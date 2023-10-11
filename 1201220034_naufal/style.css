@@ -28,9 +28,7 @@ header h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Warna dasar */
     color: #333;
-    /* Nuansa lain dari warna dasar */
     border-color: #D9D9D9;
     justify-content: center;
     align-content: center;
@@ -38,22 +36,22 @@ header h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
 }
-/* Reset margin dan padding untuk elemen */
+
 body, ul {
     margin: 0;
     padding: 0;
 }
 
-/* Gaya dasar header */
+
 header {
     background-color: #c5c9c5;
     padding: 20px;
     text-align: center;
 }
 
-/* Gaya dasar navigasi row */
+
 .row-nav {
-    background-color: #727272; /* Warna latar belakang navigasi row */
+    background-color: #727272; 
     padding: 10px 10px;
     text-align: center;
 }
@@ -144,12 +142,12 @@ html {
     text-align: center;
     padding-bottom: 5px;   
 }
-/*untuk scroll halus ke L1*/
+
 [id="L1"]::before {
     content: "";
     display: block;
-    height: 100px; /* Adjust the height as needed */
-    margin: -100px 0 0; /* Match the height */
+    height: 100px; 
+    margin: -100px 0 0; 
     visibility: hidden;
 }
 
@@ -178,37 +176,36 @@ html {
 
 
 
-/* Gaya untuk daftar menu */
+
 .row-nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Menggunakan flexbox untuk tata letak baris */
-    justify-content: space-around; /* Menyusun menu dengan jarak yang sama */
+    display: flex; 
+    justify-content: space-around; 
 }
 
-/* Gaya untuk setiap item menu */
+
 .row-nav li {
     padding: 10px 0;
 }
 
-/* Gaya untuk tautan menu */
+
 .row-nav a {
     text-decoration: none;
-    color: white; /* Warna teks tautan */
-    transition: 0.3s; /* Efek transisi hover */
+    color: white; 
+    transition: 0.3s; 
 }
 
-/* Gaya tautan saat dihover */
 .row-nav a:hover {
-    color: #f0f0f0; /* Warna teks saat dihover */
+    color: #f0f0f0; 
 }
 
-/* Gaya konten utama */
+
 .content {
     padding: 20px;
 }
 
-/* Styling for the content */
+
 .content {
     margin-left: 250px;
     padding: 20px;
@@ -258,8 +255,8 @@ html {
     transition: 0.3s;    
 }
 .InputC input:hover{
-    background-color: #c4c1c1; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #c4c1c1; 
+    color: #fff; 
     border-radius: 10px;
 }
 
@@ -269,12 +266,12 @@ html {
     border: transparent;
     padding: 10px 50px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Efek transisi saat latar belakang berubah */
+    transition: background-color 0.3s; 
     border-radius: 10px;
 }
 .InputC button:hover{
-    background-color: #02b5e2; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #02b5e2; 
+    color: #fff; 
     border-radius: 5px;
 }
 .InputC p {
@@ -316,8 +313,8 @@ html {
     
 }
 .InputD input:hover{
-    background-color: #c4c1c1; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #c4c1c1; 
+    color: #fff;
     border-radius: 10px;
 }
 .InputD button{
@@ -326,13 +323,13 @@ html {
     border: transparent;
     padding: 10px 50px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Efek transisi saat latar belakang berubah */
+    transition: background-color 0.3s;
     border-radius: 10px;
 
 }
 .InputD button:hover{
-    background-color: #02b5e2; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #02b5e2; 
+    color: #fff; 
     border-radius: 5px;
 }
 .InputD p {
@@ -422,6 +419,6 @@ h3{
     border: transparent;
     padding: 10px 50px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Efek transisi saat latar belakang berubah */
+    transition: background-color 0.3s; 
     border-radius: 10px;
 }
