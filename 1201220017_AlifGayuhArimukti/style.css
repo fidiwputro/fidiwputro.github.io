@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+
+
+}
+
+.banner
+{
+    width: 100%;
+    padding: 0px 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/treeafd.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar
+{
+    width: 95%;
+    height: 60px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 4%;
+}
+
+.Logo
+{
+    width: 20%;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* position: relative; */
+}
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    color:  white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #edc31d;
+    position: absolute;
+    left: 0%;
+    bottom:  -5px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+
+.content
+{
+    width: 100%;
+    margin:auto;
+    padding: 0%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.slide{
+
+}
+
+.content h1{
+    font-size: 50px;
+}
+.highlight{
+    color: green;
+}
+
+button
+{
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+    border: 2px solid #826d17;
+    background: 0%;
+}
+
+button:hover{
+    border: none;
+    transition: 0.3s;
+    background: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
