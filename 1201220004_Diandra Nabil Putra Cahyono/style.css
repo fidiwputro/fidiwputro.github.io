@@ -1,0 +1,102 @@
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32pt;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15pt;
+  color: rgb(0, 0, 0);
+}
+
+.topnav {
+  position: fixed;
+  width: 100%;
+  height: 11%;
+  background-color: #001524;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #FEFAE0;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 0px;
+}
+
+
+.topnav a:hover {
+  background-color: #D6CC99;
+  color: black;
+}
+
+.topnav p {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0px;
+  margin: -5px 20px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 70px;
+  margin: -20px -5px;
+}
+
+.logo-text {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  color: #FEFAE0;
+  font-size: 24px;
+  
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 583px;
+  background-image: url('/bongkar_laptop.jpg');
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  margin-bottom: -29px;
+}
+
+.text-overlay {
+  color: #FEFAE0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center top;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome {
+  background-color: #D6CC99;
+  height: 175px;
+  text-align: center;
+}
+
+.welcome h1, p {
+  margin-left: 20px;
+  margin-bottom: 2px;
+  margin-right: 20px;
+}
