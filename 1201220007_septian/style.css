@@ -1,0 +1,327 @@
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+div.containerPageTop{
+    color: white;
+    text-align: center;
+    background-color: #4B527E;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* SIDEBAR START */
+.sidebar{
+    background-color: #7C81AD;
+    height: 100vh;
+}
+
+.sidebar h3{
+    background-color: #363062;
+    margin: 0;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+
+        /* shadow box */
+        box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75); 
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+
+.menuJual{
+    display: flex;
+    background-color: #F99417;
+    font-weight: 600;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.menuJual a{
+    color: white;
+}
+
+/* Hover Kursor */
+.sidebar li:hover{
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.sidebar ul{
+    padding-left: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.671);
+    padding: 10px 0 10px 5px;
+    margin: 5px;
+    border-radius: 8px;
+}
+/* SIDEBAR END */
+
+
+.main {
+    width: 100%;
+}
+
+
+
+/* NAVBAR TOP START */
+.navUp ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E4374;
+
+        /* shadow box */
+        box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75); 
+}
+
+.navUp ul li{
+    float: right;
+    display: flex;
+    align-items: baseline;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navUp ul li p{
+    font-weight: bold;
+    margin: 10px;
+}
+
+.navUp ul li img{
+    width: 2em;
+    border-radius: 2em;
+    margin-top: 2px ;
+}
+
+.navUp ul li.left{
+    float: left;
+}
+
+#nama{
+    font-weight: 400;
+}
+
+
+/* NAVBAR TOP END */
+
+/* PAGE TOP START */
+
+div.topItem{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: start;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #4B527E;
+    padding-bottom: 50px;
+
+    /* background-color: #F99417; */
+}
+
+.contenLeft{
+    width: 60%;
+}
+
+.contenRight{
+    width: 20%;
+} 
+
+/* PAGE TOP TABLE LEFT START */
+
+
+table.tableLeft, .tableLeft th{
+    border: 2px solid #A8C5E6;
+    border-collapse: collapse;
+    padding: 10px 40px;
+    
+  }
+
+th.no{
+    padding: 10px 10px;
+}
+
+.tableLeft td{
+    background-color: white;
+    border: 2px solid #A8C5E6;
+    color: #4B527E;
+    padding: 10px;
+}
+
+.tableLeft th {
+    background-color: #769FCD;
+  }
+
+.tableLeft{
+    text-align: center;
+    width: 100%;
+}
+
+#btnLogPengiriman{
+    float: right;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #78D6C6;
+    padding: 4px 8px;
+    border: none;
+
+    box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.32);
+}
+
+#btnLogPengiriman a{
+    color: #2E4374;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+
+/* PAGE TOP TABLE LEFT END */
+/* PAGE TOP TABLE RIGHT START */
+
+
+
+.tableIncome ,.tableOutcome{
+ border-collapse: none;
+ background-color: #7C81AD;
+ border-top-left-radius: 2em;
+ border-bottom-left-radius: 2em;
+ border-top-Right-radius: 2em;
+ border-bottom-right-radius: 2em;
+ padding: 10px 40px;
+
+
+ margin-bottom: 10px;
+ width: 100%;
+
+ box-shadow: 0px 12px 26px -2px rgba(0,0,0,0.32);
+-webkit-box-shadow: 0px 12px 26px -2px rgba(0,0,0,0.32);
+-moz-box-shadow: 0px 12px 26px -2px rgba(0,0,0,0.32);
+}
+
+.tableProfit{
+    border-collapse: none;
+    background-color: #F99417;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-Right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 10px 40px;
+
+   
+    margin-top: 20px;
+    width: 115%;
+   
+    box-shadow: 0px 12px 26px -2px rgba(0,0,0,0.32);
+   -webkit-box-shadow: 0px 12px 26px -2px rgba(0,0,0,0.32);
+   -moz-box-shadow: 0px 12px 26px -2px rgba(0,0,0,0.32);
+}
+
+.tableIncome th,.tableOutcome th, .tableProfit th{
+    text-align: left;
+    padding-right: 3px;
+}
+
+.tableIncome th.spce{
+    padding-right: 20px;
+}
+
+/* PAGE TOP TABLE RIGHT END */
+/* PAGE TOP END */
+
+
+/* PageBottom Start */
+.containerPageBottom {
+    background-color: white;
+    padding: 30px 0 50px;
+}
+
+.containerPageBottom h4{
+    margin-left: 5% ;
+    color: #4B527E;
+}
+
+.tableKaryawan{
+
+    width: 96%;
+    margin: 0 2%;
+    border-collapse: collapse;
+    border: 2px solid #A8C5E6;
+}
+
+.thKaryawan {
+    background-color: #A8C5E6;
+    color: white;
+    text-align: center;
+
+}
+
+.tableKaryawan td{
+    text-align: center;
+    border: 2px solid #A8C5E6;
+}
+
+  /* PageBottom end*/
+
+  .containerTableGudang{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 4em 10px;
+
+  }
+
+  .display{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .tableBB, .tableBJ{
+    border: 2px solid #A8C5E6;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .tableBB th, .tableBB td{
+    border: 2px solid #A8C5E6;
+
+  }
+
+  .tableBB th, .tableBJ th{
+    background-color: #769FCD;
+    color: white;
+    padding: 10px;
+  }
