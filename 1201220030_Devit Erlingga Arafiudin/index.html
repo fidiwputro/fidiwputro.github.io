@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K4-CTF Platform</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="./css/full-pack.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+</head>
+<body class="bg-gray-900">
+    <!-- Navbar -->
+    <nav class="navbar fixed w-full bg-gray-900 font-mono z-100 ">
+        <a href="/"  class="text-lime-200 items-center ">
+            <img class=" h-8 mr-3" src="https://iili.io/J27Kips.png" alt="">
+            <span class="font-semibold text-2xl" >K4-CTF</span>
+        </a>
+        <ul class="nav-clean font-mono ">
+            <li><a class="text-lime-200" href="/rule">Rule</a></li>
+            <li><a class="text-lime-200" href="/users">Users</a></li>
+            <li><a class="text-lime-200" href="/teams">Teams</a></li>
+            <li><a class="text-lime-200" href="/scoreboard">Scoreboard</a></li>
+            <li><a class="text-lime-200" href="/challenges">Challenges</a></li>
+        </ul>
+        <div class="items-center ">
+            <span class=" text-lime-800 bg-lime-300 px-6 rounded-md py-2" >Login kuy &rarr;</span>
+        </div>
+    </nav>
+    <!-- Content -->
+    <br>
+    <div class=" flex-col p-10 mt-20">
+        <div class="first-view flex mb-10 " >
+            <div class="first-view-text font-mono text-white">
+                <h1>WELCOME TO K4-CTF </h1>
+                <p class="mt-8 text-gray-400"> Ctf ini di persembahkan oleh Institut Teknologi Telkom Surabaya 
+                dengan tujuan untuk mengasah kemampuan mahasiswa dalam bidang cyber security
+                </p> 
+                </p>
+                <p class="mt-2 text-gray-400">start At <i><b>2021-05-20 00:00:00</b></i> </p>
+
+                <p class="mt-2 text-gray-400">end At <i><b>2021-05-20 00:00:00</b></i> </p>
+
+                <p class="mt-2 text-gray-400">Competition duration <i><b>24 hours</b></i> </p>
+                <button class="mt-6 rounded-md  ">Happy Hacking :)</button>
+                <a class="our-sponsor text-lime-200" href="#patner">&nbsp; Our Sponsor &darr;</a>
+            </div>
+            <div class="img-container mt-4" >
+                <img class="rounded-2xl " src="https://iili.io/J3IHAMB.png" alt="">
+            </div>
+        </div>
+    </div>
+        <!-- Sponsor List -->
+        <div class=" p-10 font-mono flex-col items-center text-white mt-14  ">
+            <div id="patner" class=" flex-col items-center">
+                <h1  >Partners & Sponsors </h1>
+                <p class="text-gray-400 mt-4 text-center " >Here at K4-CTF Sponsor, Big thanks for our sponsor and dont forget to visit please. </p>
+            </div>
+            <div class="flex-row mt-14 text-gray-400 items-center " >
+                <!-- List -->
+                <div class="sponsor-list flex-col">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/spotify.svg" alt="">
+                    <span class="mt-4" >Spotify</span>
+                    <div class="visit mt-4" >
+                        <a href="#">
+                            <svg aria-hidden="true" class=" h-5  mr-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>    
+                            <span>Visit</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sponsor-list flex-col">
+                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/netflix.svg" alt="">
+                    <span class="mt-4" >Netflix</span>
+                    <div class="visit mt-4" >
+                        <a href="#">
+                            <svg aria-hidden="true" class=" h-5  mr-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>    
+                            <span>Visit</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sponsor-list flex-col">
+                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/twitch.svg" alt="">
+                    <span class="mt-4" >Twitch</span>
+                    <div class="visit mt-4" >
+                        <a href="#">
+                            <svg aria-hidden="true" class=" h-5  mr-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>    
+                            <span>Visit</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sponsor-list flex-col">
+                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/disney.svg" alt="">
+                    <span class="mt-4" >Disney</span>
+                    <div class="visit mt-4" >
+                        <a href="#">
+                            <svg aria-hidden="true" class=" h-5  mr-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>    
+                            <span>Visit</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sponsor-list  flex-col">
+                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/spotify.svg" alt="">
+                    <span class="mt-4" >Spotify</span>
+                    <div class="visit mt-4" >
+                        <a href="#">
+                            <svg aria-hidden="true" class=" h-5  mr-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>    
+                            <span>Visit</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Competition Category -->
+        <div class="flex-col mt-20 font-mono max-width-1200 mb-10">
+            <div class="">
+                <h1 class="text-lime-200 text-center">
+                    Competition Category
+                </h1>
+                <p class="text-gray-400 mt-4 text-center " >Here at K4-CTF Competition Category, this all the challenges category. </p>
+            </div>
+            <div class="flex-row bg-gray-800 rounded-md items-center mt-12 text-center px-10 py-10 ">
+                <!-- list -->
+                <div class="text-gray-400  px-6  ">
+                    <img class="h-8 w-auto rounded-xl " src="./img/aaa.png" alt="">
+                    <h3>Web Exploit</h3>
+                    <p class="text-sm ">Peserta diharapkan dapat menyelesaikan soal yang berhubungan dengan web dan networking</p>
+                </div>
+                <div class="text-gray-400  px-6 ">
+                    <img class="h-8 w-auto rounded-xl " src="./img/aaa.png" alt="">
+                    <h3>Cryptography</h3>
+                    <p class="text-sm ">Peserta diharapkan dapat menyelesaikan soal yang berhubungan dengan encryption, dencryption, hash</p>
+                </div>
+                <div class="text-gray-400  px-6 ">
+                    <img class="h-8 w-auto rounded-xl " src="./img/aaa.png" alt="">
+                    <h3>Reverse</h3>
+                    <p class="text-sm ">Peserta diharapkan dapat menyelesaikan soal yang berhubungan dengan Cracking, Flag Checker, App</p>
+                </div>
+                <div class="text-gray-400  px-6 ">
+                    <img class="h-8 w-auto rounded-xl " src="./img/aaa.png" alt="">
+                    <h3>Binary Exploit</h3>
+                    <p class="text-sm ">Peserta diharapkan dapat menyelesaikan soal yang berhubungan dengan BufferOferflow, Py jail</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    <!-- Problem Setter -->
+        <div class="flex-col mt-20 font-mono max-width-1200 mb-10">
+            <div class="">
+                <h1 class="text-white text-center">
+                    Problem Setter
+                </h1>
+                <p class="text-gray-400 mt-4 text-center " >Here at K4-CTF Problem Setter, Big thanks for our Problem Setter, there is who make the challenges. </p>
+            </div>
+            <div class="flex-row  rounded-md items-center mt-12 text-center px-10 py-10 ">
+                <!-- list -->
+                <div class="flex-row-2 text-left px-6">
+                    <div class=" flex-col-right text-gray-400">
+                        <h3>Dimas Maulana</h3>
+                        <p class="tag-chall mt-2 mb-2">Web Exploit</p>
+                        <span>Founder TC1P team</span>
+                        <span> Juara 3 Cyber Jawara</span>
+                    </div>
+                    <img class="h-19 rounded-md ml-6" src="./img/samplee3.jpeg" alt="">
+                </div>
+                <div class="flex-row text-left px-6">
+                    <img class="h-19 rounded-md mr-6" src="./img/s4.jpeg" alt="">
+                    <div class=" flex-col-left text-gray-400">
+                        <h3>Aseng</h3>
+                        <p class="tag-chall mt-2 mb-2">Cryptography</p>
+                        <span>Founder SKSD Team</span>
+                        <span>Juara 1 	CTFZone 2023</span>
+                    </div>
+                </div>
+            </div>
+            <!-- list bawah -->
+            <div class="flex-row  rounded-md items-center  text-center">
+                <!-- list -->
+                <div class="flex-row-2 text-left px-6">
+                    <div class=" flex-col-right text-gray-400">
+                        <h3>Daffa Info</h3>
+                        <p class="tag-chall mt-2 mb-2">Reverse</p>
+                        <span>Member SKSD team</span>
+                        <span>Juara 1 0byteCTF 2023</span>
+                    </div>
+                    <img class="h-19 rounded-md ml-6" src="./img/s4.jpeg" alt="">
+                </div>
+                <div class="flex-row text-left px-6 ">
+                    <img class="h-19 rounded-md mr-6" src="./img/s5.jpg" alt="">
+                    <div class=" flex-col-left text-gray-400">
+                        <h3>Linz</h3>
+                        <p class="tag-chall mt-2 mb-2">Binary Exploit</p>
+                        <span>Gemastix9 Probsetter</span>
+                        <span>Juara 1 Cyber Jawara</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+        <div class="w-full text-center mt-20 text-gray-400 bg-gray-800 py-4">
+            <p>This CTF platform made by💖 <a class="text-lime-600" href="https://mpiie.my.id">mpiie.my.id</a></p>
+        </div>
+
+
+</body>
+</html>
