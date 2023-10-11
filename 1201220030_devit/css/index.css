@@ -89,7 +89,7 @@ a{
     align-items: center;
     flex-direction: column;
     padding: 0 13%;
-    margin-top: 80px;
+    margin: 140px 0;
 }
 
 .content-utama-2{
@@ -101,6 +101,36 @@ a{
 
 .content-utama-2 h1{
     color:  white;
+    margin-bottom: 20px;
+}
+
+.content-utama-2 p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(156 163 175 );
+}
+
+.content-utama-text-area{
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.content-utama-text-area button{
+    border-radius: 7px;
+    border: 5px solid #fff;
+    padding: 10px 20px;
+    background-color: rgb(190 242 100 );
+    border: none;
+    color: rgb(51 85 0 );
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.content-utama-text-area a{
+    color: rgb(217 249 157 );
 }
 
 .content-utama-gambar img{
