@@ -1,0 +1,74 @@
+.main-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.first-view {
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* 0 top/bottom, auto left/right */
+    padding: 20px ;
+}
+
+.first-view-text {
+    flex: 1; /* agar item di dalam flex itu memenuhi ruang div sesuai max-width */
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.first-view-text button {
+    border: 5px solid #fff;
+    padding: 10px 20px;
+    background-color: #3f6212;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.img-container {
+    flex: 1;
+    text-align: right; /* agar foto berada di kanan */
+}
+
+.img-container img {
+    max-width: 60%;
+    height: auto;
+}
+
+.sponsor-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% ;
+}
+
+.sponsor-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.visit {
+    border-radius: 5px;
+    padding: 6px 20px;
+    background-color: #1e293b;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.visit a{
+    display: flex;
+    text-decoration: none;
+    color: #3a4ade;
+    
+}
+
+.tag-chall{
+    background-color: rgb(51 85 0 );
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: rgb(137 212 0 );
+    font-size: small;
+}
