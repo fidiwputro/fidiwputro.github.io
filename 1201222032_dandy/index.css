@@ -1,0 +1,262 @@
+:root{
+    --primary-color: #2447f9;
+    --secondary-color: #e5e9f2;
+    --third-color: #f6f8fd;
+    --nonactive-color:#0b5ed7;
+    --text-color:#34364a;
+}
+
+* {
+    margin: 0;
+    font-family: Poppins;
+}
+
+nav {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 20px 80px;
+    background-color: var(--third-color);
+}
+
+h1>a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navbar-mid {
+    margin-right: auto;
+}
+
+nav>div>ul>li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav>div>ul>li>a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav>div>ul>li>a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btnLogin{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--nonactive-color);
+    margin-left: 20px;
+}
+
+.btnLogin:hover{
+    background-color: var(--primary-color);
+}
+
+.header {
+    display: flex;
+    height: 500px;
+    background-color: var(--third-color);
+}
+
+.headerLeft {
+    margin: 50px 0px 50px 100px;
+}
+
+.tagLine {
+    color: #47bb8e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Judul {
+    font-size: 46px;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+.headerRight {
+    margin: 50px 100px 50px 0px;
+}
+
+#headerImg {
+    height: 100%;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 0px 70px 0px 70px;
+}
+
+.Deskripsi {
+    font-size: 18px;
+}
+
+.btnHeader{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--nonactive-color);
+    margin-top: 30px;
+}
+
+.Katalog {
+    width: 100%;
+    height: 520px;
+    background-color: var(--third-color);
+}
+
+.wrapperKatalog {
+    padding: 50px 0px 5px 50px;
+    background-color: var(--third-color);
+    display: block;
+}
+
+.taglineWrapper {
+    color: #47bb8e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.judulWrapper {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+.wrapperCard {
+    padding: 5px 0px 5px 50px;
+    background-color: var(--third-color);
+    display: flex;
+    gap: 25px;
+}
+
+.Card {
+    border-radius: 20px 20px 10px 10px;
+    display: block;
+    width:  294px;
+    height: 300px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cardHeader {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    text-align: center;
+}   
+
+.cardImg {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-position: center;
+}
+
+.cardTitle {
+    display: block;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardPrice {
+    display: block;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.cardRating {
+    display: block;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.Gallery {
+    background-color: #181230;
+}
+
+.galleryHeader {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 140px;
+    padding: 50px 0px 0px 0px;
+}
+
+.galleryTitle {
+    margin: 20px 50px 0px 50px;
+    color: #47bb8e;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.galleryTagline {
+    margin: 0px 50px 5px 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+
+.galleryBody {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px 50px 20px;
+    margin: 0px 20px;
+    height: auto;
+    justify-content: center;
+    gap: 20px;
+    background-color: #181230;
+}
+
+.cardSlim {
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    width: 288px;
+    height: 110px;
+    align-items: center;
+}
+
+.cardLogo {
+    margin: 20px 16px 20px 20px;
+    display: inline;
+}
+
+.logoText {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+.logoTitle {
+    font-size: 20px;
+}
+
+.logoDesc {
+    font-size: 14px;
+}
+
+footer {
+    background-color: var(--third-color);
+    display: block;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+}
