@@ -1,0 +1,36 @@
+body {
+    background-color:rgb(21, 20, 20);
+}
+
+.navigator  {
+    display: flex;
+    
+    background-color: rgb(246, 12, 12);
+}
+
+.navigator ul li  {
+    list-style:none ;
+    display:inline-block;
+    padding: 20px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.navigator ul li:hover{
+    color: #f28d10;
+} 
+
+.Register_Button {
+    background-color: rgb(246, 12, 12);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
