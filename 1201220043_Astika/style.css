@@ -15,7 +15,7 @@
 }
 
 
-
+/*menu*/
 .menu{
 	margin-left: 1000x;
 	padding-top: 35px;
@@ -48,6 +48,7 @@
 }
 
 
+/*kucing*/
 .kucing {
 	background-color: #DFF5F6;
 	height: 750px;
@@ -247,112 +248,7 @@
 
 
 
-
-
-
-.food{
-	width: 98%;
-    background-color: #DFF5F6;
-	min-height: 100vh;
-}
-.food .box{
-    width: 98%;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.food .box .card{
-    width: 300px;
-    height: auto;
-    padding: 5px 5px;
-    margin: 3px;
-    background: gainsboro;
-    border: 1px solid gainsboro;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.3s;
-}
-.food .box .card:hover{
-    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
-    transform: scale(1.1);
-    border-radius: 2px;
-}
-
-
-
-
-/*produk*/
-.produk{
-	width: 100%;
-    background-color: #DFF5F6;
-	min-height: 100vh;
-}
-.produk .box{
-    width: 100%;
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.produk .box .card{
-    width: 330px;
-    height: auto;
-    padding: 5px 10px;
-    margin: 2px;
-    background: white;
-    border: 1px solid abuabu;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.3s;
-}
-.produk .box .card:hover{
-    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
-    transform: scale(1.1);
-    border-radius: 4px;
-}
-
-
-
-
-/*contact*/
-.contact{
-	width: 100%;
-    background-color: #DFF5F6;
-	
-}
-.contact hr{
-    height: 4px;
-    background: #d98ca5;
-    border-radius: 5px;
-    margin: 20px 20px;
-}
-.contact .box{
-    width: 100%;
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contact .box .card{
-    width: 330px;
-    height: auto;
-    padding: 5px 10px;
-    margin: 2px;
-    background: #71E0F8;
-    border: 1px solid abuabu;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.3s;
-}
-.contact .box .card:hover{
-    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
-    transform: scale(1.1);
-    border-radius: 4px;
-}
-
-
-
+/*catatan kaki*/
 .footer {
             background-color: #DFF5F6;
             color: black;
