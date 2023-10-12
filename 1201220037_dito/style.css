@@ -1,0 +1,45 @@
+body {
+    background-image: url('./Asset/bggg.png');
+    color: #213555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    margin-top: 20px;
+}
+
+.menu h2 {
+    padding-left: 100px;
+    padding-right: 300px;
+}
+
+.menu img {
+    width: 70px;
+    padding-left: 350px;
+}
+
+.dashboard img {
+    padding-left: 200px;
+}
+
+.dash h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.dashboard p {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
+}
