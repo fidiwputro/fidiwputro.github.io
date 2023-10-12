@@ -1,0 +1,261 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: time new roman;
+}
+.navigasi{
+	background-color: #DFF5F6;
+	background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
+	width:100%;
+	height: 100px;
+	
+}
+.logo{
+	float: left;
+}
+
+
+/*menu*/
+.menu{
+	margin-left: 1000x;
+	padding-top: 35px;
+	cursor: pointer;
+}
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+.menu ul li::after{
+	content: '';
+	height: 3px;
+	width: 100%;
+	background: #EF2894;
+	position: absolute;
+	left:0;
+	bottom: -10px;
+}
+.menu ul li a:hover{
+	width: 100%;
+	color:#EF2894;
+	font-style: italic;
+}
+
+
+/*kucing*/
+.kucing {
+	background-color: #DFF5F6;
+	height: 750px;
+	text-align: center;
+}
+.kucing h1{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 55px;
+    color: #000000;
+}
+.kucing h1 span{
+    color: #FF66C4;
+}
+.kucing p{
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.background_image img{
+    width: 650px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    margin-left: 25px;
+}
+
+
+.btn{
+    position: absolute;
+    top: 77%;
+    left: 38px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn .read{
+    background: #7CEEF4;
+    color: Black;
+	font-family: Time New Roman bold;
+   
+}
+.btn p{
+    padding: 10px 25px;
+    background: none;
+    border: 2px solid #b36982;
+   
+}
+
+
+
+
+.about{
+	width: 100%;
+    background-color: #DFF5F6;
+	background-size:cover;
+	min-height: 100vh;
+}
+.about .box{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .box .card{
+    width: 330px;
+    height: auto;
+    padding: 5px 10px;
+    margin: 2px;
+    background: gainsboro;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+}
+.about .box .card:hover{
+    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+    border-radius: 4px;
+}
+
+
+.about .miaw p{
+    text-align: center;
+    margin: 30px 0;
+    color: gray;
+    font-size: 25px;
+	
+}
+.about .miaw_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr;
+    grid-gap: 20px;
+}
+.about .miaw_box .miaw_card{
+    background: #5AA3F8;
+    width: 350px;
+	margin: 55px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.about .miaw_box .miaw_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+.about .miaw.miaw_box img{
+    width: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.about .miaw .miaw_box img:hover{
+    transform: scale(1.1);
+}
+.about .miaw_box .miaw_card h1{
+    font-size: 25px;
+    color: white;
+    margin: 15px 0;
+}
+.about .miaw_box .miaw_card p{
+    color: white;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.about hr{
+    height: 4px;
+    background: #d98ca5;
+    border-radius: 5px;
+    margin: 20px 20px;
+}
+
+.about .miaw h1{
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.about .miaw p{
+    text-align: center;
+    margin: 35px 0;
+    color: white;
+    font-size: 25px;
+}
+
+.about .miaw_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr;
+    grid-gap: 2px;
+}
+
+.about .miaw box .miaw_card{
+    background: #9d9d9d;
+    width: 350px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.about .miaw_box .miaw_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.about .miaw .miaw_box img{
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about .miaw .miaw_box img:hover{
+    transform: scale(1.1);
+}
+
+.about .miaw_box .miaw_card h1{
+    font-size: 35px;
+    color: gainsboro;
+    margin: 15px 0;
+}
+
+.about .miaw_box .miaw_card p{
+    color: white;
+    margin: 3px 0;
+    font-size: 17px;
+}
+
+
+
+
+/*catatan kaki*/
+.footer {
+            background-color: #DFF5F6;
+            color: black;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+		
