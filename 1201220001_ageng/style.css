@@ -1,0 +1,125 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px;
+}
+
+.navbar {
+    background-color: #8EACCD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a:hover {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #113946;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    color: #113946;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #333;
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #D2E0FB;
+}
+
+.wan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wan .hiu1,
+.wan .atlantis,
+.wan .hiu,
+.wan .roller,
+.wan .seaworld {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: #113946;
+}
+
+.wan .hiu1:hover,
+.wan .atlantis:hover,
+.wan .hiu:hover,
+.wan .roller:hover,
+.wan .seaworld:hover {
+    background-color: #146C94;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.wan h3 {
+    padding-top: 15px;
+}
+
+.wan img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main h2 {
+    font-size: 28px;
+    color: #113946;
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
