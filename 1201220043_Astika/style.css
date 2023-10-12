@@ -106,38 +106,18 @@
 
 
 
-
 .about{
 	width: 100%;
     background-color: #DFF5F6;
 	background-size:cover;
 	min-height: 100vh;
 }
-.about .box{
-    width: 100%;
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about hr{
+    height: 4px;
+    background: #d98ca5;
+    border-radius: 5px;
+    margin: 20px 20px;
 }
-.about .box .card{
-    width: 330px;
-    height: auto;
-    padding: 5px 10px;
-    margin: 2px;
-    background: gainsboro;
-    border: 1px solid gainsboro;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.3s;
-}
-.about .box .card:hover{
-    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
-    transform: scale(1.1);
-    border-radius: 4px;
-}
-
-
 .about .miaw p{
     text-align: center;
     margin: 30px 0;
@@ -179,70 +159,6 @@
 .about .miaw_box .miaw_card p{
     color: white;
     margin: 10px 0;
-    font-size: 17px;
-}
-
-.about hr{
-    height: 4px;
-    background: #d98ca5;
-    border-radius: 5px;
-    margin: 20px 20px;
-}
-
-.about .miaw h1{
-    font-size: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 35px 0;
-}
-
-.about .miaw p{
-    text-align: center;
-    margin: 35px 0;
-    color: white;
-    font-size: 25px;
-}
-
-.about .miaw_box{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0fr 0fr 0fr 0fr;
-    grid-gap: 2px;
-}
-
-.about .miaw box .miaw_card{
-    background: #9d9d9d;
-    width: 350px;
-    padding: 10px 10px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.about .miaw_box .miaw_card:hover{
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-}
-
-.about .miaw .miaw_box img{
-    width: 250px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.about .miaw .miaw_box img:hover{
-    transform: scale(1.1);
-}
-
-.about .miaw_box .miaw_card h1{
-    font-size: 35px;
-    color: gainsboro;
-    margin: 15px 0;
-}
-
-.about .miaw_box .miaw_card p{
-    color: white;
-    margin: 3px 0;
     font-size: 17px;
 }
 
