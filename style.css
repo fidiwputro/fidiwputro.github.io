@@ -1,0 +1,47 @@
+h1 {
+    font-family:Arial, Helvetica, sans-serif;  
+    display: inline-block;
+    width: auto;
+    clear: left;
+    /* border: 1px solid black;   */
+}
+
+.menuatas {
+    float: right;
+}
+
+.menuatas ul li {
+    display:inline-block;   
+    width: 100px;
+    text-align: center;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    border: 1px solid gray;
+    background-color: cyan;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 5px;    
+}
+
+li li{
+    border: 1px solid red;
+    width: 80%;
+}
+
+li li:hover{
+    background-color: #a8b10770;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited{
+    color: green;
+}
