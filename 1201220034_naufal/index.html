@@ -13,7 +13,8 @@
     
     <nav class="row-nav">
         <ul>
-            <li ><button id="a"><h3 id="A">Features</h3>
+            <li >
+            <button id="a"><h3 id="A">Features</h3>
                 <ul id="bycode">
                     <a href="#L1" >Search By Code</a></ul>
                 <ul id="bydesc">
@@ -22,7 +23,11 @@
                     <a href="#L3">Forum</a></ul>
             </button>
             </li>
-            <li ><button id="d"><h3 id="D">Kontak</h3></li>
+            <li ><button id="d">
+                <h3 id="D">
+                Contact
+                </h3>
+            </li>
         </ul>
     </nav>
     
@@ -46,17 +51,20 @@
             <h2 id="L1" class="L1">Cari Berdasarkan Kode</h2>
 
             <div class="InputC" >
-                <p>Dapat dengan mudah mencari solusi dari masalah hanya melalui kode error</p>
-                <input type="text" placeholder="Inputkan Kode">
-                <button>Cari Solving</button>
+                <ul>
+                    <li><input type="text" placeholder="Inputkan Kode"></li>
+                    <li><button>Cari Solving</button></li>
+                </ul>
             </div>
             
             <h2 id="L2" class="L2">Cari Berdasarkan Deskripsi</h2>
             <div class="InputD">
-                <p>Dapat dengan mudah mencari solusi dari masalah error dengan deskripsi singkat maupun mendetail</p>
-                <input class="InputD" type="text" placeholder="Inputkan Deskripsi">
-                <button>Cari Solving</button>
+                <ul>
+                    <li><input type="text" placeholder="Inputkan Deskripsi"></li>
+                    <li><button>Cari Solving</button></li>
+                </ul>
             </div>
+            
             <h2 id="L3" class="L3">Forum</h2>
             <div class="Forumf">   
                 <p>Solusi tidak ditemukan?, bisa langsung bertanya di forum, dengan bertanya tidak hanya mendapatkan solusi, tapi kamu secara tidak langsung juga ikut berkontribusi</p>
@@ -64,7 +72,7 @@
                 <button>Kirim Problem Ke Forum</button>
             </div>
             <div class="trending">
-                <h3>Trending Topics:</h3> <p class="Errorcode">Error code</p> <p class="dll">.dll error</p> <p class="directx">directx error</p>
+                <h3>Trending Topics:</h3> <button class="Errorcode">Error code</button> <button class="dll">.dll error</button> <button class="directx">directx error</button>
             </div>
             
     </section>
