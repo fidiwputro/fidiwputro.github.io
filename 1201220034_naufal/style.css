@@ -1,3 +1,4 @@
+/*Test*/
 /*agar font satu halaman hanya 1 jenis font*/
 body{
     font-family:'Courier New', Courier, monospace
@@ -17,6 +18,8 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /*untuk judul "About" di sesi About*/
 .Tentang h2{
@@ -24,7 +27,6 @@ body{
     display: flex;
     justify-content: center;
     margin-top: -450px;
-    font-size: 40px;
 }
 /*untuk header diatas, "Software Problem Solver"*/
 header h1{
@@ -252,20 +254,17 @@ html {
     display: flex;
     background-color: #c4c2c2;
     padding-bottom: 50px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding-right: 20px;
+    border-radius: 15px;
     text-align: center;
 
 }
 .InputC ul {
     list-style-type: none;
-    padding-top: 350px;
 }
+
 .InputC ul li input{
+    margin-top: 350px;
     margin-bottom: 5px;
-    margin-right: 5px;
-    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-color: transparent;
@@ -275,7 +274,6 @@ html {
     text-align: center;
 }
 .InputC input{
-    margin-right: 5px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -291,23 +289,21 @@ html {
 }
 
 .InputC button{
-    background-color: #fff;
+    background-color: #e2e0e0;
     color: #333;
     border: transparent;
     padding: 10px 50px;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s; 
+    transition: 0.3s;
     border-radius: 10px;
+    width: 130px;
 }
 .InputC button:hover{
-    background-color: #e6e3e3; 
+    background-color: #d4d2d2; 
     color: #525151; 
     border-radius: 5px;
-}
-.InputC p {
-    margin-left: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-right: 10px;
+    width: 140px;
 }
 .L2{
     display: flex;
@@ -320,24 +316,21 @@ html {
     border-top-right-radius: 20px;
 }
 .InputD{
-    
+    margin-top: 20px;
     justify-content:center;
     display: flex;
     background-color: #c4c2c2;
     padding-bottom: 50px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding-right: 20px;
+    border-radius: 15px;
     text-align: center;
 }
 .InputD ul {
     list-style-type: none;
-    padding-top: 350px;
+
   }
-.InputD ul li input{
+.InputD input{
+    margin-top: 350px;
     margin-bottom: 5px;
-    margin-right: 5px;
-    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-color: transparent;
@@ -352,25 +345,24 @@ html {
     border-radius: 10px;
 }
 .InputD button{
-    background-color: #fff;
+    background-color: #e2e0e0;
     color: #333;
     border: transparent;
     padding: 10px 50px;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
     border-radius: 10px;
-
+    width: 130px;
 }
+
 .InputD button:hover{
-    background-color: #e6e3e3; 
+    background-color: #d4d2d2; 
     color: #525151; 
     border-radius: 5px;
+    width: 140px;
 }
-.InputD p {
-    margin-left: 20px;
-    margin-right: 10px;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 .L3{
     display: flex;
     justify-content: center;
@@ -382,12 +374,48 @@ html {
     border-top-right-radius: 20px;
 }
 .Forumf{
-    justify-content:right;
+    justify-content:center;
     display: flex;
     background-color: #c4c2c2;
-    padding-right: 20px;
-    padding-left: 20px;
     text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+.Forumf ul{
+    list-style-type: none;
+}
+.Forumf input{
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s;
+    text-align: center;
+}
+.Forumf input:hover{
+    background-color: #e7e3e3; 
+    color: #fff; 
+    border-radius: 10px; 
+}
+.Forumf button{
+    margin-bottom: 150px;
+    background-color: #e2e0e0;
+    color: #333;
+    border: transparent;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 130px;
+}
+.Forumf button:hover{
+    background-color: #d4d2d2; 
+    color: #525151; 
+    border-radius: 5px;
+    width: 140px;
 }
 .Kontakk{
     padding-top: 5px;
@@ -399,64 +427,5 @@ html {
     margin-left: 0;
     margin-right: 0;
 }
-h3{
-    text-align: center;
-}
-.Errorcode{
-    background-color: #02b5e2;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: #727272;
-    margin-left: 240px;
-    margin-right: 240px;
-}
-.dll{
-    background-color: #02b5e2;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: #727272;
-    margin-left: 240px;
-    margin-right: 240px;
-    
-}
-.directx{
-    background-color: #02b5e2;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: #727272;
-    margin-left: 240px;
-    margin-right: 240px;
-}
-.trending{
-    padding-top: 20px;
-    background-color: #c4c2c2;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-bottom: 10px;
-}
-.Forumf input{
-    margin-right: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-color: transparent;
-    border-radius: 10px;
-    background-color: #fff;
-    transition: 0.3s;
-    text-align: center;
-}
-.Forumf button{
-    background-color: #fff;
-    color: #333;
-    border: transparent;
-    padding: 10px 50px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    border-radius: 10px;
-}
+
+
