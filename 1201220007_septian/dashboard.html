@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DASHBOARD</title>
+        <link rel="stylesheet" href="display.css" />
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="label">
+                <img src="asset/DIDIMO-logo-final.png" alt="" />
+                <div class="text">UD CHANDRA FURNITURE</div>
+            </div>
+            <hr />
+            <div class="menu">
+                <div>
+                    <div class="item">
+                        <img class="" src="asset/dashboard.png" alt="" />
+                        <div class="text">DASHBOARD</div>
+                    </div>
+                    <div class="item">
+                        <img src="asset/logbook.png" alt="" />
+                        <div class="text">LOGBOOK</div>
+                    </div>
+                    <div class="item">
+                        <img src="asset/warehouse.png" alt="" />
+                        <div class="text">WAREHOUSE</div>
+                    </div>
+                    <div class="item">
+                        <img src="asset/employee.png" alt="" />
+                        <div class="text">EMPLOYEE</div>
+                    </div>
+                </div>
+                <div class="logout">
+                    <div class="item">
+                        <img src="asset/employee.png" alt="" />
+                        <div class="text">Logout</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="topDisplay">
+                <div class="section1">
+                    <div class="greetingCard">
+                        <div class="greeting">
+                            <div class="up">
+                                <p>Senin, 16 Oktober 2023</p>
+                            </div>
+                            <div class="bottom">
+                                <h1>Good Day, BOS</h1>
+                                <p>Have a nice Monday!!!</p>
+                            </div>
+                        </div>
+                        <div class="picture">
+                            <img src="asset/greeting.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="keuangan">
+                        <div class="card income">
+                            <h5>INCOME</h5>
+                            <br />
+                            <h2>Rp. XXX.XXX.XXX,00</h2>
+                        </div>
+                        <div class="card outcome">
+                            <h5>OUTCOME</h5>
+                            <br />
+                            <h2>Rp. XXX.XXX.XXX,00</h2>
+                        </div>
+                        <div class="card profit">
+                            <h5>PROFIT</h5>
+                            <br />
+                            <h2>Rp. XXX.XXX.XXX,00</h2>
+                        </div>
+                    </div>
+                    <div class="warehouse">
+                        <div class="bahanBaku">
+                            <h4>BAHAN BAKU</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>NAMA BARANG</th>
+                                        <th>STOCK</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Sengon</th>
+                                        <td>4 Kubik</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sengon</th>
+                                        <td>4 Kubik</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sengon</th>
+                                        <td>4 Kubik</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="bahanJadi">
+                            <h4>BAHAN JADI</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>NAMA BARANG</th>
+                                        <th>STOCK</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Sengon</th>
+                                        <td>4 Kubik</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sengon</th>
+                                        <td>4 Kubik</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sengon</th>
+                                        <td>4 Kubik</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <div class="profile">
+                        <h3>PROFILE</h3>
+                        <div class="about">
+                            <div class="profileImg">
+                                <img src="asset/profile.jpg" alt="" />
+                            </div>
+                            <div class="desk">
+                                <h4>UD CHANDRA FURNITURE</h4>
+                                <p>Sawmill Industri</p>
+                                <div class="location">
+                                    <img src="asset/employee.png" alt="" />
+                                    <p>Kab.Malang Jawatimur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipment">
+                        <div class="headShip">
+                            <h3>SHIPMENT</h3>
+                            <select name="month" id="month">
+                                <option value="januari">Januari</option>
+                                <option value="februari">Februari</option>
+                                <option value="maret">Maret</option>
+                                <option value="april">April</option>
+                                <option value="bulan">Bulan</option>
+                                <option value="bulan">Bulan</option>
+                                <option value="bulan">Bulan</option>
+                                <option value="bulan">Bulan</option>
+                                <option value="bulan">Bulan</option>
+                                <option value="bulan">Bulan</option>
+                                <option value="bulan">Bulan</option>
+                                <option value="bulan">Bulan</option>
+                            </select>
+                        </div>
+                        <div class="date">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Senin</th>
+                                        <th>Selasa</th>
+                                        <th>Rabu</th>
+                                        <th>Kamis</th>
+                                        <th>Jum'at</th>
+                                        <th>Sabtu</th>
+                                        <th>Minggu</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="headDtl">
+                            <h4>Oktober</h4>
+                            <button>Lihat Detail</button>
+                        </div>
+                        <div class="detailDate">
+                            <table class="tableDtl">
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                                <tr>
+                                    <th>Minggu, 15</th>
+                                    <td>Kirim ke surabaya</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomDisplay">
+                <div class="tableKehadiran first">
+                    <table >
+                        <tr>
+                            <th>NAMA</th>
+                        </tr>
+                        <tr>
+                            <th>DATANG</th>
+                        </tr>
+                        <tr>
+                            <th>PULANG</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableKehadiran second">
+                    <table class="jamKehadiran">
+                        <tr>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                            <th>Suyanto</th>
+                            <th>Dianto</th>
+                            <th>Naruto</th>
+                            <th>Dito</th>
+                        </tr>
+                        <tr>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                            <td>08:00 </td>
+                        </tr>
+                        <tr>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                            <td>16:00 </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
