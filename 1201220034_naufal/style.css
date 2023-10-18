@@ -23,7 +23,7 @@ body{
 }
 /*untuk judul "About" di sesi About*/
 .Tentang h2{
-    font-size: 50px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     margin-top: -450px;
@@ -171,6 +171,30 @@ html {
     padding-bottom: 5px;   
 }
 
+/*untuk opsi "Search By Image" didalam opsi navigasi "Features"*/
+#byimg{
+    font-size: 0;
+    text-align: center;
+    padding-right: 0;
+    transition: 0.1s;
+    transition: ease;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*untuk opsi "Search By Image" didalam opsi navigasi "Features" ketika hover*/
+#byimg:hover{
+    background-color:#727272;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*untuk opsi "Search By Image" didalam opsi navigasi "Features". untuk menambahkan efek muncul ketika hover*/
+#a:hover #byimg{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
 
 
 #d{
@@ -351,7 +375,6 @@ html {
     color: #333;
     border: transparent;
     padding: 10px 50px;
-    text-align: center;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 10px;
@@ -382,7 +405,7 @@ html {
     text-align: center;
     border-radius: 15px;
     margin-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 .Forumf ul{
     list-style-type: none;
@@ -403,17 +426,77 @@ html {
     border-radius: 10px; 
 }
 .Forumf button{
-    margin-bottom: 150px;
+    margin-bottom: 10px;
     background-color: #e2e0e0;
     color: #333;
     border: transparent;
-    text-align: center;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 10px;
     width: 130px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .Forumf button:hover{
+    background-color: #d4d2d2; 
+    color: #525151; 
+    border-radius: 5px;
+    width: 140px;
+}
+
+.InputE{
+    justify-content:center;
+    display: flex;
+    background-color: #c4c2c2;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.InputE ul {
+    list-style-type: none;
+}
+
+.InputC ul li input{
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s;
+    text-align: center;
+}
+.InputE input{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.InputE input:hover{
+    background-color: #887c7c; 
+    color: #fff; 
+    border-radius: 10px;
+}
+
+.InputE button{
+    background-color: #e2e0e0;
+    color: #333;
+    border: transparent;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 130px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.InputE button:hover{
     background-color: #d4d2d2; 
     color: #525151; 
     border-radius: 5px;
@@ -429,5 +512,3 @@ html {
     margin-left: 0;
     margin-right: 0;
 }
-
-
