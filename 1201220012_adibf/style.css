@@ -4,57 +4,61 @@
   font-family: sans-serif;
 }
 
-.banner {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/background.jpg);
-  background-size: cover;
+.logo {
+  width: 120px;
 }
 
 .navbar {
-  width: 85%;
   margin: auto;
-  padding: 35px 0;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo {
-  width: 120px;
-  cursor: pointer;
+  background-color: orange;
 }
 
 .navbar ul li {
-  list-style: none;
   display: inline-block;
   margin: 0 20px;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
 }
 
 .navbar ul li a:hover {
-  color: orange;
+  color: white;
 }
 
-.content {
-  width: 100%;
-  top: 50%;
+.content-home {
   text-align: center;
-  color: #fff;
+  color: white;
 }
 
-.content h1 {
+.content-about {
+  text-align: center;
+  color: black;
+}
+
+.content-home h1,
+.content-about h1 {
   font-size: 70px;
-  margin-top: 80px;
 }
 
-.content p {
-  margin: 20px auto;
+.content-home p,
+.content-about p {
   font-weight: 100;
   line-height: 25px;
+}
+
+.home {
+  background-color: black;
+  height: 590px;
+}
+
+.about {
+  background-color: white;
+  height: 662px;
 }
