@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 120px;
+}
+
+.navbar {
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  color: white;
+}
+
+.content-home {
+  text-align: center;
+  color: white;
+}
+
+.content-about {
+  text-align: center;
+  color: black;
+}
+
+.content-home h1,
+.content-about h1 {
+  font-size: 70px;
+}
+
+.content-home p,
+.content-about p {
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.home {
+  background-color: black;
+  height: 590px;
+}
+
+.about {
+  background-color: white;
+  height: 662px;
+}

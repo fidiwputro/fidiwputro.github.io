@@ -1,0 +1,6 @@
+1. git <enter> (untuk cek git udah diinstall atau blm)
+2. git clone <alamat clone https dari github><enter>
+3. git add . <enter> (untuk menambahkan file ke git lokal)
+4. git commit -m "komentar kalian" <enter> (menyimpan file git lokal secara permanen)
+5. git push <enter> (untuk mengirim file ke server github)
+6. git pull <enter> (untuk mendownload update file dari server github)
