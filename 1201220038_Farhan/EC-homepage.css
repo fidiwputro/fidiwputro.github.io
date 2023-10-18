@@ -14,6 +14,8 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #0F0F0F;
+    position: sticky;
+    top: 0;
 }
 
 .home {

@@ -1,36 +1,40 @@
+/*Test*/
+/*agar font satu halaman hanya 1 jenis font*/
 body{
     font-family:'Courier New', Courier, monospace
 }
+/*untuk sesi About dibawah navigasi bar*/
 .Tentang{
-    background-color: #e7e7e6;
-    padding-bottom: 100px;
-    padding-top: 540px;
+    background-color: #d3d3d3;
+    padding-bottom: 1px;
+    padding-top: 480px;
     margin-left: 20px;
     margin-right: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
+/*untuk paragraf yang satu sesi dengan About*/
 .paragraf{
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+/*untuk judul "About" di sesi About*/
 .Tentang h2{
-    font-size: 50px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     margin-top: -450px;
-    font-size: 40px;
 }
+/*untuk header diatas, "Software Problem Solver"*/
 header h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Warna dasar */
     color: #333;
-    /* Nuansa lain dari warna dasar */
     border-color: #D9D9D9;
     justify-content: center;
     align-content: center;
@@ -38,40 +42,46 @@ header h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
 }
-/* Reset margin dan padding untuk elemen */
+/*agar body dan list di navigasi bar tidak menyisahkan rongga disamping dan atas/bawah*/
 body, ul {
     margin: 0;
     padding: 0;
 }
-
-/* Gaya dasar header */
+/*untuk tata letak dan warna latar belakang di header*/
 header {
-    background-color: #c5c9c5;
+    background-color: #a9aaa9;
     padding: 20px;
     text-align: center;
 }
-
-/* Gaya dasar navigasi row */
+/*untuk warna latar belakang dan tata letak navigasi bar*/
 .row-nav {
-    background-color: #727272; /* Warna latar belakang navigasi row */
+    background-color: #c5c9c5; 
     padding: 10px 10px;
     text-align: center;
 }
+/*untuk opsi "Features" di navigasi bar*/
 #a{
+    color: #c4c1c1;
     background-color: transparent;
     border-right: none;
     border-top: none;
     border-left: none;
     transition: 0.3s;
-    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 3px;
 }
+/*untuk opsi "Features" di navigasi bar ketika hover*/
 #a:hover{
-    background-color: #a3a3a3;
+    color:#c2c1c1;
+    background-color: #b9b9b9;
     border-radius: 10px;
     border:none;
+    transition: 0.1s;
 }
-
+/*untuk tata letak text di opsi "Features" navigasi bar*/
 #A{
+    color: #5e5d5d;
     margin-top: 3px;
     margin-bottom: 3px;
     padding-top: 5px;
@@ -79,6 +89,7 @@ header {
     font-size: 30px;
     text-align: center;
 }
+/*untuk kondisi tata letak text ketika opsi navigasi "Features" sedang hover*/
 #a:hover #A{
     padding-top: 10px;
     text-align: center;
@@ -86,37 +97,48 @@ header {
     padding-right: 50px;
     transition: 0.3s;
 }
+/*untuk opsi "Search By Code" didalam opsi navigasi "Features"*/
 #bycode{
     font-size: 0;
     text-align: center;
     padding-right: 0;
-}
-#bycode:hover{
-    background-color:#727272;
-    border-radius: 10px;
-    transition: 0.4s;
+    transition: 0.1s;
+    transition: ease;
     margin-left: 40px;
     margin-right: 40px;
 }
+/*untuk opsi "Search By Code" didalam opsi navigasi "Features" ketika hover*/
+#bycode:hover{
+    background-color:#727272;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*untuk opsi "Search By Code" didalam opsi navigasi "Features". untuk menambahkan efek muncul ketika hover*/
 #a:hover #bycode{
     font-size: 20px;
     text-align: center;
     padding-bottom: 5px;
 }
-
+/*agar halaman scroll secara halus terutama ketika kita melakukan klik yang mengarah pada class tertentu*/
 html {
     scroll-behavior: smooth;
 }
-
+/*untuk opsi "Search By Description" didalam opsi navigasi "Features"*/
 #bydesc{
     font-size: 0px;
     text-align: center;
     padding-right: 0;
+    transition: 0.1s;
+    transition: ease;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 #bydesc:hover{
     background-color:#727272;
     border-radius: 10px;
-    transition: 0.4s;
+    transition: 0.2s;
     margin-left: 15px;
     margin-right: 15px;
 
@@ -131,11 +153,15 @@ html {
     font-size: 0px;
     text-align: center;
     padding-right: 0;
+    transition: 0.1s;
+    transition: ease;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 #Forum:hover{
     background-color:#727272;
     border-radius: 10px;
-    transition: 0.4s;
+    transition: 0.2s;
     margin-left: 70px;
     margin-right: 70px;
 }
@@ -144,77 +170,88 @@ html {
     text-align: center;
     padding-bottom: 5px;   
 }
-/*untuk scroll halus ke L1*/
-[id="L1"]::before {
-    content: "";
-    display: block;
-    height: 100px; /* Adjust the height as needed */
-    margin: -100px 0 0; /* Match the height */
-    visibility: hidden;
+
+/*untuk opsi "Search By Image" didalam opsi navigasi "Features"*/
+#byimg{
+    font-size: 0;
+    text-align: center;
+    padding-right: 0;
+    transition: 0.1s;
+    transition: ease;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*untuk opsi "Search By Image" didalam opsi navigasi "Features" ketika hover*/
+#byimg:hover{
+    background-color:#727272;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*untuk opsi "Search By Image" didalam opsi navigasi "Features". untuk menambahkan efek muncul ketika hover*/
+#a:hover #byimg{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
+
 #d{
+    color: #c4c1c1;
     background-color: transparent;
     border-right: none;
     border-top: none;
     border-left: none;
     transition: 0.3s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 3px;
 }
 
 #D{
-
-    margin-top: 5px;
-    margin-bottom: 5px;
+    color: #5e5d5d;
+    margin-top: 3px;
+    margin-bottom: 3px;
     padding-top: 5px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
-    text-align: left;
+    text-align: center;
 }
 #d:hover{
-    background-color: #a3a3a3;
+    color:#333;
+    background-color: #b9b9b9;
     border-radius: 10px;
     border:none;
+    transition: 0.1s;
 }
-
-
-
-/* Gaya untuk daftar menu */
+/*untuk tata letak list didalam opsi navigasi "Features"*/
 .row-nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Menggunakan flexbox untuk tata letak baris */
-    justify-content: space-around; /* Menyusun menu dengan jarak yang sama */
+    display: flex; 
+    justify-content: space-around; 
 }
-
-/* Gaya untuk setiap item menu */
+/*untuk padding atas dan bawah di list pada navigasi bar*/
 .row-nav li {
-    padding: 10px 0;
+    padding: 10px 10px;
 }
-
-/* Gaya untuk tautan menu */
+/*untuk kondisi warna text didalam opsi navigasi "Features" ketika sebelum hover */
 .row-nav a {
     text-decoration: none;
-    color: white; /* Warna teks tautan */
-    transition: 0.3s; /* Efek transisi hover */
+    color: rgb(255, 255, 255); 
+    transition: 0.3s; 
 }
-
-/* Gaya tautan saat dihover */
+/*untuk kondisi warna text didalam opsi navigasi "Features" ketika hover */
 .row-nav a:hover {
-    color: #f0f0f0; /* Warna teks saat dihover */
+    color: #d1cbcb; 
 }
-
-/* Gaya konten utama */
-.content {
-    padding: 20px;
-}
-
-/* Styling for the content */
+/*mengatur tata letak seluruh konten di halaman sesuai ukuran layar*/
 .content {
     margin-left: 250px;
     padding: 20px;
 }
 .fitur{
-
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 1px;
@@ -229,7 +266,7 @@ html {
 .L1{
     display: flex;
     justify-content: center;
-    background-color: #a09f9f;
+    background-color: #c4c2c2;
     padding-top: 20px;
     padding-bottom: 15px;
     margin-bottom: 0;
@@ -237,55 +274,67 @@ html {
     border-top-right-radius: 20px;
 }
 .InputC{
-    justify-content:right;
+    justify-content:center;
     display: flex;
-    background-color: #a09f9f;
-    padding-bottom: 380px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding-right: 20px;
+    background-color: #c4c2c2;
+    padding-bottom: 50px;
+    border-radius: 15px;
     text-align: center;
 
 }
-.InputC input{
-    margin-right: 5px;
-    padding-left: 10px;
+.InputC ul {
+    list-style-type: none;
+}
+
+.InputC ul li input{
+    margin-top: 350px;
+    margin-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-color: transparent;
     border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s;
     text-align: center;
-    transition: 0.3s;    
+}
+.InputC input{
+    margin-top: 350px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s;
+    text-align: center; 
 }
 .InputC input:hover{
-    background-color: #c4c1c1; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #e7e3e3; 
+    color: #fff; 
     border-radius: 10px;
 }
 
 .InputC button{
-    background-color: #fff;
+    background-color: #e2e0e0;
     color: #333;
     border: transparent;
     padding: 10px 50px;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s; /* Efek transisi saat latar belakang berubah */
+    transition: 0.3s;
     border-radius: 10px;
+    width: 130px;
 }
 .InputC button:hover{
-    background-color: #02b5e2; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #d4d2d2; 
+    color: #525151; 
     border-radius: 5px;
-}
-.InputC p {
-    margin-left: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-right: 10px;
+    width: 140px;
 }
 .L2{
     display: flex;
     justify-content: center;
-    background-color: #a09f9f;
+    background-color: #c4c2c2;
     padding-top: 20px;
     padding-bottom: 15px;
     margin-bottom: 0;
@@ -293,57 +342,56 @@ html {
     border-top-right-radius: 20px;
 }
 .InputD{
-    justify-content:right;
+    margin-top: 20px;
+    justify-content:center;
     display: flex;
-    background-color: #a09f9f;
-    padding-bottom: 380px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding-right: 20px;
+    background-color: #c4c2c2;
+    padding-bottom: 50px;
+    border-radius: 15px;
     text-align: center;
-    
 }
+.InputD ul {
+    list-style-type: none;
+
+  }
 .InputD input{
-    margin-right: 5px;
-    padding-left: 10px;
+    margin-top: 350px;
+    margin-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-color: transparent;
     border-radius: 10px;
     background-color: #fff;
     transition: 0.3s;
-    
-    
+    text-align: center;
 }
 .InputD input:hover{
-    background-color: #c4c1c1; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #e7e3e3; 
+    color: #fff; 
     border-radius: 10px;
 }
 .InputD button{
-    background-color: #fff;
+    background-color: #e2e0e0;
     color: #333;
     border: transparent;
     padding: 10px 50px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Efek transisi saat latar belakang berubah */
+    transition: 0.3s;
     border-radius: 10px;
+    width: 130px;
+}
 
-}
 .InputD button:hover{
-    background-color: #02b5e2; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover */
+    background-color: #d4d2d2; 
+    color: #525151; 
     border-radius: 5px;
+    width: 140px;
 }
-.InputD p {
-    margin-left: 20px;
-    margin-right: 10px;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 .L3{
     display: flex;
     justify-content: center;
-    background-color: #a09f9f;
+    background-color: #c4c2c2;
     padding-top: 20px;
     padding-bottom: 15px;
     margin-bottom: 0;
@@ -351,63 +399,19 @@ html {
     border-top-right-radius: 20px;
 }
 .Forumf{
-    justify-content:right;
+    justify-content:center;
     display: flex;
-    background-color: #a09f9f;
-    padding-right: 20px;
+    background-color: #c4c2c2;
     text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
-.Kontakk{
-    padding-top: 5px;
-    background-color: #727272;
-    text-align: center;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    padding-bottom: 10px;
-}
-h3{
-    text-align: center;
-}
-.Errorcode{
-    background-color: #02b5e2;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: #727272;
-    margin-left: 240px;
-    margin-right: 240px;
-}
-.dll{
-    background-color: #02b5e2;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: #727272;
-    margin-left: 240px;
-    margin-right: 240px;
-}
-.directx{
-    background-color: #02b5e2;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: #727272;
-    margin-left: 240px;
-    margin-right: 240px;
-}
-.trending{
-    padding-top: 20px;
-    background-color: #a09f9f;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-bottom: 10px;
+.Forumf ul{
+    list-style-type: none;
 }
 .Forumf input{
-    margin-right: 5px;
-    padding-left: 10px;
+    margin-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-color: transparent;
@@ -416,12 +420,95 @@ h3{
     transition: 0.3s;
     text-align: center;
 }
+.Forumf input:hover{
+    background-color: #e7e3e3; 
+    color: #fff; 
+    border-radius: 10px; 
+}
 .Forumf button{
+    margin-bottom: 10px;
+    background-color: #e2e0e0;
+    color: #333;
+    border: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 130px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.Forumf button:hover{
+    background-color: #d4d2d2; 
+    color: #525151; 
+    border-radius: 5px;
+    width: 140px;
+}
+
+.InputE{
+    justify-content:center;
+    display: flex;
+    background-color: #c4c2c2;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.InputE ul {
+    list-style-type: none;
+}
+
+.InputC ul li input{
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    border-radius: 10px;
     background-color: #fff;
+    transition: 0.3s;
+    text-align: center;
+}
+.InputE input{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.InputE input:hover{
+    background-color: #887c7c; 
+    color: #fff; 
+    border-radius: 10px;
+}
+
+.InputE button{
+    background-color: #e2e0e0;
     color: #333;
     border: transparent;
     padding: 10px 50px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Efek transisi saat latar belakang berubah */
+    transition: 0.3s;
     border-radius: 10px;
+    width: 130px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.InputE button:hover{
+    background-color: #d4d2d2; 
+    color: #525151; 
+    border-radius: 5px;
+    width: 140px;
+}
+.Kontakk{
+    padding-top: 5px;
+    background-color: #727272;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
 }

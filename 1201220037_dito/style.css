@@ -1,0 +1,93 @@
+body {
+    background-image: url('./Asset/bggg.png');
+    color: #213555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding-left: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #213555;
+}
+
+.menu a:hover {
+    color: #4F709C;
+    font-size: 25px;
+    /* untuk transisiton pas hover */
+    transition: 0.5s ease;
+}
+
+.menu li {
+    padding-right: 30px;
+}
+
+.menu ul {
+    padding-right: 300px;
+    border: 1px solid black;
+
+}
+
+.menu {
+    display: flex;
+    /* kenapa pake flex? karena parentnya pada div menu jadi contentnya akan menyesuaikan parent menjadi datar*/
+    margin-top: 0px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.menu h2 {
+    padding-left: 100px;
+    padding-right: 200px;
+    font-size: 25px;
+    border: 1px solid black;
+    margin-top: 35px;
+}
+
+.menu img {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.dashboard img {
+    padding-left: 15%;
+    border: 1px solid black;
+
+}
+
+.dash h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.dashboard p {
+    margin-left: 20%;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 30%;
+    text-align: justify;
+}
+
+hr {
+    background-color: #000;
+    height: 2px;
+}
+
+footer {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40 px;
+}
