@@ -32,10 +32,16 @@ body{
     width: 120px;
     text-align: center;
     margin-right: 1px;
+    margin-top: 0px;
+    padding-bottom:5px ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12pt;
     /* border: 1px solid gray; */
     background-color: cyan;
+}
+
+.menuatas ul{
+    margin-top: 5px;
 }
 
 li {
@@ -61,3 +67,90 @@ a {
 a:visited{
     color: green;
 }
+
+.form-reg{
+    border: 1px solid blue;
+    border-radius: 20px;
+    width: 500px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    float: right;
+}
+
+@media screen and (min-width: 3000px) {
+    .form-reg{
+        background-color: aquamarine;
+        margin-left: auto;
+        margin-right: 30%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 3000px) {
+    .form-reg{
+        background-color:bisque;
+        margin-left: auto;
+        margin-right: 36%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .form-reg{
+        background-color:bisque;
+        margin-left: auto;
+        margin-right: 25%;
+    }
+}
+
+@media screen and  (max-width: 500px) {
+    .form-reg{
+        background-color: aliceblue;
+        margin-left: auto;
+        margin-right: 0%;
+    }
+}
+
+@media print and (min-width: 1000px){
+    .form-reg{
+        background-color:blueviolet;
+        margin-left: auto;
+        margin-right: 0%;
+    }
+}
+
+form h1{    
+    text-align: center;
+}
+
+.form-reg div{
+    /* border: 1px solid blue; */
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input {
+    height: 30px;
+    border-radius: 8px;
+    border: 0.05em solid grey;
+    font-size: 14pt;
+}
+
+select {
+    height: 40px;
+    font-size: 14pt;
+    border-radius: 8px;
+}
+
+#txtnama {
+    width: 300px;
+}
+
+
+#sbtreg{
+    width: 80px;
+    font-size: 14pt;
+    margin-left: 200px;
+}
+
