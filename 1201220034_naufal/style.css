@@ -118,8 +118,6 @@ header {
     text-align: center;
     padding-bottom: 5px;
 }
-
-
 /*agar halaman scroll secara halus terutama ketika kita melakukan klik yang mengarah pada class tertentu*/
 html {
     scroll-behavior: smooth;
