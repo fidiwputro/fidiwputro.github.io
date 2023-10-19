@@ -13,7 +13,7 @@ body {
   left: 0;
   border-radius: 30px;
   width: 100%;
-  height: 100%;
+  height: 150%;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: -1;
 }
@@ -22,11 +22,12 @@ body {
 .topNavbar {
   background-color: #aee2ff;
   overflow: hidden;
-  width: 100%;
+  width: 86%;
   border-radius: 20px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
+  margin-left: 15%;
 }
 
 .topNavbar .wordLogo img {
@@ -89,54 +90,41 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
+.topNavbar .profile img {
+  padding-top: 20px;
+  padding-right: 40px;
+}
 
-/*main profile*/
-.mainProfile {
-  background-color: #70cbff;
-  border-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  max-width: 1100px;
-  margin: 40px auto;
+.topNavbar img {
+  float: right;
+  display: block;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: -30px;
+  padding-bottom: 15px;
+  max-width: 200%;
+  max-height: 60px;
+}
+
+.sidebar {
+  width: 250px; /* Specify your preferred width */
+  max-height: 100%; /* Set a maximum height for the sidebar */
+  overflow-y: auto; /* Add a vertical scrollbar when content exceeds the height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #aee2ff; /* Sidebar background color */
+  transition: 0.5s;
+  z-index: 1;
   padding: 20px;
-  box-shadow: #333;
 }
 
-.mainProfile .fotoSMK img {
-  max-width: 400px;
-  height: auto;
-  margin-right: 20px;
-  border-radius: 5px;
-  margin-top: 20%;
-  border-radius: 30px;
-  background-color: #ffffff;
-}
-
-.mainProfile .penjelasanSMK h2 {
+.sidebar h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  margin-top: 0;
+  font-size: 20px; /* Header text size */
 }
 
-.mainProfile .penjelasanSMK p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  margin-bottom: 0;
-  text-align: justify;
-}
-
-/*carrousel*/
-.carrousel {
-  background-color: #aee2ff;
-  border-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  max-width: 83%;
-  margin: 40px auto;
-  padding: 20px;
-  box-shadow: #333;
-}
-
-.carrousel .cards {
+.card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 30px;
@@ -147,110 +135,71 @@ body {
   margin: 10px;
 }
 
-.carrousel .cards:hover{
+.card:hover {
   transform: scale(1.05);
+  transition: ease-in-out;
 }
 
-.carrousel .cards img {
+.card img {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
 }
 
-.carrousel .cards p {
-  margin: 0;
-  padding: 10px 0;
+.card h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  background-color: #70cbff;
-  border-radius: 20px;
+  font-size: 16px; /* Task title size */
+  margin-top: 10px; /* Margin between task title and image */
+  border-radius: 30px;
+  text-align: center;
+  color: #333;
 }
 
-/*table*/
-.table {
+/*Main*/
+.main {
+  margin-left: 16%;
+  margin-top: 2%;
   background-color: #aee2ff;
   border-radius: 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  max-width: 1100px;
-  margin: 40px auto;
+  max-width: 50%;
   padding: 20px;
+  margin-left: 580px;
   box-shadow: #333;
 }
-
-.table h1 {
+.main h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  margin-top: 0;
-  font-weight: bold;
-  text-align: center;
 }
 
-.table table {
+.main p {
   font-family: "Montserrat", sans-serif;
-  border-collapse: collapse;
-  width: 100%;
 }
 
-.table th, td {
-  font-family: "Montserrat", sans-serif;
-  border: 1px solid black;
-  padding: 8px;
-  text-align: center;
-  background-color: white;
-}
-
-.table th {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f2f2f2;
-}
-
-/*regist*/
-.registrasi {
-  background-color: #70cbff;
+.main .jadwal {
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.registrasi h1,
-.registrasi h2 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  font-style: italic;
-  margin: 0;
-}
-
-.registrasi .button {
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: inline-block;
-  border-radius: 30px;
-  padding: 10px 20px;
-  color: #333;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
+  text-align: center;
+  padding: 10px;
   margin: 10px;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
-.registrasi .button:hover {
-  background-color: #f0f0f0;
+.main .jadwal:hover {
   transform: scale(1.05);
 }
 
 /*Bottom Navbar*/
 .botNavbar {
   background-color: #aee2ff;
-  max-width: 100%;
-  margin: -8px -8px -8px -8px;
-  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .botNavbar .content p {
