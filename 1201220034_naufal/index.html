@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <title>Landing Page Sederhana</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -10,61 +11,74 @@
     <header>
         <h1>Software Problem Solver</h1>
     </header>
-    
-    <nav class="row-nav">
+    <div class="row-nav">
         <ul>
-            <li ><button id="a"><h3 id="A">Features</h3>
-                <ul id="bycode">
-                    <a href="#L1" >Search By Code</a></ul>
-                <ul id="bydesc">
-                    <a href="#L2">Search By Description</a></ul>
-                <ul id="Forum">
-                    <a href="#L3">Forum</a></ul>
+            <li >
+            <button class="a"><h3 class="A">Search by</h3>
+                <div class="listmenu">                
+                <ul class="bycode">
+                    <a href="#L1" >Code</a>
+                </ul>
+                <ul class="bydesc">
+                    <a href="#L2">Description</a>
+                </ul>
+                <ul class="Forum">
+                    <a href="#L3">Forum</a>
+                </ul>
+                <ul class="byimg">
+                    <a href="#L4">Image</a>
+                </ul>
+                </div>
             </button>
             </li>
-            <li ><button id="d"><h3 id="D">Kontak</h3></li>
+            <li ><button id="d">
+                <h3 id="D">
+                Contact
+                </h3>
+            </li>
         </ul>
-    </nav>
+    </div>
     
     <section class="Tentang">
         <h2>About</h2>
         <p class="paragraf">"Software Problem Solver" adalah sebuah aplikasi atau platform yang dirancang untuk membantu pengguna dalam mengatasi masalah perangkat lunak. Aplikasi ini memiliki beberapa fitur utama, yaitu:
-
             Pencarian Error Berdasarkan Kode: Pengguna dapat memasukkan kode error yang mereka alami, dan aplikasi akan mencari solusi atau informasi terkait error tersebut. Ini memungkinkan pengguna untuk mendapatkan solusi cepat untuk masalah yang mereka hadapi.
-        
             Pencarian Error Berdasarkan Deskripsi: Pengguna juga dapat memasukkan deskripsi singkat dari masalah yang mereka hadapi. Aplikasi ini akan mencoba mencocokkan deskripsi tersebut dengan database masalah dan solusi yang ada untuk memberikan panduan yang relevan.
-        
-            Fitur Forum: Aplikasi ini memiliki fitur forum yang memungkinkan pengguna untuk berinteraksi dengan komunitas pengguna lainnya. Pengguna dapat membuat posting untuk meminta bantuan atau berbagi pengalaman mereka dalam mengatasi masalah perangkat lunak. Ini memungkinkan kolaborasi dan pertukaran pengetahuan di antara pengguna yang berbeda.
-        
-            Rating dan Ulasan: Pengguna dapat memberikan peringkat dan ulasan terhadap solusi yang mereka temukan atau posting di forum. Ini membantu pengguna lain dalam menilai keefektifan solusi atau kualitas informasi yang ada.
-        
-            Cari Solusi Terkini: Aplikasi ini secara teratur memperbarui basis data masalah dan solusi untuk menjaga informasi tetap relevan dan akurat. Pengguna dapat mencari solusi terkini untuk masalah perangkat lunak yang mereka alami.</p>
+        </p>
     </section>
-    
     <section class="fitur">
         <h2 class="Lkami">Features</h2>
-            <h2 id="L1" class="L1">Cari Berdasarkan Kode</h2>
-
+        
             <div class="InputC" >
-                <p>Dapat dengan mudah mencari solusi dari masalah hanya melalui kode error</p>
-                <input type="text" placeholder="Inputkan Kode">
-                <button>Cari Solving</button>
+                <ul>
+                    <h2 id="L1" class="L1">Cari Berdasarkan Kode</h2>
+                    <li><input type="text" placeholder="Inputkan Kode"></li>
+                    <li><button>Cari</button></li>
+                </ul>
             </div>
             
-            <h2 id="L2" class="L2">Cari Berdasarkan Deskripsi</h2>
             <div class="InputD">
-                <p>Dapat dengan mudah mencari solusi dari masalah error dengan deskripsi singkat maupun mendetail</p>
-                <input class="InputD" type="text" placeholder="Inputkan Deskripsi">
-                <button>Cari Solving</button>
+                <ul>
+                    <h2 id="L2" class="L2">Cari Berdasarkan Deskripsi</h2>
+                    <li><input type="text" placeholder="Inputkan Deskripsi"></li>
+                    <li><button>Cari</button></li>
+                </ul>
             </div>
-            <h2 id="L3" class="L3">Forum</h2>
+            
             <div class="Forumf">   
-                <p>Solusi tidak ditemukan?, bisa langsung bertanya di forum, dengan bertanya tidak hanya mendapatkan solusi, tapi kamu secara tidak langsung juga ikut berkontribusi</p>
-                <input placeholder="Deskripsikan Problem" type="text">
-                <button>Kirim Problem Ke Forum</button>
+                <ul>
+                    <li><h2 id="L3" class="L3">Forum</h2></li>
+                    <li><input placeholder="Deskripsikan Problem" type="text"></li>
+                    <li><button>Kirim Problem Ke Forum</button></li>
+                </ul>
             </div>
-            <div class="trending">
-                <h3>Trending Topics:</h3> <p class="Errorcode">Error code</p> <p class="dll">.dll error</p> <p class="directx">directx error</p>
+            <div class="InputE">
+                <ul>
+                    <h2 id="L4" class="L4">Cari berdasarkan Gambar</h2>
+                    <li><input src="./logo/icon image.png" placeholder="Masukkan Gambar Error" type="image">
+                        </li>
+                    <li><button>Konfirmasi</button></li>
+                </ul>
             </div>
             
     </section>

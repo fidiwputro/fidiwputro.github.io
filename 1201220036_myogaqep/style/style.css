@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+header.navbar-container {
+    max-width: 1440px;
+    width: 100%;
+    height: 92px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1C1E53;
+}
+
+header.navbar-container .logo img {
+    width: 120px;
+    margin-left: 78px;
+}
+
+header.navbar-container .nav-list {
+    margin-right: 78px;
+}
+
+header.navbar-container .nav-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px 16px;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list ul li:last-child a {
+    background: #FCD980;
+    color: #000;
+    border-radius: 8px;
+    padding: 16px 32px;
+}
+
+header.navbar-container .nav-list ul li:last-child a:hover {
+    background: #1C1E53;
+    color: #fff;
+    border: #FCD980 solid 3px;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    transition: all;
+    transition-duration: 0.75s;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: #FCD980;
+    color: #000;
+
+}
+
+main {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #1C1E53;
+    padding: 0 0 48px 0;
+}
+
+main .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;    
+}
+
+main .content .content-description {
+    margin: 0 0 24px 80px;
+    width: 50%;
+}
+
+main .content .content-image {
+    margin: 64px 54px 0 0;
+    width: 50%;
+}
+
+
+main .content .content-description p {
+    line-height: 26px;
+    font-size: 18px;
+}
+
+main .content .content-description button {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #FCD980;
+    border: #FCD980 solid 1px;
+    border-radius: 8px;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: all;
+        transition-duration: 0.75s;
+}
+
+main .content .content-description button:hover {
+    background: #1C1E53;
+    color: #fff;
+    border: #FCD980 solid 3px;
+}
