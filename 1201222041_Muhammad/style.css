@@ -1,142 +1,142 @@
 body{
-    background-color: rgb(238, 238, 238);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
+  background-color: rgb(238, 238, 238);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
 #nav{
-    /* margin: auto; */
-    border: 1px  black;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+  /* margin: auto; */
+  border: 1px  black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 #nav h1{
-    padding-left: 100px;
-    padding-right: 700px;
-    font-family: 'Pixelify Sans', cursive;
-    font-size: 40px;
-    cursor: pointer;
+  padding-left: 100px;
+  padding-right: 700px;
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 #nav  a{
-    text-decoration: none;
-    color: black;
-    padding-top: 40px;
-    padding-right: 70px;
-    font-size: 18px;
-    font-family: 'Pixelify Sans', cursive;
-    cursor: pointer;
+  text-decoration: none;
+  color: black;
+  padding-top: 40px;
+  padding-right: 70px;
+  font-size: 18px;
+  font-family: 'Pixelify Sans', cursive;
+  cursor: pointer;
 }
 #nav a:hover{
-  font-size: 25px;
-  color: rgb(251, 242, 224);
-  transition: 0.4s ease;
-  text-decoration: underline;
+font-size: 20px;
+color: rgb(251, 242, 224);
+transition: 0.4s ease;
+text-decoration: underline;
 }
 
 #nav label{
-  display: none;
+display: none;
 }
 
 .jud h1{
-    text-align: center;
-    font-family: 'Pixelify Sans', cursive;
-    padding-top: 100px;
-    font-size: 70px;
-    color: rgb(67, 67, 67);
+  text-align: center;
+  font-family: 'Pixelify Sans', cursive;
+  padding-top: 100px;
+  font-size: 70px;
+  color: rgb(67, 67, 67);
 }
 
 .te{
-  border: 1px black;
-  width: 50%;
-  margin: auto;
+border: 1px black;
+width: 50%;
+margin: auto;
 }
 .te p{
-    text-align: center;
+  text-align: center;
 }
 
 section{
-  border: 1px black;
-  height: 750px;
+border: 1px  black;
+height: 750px;
 }
 
 #baru{
-  border: 1px black;
-  height: 830px;
-  background: white;
-  background-image: url(./aset/bg-white.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+border: 1px black;
+height: 830px;
+background: white;
+background-image: url(./aset/bg-white.jpg);
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 .SBS-1{
-  width: 140px;
-  height: 40px;
-  margin-left: 785px;
-  margin-top: 30px;
-  border-radius: 8px;
-  border: rgb(255, 215, 128);
-  background: rgb(239, 144, 2);
-  background: radial-gradient(circle, rgb(230, 171, 10), rgba(239, 144, 2));   
+width: 140px;
+height: 40px;
+margin-left: 715px;
+margin-top: 30px;
+border-radius: 8px;
+border: rgb(255, 215, 128);
+background: rgb(239, 144, 2);
+background: radial-gradient(circle, rgb(230, 171, 10), rgba(239, 144, 2));   
 }
 .SBS-1 a{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  position: relative;
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  padding: 30px;
-  width: 100%;
-  height: 100%;
+text-decoration: none;
+color: rgb(0, 0, 0);
+position: relative;
+font-family: 'Lato', sans-serif;
+font-size: 13px;
+padding: 30px;
+width: 100%;
+height: 100%;
 }
 .SBS-1:hover{
-  background: rgba(236, 231, 231, 0.703);
-  box-shadow: 5px 5px 6px  rgba(111, 111, 111, 0.603);
-  transition: all 0.5s ease;
+background: rgba(236, 231, 231, 0.736);
+box-shadow: 5px 5px 6px  rgba(111, 111, 111, 0.603);
+transition: all 0.5s ease;
 }
 .SBS-1 a:hover{
-  color: rgb(250, 148, 14);
+color: rgb(250, 148, 14);
 }
 
 #baru h1{
-  text-align: center;
-  font-family: 'Pixelify Sans', cursive;
-  padding-top: 90px;
-  font-size: 50px;
-  padding-bottom: 50px;
+text-align: center;
+font-family: 'Pixelify Sans', cursive;
+padding-top: 90px;
+font-size: 50px;
+padding-bottom: 50px;
 }
 #baru .profil{
-  justify-content: space-between;
-  display: flex;
+justify-content: space-between;
+display: flex;
 }
 #baru .profil .gambar{
-  border: 1px  black;
-  transform: translateX(300px);
-  box-shadow: 5px 5px rgba(172, 172, 172, 0.4);
+border: 1px  black;
+transform: translateX(250px);
+box-shadow: 5px 5px rgba(172, 172, 172, 0.4);
 }
 #baru .profil .gambar img{
-  width: 430px;
+width: 400px;
 }
 #baru .profil .teks{
-  border:1px  black;
-  width: 550px;
-  text-align: justify;
-  font-family: 'Times New Roman', Times, serif ;
-  transform: translateX(-190px);
+border:1px  black;
+width: 550px;
+text-align: justify;
+font-family: 'Times New Roman', Times, serif ;
+transform: translateX(-190px);
 
 }
 #baru .profil p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 16px;
 }
 
 
 .footer{
-  border: 1px solid rgba(0, 0, 0, 0);
-  background: rgb(172, 172, 172);
+border: 1px solid rgba(0, 0, 0, 0);
+background: rgb(172, 172, 172);
 }
 .footer p{
-  padding-left: 40px;
+padding-left: 40px;
 }
