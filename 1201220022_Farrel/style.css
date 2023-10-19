@@ -1,8 +1,6 @@
 {
 	margin: 0;
 	padding: 0;
-	
-	
 }
 
 .navbar{
@@ -111,4 +109,15 @@ main .dashboard img{
     background-color: #202020;
     height: 70px;
     width: 100%;
+}
+
+.container{
+	width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  line-height: 100px;
+  display: inline-block;
 }
