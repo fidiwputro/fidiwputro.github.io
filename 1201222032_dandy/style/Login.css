@@ -1,0 +1,79 @@
+:root{
+    --primary-color: #2447f9;
+    --secondary-color: #e5e9f2;
+    --third-color: #f6f8fd;
+    --nonactive-color:#0b5ed7;
+    --text-color:#34364a;
+}
+
+* {
+    margin: 0;
+    font-family: Poppins;
+}
+
+body {
+    display: flex;
+}
+
+.Logo {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.loginLeft {
+    /* background-color: red; */
+    background-color: var(--third-color);
+    width: 50%;
+    height: 100vh;
+    padding: 50px;
+}
+
+p {
+    margin: 10px 0px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+.form {
+    padding: 20px;
+    margin-top: 48px;
+    border-radius: 10px;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+}
+
+.usernameForm {
+    margin-bottom: 40px;
+}
+
+.passwordForm {
+    margin: 10px 0px;
+}
+
+.loginRight {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex   ;
+}
+
+img {
+    background-size: contain;
+    object-fit: contain;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+}

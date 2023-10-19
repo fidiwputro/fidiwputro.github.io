@@ -3,96 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe - Permainan X dan O</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('bg1.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            animation: idleBackground 20s infinite alternate;
-        }
-
-        @keyframes idleBackground {
-            0% {
-                background-position: center top;
-            }
-            100% {
-                background-position: center bottom;
-            }
-        }
-
-        header {
-	    background-color: #ccc;
-            background-repeat: no-repeat;
-            color: #000;
-            text-align: center;
-            padding: 20px 0;
-            opacity: 1;
-            transition: opacity 0.5s;
-            text-shadow: 2px 2px 5px #fff;
-        }
-
-        header.hidden {
-            opacity: 0;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        p {
-            line-height: 1.6;
-            font-size: 18px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #555;
-        }
-
-        .features {
-            margin-top: 20px;
-        }
-
-        .feature {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 5px;
-        }
-
-        .feature h3 {
-            color: #333;
-        }
-    </style>
+    <title>Tic Tac Toe - Main Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tic Tac Toe - Permainan X dan O</h1>
+    <header id="site-header">
+        <h1>Tic Tac Toe</h1>
         <p>Aplikasi permainan klasik Tic Tac Toe berbasis web.</p>
     </header>
     <div class="container">
@@ -121,10 +37,17 @@
     </div>
 
     <script>
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('header');
-            header.classList.toggle('hidden', window.scrollY > 0);
-        });
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("site-header").classList.add("header-fade");
+            } else {
+                document.getElementById("site-header").classList.remove("header-fade");
+            }
+        }
     </script>
 </body>
 </html>
