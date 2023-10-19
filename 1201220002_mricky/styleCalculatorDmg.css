@@ -2,6 +2,68 @@ body{
     margin: 0;
     background-color: antiquewhite;
 }
-.judul h1{
+
+.navbar{
+    padding: 10px;
+    background-color: #323F43ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar h1{
+    color: antiquewhite;
+    margin-left: 20px;
+}
+.navbar div ul{
+    list-style: none;
+}
+.navbar div ul li{
+    display: inline;
+    margin: 1px;
+}
+.credential{
+    color: aquamarine;
+}
+.credential:hover{
+    color: #323F43ff;
+    background-color: aquamarine;
+}
+.navbar div ul li a{
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+.navbar div ul li a:hover{
+    color: #323F43ff;
     background-color: antiquewhite;
+}
+
+.input-stat{
+    border: 1px solid #323F43ff;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.input-stat div{
+    padding: 5px;
+    margin-left: 10px;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+select{
+    width: 160px;
+}
+.skill-natasha{
+    width: 300px;
+    border: 1px solid #323F43ff;
+}
+
+.skill-natasha input{
+    padding: 10px;
 }
