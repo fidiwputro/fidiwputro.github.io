@@ -116,8 +116,9 @@ main .dashboard img{
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid;
   box-sizing: border-box;
   line-height: 10px;
-  display: inline-block;
+  background-color: black;
+  color: red;
 }
