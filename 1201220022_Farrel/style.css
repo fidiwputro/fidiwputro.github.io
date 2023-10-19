@@ -112,12 +112,12 @@ main .dashboard img{
 }
 
 .container{
-	width: 50%;
+	width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  line-height: 100px;
+  line-height: 10px;
   display: inline-block;
 }
