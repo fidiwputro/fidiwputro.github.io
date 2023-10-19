@@ -124,7 +124,7 @@ footer {
     border-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    background-color: #D2E0FB;
     text-align: center;
 }
 
@@ -133,4 +133,27 @@ footer {
     margin: 10px;
     font-size: medium;
     padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+.divRegis {
+    padding: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 2px solid #333;
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #D2E0FB;
+    text-align: center;
+}
+
+.divRegis div input {
+    width: 500px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: medium;
+    padding: 10px;
+    text-align: center;
 }
