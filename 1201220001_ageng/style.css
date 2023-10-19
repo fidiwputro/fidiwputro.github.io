@@ -123,3 +123,8 @@ main h2 {
     margin-top: 10px; 
     margin-bottom: 20px;
 }
+
+#inputLogin {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
