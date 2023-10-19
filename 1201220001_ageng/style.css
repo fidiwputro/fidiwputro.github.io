@@ -58,7 +58,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
-main {
+.mainIndex {
     padding: 20px;
     margin: 10px;
     border: 2px solid #333;
@@ -116,15 +116,21 @@ footer {
     padding: 10px 0;
 }
 
-main h2 {
-    font-size: 28px;
-    color: #113946;
+.divLogin {
+    padding: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 2px solid #333;
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
     text-align: center;
-    margin-top: 10px; 
-    margin-bottom: 20px;
 }
 
-#inputLogin {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+.divLogin div input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: medium;
+    padding: 10px;
 }
