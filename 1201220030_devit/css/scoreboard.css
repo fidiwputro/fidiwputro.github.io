@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17 24 39 ); 
+    font-family: 'Fira Code', monospace;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR AREA */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    top: 0;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 20px 13%;
+    background-color: rgb(17 24 39 );
+    z-index: 1000;
+    color: rgb(217 249 157 );
+    
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(217 249 157 );
+}
+
+.logo img{
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-clean{
+    list-style: none;
+    display: flex;
+}
+
+.nav-clean li{
+    margin-right: 20px;
+}
+
+.nav-clean li a{
+    color: rgb(217 249 157 );
+}
+
+.login-button{
+    background-color: rgb(190 242 100 );
+    color: rgb(51 85 0 );
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

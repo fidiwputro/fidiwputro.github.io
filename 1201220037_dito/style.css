@@ -6,31 +6,65 @@ body {
 
 .menu ul li {
     display: inline-block;
-    padding-left: 50px;
-    margin-top: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #213555;
+}
+
+.menu a:hover {
+    color: #4F709C;
+    font-size: 25px;
+    /* untuk transisiton pas hover */
+    transition: 0.5s ease;
+}
+
+.menu li {
+    padding-right: 30px;
+}
+
+.menu ul {
+    padding-right: 300px;
+    border: 1px solid black;
+
 }
 
 .menu {
     display: flex;
-    margin-top: 20px;
+    /* kenapa pake flex? karena parentnya pada div menu jadi contentnya akan menyesuaikan parent menjadi datar*/
+    margin-top: 0px;
+    font-size: 20px;
+    border: 1px solid black;
 }
 
 .menu h2 {
     padding-left: 100px;
-    padding-right: 300px;
+    padding-right: 200px;
+    font-size: 25px;
+    border: 1px solid black;
+    margin-top: 35px;
 }
 
 .menu img {
-    width: 70px;
-    padding-left: 350px;
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    border: 1px solid black;
 }
 
 .dashboard img {
-    padding-left: 200px;
+    padding-left: 15%;
+    border: 1px solid black;
+
 }
 
 .dash h2 {
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -39,7 +73,21 @@ body {
 }
 
 .dashboard p {
-    padding-left: 200px;
-    padding-right: 200px;
+    margin-left: 20%;
     font-size: 20px;
+    border: 1px solid black;
+    width: 30%;
+    text-align: justify;
+}
+
+hr {
+    background-color: #000;
+    height: 2px;
+}
+
+footer {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40 px;
 }

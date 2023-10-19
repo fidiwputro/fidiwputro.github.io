@@ -1,3 +1,4 @@
+/*BODY*/
 *{
 	margin:0;
 	padding:0;
@@ -10,12 +11,13 @@
 	height: 100px;
 	
 }
+/*LOGO*/
 .logo{
 	float: left;
 }
 
 
-
+/*MENU*/
 .menu{
 	margin-left: 1000x;
 	padding-top: 35px;
@@ -47,7 +49,7 @@
 	font-style: italic;
 }
 
-
+/*KUCING GAMBAR*/
 .kucing {
 	background-color: #DFF5F6;
 	height: 750px;
@@ -71,7 +73,6 @@
     line-height: 26px;
     text-align: justify;
 }
-
 .background_image img{
     width: 650px;
     position: absolute;
@@ -80,13 +81,14 @@
     margin-left: 25px;
 }
 
-
+/*TOMBOL BACA SELANGKAPNYA ATAU BELI SEKARANG*/
 .btn{
     position: absolute;
     top: 77%;
     left: 38px;
     width: 340px;
     display: flex;
+	/* kenapa pake flex? karena parentnya pada div menu jadi contentnya akan menyesuaikan parent menjadi datar*/
     align-items: center;
     justify-content: space-around;
 }
@@ -105,7 +107,7 @@
 
 
 
-
+/*ABOUT KUCING CATEGORY*/
 .about{
 	width: 100%;
     background-color: #DFF5F6;
@@ -124,7 +126,7 @@
     height: auto;
     padding: 5px 10px;
     margin: 2px;
-    background: gainsboro;
+    background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
     border: 1px solid gainsboro;
     cursor: pointer;
     z-index: 1;
@@ -136,7 +138,7 @@
     border-radius: 4px;
 }
 
-
+/*GAMBAR KUCING DLM KOTAK*/
 .about .miaw p{
     text-align: center;
     margin: 30px 0;
@@ -181,13 +183,13 @@
     font-size: 17px;
 }
 
+/* ABOUT CAT UNTUK SERVICE*/
 .about hr{
     height: 4px;
     background: #d98ca5;
     border-radius: 5px;
     margin: 20px 20px;
 }
-
 .about .miaw h1{
     font-size: 55px;
     display: flex;
@@ -195,21 +197,22 @@
     align-items: center;
     margin: 35px 0;
 }
-
 .about .miaw p{
     text-align: center;
     margin: 35px 0;
     color: white;
     font-size: 25px;
 }
-
 .about .miaw_box{
     width: 100%;
     display: grid;
+	/* Elemen akan ditampilkan sebagai wadah grid*/
+    width: 100%;
+    display: grid;
     grid-template-columns: 0fr 0fr 0fr 0fr;
-    grid-gap: 2px;
+    grid-gap: 2px;/*Menetapkan jarak 2 piksel antara item kisi (baris dan kolom)*/
 }
-
+   
 .about .miaw box .miaw_card{
     background: #9d9d9d;
     width: 350px;
@@ -218,27 +221,22 @@
     border-radius: 10px;
     transition: 0.3s;
 }
-
 .about .miaw_box .miaw_card:hover{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
 }
-
 .about .miaw .miaw_box img{
     width: 250px;
     cursor: pointer;
     transition: 0.3s;
 }
-
 .about .miaw .miaw_box img:hover{
     transform: scale(1.1);
 }
-
 .about .miaw_box .miaw_card h1{
     font-size: 35px;
     color: gainsboro;
     margin: 15px 0;
 }
-
 .about .miaw_box .miaw_card p{
     color: white;
     margin: 3px 0;
@@ -246,72 +244,46 @@
 }
 
 
-
-
-
-
-.food{
-	width: 98%;
-    background-color: #DFF5F6;
-	min-height: 100vh;
-}
-.food .box{
-    width: 98%;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.food .box .card{
-    width: 300px;
-    height: auto;
-    padding: 5px 5px;
-    margin: 3px;
-    background: gainsboro;
-    border: 1px solid gainsboro;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.3s;
-}
-.food .box .card:hover{
-    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
-    transform: scale(1.1);
-    border-radius: 2px;
-}
-
-
-
-
 /*produk*/
-.produk{
-	width: 100%;
-    background-color: #DFF5F6;
-	min-height: 100vh;
-}
-.produk .box{
-    width: 100%;
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.produk .box .card{
-    width: 330px;
-    height: auto;
-    padding: 5px 10px;
-    margin: 2px;
-    background: white;
-    border: 1px solid abuabu;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.3s;
-}
-.produk .box .card:hover{
-    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
-    transform: scale(1.1);
-    border-radius: 4px;
+.produk {
+  background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  margin: 5px auto;
+  padding: 10px;
+  box-shadow: #333;
 }
 
+.produk .cards {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.produk .cards:hover{
+  transform: scale(1.05);
+}
+
+.produk .cards img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.produk .cards p {
+  margin: 0;
+  padding: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background-color: #70cbff;
+  border-radius: 20px;
+}
 
 
 
@@ -353,12 +325,9 @@
 
 
 
-.footer {
-            background-color: #DFF5F6;
-            color: black;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-		
+footer {
+    background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
+    color: Black;
+    text-align: center;
+    padding: 10px 0;
+}

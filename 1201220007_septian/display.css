@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    max-width: 96%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/* INI ADALAH SIDEBAR */
+.sidebar{
+    background-color: white ;
+    min-width: 60px;
+    height: 98vh;
+    box-sizing: border-box ;
+    padding: 10px;
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+    margin: 10px 0 10px 10px;
+    border-radius: 8px;
+}
+.label{
+    display: flex;
+}
+.label img{
+    width: 40px;
+    height: 40px;
+}
+.menu{
+    height: 80%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.menu div.logout{
+    justify-content: f;
+}
+.item{
+    display: flex;
+    margin: 40px 10px 40px 0;
+    padding: 10px;
+    align-items: center;
+}
+hr{
+    margin: 10px 0;
+}
+.text{
+    opacity: 0;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+.sidebar:hover .label .text{
+    width: 150px;
+    white-space: wrap;
+    
+}
+.sidebar:hover{
+    min-width: 200px;
+}
+.sidebar:hover .item .text, .sidebar:hover .label .text{
+    opacity: 1;
+}
+.item:hover{
+    background-color: rgb(51, 184, 139);
+    transition: ease-in-out 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* END SIDEBAR */
+
+main{
+    width: 100%;
+}
+/* INI ADALAH MAIN DISPLAY */
+.topDisplay{
+    display: flex;
+    flex-grow: 1;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+    /* Greeting Card */
+.greetingCard{
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0 0 10px;
+    justify-content: space-around;
+}
+.greetingCard .up{
+    background-color: rgba(100, 100, 100, 0.267);
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+}
+
+.greetingCard .picture img{
+    width: 300px;
+}
+
+.bottom h1{
+    font-size: 80px;
+}
+.bottom P{
+    font-size: 30px;
+}
+
+.greetingCard .greeting{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+    /* Keuangan */
+.keuangan{
+    display: flex;
+    justify-content: space-around;
+}
+
+.keuangan .card{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0 0 10px;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.card h2{
+    text-align: center;
+}
+
+
+    /* Warehouse */
+.warehouse{
+    display: flex;
+    flex-direction: row;
+}
+
+.bahanBaku , .bahanJadi{
+    background-color: white;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin: 10px 0 0 10px;
+    height: 200px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.bahanJadi::-webkit-scrollbar, .bahanBaku::-webkit-scrollbar{
+    display: none ;
+}
+
+.table thead{
+    background-color: rgb(51, 184, 139);
+}
+
+.table tbody tr:nth-child(even){
+    background-color: bisque;
+}
+
+.table th, .table td{
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Section 2 */
+.section2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.profile {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 10px 0 20px;
+}
+
+.profile h3{
+    background-color: rgb(51, 184, 139);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.profileImg img{
+    border-radius: 100px;
+}
+
+.about{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.desk{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.location{
+    display: flex;
+}
+
+
+    /* Shipment */
+
+.shipment{
+    margin: 10px 10px 0 20px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+}
+.headShip{
+    background-color: rgb(51, 184, 139);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headShip select{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.date{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(212, 212, 212);
+}
+.date table{
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.detailDate{
+    padding: 10px;
+    height: 310px;
+    overflow-y  : scroll;
+    background-color: white;
+    border-radius: 0 0 10px 10px ;
+    scrollbar-width: none;
+}
+.detailDate::-webkit-scrollbar{
+    display: none;
+}
+
+.headDtl{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+}
+
+.tableDtl{
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.tableDtl th, .tableDtl td{
+    padding: 20px;
+}
+
+.tableDtl tr{
+    border-top: 1px solid rgba(100, 100, 100, 0.267);
+}
+
+
+/* BOTTOM DISPLAY */
+.bottomDisplay{
+    display: flex;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.tableKehadiran{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    height: 13em;
+}
+
+.first{
+    background-color: rgb(51, 184, 139);
+}
+
+.tableKehadiran table{
+    height: 100%;
+}
+
+.second{
+    margin-left: 20px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.second::-webkit-scrollbar{
+    display: none;
+}
+
+.jamKehadiran{
+    border-collapse: collapse;
+}
+
+.jamKehadiran tr{
+    border-bottom: 1px solid rgba(100, 100, 100, 0.267);
+}
+
+.jamKehadiran th , .jamKehadiran td{
+    padding: 10px;
+}

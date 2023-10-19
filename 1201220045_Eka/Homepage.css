@@ -1,0 +1,116 @@
+body{
+    background-image: url(back.jpg);
+    background-size: 100% 100%;
+    margin: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.menu {
+    font-family: tahoma;
+    font-weight: bold;
+    height: 100px;
+    width: 100%;
+    background: rgb(39, 39, 39);
+    opacity: 85%;
+    border-radius: 0px;
+    font-size: 18px;
+}
+
+    
+label {
+        font-family: sans-serif;
+        font-size: 24pt;
+        color: white;
+        margin: 10px;
+        padding: 15px;
+        float: left;
+    }
+
+.menu ul {
+    margin: 0px;
+    padding: 35px;
+    background:none;
+    display: block;
+    float :right ;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul li a{
+    display:inline-flex;
+    text-decoration: none;
+    padding: 10px;
+    color: #ddd;
+}
+
+.menu ul li a:hover {
+
+    display: block;
+    color: rgb(184, 100, 16);
+    background: #222;
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.menu ul li .dropdown {
+    display: none;
+}
+
+.menu ul li:hover .dropdown {
+    display: block;
+    background: black;
+    position:absolute;
+    padding: 5px;
+}
+
+.menu ul li:hover .dropdown li {
+    display: block;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin:20px ;
+    font-weight: 24px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover{
+    border: none;
+}
