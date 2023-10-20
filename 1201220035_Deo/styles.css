@@ -36,14 +36,14 @@ nav ul li{
     list-style: none;
 }
 nav ul li a{
-    text-decoration: none;
     color: #fff;
     font-weight: 500;
+    text-decoration: none;
 }
 
 nav ul .menu {
-    display: flex;
     gap: 40px;
+    display: flex;
     /* background-color: aqua; */
 }
 nav ul .menu li a:not(#active){
@@ -52,17 +52,17 @@ nav ul .menu li a:not(#active){
 
 
 nav ul .pic {
-    display: flex;
     gap: 40px;
+    display: flex;
     /* background-color: aqua; */
 }
 
 /* main */
 
 main .hero{
-    padding: 20px 10%;
+    height: 60vh;
     display: flex;
-    height: 55vh;
+    padding: 20px 10%;
     align-items: center;
     background-color: #3b5d4f;
     justify-content: space-between;
@@ -80,14 +80,44 @@ main .hero .text h1{
     margin-bottom: 30px;
 }
 main .hero .text p{
-    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.5);
 }
+
+main .hero .text .button {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+main .hero .text .button #shop{
+    color: #3b5d4f;
+    font-weight: 600;
+    padding: 18px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid #f8bf28;
+    background-color: #f8bf28 ;
+}
+    main .hero .text .button #shop:hover{
+    transform: scale(102%);
+}
+main .hero .text .button #explore{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 18px 36px;
+    border-radius: 50px ;
+    border: 2px solid #fff;
+    opacity: 0.8;
+}
+    main .hero .text .button #explore:hover{
+        transform: scale(102%);
+    }
 main .hero img{
     /* background-color: #f8bf28; */
-    position: absolute;
+    top: 80px;
+    left:550px;
     z-index: 2;
     width: 700px;
-    left:550px;
-    top: 80px;
+    position: absolute;
 }
