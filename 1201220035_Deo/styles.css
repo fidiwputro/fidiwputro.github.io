@@ -1,6 +1,8 @@
-/* 60 - #f0f2f1
+/* 
+60 - #f0f2f1
 30 - #3b5d4f
-10 - #f8bf28 */
+10 - #f8bf28 
+*/
 
 *{
     margin: 0;
@@ -23,52 +25,39 @@ nav h1{
     font-size: 24px;
     font-family: "Poppins";
 }
-nav ul{
+
+nav ul {
     gap: 45px;
     display: flex;
     align-items: center;
     /* background-color: antiquewhite; */
 }
-nav ul li {
+nav ul li{
     list-style: none;
 }
-
-nav ul li a:not(:has(> img)){
-    opacity: 50%;
+nav ul li a{
+    text-decoration: none;
     color: #fff;
     font-weight: 500;
-    position: relative;
-    text-decoration: none;
-    transition: opacity 0.3s ease-in-out; /* Animasi opacity */
 }
 
-nav ul li a::before {
-    left: 0;
-    width: 0;
-    height: 4px;
-    content: "";
-    bottom: -9px; 
-    position: absolute;
-    background-color: #f8bf28; /* Warna underline */
-    transition: width 0.3s ease-in-out; /* Animasi lebar underline */
+nav ul .menu {
+    display: flex;
+    gap: 40px;
+    /* background-color: aqua; */
 }
-nav ul li a:hover::before {
-    width: 100%; /* Lebar underline menjadi 100% saat dihover */
-}
-nav ul li a#active {
-    opacity: 100%; /* Opacity 100% untuk elemen dengan id "active" */
-}
-nav ul li a#active::before {
-    width: 100%; /* Lebar underline 100% untuk elemen dengan id "active" */
-}
-nav ul li a:hover,nav ul li a#active {
-    opacity: 100%; /* Opacity 100% saat dihover atau aktif */
+nav ul .menu li a:not(#active){
+    opacity: 0.5;
 }
 
+
+nav ul .pic {
+    display: flex;
+    gap: 40px;
+    /* background-color: aqua; */
+}
 
 /* main */
-/* main{
-} */
 
 main .hero{
     padding: 20px 10%;
