@@ -1,0 +1,104 @@
+/* 60 - #f0f2f1
+30 - #3b5d4f
+10 - #f8bf28 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Inter",sans-serif;
+}
+nav{
+    display: flex;
+    padding: 20px 10%;
+    align-items: center;
+    background-color: #3b5d4f;
+    justify-content: space-between;
+}
+nav h1{
+    color: #fff;
+    font-size: 24px;
+    font-family: "Poppins";
+}
+nav ul{
+    gap: 45px;
+    display: flex;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a:not(:has(> img)){
+    opacity: 50%;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out; /* Animasi opacity */
+}
+
+nav ul li a::before {
+    left: 0;
+    width: 0;
+    height: 4px;
+    content: "";
+    bottom: -9px; 
+    position: absolute;
+    background-color: #f8bf28; /* Warna underline */
+    transition: width 0.3s ease-in-out; /* Animasi lebar underline */
+}
+nav ul li a:hover::before {
+    width: 100%; /* Lebar underline menjadi 100% saat dihover */
+}
+nav ul li a#active {
+    opacity: 100%; /* Opacity 100% untuk elemen dengan id "active" */
+}
+nav ul li a#active::before {
+    width: 100%; /* Lebar underline 100% untuk elemen dengan id "active" */
+}
+nav ul li a:hover,nav ul li a#active {
+    opacity: 100%; /* Opacity 100% saat dihover atau aktif */
+}
+
+
+/* main */
+/* main{
+} */
+
+main .hero{
+    padding: 20px 10%;
+    display: flex;
+    height: 55vh;
+    align-items: center;
+    background-color: #3b5d4f;
+    justify-content: space-between;
+}
+
+main .hero .text{
+    color: #fff;
+    max-width: 400px;
+    /* background-color: #f8bf28; */
+}
+
+main .hero .text h1{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+main .hero .text p{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+main .hero img{
+    /* background-color: #f8bf28; */
+    position: absolute;
+    z-index: 2;
+    width: 700px;
+    left:550px;
+    top: 80px;
+}

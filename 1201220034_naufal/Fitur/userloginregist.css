@@ -1,0 +1,81 @@
+.Registrasi{
+    border-radius: 30px;
+    background-color: #d3d3d3;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.UsernameR{
+    border-radius: 5px;
+    border:none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.PasswordR{
+    border-radius: 5px;
+    border:none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.KonfirmasiR{
+    border-radius: 5px;
+    border:none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.Registrasi button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border:none;
+    transition: 0.3s;
+}
+.Registrasi button:hover{
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border:none;
+}
+
+.Login{
+    border-radius: 30px;
+    background-color: #d3d3d3;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+.UsernameL{
+    border-radius: 5px;
+    border:none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.PasswordL{
+    border-radius: 5px;
+    border:none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.Login button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+.Login button:hover{
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
