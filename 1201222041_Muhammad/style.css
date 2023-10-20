@@ -153,11 +153,12 @@ padding-left: 40px;
   display: flex;
 }
 .login .gambar img{
-  width: 400px;
+  width: 435px;
   height: 471px;
 }
 .login h2{
-  padding-left: 173px;
+  position: absolute;
+  padding-left: 575px;
   padding-bottom: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 50px;
