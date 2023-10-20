@@ -5,21 +5,22 @@ body{
 @media only screen and (max-width: 720px) {
     /*Responsive*/
     .halamanlogin{
-        margin-top: 260px;
+        margin-top: 200px;
+        margin-bottom: 200px;
     }
     .Registrasi{
         text-align: center;
         margin-bottom: 50px;
     }
     .Registrasi p{
-        font-size: 30px;
+        font-size: 50px;
         font-family: 'Courier New', Courier, monospace;
     }
     .Login{
         text-align: center;
     }
     .Login p{
-        font-size: 30px;
+        font-size: 50px;
         font-family: 'Courier New', Courier, monospace;
     }
     /*Responsive*/
@@ -27,34 +28,42 @@ body{
     .Registrasi input{
         text-align: center;
         margin: 10px;
-        padding: 5px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border: none;
-        border-radius: 5px;
+        border-radius: 15px;
         font-family: 'Courier New', Courier, monospace;
     }
     .Registrasi label{
         font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
     }
     .Registrasi button{
         font-family: 'Courier New', Courier, monospace;
-        padding: 5px;
-        border-radius: 5px;
+        padding: 15px;
+        border-radius: 10px;
     }
     .Login input{
         text-align: center;
         margin: 10px;
-        padding: 5px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border: none;
-        border-radius: 5px;
+        border-radius: 15px;
         font-family: 'Courier New', Courier, monospace;
     }
     .Login label{
         font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
     }
     .Login button{
         font-family: 'Courier New', Courier, monospace;
-        padding: 5px;
-        border-radius: 5px;
+        padding: 15px;
+        border-radius: 10px;
         
     }
     /*Non Responsive*/
