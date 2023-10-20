@@ -18,7 +18,7 @@ body {
 }
 
 .menu a:hover {
-    color: #4F709C;
+    color: #E5D283;
     font-size: 25px;
     /* untuk transisiton pas hover */
     transition: 0.5s ease;
@@ -57,6 +57,13 @@ body {
     border: 1px solid black;
 }
 
+.signup {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 35px;
+}
+
 .dashboard img {
     padding-left: 15%;
     border: 1px solid black;
@@ -78,6 +85,66 @@ body {
     border: 1px solid black;
     width: 30%;
     text-align: justify;
+}
+
+.pengeluaran {
+    margin: auto;
+    border: 1px solid black;
+    width: 70%;
+    text-align: center;
+}
+
+.pengeluaran label {
+    text-align: start;
+    margin-left: 200px;
+}
+
+form .kotak_input {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+form .kotak_input select {
+    width: 61.5%;
+    padding: 10px;
+    font-size: 30px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 60%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 25px;
+    background-color: #E5D283;
+    color: #213555;
+    border-radius: 13px;
+    margin-top: 20px;
+}
+
+.pengeluaran button:hover {
+    background: #E5D283;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #E5D283,
+        0 0 25px #E5D283,
+        0 0 50px #E5D283,
+        0 0 100px #E5D283;
+    transition: 0.5s ease;
+}
+
+.daftarPengeluaran h3 {
+    font-size: 35px;
 }
 
 hr {

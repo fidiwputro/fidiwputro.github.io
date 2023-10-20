@@ -1,0 +1,122 @@
+body{
+    background-color: #d3d3d3;
+}
+
+@media only screen and (max-width: 720px) {
+    /*Responsive*/
+    .halamanlogin{
+        margin-top: 260px;
+    }
+    .Registrasi{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .Registrasi p{
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login{
+        text-align: center;
+    }
+    .Login p{
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /*Responsive*/
+    /*Non Responsive*/
+    .Registrasi input{
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Registrasi label{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Registrasi button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .Login input{
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login label{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+    /*Non Responsive*/
+}
+
+@media only screen and (min-width: 720px){
+    /*Responsive*/
+    .halamanlogin{
+        display: flex; 
+        justify-content: space-around; 
+        margin-top: 250px;
+    }
+
+    .Registrasi{
+        text-align: center;
+        margin-left: 100px;
+    }
+    .Registrasi p{
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login{
+        text-align: center;
+        margin-right: 100px;
+    }
+    .Login p{
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /*Responsive*/
+    /*Non Responsive*/
+    .Registrasi input{
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Registrasi label{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Registrasi button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .Login input{
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login label{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    /*Non Responsive*/
+}

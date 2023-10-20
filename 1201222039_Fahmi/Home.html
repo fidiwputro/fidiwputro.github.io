@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameStore</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="Image/ICON.png" type="image/gif" rel="shortcut icon"/>
+    <title>Game Store</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
 </head>
 <body>
     <header>
-        <h1>GameStore</h1>
         <nav>
+            <icon><a href="#home">
+                <img src="Image/ICON.png">Game Store
+                </a>
+            </icon>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="Login.html">Login</a></li>
                 <li><a href="#register">Register</a></li>
             </ul>
         </nav>
@@ -21,86 +23,103 @@
     <main>
         <section id="game news">
             <section id="game of the year">
-                <h2>Game of the Year 2022</h2>
-                <p>
-                    The Game Awards 2022 are a wrap, and Elden Ring took home the biggest award of the night: Game of the Year.
-                    God of War Ragnarok also did pretty well for itself, taking home a handful of awards.
-                </p>
-                <image src="Game Image/11.jpg">
+                <div style="width: 100%; height: 100%; position: relative; background: #F5F5F5; flex-direction: row; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 686px; height: 36px; font-size: 24px; font-weight: 700; line-height: 36px;"><gameOfTheYear>Game of the Year 2022</gameOfTheYear>
+                        <div style="width: 686px; height: 90px; font-size: 18px; font-weight: 400; line-height: 30px;"><gameOfTheYear>
+                            Game Awards 2022 are a wrap, and Elden Ring took home the biggest award of the night: Game of the Year. God of War Ragnarok also did pretty well for itself, taking home a handful of awards.</div>
+                        </gameOfTheYear>
+                    </div>
+                    <div style="width: 750px; height: 440px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); justify-content: center; align-items: center; display: inline-flex">
+                        <img style="width: 750px; height: 440px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border: 1px rgba(0, 0, 0, 0.30) solid" src="image/Game Image/11.jpg"/>
+                    </div>
+                </div>
             </section>
         </section>
         <section id="browse">
             <h2>Browse Game</h2>
             <p>Many Game wait you to play</p>
             <div class="game">
-                <img src="Game Image/1.jpg" alt="Game 1">
+                <img src="image/Game Image/1.jpg" alt="Game 1">
                 <h3>Game 1</h3>
                 <p>Price: $49.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/2.jpg" alt="Game 2">
+                <img src="image/Game Image/2.jpg" alt="Game 2">
                 <h3>Game 2</h3>
                 <p>Price: $39.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/3.jpg" alt="Game 3">
+                <img src="image/Game Image/3.jpg" alt="Game 3">
                 <h3>Game 3</h3>
                 <p>Price: $29.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/4.jpg" alt="Game 4">
+                <img src="image/Game Image/4.jpg" alt="Game 4">
                 <h3>Game 4</h3>
                 <p>Price: $49.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/5.jpg" alt="Game 5">
+                <img src="image/Game Image/5.jpg" alt="Game 5">
                 <h3>Game 5</h3>
                 <p>Price: $39.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/6.jpg" alt="Game 6">
+                <img src="image/Game Image/6.jpg" alt="Game 6">
                 <h3>Game 6</h3>
                 <p>Price: $29.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/7.jpg" alt="Game 7">
+                <img src="image/Game Image/7.jpg" alt="Game 7">
                 <h3>Game 7</h3>
                 <p>Price: $49.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/8.jpg" alt="Game 8">
+                <img src="image/Game Image/8.jpg" alt="Game 8">
                 <h3>Game 8</h3>
                 <p>Price: $39.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/9.jpg" alt="Game 9">
+                <img src="image/Game Image/9.jpg" alt="Game 9">
                 <h3>Game 9</h3>
                 <p>Price: $29.99</p>
                 <button>Add to Cart</button>
             </div>
             <div class="game">
-                <img src="Game Image/10.jpg" alt="Game 10">
+                <img src="image/Game Image/10.jpg" alt="Game 10">
                 <h3>Game 10</h3>
                 <p>Price: $29.99</p>
                 <button>Add to Cart</button>
             </div>
         </section>
         <section id="recomendations">
-            <h2>Looking for Recomendations?</h2>
-            <button><a href="#login">login</a></button>
-            <button><a href="#register">register</a></button>
+            <div style="width: 100%; height: 100%; position: relative; background: #F5F5F5; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 1678.54px; height: 178px; color: rgba(0, 0, 0, 0.80); font-size: 64.08px; font-family: Montserrat; font-weight: 400; line-height: 89px; word-wrap: break-word">Looking for Recomendations?</div>
+                <div style="width: 192px; height: 52px; position: relative">
+                    <a href="Login.html">
+                        <div style="width: 192px; height: 52px; left: 0px; top: 0px; position: absolute; background: #18A0FB; border-radius: 6px"></div>
+                        <div style="left: 71.22px; top: 15.30px; position: absolute; text-align: center; color: white; font-size: 17px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Login
+                        </div>
+                        </div>
+                    </a>
+                    <a href="#register">
+                        <div style="width: 192px; height: 52px; position: relative">
+                        <div style="width: 192px; height: 52px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 6px; border: 1px #18A0FB solid"></div>
+                        <div style="left: 64.03px; top: 16.30px; position: absolute; text-align: center; color: #18A0FB; font-size: 15px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Register</div>
+                        </div>
+                        </div>
+                    </a>
         </section>
     </main>
     <footer>
-        <h6>Game Store</6>
+        <h2><img src="Image/ICON.png">Game Store</h2>
         <hr />
         <p> Copyright &copy; 2023</p>
     </footer>
