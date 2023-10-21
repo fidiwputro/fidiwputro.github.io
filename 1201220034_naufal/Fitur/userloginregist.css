@@ -1,81 +1,152 @@
-.Registrasi{
-    border-radius: 30px;
+body{
     background-color: #d3d3d3;
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 10px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-.UsernameR{
-    border-radius: 5px;
-    border:none;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-}
-.PasswordR{
-    border-radius: 5px;
-    border:none;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-}
-.KonfirmasiR{
-    border-radius: 5px;
-    border:none;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-}
-.Registrasi button{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border:none;
-    transition: 0.3s;
-}
-.Registrasi button:hover{
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    border:none;
 }
 
-.Login{
-    border-radius: 30px;
-    background-color: #d3d3d3;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
-    padding-top: 1px;
-    padding-bottom: 10px;
+@media only screen and (max-width: 770px) {
+    /*Responsive*/
+    .halamanlogin{
+        margin-top: 200px;
+        margin-bottom: 250px;
+    }
+    .Registrasi{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .Registrasi p{
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login{
+        text-align: center;
+    }
+    .Login p{
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /*Responsive*/
+    /*Non Responsive*/
+    .Registrasi input{
+        text-align: center;
+        margin: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Registrasi label{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+    }
+    .Registrasi button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .Login input{
+        text-align: center;
+        margin: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login label{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+    }
+    .Login button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 15px;
+        border-radius: 10px;
+        
+    }
+    /*Non Responsive*/
 }
-.UsernameL{
-    border-radius: 5px;
-    border:none;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-}
-.PasswordL{
-    border-radius: 5px;
-    border:none;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-}
-.Login button{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: none;
-    transition: 0.3s;
-}
-.Login button:hover{
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    border: none;
+
+@media only screen and (min-width: 770px){
+    /*Responsive*/
+    .halamanlogin{
+        display: flex; 
+        justify-content: space-around; 
+        margin-top: 250px;
+    }
+
+    .Registrasi{
+        text-align: center;
+        margin-left: 300px;
+        margin-right: 10px;
+        background-color: #c5c9c5;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        padding-bottom: 10px;
+    }
+    .Registrasi p{
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login{
+        text-align: center;
+        margin-right: 300px;
+        background-color: #c5c9c5;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        margin-left: 10px;
+    }
+    .Login p{
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /*Responsive*/
+    /*Non Responsive*/
+    .Registrasi input{
+        text-align: center;
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Registrasi label{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Registrasi button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .Login input{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login label{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .Login button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    /*Non Responsive*/
 }
