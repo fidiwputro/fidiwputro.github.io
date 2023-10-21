@@ -182,3 +182,8 @@ footer {
 #txtnama, #txtemail, #txtnotelp {
     width: 400px;
 }
+
+#beliTiket input:hover {
+    color: #ddd;
+    background-color: #333;
+}
