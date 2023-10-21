@@ -5,6 +5,15 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.menu {
+    display: flex;
+    /* kenapa pake flex? karena parentnya pada div menu jadi contentnya akan menyesuaikan parent menjadi datar*/
+    margin-top: 0px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .menu ul li {
     display: inline-block;
     padding-left: 10px;
@@ -30,6 +39,7 @@ body {
     /* pointer ini adalah menambahkan ikon tangan saat ingin klik hobvernya */
 }
 
+/* bagian ini untuk jika kita memencet salah satu menunya maka akan tetap berwarna */
 #dash {
     color: #E5D283;
     font-size: 16px;
@@ -54,14 +64,6 @@ body {
     border: 1px solid black;
     flex-grow: 1;
 
-}
-
-.menu {
-    display: flex;
-    /* kenapa pake flex? karena parentnya pada div menu jadi contentnya akan menyesuaikan parent menjadi datar*/
-    margin-top: 0px;
-    font-size: 20px;
-    border: 1px solid black;
 }
 
 .menu h2 {
@@ -90,12 +92,12 @@ body {
 .dashboard img {
     border: 1px solid black;
     max-width: 50%;
-    margin-right: 20%;
+    margin-right: 15%;
 }
 
 .dash {
     border: 1px solid black;
-    margin-left: 20%;
+    margin-left: 15%;
     width: 30%;
     text-align: justify;
 }
@@ -119,9 +121,23 @@ body {
     border: 1px solid black;
     width: 70%;
     text-align: center;
+    margin-top: 50px;
+}
+
+.catatanpribadi {
+    margin: auto;
+    border: 1px solid black;
+    width: 70%;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .pengeluaran label {
+    text-align: start;
+    margin-left: 200px;
+}
+
+.catatanpribadi label {
     text-align: start;
     margin-left: 200px;
 }
@@ -148,6 +164,7 @@ form textarea {
     width: 60%;
     padding: 10px;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 form button {
@@ -162,7 +179,7 @@ form button {
 .pengeluaran button:hover {
     background: #E5D283;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 13px;
     box-shadow: 0 0 5px #E5D283,
         0 0 25px #E5D283,
         0 0 50px #E5D283,
@@ -170,7 +187,18 @@ form button {
     transition: 0.5s ease;
 }
 
-.daftarPengeluaran h3 {
+.catatanpribadi button:hover {
+    background: #E5D283;
+    color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 0 5px #E5D283,
+        0 0 25px #E5D283,
+        0 0 50px #E5D283,
+        0 0 100px #E5D283;
+    transition: 0.5s ease;
+}
+
+.history h3 {
     font-size: 35px;
 }
 
