@@ -4,39 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
+    <link rel="stylesheet" href="../CSS/register.css">
 </head>
 <body>
-    <!-- Create form register -->
-    <form action="register.php" method="post">
-        <table>
-            <tr>
-                <td>Full Name</td>
-                <td>:</td>
-                <td><input type="text" name="fullname" placeholder="Full Name" required></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>:</td>
-                <td><input type="text" name="email" placeholder="Email" required></td>
-            </tr>
-            <tr>
-                <td>Username</td>
-                <td>:</td>
-                <td><input type="text" name="username" placeholder="Username" required></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>:</td>
-                <td><input type="password" name="password" placeholder="Password" required></td>
-            </tr>
-            <tr>
-                <td>Confirm Password</td>
-                <td>:</td>
-                <td><input type="password" name="confirm_password" placeholder="Confirm Password" required></td>
-            </tr>
-            <tr>
-                <td colspan="3"><input type="submit" name="register" value="Register"></td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="register">
+            <h1>Registration</h1>
+            <form class="form-group" action="Index.html" method="post">
+                <label for="">Full Name</label>
+                <input type="text" name="full_name" placeholder="Full Name" required="required">
+                <label for="">Username</label>
+                <input type="text" name="username" placeholder="Username" required="required">
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="Password" required="required">
+                <label for="">Email</label>
+                <input type="text" name="email" placeholder="Email" required="required">
+                <label for="">Phone Number</label>
+                <input type="text" name="phone_number" placeholder="Phone Number" required="required">
+                <button type="submit" class="btn btn-primary btn-block btn-large">Submit.</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
