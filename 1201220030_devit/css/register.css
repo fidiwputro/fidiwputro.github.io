@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   body{
+    font-family: 'Unifont';
+       background-color: rgb(17 24 39 );
+   }
+   
+   a{
+       text-decoration: none;
+   }
+
+   .kotak1{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+   }
+
+   .main-kontent{
+    box-shadow: 5px 5px 20px rgba(122, 122, 122, 0.147);
+
+    background-color: rgb(31 41 55 );   
+    border-radius: 5px;
+    margin-top: 100px;
+    color: rgb(108, 123, 138);
+
+    padding: 50px 50px;
+
+    justify-content: center;
+   }
+
+   .kotak-form{
+    display: flex;
+    flex-direction: row;
+   }
