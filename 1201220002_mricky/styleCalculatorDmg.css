@@ -38,30 +38,50 @@ body{
     color: #323F43ff;
     background-color: antiquewhite;
 }
-
+.content{
+    display: flex;
+}
 .input-stat{
-    border: 1px solid #323F43ff;
+    background-color: #323F43ff;
+    border: 5px solid #DDD2C2;
     margin: 10px;
     padding: 10px;
     width: 300px;
+    border-radius: 10px;
 }
 
 .input-stat div{
     padding: 5px;
-    margin-left: 10px;
+    margin-left: 10px;  
 }
 
 label{
     display: inline-block;
     width: 100px;
+    color: antiquewhite;
 }
 
 select{
     width: 160px;
 }
+
 .skill-natasha{
-    width: 300px;
-    border: 1px solid #323F43ff;
+    display: flex;
+    width: 350px;
+    border: 1px solid #DDD2C2;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    background-color: #323F43ff;
+    align-items: flex-start;
+}
+
+.skill-natasha span{
+    margin: 10px;
+}
+
+.skill-natasha label{
+    display: inline-block;
 }
 
 .skill-natasha input{
