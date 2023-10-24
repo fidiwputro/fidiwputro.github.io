@@ -88,6 +88,7 @@
     left: 38px;
     width: 340px;
     display: flex;
+	/* kenapa pake flex? karena parentnya pada div menu jadi contentnya akan menyesuaikan parent menjadi datar*/
     align-items: center;
     justify-content: space-around;
 }
@@ -205,9 +206,13 @@
 .about .miaw_box{
     width: 100%;
     display: grid;
+	/* Elemen akan ditampilkan sebagai wadah grid*/
+    width: 100%;
+    display: grid;
     grid-template-columns: 0fr 0fr 0fr 0fr;
-    grid-gap: 2px;
+    grid-gap: 2px;/*Menetapkan jarak 2 piksel antara item kisi (baris dan kolom)*/
 }
+   
 .about .miaw box .miaw_card{
     background: #9d9d9d;
     width: 350px;

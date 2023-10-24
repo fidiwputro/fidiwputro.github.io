@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(25, 199, 243);
+    margin: 0px;
+    padding: 20px;
+}
+
+
+
+form { 
+    background-color: #65a4f0;
+    padding: 30px;
+    border-radius: 60px;
+    box-shadow: 0px 2px 5px rgba(64, 64, 64, 0.3);
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  label {
+    font-weight: bold;
+    border-radius: 10px;
+  }
+   h2{
+    text-align: center;
+   }
+   #button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* CSS untuk navigasi bar */
+.navbar{
+    margin-top: -60px;
+    }
+    .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    
+    .navbar li {
+    display: inline-block;
+    margin-left: 10px;
+    }
+    
+    .navbar li:first-child {
+    margin-left: 0;
+    }
+    
+    .navbar li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Baltica", sans-serif;
+    font-weight: bold;
+    }
+    
+    .navbar li a:hover {
+      background-color: #ddd;
+    }
+    
+    .navbar li a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    
+    .navbar .logo {
+    font-size: 24px;
+    margin-right:0px;
+    }
+    .navbar .logo {
+    display: inline-block;
+    width: 150px; /* sesuaikan lebar logo */
+    height:150px; /* sesuaikan tinggi logo */
+    background-image: url('0.png'); 
+    background-size: cover;
+    background-position: center;
+    }
+    .navbar .home-link {
+    margin-left: 50px;
+    }

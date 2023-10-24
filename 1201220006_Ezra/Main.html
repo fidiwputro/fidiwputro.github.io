@@ -10,6 +10,9 @@
 
 <body>
 
+    <!-- MOBILE MENU -->
+    <input type="checkbox" id="check" class="triger">
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-logo">
@@ -25,7 +28,40 @@
         </div>
 
         <div class="nav-button-tentang"><a href="#tentang">TENTANG</a></div>
+
+        <div class="hamburger">
+            <a href="">
+            <label for="check">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </a>
+        </div>
     </nav>
+
+    <!-- SIDE BAR -->
+    <section class="side-bar">
+        <div></div>
+        <label for="check">
+            <div class="sidebar-in">
+                <ul>
+                    <li>
+                        <div class="nav-button-tugas"><a href="#tugas">TUGAS</a></div>
+                    </li>
+                    <li>
+                        <div class="nav-button-jadwal"><a href="#jadwal">JADWAL</a></div>
+                    </li>
+                    <li>
+                        <div class="nav-button-tentang"><a href="#tentang">TENTANG</a></div>
+                    </li>
+                    <li>
+                        <div class="nav-button-logout"><a href="Login.html">LOGOUT</a></div>
+                    </li>
+                </ul>
+            </div>
+        </label>
+    </section>
 
     <!-- TUGAS -->
     <section class="tugas" id="tugas">

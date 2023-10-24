@@ -1,7 +1,80 @@
-body{
+body {
     margin: 0;
-    background-color: antiquewhite;
+    padding: 10px;
+    background-color: #323F43ff;
 }
-.judul h1{
-    background-color: antiquewhite;
+.navigasi{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pouch{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: 10px;
+    background-color: #faebd7;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: fixed;
+}
+.pouch img{
+    width: 40px;
+    margin: 2px;
+}
+.tabel{
+    border: 2px solid #323F43ff;
+    
+}
+.Character{
+    border: 1px solid #faebd7;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    
+}
+.Character img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.skill{
+    margin: 10px;
+    border: 1px dashed #faebd7;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+.inputan{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2px;
+    margin-bottom: 40px;
+    
+}
+label{
+    color: #faebd7;
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+}
+p{
+    color: #faebd7;
+}
+
+.judul{
+    color: #faebd7;
+    text-align: center;
+}
+h4{
+    color: #faebd7;
+}
+.hasil{
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px dashed #faebd7;
 }
