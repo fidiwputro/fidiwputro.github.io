@@ -2,20 +2,89 @@
 <html lang="en">
 <head>
     <title>CalculatorDmg</title>
-    <link rel="stylesheet" type="css/text" href="./styleCalculatorDmg.css">
+    <link rel="stylesheet" type="text/css" href="styleCalculatorDmg.css">
 </head>
 <body>
-    <div class="judul">
-        <h1> Crafter</h1>
+
+    <div class="navbar">
+        <h1>Crafter</h1>
+        <div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="CalculatorDmg.html">Calculator DMG</a></li>
+                <li><a href="">Compare</a></li>
+                <li><a class="credential" href="">Log in</a></li>
+                <li><a class="credential" href="">Sign up</a></li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <h3>List Charakter</h3>
-    </div>
-    <div>
-        <ul>
-            <li><img src="image/icon_march7.jpg" alt=""></li>
-            <li><img src="image/icon_natasha.png" alt=""></li>
-        </ul>
+
+    <div class="content">
+        <div class="input-stat">
+            <form action="">
+    
+                <div>
+                    <label for="ListCharacter">List Character</label>
+                    <select name="list" id="ListCharacter">
+                        <option value="natasha">Natasha</option>
+                        <option value="march7">March 7</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="hp">HP</label>
+                    <input type="number" id="hp">
+                </div>
+                
+                <div>
+                    <label for="atk">ATK</label>
+                    <input type="number" id="atk">
+                </div>
+                
+                <div>
+                    <label for="def">DEF</label>
+                    <input type="number" id="def">
+                </div>
+                
+                <div>
+                    <label for="spd">SPD</label>
+                    <input type="number" id="spd">
+                </div>
+               
+                <div>
+                    <label for="cr">Crit Rate</label>
+                    <input type="number" id="cr">
+                </div>
+    
+                <div>
+                    <label for="cdm">Crit Damage</label>
+                    <input type="number" id="cdm">
+                </div>
+                
+                <div>
+                    <label for="be">Break Effect</label>
+                    <input type="number" id="be">
+                </div>
+                
+                <div>
+                    <label for="ohb">Outgoing Healing Boost</label>
+                    <input type="number" id="ohb">
+                </div>
+                
+                <div>
+                    <label for="elementalboost">Elemental Dmg Boost</label>
+                    <input type="number" id="elementalboost">
+                </div>
+            </form>
+        </div>
+        <div class="skill-natasha" >
+            <span>Normal Attack</span>
+            <label for="normal-attack-natasha">Behind the Kindness</label>
+            <input type="range" name="" id="normal-attack-natasha" min="1" max="7">
+            <span> Memberikan Pyshical Damage sebesar 
+                <span id="hasil-normal-attack-nataasha"></span>
+            </span>
+        </div>
     </div>
 </body>
 </html>

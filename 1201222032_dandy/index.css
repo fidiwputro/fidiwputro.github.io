@@ -60,12 +60,14 @@ nav>div>ul>li>a:hover {
 
 .header {
     display: flex;
+    flex-wrap: nowrap;
     height: 500px;
+    padding: 50px 100px;
     background-color: var(--third-color);
 }
 
 .headerLeft {
-    margin: 50px 0px 50px 100px;
+    padding-top: 50px;
 }
 
 .tagLine {
@@ -81,7 +83,7 @@ nav>div>ul>li>a:hover {
 }
 
 .headerRight {
-    margin: 50px 100px 50px 0px;
+    padding: 50px 0px;
 }
 
 #headerImg {

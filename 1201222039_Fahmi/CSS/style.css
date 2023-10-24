@@ -1,0 +1,70 @@
+
+h2{
+    color: #000;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 28.444px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.427px;
+}
+
+icon_img{
+    width: 46.49px; 
+    height: 46.44px;
+    left: 0px;
+    top: 6.11px;
+    position: absolute
+}
+
+text_icon{
+    color: black;
+    font-size: 28.44px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+icon{
+    width: 252px; 
+    height: 66px;
+    position: relative;
+}
+
+gameOfTheYear{
+    color: black;
+    font-family: 'Montserrat', sans-serif; 
+    word-wrap: break-word;
+}
+
+nav_tombol{
+    width: 130px;
+    height: 40px;
+    position: absolute; 
+    border-radius: 6px;
+}
+
+nav_text_tombol {
+    top: 11px;
+    position: absolute;
+    text-align: center;
+    font-size: 15px; 
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word
+}
+tombol{
+    width: 192px; 
+    height: 52px;
+    position: absolute;
+    border-radius: 6px;
+}
+
+text_tombol{
+    position: absolute; 
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500; 
+    word-wrap: break-word;
+}
