@@ -7,20 +7,18 @@ body {
     background-color: #040D12;
 }
 
+/* navbar */
 header {
     width: auto;
-    height: 40px;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     background-color: #0F0F0F;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .home {
-    width: 200px;
-    height: 60px;
     display: flex;
     
 }
@@ -73,7 +71,10 @@ header {
     color: #93B1A6;
 }
 
+
+/* body */
 .intro1 {
+    margin-top: 100px;
     width: 60%;
     height: 580px;
     border: 1px solid rgb(10, 25, 30);
@@ -141,4 +142,52 @@ header {
 
 .awal {
     display: flex;
+    flex-direction: column;
+}
+
+.kotak1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* menu apps */
+
+.kotak2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.listcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.listcard div{
+    background-image: url("https://iili.io/J27KLTG.jpg");
+    background-size: cover; /* Atur sesuai kebutuhan */
+  background-position: center; /* Atur posisi latar belakang */
+  background-repeat: no-repeat;
+    color: black;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listcard div p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #93b1a6a9;
+    padding: 30px;
+    height: 50px;
+    
 }

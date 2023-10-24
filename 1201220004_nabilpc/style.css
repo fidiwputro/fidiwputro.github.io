@@ -49,6 +49,10 @@ body {
   margin: -5px 20px;
 }
 
+.login-button {
+  background-color: #445D48;
+}
+
 .logo {
   display: inline-block;
   vertical-align: top;
@@ -111,12 +115,20 @@ body {
 }
 
 .bagian-tengah {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 500px 500px;
   margin: 0;
   padding: 1%;
   background-color: #FDE5D4;
 }
 
-.tentang-kami {
+.elemen-bagian-tengah {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.tentang-kami, .tentang-kami footer{
   margin: 0;
   margin-top: -29px;
   color: #FEFAE0;
