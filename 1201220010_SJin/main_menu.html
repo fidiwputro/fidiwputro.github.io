@@ -3,51 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe - Main Menu</title>
+    <title>Beli dan Sewa iPhone - Main Menu</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header id="site-header">
-        <h1>Tic Tac Toe</h1>
-        <p>Aplikasi permainan klasik Tic Tac Toe berbasis web.</p>
+        <nav>
+            <ul>
+                <li><a href="main_menu.html">Beranda</a></li>
+                <li><a href="list_iphone.html">List iPhone</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Beli dan Sewa iPhone</h1>
+            <p>Layanan pembelian dan penyewaan iPhone terbaik di kota.</p>
+            <a class="button" href="#">Lihat Produk</a>
+        </div>
     </header>
     <div class="container">
-        <h2>Deskripsi Aplikasi</h2>
-        <p>Aplikasi "Tic Tac Toe" adalah implementasi permainan klasik Tic Tac Toe (X dan O) berbasis web.
-        Permainan ini memungkinkan dua pemain untuk bermain bersama dalam permainan kotak-kotak
-        3x3 yang ikonik, di mana pemain harus mencoba menyelesaikan pola tiga simbol berturut-turut
-        secara horizontal, vertikal, atau diagonal untuk memenangkan permainan.</p>
-
-        <div class="features">
-            <h2>Fitur-fitur Utama</h2>
-            <div class="feature">
-                <h3>Papan Permainan Interaktif</h3>
-                <p>Aplikasi ini menyediakan papan permainan interaktif yang memungkinkan pemain untuk mengklik sel-sel pada papan untuk menempatkan simbol (X atau O) sesuai giliran mereka. Setiap sel pada papan dapat diisi oleh satu simbol, dan pemain dapat memilih sel yang tersedia.</p>
-            </div>
-            <div class="feature">
-                <h3>Pengecekan Pemenang</h3>
-                <p>Aplikasi ini memiliki fitur pengecekan pemenang yang otomatis menentukan pemenang setelah setiap langkah. Ketika ada tiga simbol berturut-turut dari pemain yang sama, baik secara horizontal, vertikal, atau diagonal, aplikasi akan mengumumkan pemenangnya.</p>
-            </div>
-            <div class="feature">
-                <h3>Perhitungan Skor</h3>
-                <p>Aplikasi ini melacak skor pemain, yaitu jumlah kemenangan Player X dan Player O. Setelah permainan selesai dan ada seorang pemenang, skor akan diperbarui dan ditampilkan di layar. Pemain dapat mereset skor kapan saja dengan tombol "Reset Scores".</p>
-            </div>
-        </div>
-        <a href="permainan_tictactoe.html" class="button">Mulai Bermain</a>
+        <!-- Konten berdasarkan tema sewa iPhone -->
+        Tempat Beli dan Sewa iPhone
     </div>
-
-    <script>
-        window.onscroll = function() {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("site-header").classList.add("header-fade");
-            } else {
-                document.getElementById("site-header").classList.remove("header-fade");
-            }
-        }
-    </script>
 </body>
 </html>
