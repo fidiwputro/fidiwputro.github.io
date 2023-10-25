@@ -36,7 +36,7 @@ header nav ul li a:hover{
 
 main .dashboard{
     background-color: #161616;
-    height: 500px;
+    height:  570px;
     display: flex;
     padding: 0 10%;
     justify-content: space-between;
@@ -65,11 +65,59 @@ margin-top: 10px;
 }
 
 main .dashboard img{
-    scale: 100%;
+    scale: 80%;
 }
 
 .mainborder{
     background-color: #202020;
     height: 70px;
+    width: 100%;
+}
+
+.preview .cardtop{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.preview .cardtop .card1,.card2,.card3{
+    /* background-color: aliceblue; */
+}
+
+.preview .cardtop .card1 img,
+.preview .cardtop .card2 img,
+.preview .cardtop .card3 img{
+    scale: 80%;
+}
+
+.preview .cardtop .card1,
+.preview .cardtop .card2,
+.preview .cardtop .card3{
+    width: 500px;
+    height: 500px;
+}
+
+.preview .cardmid{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.preview .cardmid .card4 img,
+.preview .cardmid .card5 img,
+.preview .cardmid .card6 img{
+    scale: 80%;
+}
+
+.preview .cardmid .card4,
+.preview .cardmid .card5,
+.preview .cardmid .card6{
+    width: 500px;
+    height: 500px;
+}
+
+.footer{
+    background-color: #cdcdcd;
+    height: 300px;
     width: 100%;
 }

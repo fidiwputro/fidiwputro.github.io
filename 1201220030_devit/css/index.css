@@ -6,7 +6,7 @@
 
 body{
     background-color: rgb(17 24 39 ); 
-    font-family: 'Fira Code', monospace;
+    font-family: 'Unifont';
 }
 
 a{
@@ -14,7 +14,6 @@ a{
 }
 
 /* NAVBAR AREA */
-
 .navbar{
     justify-content: space-between;
     align-items: center;

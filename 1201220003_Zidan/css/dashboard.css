@@ -1,0 +1,209 @@
+/*Body*/
+body {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+
+/*Overlay*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  width: 100%;
+  height: 150%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
+
+/*navbar*/
+.topNavbar {
+  background-color: #aee2ff;
+  overflow: hidden;
+  width: 86%;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  margin-left: 15%;
+}
+
+.topNavbar .wordLogo img {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 200%;
+  max-height: 60px;
+}
+
+.topNavbar .Group a {
+  font-family: "Montserrat", sans-serif;
+  background-color: #aee2ff;
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 40px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topNavbar .Group a:hover {
+  background-color: #d3efff;
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+.topNavbar-link {
+  border-radius: 30px;
+  background-color: #00a2ff;
+  font-family: "Montserrat", sans-serif;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+.topNavbar-link:hover {
+  background-color: #0090e1;
+  transform: scale(1.05);
+}
+
+.topNavbar p {
+  font-family: "Montserrat", sans-serif;
+  float: right;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topNavbar .profile img {
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.topNavbar img {
+  float: right;
+  display: block;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: -30px;
+  padding-bottom: 15px;
+  max-width: 200%;
+  max-height: 60px;
+}
+
+.sidebar {
+  width: 250px; /* Specify your preferred width */
+  max-height: 100%; /* Set a maximum height for the sidebar */
+  overflow-y: auto; /* Add a vertical scrollbar when content exceeds the height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #aee2ff; /* Sidebar background color */
+  transition: 0.5s;
+  z-index: 1;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px; /* Header text size */
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: ease-in-out;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; /* Task title size */
+  margin-top: 10px; /* Margin between task title and image */
+  border-radius: 30px;
+  text-align: center;
+  color: #333;
+}
+
+/*Main*/
+.main {
+  margin-left: 16%;
+  margin-top: 2%;
+  background-color: #aee2ff;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  padding: 20px;
+  margin-left: 580px;
+  box-shadow: #333;
+}
+.main h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main .jadwal {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main .jadwal:hover {
+  transform: scale(1.05);
+}
+
+/*Bottom Navbar*/
+.botNavbar {
+  background-color: #aee2ff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.botNavbar .content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
