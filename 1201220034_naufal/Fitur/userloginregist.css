@@ -1,7 +1,9 @@
 body{
     background-color: #d3d3d3;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 @media only screen and (max-width: 770px) {
     /*Responsive*/
     .halamanlogin{
@@ -86,6 +88,7 @@ body{
         padding-right: 20px;
         border-radius: 15px;
         padding-bottom: 10px;
+        border: 3px solid black;
     }
     .Registrasi p{
         font-size: 40px;
@@ -99,6 +102,7 @@ body{
         padding-right: 20px;
         border-radius: 15px;
         margin-left: 10px;
+        border: 3px solid black;
     }
     .Login p{
         font-size: 40px;

@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+.searchbar{
+    text-align: center;
+    list-style-type: none;
+}
+.searchbar li{
+    margin: 10px;
+    
+}
