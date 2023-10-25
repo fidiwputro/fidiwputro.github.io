@@ -98,7 +98,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(../bg-web2.jpg);
+    background-image: url(bg-web2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
