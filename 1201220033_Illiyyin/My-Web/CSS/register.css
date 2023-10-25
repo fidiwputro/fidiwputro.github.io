@@ -1,0 +1,95 @@
+body{
+    background-color: #f2f2f2;
+    background-image: url(../Source/pexels-elle-hughes-1660030.jpg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.register{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.register h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register .form-group{
+    margin-bottom: 20px;
+}
+
+.register label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+.form-group input:focus{
+    border-color: #4fc08d;
+    box-shadow: 0 0 8px rgba(79,192,141,0.6);
+}
+
+.register button{
+    display: block;
+    margin: 20px 0px;
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #4fc08d;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+}
+
+button:hover{
+    background: #46a885;
+}
