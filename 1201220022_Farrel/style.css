@@ -114,7 +114,7 @@ main .dashboard img{
 .login{
         margin: 250px auto;
         width: 500px;
-        padding: 50px;
+        padding: 0px;
         border: 0px solid #ccc;
         background:black;
 		color:red;
