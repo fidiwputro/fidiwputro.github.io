@@ -5,34 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
-    <div class="back">
-        <a href="../index.html"><button>&lBarr; Back</button></a>
-    </div>
+    <!-- Navbar -->
+        <nav class="navbar ">
+            <a href="../index.html"  class="logo">
+                <img  src="https://iili.io/J27Kips.png" alt="">
+                <span class="" >K4-CTF</span>
+            </a>
+
+            <ul class="nav-clean ">
+                <li><a href="./rule.html">Rule</a></li>
+                <li><a href="/users">Users</a></li>
+                <li><a href="/teams">Teams</a></li>
+                <li><a href="./scoreboard.html">Scoreboard</a></li>
+                <li><a href="./challenges.html">Challenges</a></li>
+            </ul>
+
+            <div class="login-button">
+                <a href="./login.html">
+                    <span  >Login kuy &rarr;</span>
+                </a>
+            </div>
+        </nav>
     <div class="kotak1">
         <!-- Content KOtak -->
            <div class="main-kontent">
             <form action="">
-                <div>
-                    <h1>FORM REGISTER</h1>
+                <div class="judul">
+                    <h1>/ FORM REGISTER /</h1>
                 </div>
+                <br>
+                <hr>
                 <div class="kotak-form">
-                    <div>
+                    <div class="kotak-kiri">
                         <div>
                             <label for="">Nama</label>
                             <input type="text">
                         </div>
                         <div>
                             <label for="">Provinsi</label>
-                            <input type="text">
+                            <select name="" id="">
+                                <option> Pilih Provinsi </option>
+                                <option value="">Jawa Timur</option>
+                                <option value="">Jawa Barat</option>
+                                <option value="">Jawa Tengah</option>
+                            </select>
                         </div>
                         <div>
                             <label for="">Kampus</label>
                             <input type="text">
                         </div>
                     </div>
-                    <div>
+                    <div class="kotak-kanan">
                         <div>
                             <label for="">Nama</label>
                             <input type="text">
@@ -47,9 +73,13 @@
                         </div>
                     </div>
                 </div>
-                <button>Register</button>
+                <br>
+                <hr>
+                <br>
+                <button>Submit</button>
             </form>
-            <button>Login</button>
+            <a href="./login.html"><button>Login</button>
+            </a>
            </div>
     </div>
 </body>
