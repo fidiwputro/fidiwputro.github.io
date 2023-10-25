@@ -111,13 +111,55 @@ main .dashboard img{
     width: 100%;
 }
 
-.container{
-	width: 40%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  line-height: 10px;
-  display: inline-block;
+.login{
+        margin: 250px auto;
+        width: 500px;
+        padding: 50px;
+        border: 0px solid #ccc;
+        background:black;
+		color:red;
+    }
+    input[type=text], input[type=password], input[type=email]{
+        margin: 5px auto;
+        width: 100%;
+        padding: 10px;
+    }
+	input[type=button]{
+		background: black;
+		color:red;
+	}
+    input[type=submit] {
+        margin 5px auto;
+        float: right;
+        padding: 5px;
+        width: 90px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: red;
+        cursor: pointer;
+}
+
+.regis{
+        margin: 250px auto;
+        width: 500px;
+        padding: 50px;
+        border: 0px solid #ccc;
+        background:black;
+		color:red;
+    }
+    input[type=text], input[type=password] {
+        margin: 5px auto;
+        width: 100%;
+        padding: 10px;
+	
+    }
+    input[type=submit] {
+        margin 5px auto;
+        float: right;
+        padding: 5px;
+        width: 90px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: red;
+        cursor: pointer;
 }
