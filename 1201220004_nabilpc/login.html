@@ -14,10 +14,16 @@
                 <input type="text" name="username" id="username"><br>
                 <label for="password">Password : </label>
                 <input type="password" name="password" id="password"><br><br>
-                <input type="button" value="Login"><br><br>
+                <input type="button" id="loginbtn" value="Login"><br><br>
                 <a href="register.html">Belum Punya Akun ?</a><br>
             </form>
         </div>
     </div>
+    <script>
+        let tombol = document.getElementById("loginbtn");
+        tombol.onclick = function mf(){
+            alert("Congratulations you are retard")
+        }
+    </script>
 </body>
 </html>
