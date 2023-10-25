@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat";
+    background-color: #161616;
+}
+header nav{
+    display: flex;
+    padding: 20px 10%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #040404;
+}
+header nav .logo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+header nav ul{
+    gap: 50px;
+    display: flex;
+    list-style-type: none;
+}
+header nav ul li a{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main .dashboard{
+    background-color: #161616;
+    height:  570px;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+main .dashboard .landing {
+    align-items: center;
+    display: flex;
+    /* background-color: seagreen; */
+}
+
+main .dashboard .landing .text {
+    /* background-color: #ff0000; */
+    color: #fff;
+    width: 500px;
+}
+
+main .dashboard .landing .text h1{
+    color: #cdcdcd;
+}
+
+main .dashboard .landing .text p {
+margin-top: 10px;
+ opacity: 30%;
+ font-size:  14px;
+}
+
+main .dashboard img{
+    scale: 80%;
+}
+
+.mainborder{
+    background-color: #202020;
+    height: 70px;
+    width: 100%;
+}
+
+.preview .cardtop{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.preview .cardtop .card1,.card2,.card3{
+    /* background-color: aliceblue; */
+}
+
+.preview .cardtop .card1 img,
+.preview .cardtop .card2 img,
+.preview .cardtop .card3 img{
+    scale: 80%;
+}
+
+.preview .cardtop .card1,
+.preview .cardtop .card2,
+.preview .cardtop .card3{
+    width: 500px;
+    height: 500px;
+}
+
+.preview .cardmid{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.preview .cardmid .card4 img,
+.preview .cardmid .card5 img,
+.preview .cardmid .card6 img{
+    scale: 80%;
+}
+
+.preview .cardmid .card4,
+.preview .cardmid .card5,
+.preview .cardmid .card6{
+    width: 500px;
+    height: 500px;
+}
+
+.footer{
+    background-color: #cdcdcd;
+    height: 300px;
+    width: 100%;
+}

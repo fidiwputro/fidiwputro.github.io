@@ -1,0 +1,244 @@
+.sidebar-fixed{
+    overflow: auto;
+    overflow-x: hidden;
+    position: fixed;
+    max-width: 230px;
+    height: calc(100% - 60px);
+    width: 230px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.navbar-fixed{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    position: fixed;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-top: 70px;
+    max-width: 850px;
+    /* padding-top: 60px; */
+}
+@media (min-width: 850px) {
+    .md\:px-0 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .md\:px-24{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .md\:hidden {
+        display: none;
+    }
+    .md\:ml-\[230px\] {
+        margin-left: 230px;
+    }
+    .md\:block{
+        display: block;
+    }
+}
+
+
+
+/* List Category */
+
+.list-category:hover{
+    background-color: #e7e7e7;
+}
+.list-category:hover a p{
+    color: rgb(53, 53, 53);
+}
+.list-category-active a img {
+    border: 1px solid white; 
+    border-radius: 8px;
+}
+.list-category-active{
+    background-color: #09b1ec;
+}
+.list-category-active a p{
+    color: white;
+}
+.list-category a p{
+    color: #585858;
+}
+.list-category a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    height: 40px;
+    white-space: nowrap;
+}
+.list-category a img {
+   border: 1px solid white;
+   border-radius: 8px;
+}
+.list-category a div button{
+    border-radius: 2px;
+    justify-content: center;
+    width: 24px; height: 24px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.list-category a div button svg{
+    color: gray;
+}
+
+
+.title-list{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: #333;
+    display: block;
+    font-weight: 500;
+}
+
+.list-horizontal-scroll .scroll{
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.list-horizontal-scroll .scroll .scroll_wrap{
+    white-space: nowrap;
+    width: 0;
+    height: auto;
+}
+.list-horizontal-scroll .scroll .scroll_wrap .list-scroll-item{
+    width: 170px;
+    margin: 0 2px 0 2px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+.list-horizontal-scroll .scroll .scroll_wrap .list-scroll-item p{
+    white-space: normal;
+    color: #333;
+    margin: 8px 0 8px 0;
+    transition: all .5s ease
+}
+.list-horizontal-scroll .scroll .scroll_wrap .list-scroll-item img{
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+.list-horizontal-scroll .scroll .scroll_wrap .list-scroll-item a:hover img{
+    transform: scale(1.2);
+}
+.list-horizontal-scroll .scroll .scroll_wrap .list-scroll-item a:hover p{
+    color: #09b1ec;
+}
+.list-horizontal-scroll .scroll .scroll_wrap .list-scroll-item .item-photo{
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+}
+
+.list-vertical-scroll .scroll_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.list-vertical-scroll .scroll_wrap a{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+.list-vertical-scroll .scroll_wrap a .item-photo{
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+    flex: 1;
+}
+.list-vertical-scroll .scroll_wrap a div{
+flex: 2;
+}
+.list-vertical-scroll .scroll_wrap a h2{
+    font-size: 16px;
+    transition: all .5s ease
+}
+.list-vertical-scroll .scroll_wrap a:hover h2{
+    color: #09b1ec;
+}
+.list-vertical-scroll .scroll_wrap a img{
+    height: 110px;
+    object-fit: cover;
+    transition: transform .5s ease;
+
+}
+.list-vertical-scroll .scroll_wrap a:hover img{
+    transform: scale(1.2);
+}
+
+
+ .text-xs{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0px;
+ }
+
+ #login{
+    display: flex;
+    justify-content: center;
+    padding-top: 86px;
+ }
+
+ .auth-card{
+    width: 650px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ .auth-card .item-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ .formel {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+ }
+ .formel-icon {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+ }
+ .formel-icon .icon-item{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#eee;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid #ccc
+ }
+ .formel input {
+     width: 350px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     height: 16px;
+     padding: 16px 0px 16px 16px;
+    }
+.formel-icon input{
+       width: 320px;
+       border: 1px solid #ccc;
+       border-top-left-radius: 8px;
+       border-bottom-left-radius: 8px;
+       height: 16px;
+       padding: 16px 0px 16px 16px;
+}

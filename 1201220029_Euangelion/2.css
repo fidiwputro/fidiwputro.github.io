@@ -1,0 +1,98 @@
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('dio.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+p{
+font-family: : Verdana, Geneva, Tahoma, sans
+  }
+  .cta-button {
+      text-align: center;
+      margin-top: 300px;
+    }
+    
+    .cta-button a {
+      display: inline-flexbox;
+      background-color: #4cac4f;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    
+    .cta-button a:hover {
+      background-color: #3da842;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 100px;
+    }
+    
+    .footer p {
+      color: #f4e6e6;
+    }
+/* CSS untuk navigasi bar */
+.navbar{
+margin-top: -60px;
+}
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.navbar li {
+display: inline-block;
+margin-left: 10px;
+}
+
+.navbar li:first-child {
+margin-left: 0;
+}
+
+.navbar li a {
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-family: "Baltica", sans-serif;
+font-weight: bold;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+}
+
+.navbar li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.navbar .logo {
+font-size: 24px;
+margin-right:0px;
+}
+.navbar .logo {
+display: inline-block;
+width: 150px; /* sesuaikan lebar logo */
+height:150px; /* sesuaikan tinggi logo */
+background-image: url('0.png'); 
+background-size: cover;
+background-position: center;
+}
+.navbar .home-link {
+margin-left: 50px;
+}

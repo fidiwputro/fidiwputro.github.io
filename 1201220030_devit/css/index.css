@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17 24 39 ); 
+    font-family: 'Unifont';
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR AREA */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    top: 0;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 20px 13%;
+    background-color: rgb(17 24 39 );
+    z-index: 1000;
+    color: rgb(217 249 157 );
+    
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(217 249 157 );
+}
+
+.logo img{
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-clean{
+    list-style: none;
+    display: flex;
+}
+
+.nav-clean li{
+    margin-right: 20px;
+}
+
+.nav-clean li a{
+    color: rgb(217 249 157 );
+}
+
+.login-button{
+    background-color: rgb(190 242 100 );
+    color: rgb(51 85 0 );
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(156 163 175 );
+    background-color: rgb(31 41 55 );
+}
+
+.footer a{
+    color: #3a4ade;
+}
+
+
+/* CONTENT AREA */
+
+.content-utama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 13%;
+    margin: 140px 0;
+}
+
+.content-utama-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-utama-2 h1{
+    color:  white;
+    margin-bottom: 20px;
+}
+
+.content-utama-2 p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(156 163 175 );
+}
+
+.content-utama-text-area{
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.content-utama-text-area button{
+    border-radius: 7px;
+    border: 5px solid #fff;
+    padding: 10px 20px;
+    background-color: rgb(190 242 100 );
+    border: none;
+    color: rgb(51 85 0 );
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.content-utama-text-area a{
+    color: rgb(217 249 157 );
+}
+
+.content-utama-gambar img{
+    border-radius: 30px;
+}
+
+
+/* ========== TEXT COLOR ========== */
+
+.text-green-200{
+    color: rgb(217 249 157 );
+}
+
+.text-green-300{
+    color: rgb(190 242 100 );
+}
+
+.text-green-400{
+
+    color: rgb(166 230 0 );
+}
+
+.text-green-500{
+
+    color: rgb(137 212 0 );
+}
+
+.text-green-600{
+
+    color: rgb(98 179 0 );
+}
+
+.text-green-700{
+
+    color: rgb(69 129 0 );
+}
+
+.text-green-800{
+
+    color: rgb(51 85 0 );
+}
+
+.text-white{
+
+    color: rgb(255 255 255 );
+}
+
+.text-gray-200{
+
+color: rgb(229 231 235 );
+}
+
+.text-gray-400 {
+
+color: rgb(156 163 175 );
+}
+
+.text-gray-800{
+
+color: rgb(31 41 55 );
+}
+
+
+.bg-gray-900{
+    background-color: rgb(17 24 39 );
+}
+
+.bg-gray-800{
+    background-color: rgb(31 41 55 );
+}
+
+.bg-green-200{
+    background-color: rgb(217 249 157 );
+}
+
+.bg-green-300{
+    background-color: rgb(190 242 100 );
+}
+
+.bg-green-400{
+    background-color: rgb(166 230 0 );
+}
+
+.bg-green-500{
+    background-color: rgb(137 212 0 );
+}
+
+.bg-green-600{
+    background-color: rgb(98 179 0 );
+}
+
+.bg-green-700{
+    background-color: rgb(69 129 0 );
+}
+
+.bg-green-800{
+    background-color: rgb(51 85 0 );
+}

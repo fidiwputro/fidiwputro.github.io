@@ -2,21 +2,21 @@ body{
     margin: 0;
     background-color: antiquewhite;
 }
-nav{
+.navbar{
     padding: 10px;
     background-color: #323F43ff;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-nav h1{
+.navbar h1{
     color: antiquewhite;
     margin-left: 20px;
 }
-nav div ul{
+.navbar div ul{
     list-style: none;
 }
-nav div ul li{
+.navbar div ul li{
     display: inline;
     margin: 1px;
 }
@@ -27,13 +27,13 @@ nav div ul li{
     color: #323F43ff;
     background-color: aquamarine;
 }
-nav div ul li a{
+.navbar div ul li a{
     border-radius: 5px;
     padding: 10px;
     text-decoration: none;
     color: antiquewhite;
 }
-nav div ul li a:hover{
+.navbar div ul li a:hover{
     color: #323F43ff;
     background-color: antiquewhite;
 }
