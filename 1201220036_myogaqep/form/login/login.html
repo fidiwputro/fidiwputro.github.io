@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Page</title>
+    <style>
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #666;
+        margin-block: 6rem;
+        padding: 4rem;
+        border-radius: 1rem;
+      }
+
+      header div {
+        text-align: center;
+      }
+
+      header div p a {
+        border-bottom: 1px solid #000;
+      }
+
+      header form {
+        margin-block: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header form div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-block-end: 2rem;
+      }
+
+      header form div p {
+        opacity: 0.5;
+      }
+
+      header form #register-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      header form #register-item p {
+        opacity: 1;
+        color: #666;
+        font-weight: bold;
+      }
+
+      header form #register-item p > a {
+        font-weight: bold;
+      }
+
+      header form label {
+        margin-block-end: 0.25rem;
+        color: #666;
+        font-weight: bold;
+        /* font-size: 1.25rem; */
+      }
+
+      header form div input {
+        width: 44.5rem;
+        border-radius: 0.75rem;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      header form div button {
+        width: 44.5rem;
+        height: 4rem;
+        border-radius: 999rem;
+        background-color: #1c1e53;
+        border: #1c1e53 solid 1px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.75s;
+        font-size: 1.25rem;
+      }
+
+      header form div button:hover {
+        background: #fff;
+        color: #1c1e53;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Sign In</h1>
+      </div>
+
+      <form>
+        <div>
+          <label for="username">username or email</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required />
+        </div>
+
+        <div>
+          <label for="password">password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required />
+          <p>
+            Use 8 or more characters with a mix of letters, numbers & symbols
+          </p>
+        </div>
+
+        <div>
+          <button type="submit">Log in</button>
+        </div>
+
+        <div id="register-item">
+          <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+      </form>
+    </header>
+  </body>
+</html>

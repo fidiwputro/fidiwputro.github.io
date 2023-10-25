@@ -1,0 +1,250 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+nav.navbar-container {
+    max-width: 1440px;
+    width: 100%;
+    height: 6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1C1E53;
+}
+
+nav.navbar-container .logo img {
+    width: 7.5rem;
+    margin-left: 5rem;
+}
+
+nav.navbar-container .nav-list {
+    margin-right: 5rem;
+}
+
+nav.navbar-container .nav-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+nav.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+nav.navbar-container .nav-list ul li:last-child a {
+    background: #FCD980;
+    color: #000;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+}
+
+nav.navbar-container .nav-list ul li:last-child a:hover {
+    background: #1C1E53;
+    color: #fff;
+    border: #FCD980 solid 3px;
+}
+
+nav.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    transition: all;
+    transition-duration: 0.75s;
+}
+
+nav.navbar-container .nav-list li:hover a{
+    background-color: #FCD980;
+    color: #000;
+}
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #1C1E53;
+    padding: 0 0 3rem 0;
+}
+
+header .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;    
+}
+
+header .content .content-description {
+    margin: 0 0 1.5rem 5rem;
+    width: 50%;
+}
+
+header .content .content-image {
+    margin: 4rem 3.5rem 0 0;
+    width: 50%;
+}
+
+header .content .content-description p {
+    line-height: 26px;
+    font-size: 1.25rem;
+}
+
+header .content .content-description button {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #FCD980;
+    border: #FCD980 solid 1px;
+    border-radius: 40px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.75s;
+}
+
+header .content .content-description button:hover {
+    background: #1C1E53;
+    color: #fff;
+    border: #FCD980 solid 3px;
+}
+
+main {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .container-menu-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 2rem;
+}
+
+main .container-menu-items h1 {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+main .menu-items {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+main .menu-items .item {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 16.5rem;
+    background: #F4F6FC;
+}
+
+main .menu-items .item .icon-item img {
+    width: 5rem;
+    background: #1c1e5313;
+    border-radius: 999px;
+    padding: 0.5rem;
+}
+
+main .menu-items .item h2, p {
+    margin-block: 0.75rem;
+}
+
+main .hero-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+main .hero-content .content-image {
+    width: 50%;
+    margin: 0 0 1.5rem 4.25rem
+}
+
+main .hero-content .content-description {
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 5rem 4.25rem 0 0;
+    align-self: flex-start;
+}
+
+main .hero-content .content-description h2 {
+    font-size: 2rem;
+}
+main .hero-content .content-description p {
+    line-height: 26px;
+}
+
+main .section-content {
+    display: flex;
+    justify-content: center;        
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 4.25rem;
+    text-align: center;
+    background: #1C1E53;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+main .section-content h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-block: 1rem;
+}
+
+main .section-content p {
+    line-height: 26px;
+    color: #fff;
+}
+
+main .section-content button {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #FCD980;
+    border: #FCD980 solid 1px;
+    border-radius: 40px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.75s;
+    margin-block: 1.5rem;
+}
+
+main .section-content button:hover {
+    background: #1C1E53;
+    color: #fff;
+    border: #FCD980 solid 3px;
+}
+
+footer {
+    padding: 1.25rem;
+    background: #1C1E53;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-block-start: 2rem;
+}
