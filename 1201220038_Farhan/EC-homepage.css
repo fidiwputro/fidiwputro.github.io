@@ -168,7 +168,6 @@ header {
 }
 
 .listcard div{
-    background-image: url("https://iili.io/J27KLTG.jpg");
     background-size: cover; /* Atur sesuai kebutuhan */
   background-position: center; /* Atur posisi latar belakang */
   background-repeat: no-repeat;
@@ -189,5 +188,20 @@ header {
     background-color: #93b1a6a9;
     padding: 30px;
     height: 50px;
-    
+}
+
+.listcard .c1 {
+    background-image: url(images/chemistryLecturer.webp);
+}
+
+.listcard .c2 {
+    background-image: url(images/englishLecturer.jpg);
+}
+
+.listcard .c3 {
+    background-image: url(images/mathLecturer.jpg);
+}
+
+.listcard .c4 {
+    background-image: url(images/kidLearning.jpeg);
 }
