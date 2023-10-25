@@ -134,3 +134,39 @@ body {
   color: #FEFAE0;
   background-color: #001524;
 }
+
+.halaman-login {
+  background-color: #FDE5D4;
+  width: 100%;
+  height: 100%;
+  padding-top: 8%;
+}
+
+.form-login {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: auto;
+  border-radius: 8%;
+  text-align: center;
+  width: 600px;
+  height: auto;
+  background-color: #D6CC99;
+}
+
+.form-login div {
+  padding: 1%;
+}
+
+.form-login label {
+  display: inline-block;
+  width: 32%;
+  text-align: left;
+}
+
+.login h2 {
+  margin-bottom: 10%;
+}
+
+.login a {
+  font-size: 14px;
+}
