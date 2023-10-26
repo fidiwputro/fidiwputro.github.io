@@ -1,7 +1,7 @@
 body {
     /* background-image: url('./Asset/bggg.png'); */
-    background-color: #4F709C;
-    color: #ffffff;
+    background-color: #c8d8ed;
+    color: #636363;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -23,12 +23,12 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #ffffff;
+    color: #636363;
     position: relative;
 }
 
 .menu a:hover {
-    color: #E5D283;
+    color: #213555;
     font-size: 16px;
     border-radius: 5px;
     /* untuk transisiton pas hover */
@@ -40,17 +40,17 @@ body {
 
 /* bagian ini untuk jika kita memencet salah satu menunya maka akan tetap berwarna */
 #dash {
-    color: #E5D283;
+    color: #213555;
     font-size: 16px;
 }
 
 #pengeluaran {
-    color: #E5D283;
+    color: #213555;
     font-size: 16px;
 }
 
 #catatanpribadi {
-    color: #E5D283;
+    color: #213555;
     font-size: 16px;
 }
 

@@ -35,10 +35,44 @@
                 <input type="number" name="phone" id="phone">
             </div>
 
-            <button type="submit">Tambah Pengeluaran</button>
+            <button type="button" id="buttonRegis" value="submit">Tambah Pengeluaran</button>
 
         </form>
     </div>
+
+    <script>
+        function coba() {
+            let name = document.getElementById('name').value;
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let confirm = document.getElementById('confirm').value;
+            let Gmail = document.getElementById('Gmail').value;
+            let phone = document.getElementById('phone').value;
+            // alert(`name:${name},username:${username}`);
+            if (name == '' || username == '' || password == '' || confirm == '' || Gmail == '' || phone == '') {
+                alert("Tolong lengkapi semua data");
+                return;
+            }
+            alert(`${name},${username},${password},${confirm},${Gmail},${phone}`);
+        }
+        // buttonRegis.addEventListener('click', coba);
+
+        function cek() {
+            let name = document.getElementById('name').value;
+
+            if (name == '') {
+                alert("nama anda kososng");
+                let nameElement = document.getElementById('name');
+
+                nameElement.style.border = "1px solid red";
+                nameElement.style.backgroundColor = "red";
+            } else {
+                coba();
+                nameElement.style.border = "1px solid black";
+            }
+        }
+        buttonRegis.addEventListener('click', cek);
+    </script>
 </body>
 
 </html>

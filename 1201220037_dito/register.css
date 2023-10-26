@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4F709C;
+    background-color: #c8d8ed;
     color: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -16,7 +16,6 @@ form textarea {
     font-size: 20px;
     border-radius: 10px;
     border: 1px solid black;
-
 }
 
 form button {
@@ -52,7 +51,7 @@ form input {
 .Register {
     width: 30%;
     padding: 40px;
-    background: #213555;
+    background: #4F709C;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
