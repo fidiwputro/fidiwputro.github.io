@@ -25,27 +25,41 @@
     <div class="divTiket">
         <div>
             <h3>Nama Lengkap</h3>
-            <input type="text" id="txtnama">
+            <input type="text" id="txtnama" placeholder="Nama" required>
         </div>
         <div>
             <h3>E-Mail</h3>
-            <input type="email" name="E-Mail" id="txtemail">
+            <input type="email" name="E-Mail" id="txtemail" placeholder="E-Mail" required>
         </div>
         <div>
             <h3>Nomor Telepon</h3>
-            <input type="text" id="txtnotelp">
+            <input type="text" id="txtnotelp" placeholder="Nomor Telepon" required>
         </div>
         <div>
             <h3>Banyak Tiket</h3>
-            <input type="number" name="tiketDewasa" id="tiketDewasa">
+            <input type="number" name="bykTiket" id="bykTiket" placeholder="Banyak Tiket" required>
         </div>
         <div>
             <h3>Tanggal Kunjungan</h3>
-            <input type="date" name="tglPesanan" id="tglPesanan">
+            <input type="date" name="tglPesanan" id="tglPesanan" placeholder="Pilih Tanggal Terlebih Dahulu" required>
         </div>
         <div id="beliTiket">
-            <input type="button" value="Beli">
+            <input onclick="submit()" type="button" value="Beli">
         </div>
     </div>
+    <script>
+        function submit() {
+            let nama = document.getElementById("txtnama").value;
+            let email = document.getElementById("txtemail").value;
+            let notelp = document.getElementById("txtnotelp").value;
+            let bykTiket = document.getElementById("bykTiket").value;
+            let tglKunjungan = document.getElementById("tglPesanan").value;
+            alert(nama);
+            alert(email);
+            alert(notelp);
+            alert(bykTiket);
+            alert(tglKunjungan);
+        }
+    </script>
 </body>
 </html>
