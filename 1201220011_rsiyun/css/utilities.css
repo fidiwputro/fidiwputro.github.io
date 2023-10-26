@@ -180,3 +180,65 @@ flex: 2;
 .list-vertical-scroll .scroll_wrap a:hover img{
     transform: scale(1.2);
 }
+
+
+ .text-xs{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0px;
+ }
+
+ #login{
+    display: flex;
+    justify-content: center;
+    padding-top: 86px;
+ }
+
+ .auth-card{
+    width: 650px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ .auth-card .item-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ .formel {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+ }
+ .formel-icon {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+ }
+ .formel-icon .icon-item{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#eee;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid #ccc
+ }
+ .formel input {
+     width: 350px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     height: 16px;
+     padding: 16px 0px 16px 16px;
+    }
+.formel-icon input{
+       width: 320px;
+       border: 1px solid #ccc;
+       border-top-left-radius: 8px;
+       border-bottom-left-radius: 8px;
+       height: 16px;
+       padding: 16px 0px 16px 16px;
+}

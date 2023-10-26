@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17 24 39 ); 
+    font-family: 'Unifont';
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR AREA */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    top: 0;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 20px 13%;
+    background-color: rgb(17 24 39 );
+    z-index: 100;
+    color: rgb(217 249 157 );
+    
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(217 249 157 );
+}
+
+.logo img{
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-clean{
+    list-style: none;
+    display: flex;
+}
+
+.nav-clean li{
+    margin-right: 20px;
+}
+
+.nav-clean li a{
+    color: rgb(217 249 157 );
+}
+
+.login-button{
+    background-color: rgb(190 242 100 );
+    color: rgb(51 85 0 );
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Kontent Main */
+
+
+.layar{
+    width: 100%;
+}
+.container-chall {
+    width: 100%;
+    margin-top: 90px;
+    height: 620px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(217 249 157);
+    border-top: 1px  solid white;
+    border-bottom: 1px  solid white;
+}
+
+.border-glow{
+    border: 1px solid rgb(217 249 157);
+    box-shadow: 0 0 10px rgb(217 249 157);
+}
+
+.vertical-text {
+    width: 12%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2.5rem;
+    color: rgb(217 249 157 );
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+    
+}
+.kategori{
+    width: 25%;
+    border-left: 1px  solid white;
+    border-right: 1px  solid white;
+    max-height: 100%;
+    overflow-y: scroll;
+
+}
+
+.kategori :hover{
+    background-color: rgb(217 249 157 );
+    box-shadow: 0 0 10px rgb(217 249 157);
+    color: rgb(17 24 39 );
+    cursor: pointer;
+}
+
+.kategori div{
+    padding: 2rem;
+    border-bottom: 1px  solid white;
+}
+
+.judul-soal{
+    width: 20%;
+    max-height: 100%;
+    overflow-y: scroll;
+
+}
+
+.soal-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.soal-1:hover{
+    background-color: rgb(217 249 157 );
+    box-shadow: 0 0 10px rgb(217 249 157);
+    color: rgb(17 24 39 );
+    cursor: pointer;
+}
+/* Deskripsi */
+.deskripsi{
+    background-color: rgb(19, 25, 35); 
+    width: 35%;
+    padding: 2rem;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.deskripsi h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.desk-2 p{
+    color:rgb(217 249 157);
+}
+
+.judul-des{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jk{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color:rgb(111, 111, 111);
+}
+/* Atch */
+.atch a{
+    color: aqua;
+}
+
+.atch a:hover{
+    color: rgb(157, 174, 249);
+}
+
+/* Flag Area */
+.flag form{
+    display: flex;
+}
+.flag button{
+    background-color:rgb(51 85 0 ); 
+    color: rgb(190 242 100 );
+    border: none;
+    border-radius: 2px;
+    padding: 3px 20px;
+    cursor: pointer;
+    border: 1px solid rgb(190 242 100 );
+}
+
+.flag button:hover{
+    background-color: rgb(190 242 100 );
+    color: rgb(51 85 0 );
+    border: 1px solid rgb(51 85 0 );
+}
+
+.flag input{
+    width: 63%;
+    background-color: rgb(17 24 39 ); 
+    color: white;
+    border-radius: 2px;
+    padding: 3px 20px;
+    border: 1px solid rgb(217 249 157);
+    margin:0 8px;
+
+}
+
+.Solper{
+    height: 25%;
+}
+
+.solved{
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+/* My Team */
+.Myteam{
+    width: 10%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2.5rem;
+    color: rgb(217 249 157 );
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Myteam:hover{
+    background-color: rgb(217 249 157 );
+    box-shadow: 0 0 10px rgb(217 249 157);
+    color: rgb(17 24 39 );
+    cursor: pointer;
+}
+
+
+

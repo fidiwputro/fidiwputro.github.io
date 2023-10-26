@@ -6,7 +6,7 @@
     </head>
     <body>
         <div>
-            <form>
+            <form name="formregistrasi">
                 <h1>Registrasi Anggota</h1>
                 <div class="form-reg">
                     <div>
@@ -30,6 +30,11 @@
                         </select>
                     </div>
                     <div>
+                        <label>Gender:</label>
+                        <label><input type="radio" name="gender" value="L" checked/>L</label>
+                        <label><input type="radio" name="gender" value="P"/>P</label>
+                    </div>
+                    <div>
                         <label>Username:</label>
                         <input type="text" id="txtusr" name="txtusr"/>
                     </div>
@@ -38,10 +43,26 @@
                         <input type="password" id="txtpwd" name="txtpwd"/>
                     </div>
                     <div>
-                        <input type="button" id="sbtreg" name="sbtreg" value="submit"/>
+                        <input type="submit" id="sbtreg" name="sbtreg" value="submit"/>
                     </div>
+                    <a href="login.html">Login</a>
+                    <a href="index.html">Home</a>
                 </div>
             </form>
         </div>
+        <script>
+            let form = document.forms.formregistrasi;
+            function kirim(){
+                let nama = document.getElementById('txtnama');
+                if(nama.value==''){
+                    nama.style.backgroundColor='red';
+                    alert('nama kok kosong??');
+                }else{
+                    form.submit();
+                }
+            }
+            form.addEventListener('submit',kirim);
+
+        </script>
     </body>
 </html>

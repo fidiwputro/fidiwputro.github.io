@@ -107,16 +107,16 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
-    /* border: rgb(174, 1, 1); */
-    /* border-style: double; */
+    border: rgb(174, 1, 1);
+    border-style: double;
     align-items: center;
 
 }
 .menu .menu1,.menu .menu2{
     display: flex;
     flex-direction: row;
-    /* border: rgb(30, 0, 104); */
-    /* border-style: double; */
+    border: rgb(30, 0, 104);
+    border-style: double;
     flex-direction: column;
 }
 .menu1{
@@ -131,8 +131,8 @@ body{
     width: 99%;
     height: auto;
     margin: 2%;
-    /* border: rgb(30, 0, 104); */
-    /* border-style: double; */
+    border: rgb(30, 0, 104);
+    border-style: double;
     display: flex;
     overflow: auto;
     
@@ -147,8 +147,8 @@ body{
 
 }
 #row{
-    /* border: rgb(30, 0, 104); */
-    /* border-style: double; */
+    border: rgb(30, 0, 104);
+    border-style: double;
 }
 #textrow{
     display: flex;
@@ -162,7 +162,6 @@ body{
     width:49%;
     height: auto;
     flex-direction: column;
-    align-items: center;
 }
 
 .struk1{
@@ -185,15 +184,49 @@ body{
     border-style: double;
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
 }
+.struk2 p, .struk2 div{
+    
+    margin: 0% 0% 0% 10%;
+    font-size: 200%;
+}
+.struk2 #indiv{
+    border: rgb(0, 0, 0);
+    border-style: double;
+    width: 80%;
+    display: flex;
+    font-size: 100%;
+
+}
+#indiv #iindiv{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    border: #09232c;
+    border-style: double;
+    margin-left: 0%;
+}
+#iindiv p {
+    width: 50%;
+}
+#indiv #lindiv{
+    text-align: left;
+    border: #09232c;
+    border-style: double;
+
+}
+
+
 .struk3{
     width: 100%;
     height: 20%;
     border: rgb(0, 0, 0);
     border-style: double;
     display: flex;
-    align-items: center;
-    text-align: center;
+}
+.struk3 button{
+    margin: auto auto auto auto;
 }
 
 
