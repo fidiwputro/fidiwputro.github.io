@@ -13,7 +13,7 @@ body {
   left: 0;
   border-radius: 30px;
   width: 100%;
-  height: 130%;
+  height: 170%;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: -1;
 }
@@ -27,6 +27,27 @@ body {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
+}
+
+.topNavbar-link {
+  border-radius: 30px;
+  background-color: #00a2ff;
+  font-family: "Montserrat", sans-serif;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+.topNavbar-link:hover {
+  background-color: #0090e1;
+  transform: scale(1.05);
 }
 
 .topNavbar .wordLogo img {
@@ -97,10 +118,17 @@ body {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   max-width: 500px;
+  max-height: 800px;
   margin: 40px auto;
   padding: 20px;
   box-shadow: #333;
   padding-bottom: -80px;
+}
+
+.card .isi img{
+  height: 28%;
+  align-items: center;
+  padding-left: 27%;
 }
 
 .card .isi h2 {
@@ -108,15 +136,13 @@ body {
   color: #333;
   text-align: center;
   text-decoration: none;
-  font-size: 30px;
-  padding-left: 120px;
+  font-size: 20px;
 }
 
 .card .isi .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 110px;
 }
 
 .card .isi .form .input {
@@ -125,6 +151,7 @@ body {
   align-items: center;
   margin: 10px 0;
 }
+
 
 .card .isi .form .input label {
   font-family: "Montserrat", sans-serif;
@@ -145,18 +172,50 @@ body {
   border: 1px solid #ccc;
 }
 
+.card .isi .form .inputLong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
+.card .isi .form .inputLong label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px; 
+  text-align: center;
+}
+
+.card .isi .form .inputLong input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 120%; 
+  height: 60px;
+  max-width: none; 
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+
 /*button*/
 .formbutton {
   text-align: center;
   margin-top: 20px; /* Adjust the margin as needed */
 }
 
-.formbutton a {
+.formbutton button a{
   text-decoration: none;
-  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #ffffff;
 }
 
-.formbutton input {
+.formbutton button {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 10px 20px;
@@ -166,14 +225,13 @@ body {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
 }
 
-.formbutton input:hover {
+.formbutton button:hover {
   background-color: #0079b1;
   transform: scale(1.05);
 }
-
-
 
 /*Botnav*/
 .botNavbar {
