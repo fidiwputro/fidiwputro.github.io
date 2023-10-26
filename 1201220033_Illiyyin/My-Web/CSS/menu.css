@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav {
+    /* background-color: #0f0e0e; */
+    color: #0a0a0a;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Logo {
+    float: left;
+    padding-left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    color: #100f0f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav ul li a:hover {
+    background-color: #09d855;
+    color: #fffefe;
+    transition: 0.5s;
+}
+
+.nav-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.nav-right {
+    float: right;
+}
+
+.container .col-2 {
+    padding: 10px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.col-2 .my_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.title-about {
+    text-align: center;
+    font-size: 40px;
+    color: #09d855;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+}
+
+.menu-dish {
+    text-align: center;
+    font-size: 40px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5%;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.container-2 .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 0 4px;
+    margin-top: 20px;
+    /* Added this line to create space between row-1 and row-2 */
+}
+
+.container-2 .row-2 .col-1 .card-1 {
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 400px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2 .row-2 .col-1 .card-1 .img-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container-2 .row-2 .col-2 .card-2 {
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 400px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2 .row-2 .col-2 .card-2 .img-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container-2 .row-2 .col-3 .card-3 {
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 400px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2 .row-2 .col-3 .card-3 .img-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

@@ -46,7 +46,7 @@
               <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
             </div>
             <div class="formbutton">
-              <button type="submit"><a href="login.html">Create Account</a></button>
+              <input type="button" id="submitForm" value="Create Account" />
             </div>
             
           </div>
@@ -64,5 +64,27 @@
         </p>
       </div>
     </div>
+
+    <script>
+      function printAlert(){
+        let nama = document.getElementById("nama").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let confirm_password = document.getElementById("confirm-password").value;
+
+        if(nama == "" || password == "" || email == "" || confirm_password == ""){
+          alert("Lengkapi Data Yang Ada!")
+        } else {
+        alert("nama anda    : " + nama 
+          + "\nemail             : " + email 
+          + "\npassword       :   " + password);
+      }
+    }
+
+      submitForm.addEventListener("click",printAlert);
+
+      
+    </script>
+
   </body>
 </html>
