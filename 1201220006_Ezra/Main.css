@@ -13,6 +13,7 @@ body {
 
 /* triger */
 .triger {
+    background-color: white;
     display: none;
 }
 
@@ -24,7 +25,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
     position: relative;
+    z-index: 2;
 }
 
 .navbar .nav-logo {
@@ -34,29 +37,43 @@ body {
     margin-left: 5rem;
 }
 
-.navbar .nav-menu {
+.navbar .nav-logo a {
+    font-size: large;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar .nav-logo a:hover {
+    color: gray;
+}
+
+.navbar .nav-menu { 
+    padding-left: 4rem;
     display: flex;
     align-items: center;
 }
 
 .navbar .nav-menu .nav-button-tugas {
     padding: 1.3rem;
-    transition: 0.4s ease-in-out;
 }
 
-.navbar .nav-menu .nav-button-tugas:hover {
-    font-size: 1.2rem;
-    box-shadow: 5px 6px 6px 1px rgb(165, 161, 161);
+.navbar .nav-menu .nav-button-tugas a {
+    transition: 0.2s ease-in-out;
+}
+
+.navbar .nav-menu .nav-button-tugas a:hover {
+    color: gray;
 }
 
 .navbar .nav-menu .nav-button-jadwal {
     padding: 1.3rem;
-    transition: 0.4s ease-in-out;
 }
 
-.navbar .nav-menu .nav-button-jadwal:hover {
-    font-size: 1.2rem;
-    box-shadow: 5px 6px 6px 1px rgb(165, 161, 161);
+.navbar .nav-menu .nav-button-jadwal a {
+    transition: 0.2s ease-in-out;
+}
+
+.navbar .nav-menu .nav-button-jadwal a:hover {
+    color: gray;
 }
 
 .navbar .nav-button-tentang{
@@ -80,12 +97,13 @@ body {
 
 /* SIDE BAR */
 .side-bar {
-    display: none;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     margin-top: -11.3rem;
     border-bottom: 1px solid black;
     padding: 1.5rem 0rem 2rem 2.4rem;
-    transition: .4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    z-index: 1;
 }
 
 .side-bar .sidebar-in ul {
@@ -286,7 +304,7 @@ body {
     .nav .nav-menu {
         display: none;
     }
-
+    
     .nav-menu .nav-button-jadwal {
         display: none;
     }
@@ -302,7 +320,7 @@ body {
     .nav-button-logout {
         margin-top: 0.5rem;
     }
-
+    
     .hamburger {
         display: block;
         margin-right: 4rem;
@@ -316,10 +334,43 @@ body {
         padding: 0px 0px 3.7px 22px;
         cursor: pointer;
     }   
-
+    
     #check:checked ~ .side-bar {
         margin: 0;
         display: block;
+    }
+
+    .tugas .button-tugas .button-reference {
+        padding: 1rem 4rem;
+    }
+
+    .tentang {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .footer {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .footer .email p {
+        font-size: 13px;
+    }
+
+    .footer .email h3{
+        font-size: 13px;
+    }
+    
+    .footer .social p {
+        font-size: 13px;
+    }
+
+    .footer .social h3 {
+        font-size: 13px;
+    }
+
+    .footer .copy p {
+        font-size: 13px;
     }
 }
 

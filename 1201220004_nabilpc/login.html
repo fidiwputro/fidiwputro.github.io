@@ -1,10 +1,12 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page Service-in Aja!</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="halaman-login">
         <div class="form-login">
@@ -20,10 +22,14 @@
         </div>
     </div>
     <script>
-        let tombol = document.getElementById("loginbtn");
-        tombol.onclick = function mf(){
-            alert("Congratulations! you click the Button yaaay")
+        let form = document.forms.form-login;
+        function ww () {
+
+            let tombol = document.getElementById("loginbtn");
+            let myElement = document.getElementById("username");
+            tombol.addEventListener('click', alert(myElement.value));
         }
     </script>
 </body>
+
 </html>

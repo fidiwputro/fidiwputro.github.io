@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.form {
+    border: 7px solid black;
+    padding-bottom: 2.6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.form h1 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.form input {
+    padding: 1em 3em;
+    border: 2.7px solid black;
+}
+
+.form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.form .inp-name{
+    margin: 2rem;
+}
+.form .inp-email{
+    margin: 2rem;
+}
+.form .inp-password{
+    margin: 2rem;
+}
+
+.form .inp-password-v {
+    margin-bottom: 3rem;
+}
+
+.form .btn-submit a {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.form .btn-submit a:hover {
+    box-shadow: 5px 6px 4.5px 1px rgb(143, 137, 137);
+}
+
+.form .btn-registrasi {
+    margin-top: 3.5rem;
+    font-size: 13px;
+}
+
+.form .btn-registrasi a {
+    color: black;
+    transition: 0.2s ease-in-out
+} 
+
+.form .btn-registrasi a:hover {
+    color: rgb(143, 137, 137);
+}
