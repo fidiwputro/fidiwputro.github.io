@@ -40,6 +40,10 @@ h1 {
 
 hr {
     border-top: 2px solid black;
+}
+
+p {
+    text-align: center;
     margin: 10px;
 }
 
