@@ -5,7 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ body{
     background: green;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     max-width: 850px;
@@ -31,19 +31,19 @@ form{
     margin: 60px auto;
 }
 
-h1{
+h1 {
     margin: 20px;
     text-align: center;
     font-weight: bolder;
     text-transform:uppercase ;
 }
 
-hr{
+hr {
     border-top: 2px solid black;
     margin: 10px;
 }
 
-.right img{
+.right img {
     width: 450px;
     height: 100%;
     border-top-right-radius: 15px;
@@ -57,7 +57,7 @@ form label{
     padding: 5px;
 }
 
-input{
+input {
     width: 100%;
     margin: 2px;
     border: none;
@@ -67,7 +67,7 @@ input{
     border: 1px solid gray;
 }
 
-button{
+button {
     border: none;
     outline: none;
     padding: 8px;
@@ -80,8 +80,8 @@ button{
     background: green;
 }
 
-button:hoven{
-    background: green;
+button:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width:880px){
@@ -91,7 +91,7 @@ button:hoven{
         margin-left: 20px;
         margin-right: 20px;
     }
-    from{
+    .from{
         width: 300px;
         margin: 20px auto;
     }
