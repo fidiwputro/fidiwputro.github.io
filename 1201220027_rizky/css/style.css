@@ -1,0 +1,150 @@
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Web */
+body {
+    background-image: url(../img/7.jpg); /* Latar Belakang (Gambar) */
+    background-color: rgb(238, 238, 238);/* Warna dari latar belakang */
+    background-size: cover;/* buat ukuran latar belakangnya (cover berati menutupi keseluruhan) */
+    background-repeat: no-repeat;/* background digambar akan muncul berapa kali( no repeat agar hanya satu background yang memenuhi tampilan */
+    margin: 0;
+}
+.sampul{
+    position: fixed;
+    top: 0;/* ~ */
+    left: 0;/* ~ */
+    width: 100%;/* Agar menutupi seluruh halaman */
+    height: 100%;/* ~ */
+    background: rgba(0, 0, 0, 0.5); /* latar belakang agar sedikit transparan */
+    z-index: -1; /* diterapkan ke bagian -1 layer */
+}
+
+/* Navbar */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* untuk text */
+    text-align: center;
+    padding: 10px 0;/* mengatur jarak */
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-sign {
+    display: flex;
+    align-items: center;
+}
+
+.login-sign a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 36px; 
+    font-weight: bold; 
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
+    background-image: url(../img/3.png); 
+    background-size: 60px; 
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    padding-left: 30px; 
+}
+.login-sign strong{
+    color: #ff0000;
+}
+
+
+
+/* Isi Content */
+main {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.content-1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.content-1 h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-1 p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.content-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-1 li {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    position: relative;
+}
+.p1{
+    color: #ffffff;
+}

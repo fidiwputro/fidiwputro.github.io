@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   body{
+    font-family: 'Unifont';
+       background-color: rgb(17 24 39 );
+   }
+   
+   a{
+       text-decoration: none;
+   }
+
+   .kotak1{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+   }
+
+   .main-kontent{
+    box-shadow: 5px 5px 20px rgba(122, 122, 122, 0.147);
+    width: 50%;
+    background-color: rgb(31 41 55 );   
+    border-radius: 5px;
+    margin-top: 150px;
+    color: rgb(108, 123, 138);
+    padding: 50px 50px;
+    border: 1px solid rgb(108, 123, 138);
+   }
+
+   .judul{
+    color: rgb(217 249 157);
+   }
+
+   .kotak-form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+   }
+
+   .kotak-kiri{
+    width: 50%;
+    margin-right: 20px;
+   }
+
+   .kotak-kanan{
+    width: 50%;
+    margin-left: 20px;
+   }
+
+    .kotak-kanan label, .kotak-kiri label{
+     display: block;
+     text-align: left;
+     color: rgb(108, 123, 138);
+    margin-bottom: 5px;
+    }
+
+    .kotak-kanan input, .kotak-kiri input ,.kotak-kiri select{
+     width: 100%;
+     padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+     border: 1px solid rgb(108, 123, 138);
+     background-color: rgb(31 41 55 );
+     color: rgb(217 249 157);
+    }
+
+    .main-kontent form button{
+        width: 100%;
+        padding: 8px;
+        border-radius: 2px;
+        background-color:rgb(51 85 0 ); 
+        color: rgb(190 242 100 );
+        border: 1px solid rgb(190 242 100 );
+        cursor: pointer;
+    }
+
+    .main-kontent button{
+        margin-top: 10px;
+        width: 100%;
+        padding: 8px;
+        border-radius: 2px;
+        background-color: rgb(26, 26, 108);
+        color: rgb(170, 170, 252);
+        border: 1px solid rgb(67, 67, 253);
+        font-weight: bold;
+        cursor: pointer;
+    }

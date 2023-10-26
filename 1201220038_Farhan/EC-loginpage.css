@@ -1,0 +1,15 @@
+body {
+    margin: 10px 10px;
+}
+
+.login {
+    border: 1px solid red;
+    width: 500px;
+    height: 550px;
+    margin: 70px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
