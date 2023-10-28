@@ -8,10 +8,7 @@ body{
     font-family: 'Unifont','Fira Code',monospace;
     background-color: rgb(17 24 39 );
 }
-@font-face{
-    font-family: 'Unifont';
-    src: url('../font/unifont.ttf') format('truetype');
-}
+
 a{
     text-decoration: none;
 }
