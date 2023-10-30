@@ -46,8 +46,9 @@ body{
 }
 
 .nav ul li a:hover{
-    background-color: #ddd;
-    color: black;
+    background-color: #09d855;
+    color: #fffefe;
+    transition: 0.5s;
 }
 
 .nav-center{

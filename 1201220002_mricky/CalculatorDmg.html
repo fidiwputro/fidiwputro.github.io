@@ -1,86 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CalculatorDmg</title>
     <link rel="stylesheet" type="text/css" href="styleCalculatorDmg.css">
+    <title>CalculatorDmg</title>
 </head>
 <body>
-
-    <div class="navbar">
-        <h1>Crafter</h1>
-        <div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="CalculatorDmg.html">Calculator DMG</a></li>
-                <li><a href="">Compare</a></li>
-                <li><a class="credential" href="">Log in</a></li>
-                <li><a class="credential" href="">Sign up</a></li>
-            </ul>
+    <div class="navigasi">
+        <div class="pouch">
+            <a href="index.html"><img src="image/home.png" alt=""></a>
+            <a href="CalculatorDmg.html"><img src="image/calculator_5927785.png" alt=""></a>
+            <a href="Login.html"><img src="image/enter_1828395.png" alt=""></a> 
         </div>
     </div>
 
-    <div class="input-stat">
-        <form action="">
+    <div class="tabel" id="natasha">
+        <div class="Character" >
+            <img src="image/icon_natasha.png" alt="">
 
-            <div>
-                <label for="ListCharacter">List Character</label>
-                <select name="list" id="ListCharacter">
-                    <option value="natasha">Natasha</option>
-                    <option value="march7">March 7</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="hp">HP</label>
-                <input type="number" id="hp">
-            </div>
-            
-            <div>
-                <label for="atk">ATK</label>
-                <input type="number" id="atk">
-            </div>
-            
-            <div>
-                <label for="def">DEF</label>
-                <input type="number" id="def">
-            </div>
-            
-            <div>
-                <label for="spd">SPD</label>
-                <input type="number" id="spd">
-            </div>
-           
-            <div>
-                <label for="cr">Crit Rate</label>
-                <input type="number" id="cr">
+            <div class="skill">
+                <div class="inputan">
+                    <label for="atk">ATK</label>
+                    <input type="number" id="atk">
+                    <label for="be">BreakEffect</label>
+                    <input type="number" id="be">
+                    <label for="be">CDM</label>
+                    <input type="number" id="cdm">
+                </div>
+                <div class="hasil">
+                    <h3 class="judul">BASIC ATK</h3>
+                    <h4>Lv.--</h4>
+                    <input type="range" min="1" max="7">
+                    <p>Memberikan phisycal Damage sebesar : <span id="hasilBasicAtkNatasha">------</span> </p>
+                </div>
+                <button id="btnHitungDmgNatasha">HITUNG</button>
             </div>
 
-            <div>
-                <label for="cdm">Crit Damage</label>
-                <input type="number" id="cdm">
+            <div class="skill">
+
+                <div class="inputan">
+                    <label for="hp">HP</label>
+                    <input type="number" id="hp">
+                    <label for="OG">Outgooing Healing</label>
+                    <input type="number" id="be">
+                </div>
+
+                <div class="hasilskill">
+                    <div class="hasil">
+                        <h3 class="judul">SKILL</h3>
+                        <h4>Lv.--</h4>
+                        <input type="range" min="1" max="7">
+                        <p>Memulihkan satu sekutu sebesar <span id="hasilSkillNatasha1">------</span>. Memulihkan sekutu sebesar <span id="hasilSkillNatasha2">------</span> di awal tiap giliran selama 2 giliran.</p>
+                    </div>
+    
+                    <div class="hasil">
+                        <h3 class="judul">ULTIMATE</h3>
+                        <h4>Lv.--</h4>
+                        <input type="range" min="1" max="7">
+                        <p>Menyembuhkan semua sekutu sebesar <span id="hasilUltimateNatasha">------</span></p>
+                    </div>
+                </div>
+
+                <button id="btnHitungHealNatasha">HITUNG</button>
+
             </div>
-            
-            <div>
-                <label for="be">Break Effect</label>
-                <input type="number" id="be">
-            </div>
-            
-            <div>
-                <label for="ohb">Outgoing Healing Boost</label>
-                <input type="number" id="ohb">
-            </div>
-            
-            <div>
-                <label for="elementalboost">Elemental Dmg Boost</label>
-                <input type="number" id="elementalboost">
-            </div>
-        </form>
+        </div>
     </div>
-    <div class="skill-natasha" >
-        <h4>Normal Attack</h4>
-        <label for="normal-attack-natasha">Behind the Kindness</label>
-        <input type="range" name="" id="normal-attack-natasha" min="1" max="7">
-        <span> Memberikan Pyshical Damage sebesar <span id="hasil-normal-attack-nataasha"></span> </span>
+
+    <div class="tabel" id="lynx">
+        <div class="Character" >
+            <img src="image/Lynx icon.webp" alt="">
+
+            <div class="skill">
+                <div class="inputan">
+                    <label for="atk">ATK</label>
+                    <input type="number" id="atk">
+                    <label for="be">BreakEffect</label>
+                    <input type="number" id="be">
+                    <label for="be">CDM</label>
+                    <input type="number" id="cdm">
+                </div>
+                <div class="hasilskill">
+                    <div class="hasil">
+                        <h3 class="judul">BASIC ATK</h3>
+                        <h4>Lv.--</h4>
+                        <input type="range" min="1" max="7">
+                        <p>Memberikan phisycal Damage sebesar : <span>------</span> </p>
+                    </div>
+                </div>
+                <button>HITUNG</button>
+            </div>
+
+            <div class="skill">
+
+                <div class="inputan">
+                    <label for="hp">HP</label>
+                    <input type="number" id="hp">
+                    <label for="OG">Outgooing Healing</label>
+                    <input type="number" id="be">
+                </div>
+
+                <div class="hasilskill">
+                    <div class="hasil">
+                        <h3 class="judul">SKILL</h3>
+                        <h4>Lv.--</h4>
+                        <input type="range" min="1" max="7">
+                        <p>Memulihkan satu sekutu sebesar <span>------</span>. Memulihkan sekutu sebesar <span>------</span> di awal tiap giliran selama 2 giliran.</p>
+                    </div>
+    
+                    <div class="hasil">
+                        <h3 class="judul">ULTIMATE</h3>
+                        <h4>Lv.--</h4>
+                        <input type="range" min="1" max="7">
+                        <p>Menyembuhkan semua sekutu sebesar <span>------</span></p>
+                    </div>
+                </div>
+                <button>HITUNG</button>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>

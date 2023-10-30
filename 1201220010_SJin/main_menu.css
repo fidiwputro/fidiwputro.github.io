@@ -1,0 +1,120 @@
+/* CSS untuk navbar */
+nav {
+<<<<<<< HEAD
+    background-color: #007BFF; /* Warna latar belakang navbar */
+    color: #3f3939;
+=======
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+>>>>>>> 2951069e75d83f8651c13cd690a80a61f03907da
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+<<<<<<< HEAD
+    padding: 10px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3e3b3b;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4084d6; /* Warna teks saat dihover */
+=======
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4084d6;
+>>>>>>> 2951069e75d83f8651c13cd690a80a61f03907da
+}
+
+/* CSS untuk header dan konten */
+header {
+<<<<<<< HEAD
+    background-image: url('iphone-background.png'); 
+=======
+    background-image: url('iphone-background.png');
+>>>>>>> 2951069e75d83f8651c13cd690a80a61f03907da
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+    text-align: center;
+<<<<<<< HEAD
+    padding: 10px 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+=======
+    padding: 100px 0;
+}
+
+.header-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+>>>>>>> 2951069e75d83f8651c13cd690a80a61f03907da
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+<<<<<<< HEAD
+    background-color: #f9f9f9; /* Warna latar belakang kontainer */
+=======
+    background-color: #fff;
+>>>>>>> 2951069e75d83f8651c13cd690a80a61f03907da
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+<<<<<<< HEAD
+/* CSS untuk tautan pada konten */
+a.button {
+    display: inline-block;
+    background-color: #007BFF; /* Warna tombol */
+    color: #fff; /* Warna teks tombol */
+=======
+/* CSS untuk tombol */
+a.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+>>>>>>> 2951069e75d83f8651c13cd690a80a61f03907da
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+<<<<<<< HEAD
+    background-color: #0056b3; /* Warna tombol saat dihover */
+=======
+    background-color: #0056b3;
+>>>>>>> 2951069e75d83f8651c13cd690a80a61f03907da
+}
