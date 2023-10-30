@@ -17,28 +17,53 @@
                                 <div style=" padding: 15px; display: inline-flex; flex-direction: column; gap: 10px;">
                                     <div style=" display: inline-flex; flex-direction: column;">
                                         <label for="username">Username:</label>
-                                        <input type="text" name="username" id="username" style="width: 386px; border-style: none;display: inline-flex;/* font-size: 24px; */padding-left: 15px;padding-right: 15px;">
+                                        <input type="text" name="username" id="username" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
                                     </div>
                                     <div style=" display: inline-flex; flex-direction: column;">
                                         <label for="email">Email Address:</label>
-                                        <input type="text" name="email" id="email" style="width: 386px; border-style: none;display: inline-flex;/* font-size: 24px; */padding-left: 15px;padding-right: 15px;">
+                                        <input type="text" name="email" id="email" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
                                     </div>
                                     <div style=" display: inline-flex; flex-direction: column;">
                                         <label for="password">Password:</label>
-                                        <input type="password" name="password" id="password" style="width: 386px; border-style: none;display: inline-flex;/* font-size: 24px; */padding-left: 15px;padding-right: 15px;">
+                                        <input type="password" name="password" id="password" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
                                     </div>
                                 </div>
                             </form>
-                            <div style="width: 192px; height: 52px; position: relative; padding: 10px; margin: auto;">
+                            <div id="sbtreg" name="sbtreg" style="width: 192px; height: 52px; position: relative; padding: 10px; margin: auto;">
                                 <a href="Register.html">
                                     <tombol style="background: #18A0FB;">
                                         <text_tombol style="left: 64.03px; top: 16.30px; color:  white; font-size: 17px;">Register</text_tombol>
                                     </tombol>
                                 </a>
                             </div>
-                        </div><div style="/* width: 622px; */height: 439px;position: relative">
+                        </div><div style="height: 439px;position: relative">
                     </div>
                 </div>
             </section>
         </main>
+        <script>
+            // document.getElementById('username').value;
+            // alert(nama);
+            
+            function Alert() {
+                let username = document.getElementById('username').value;
+                let email = document.getElementById('email').value;
+                let password = document.getElementById('password').value;
+                
+                if(username == ''){
+                    alert("username tidak boleh kosong");
+                }
+                
+                if(email == ''){
+                    alert("email tidak boleh kosong")
+                }
+
+                if(password == ''){
+                    alert("password tidak boleh kosong");
+                }             
+            }            
+            
+            sbtreg.addEventListener("click", Alert);
+        </script>
     </body>
+</html>

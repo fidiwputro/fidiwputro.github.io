@@ -27,7 +27,7 @@
                             </form>
                             <div style="display: inline-flex;align-items: center;"> 
                                 <a href="Register.html">Dont have account? Register now!</a>
-                                <div style="width: 192px; height: 52px;position: relative; margin: auto;">
+                                <div id="sbtreg" name="sbtreg" style="width: 192px; height: 52px;position: relative; margin: auto;">
                                     <a type="submit" href="#sudahlogin">
                                         <tombol style="background: #18A0FB; margin: 15px;">
                                             <text_tombol style="left: 64.03px; top: 16.30px; color:  white; font-size: 17px;">Login</text_tombol>
@@ -40,4 +40,24 @@
                 </div>
             </section>
         </main>
+        <script>
+            // document.getElementById('username').value;
+            // alert(nama);
+            
+            function Alert() {
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+                
+                if(username == ''){
+                    alert("username tidak boleh kosong");
+                }
+
+                if(password == ''){
+                    alert("password tidak boleh kosong");
+                }             
+            }            
+            
+            sbtreg.addEventListener("click", Alert);
+        </script>
     </body>
+</html>
