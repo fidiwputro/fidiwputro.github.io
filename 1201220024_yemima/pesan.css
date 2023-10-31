@@ -10,7 +10,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: url(2.png);
+    background-image: url(background.png);
     background-repeat: no-repeat;
     background-size: auto;
     display: block;
@@ -52,12 +52,16 @@ body{
     list-style: none;
     /* Ini rada error gakjelas */
     display: inline-block;
-    color: #EC008C;
+    color:darkcyan;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 30px 8px;
 }
 
+.nav p {
+    color:#EC008C;
+    font-weight: bolder;
+}
 /* Class Header */
 .header{
     text-align: left;
@@ -74,8 +78,29 @@ body{
     font-size: 50px;
 }
 
+/* Untuk Food */
+.header-food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Untuk mengatur teks di tengah vertikal juga */
+    /* border: #EC008C; */
+}
+
+.header-food h1{
+    color: rgb(74, 147, 147);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    font-size: 50;
+}
+
+.header-food span{
+    color:#EC008C;
+}
+/* AkhirFood */
+
 .header span{
-    color:#EC008C
+    color:#EC008C;
 }
 
 .kotak-span {
@@ -99,5 +124,66 @@ body{
     margin-right: 140px;
     margin-top: 120px;
     
+}
+
+/* section makan */
+.menu{
+    display: grid;
+    top: 65%;
+    /* fungsinyaadalah untuk membagi tampilan menjadi 3 dalam 1 frame */
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 30px 20px;
+    /* untuk jarak */
+    grid-column-gap: 25px;
+    grid-row-gap: 80px;
+}
+.makanan img{
+    top: 65%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.makanan h4{
+    padding: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(33, 59, 59);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.makanan button{
+    pad:  5px 30px;
+    border:none;
+    outline: none;
+    background-color: #EC008C;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.makanan p{
+    padding: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(33, 59, 59);
+}
+
+@media screen and (max-width: 1000px){
+    .menu{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
