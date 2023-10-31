@@ -2,77 +2,49 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./register.css" type="text/css">
+    <link rel="stylesheet" href="register.css" type="text/css">
     <title>ExpenseNote</title>
 </head>
 
 <body>
     <div class="Register">
-        <h2>Login</h2>
+        <div class="imgkiri">
+            <img src="Asset/papandada.png" alt="">
+        </div>
+
+        <h2>Register</h2>
         <form>
-            <div class="kotak_input">
-                <label>Name</label>
-                <input type="text" name="name" id="name">
+            <div class="name">
+                <!-- <label>Name</label> -->
+                <input type="text" name="name" id="name" placeholder="Name">
             </div>
-            <div class="kotak_input">
-                <label>Username</label>
-                <input type="text" name="username" id="username">
+            <div class="username">
+                <!-- <label>Username</label> -->
+                <input type="text" name="username" id="username" placeholder="Username">
             </div>
-            <div class="kotak_input">
-                <label>Password</label>
-                <input type="password" name="password" id="password">
+            <div class="password">
+                <!-- <label>Password</label> -->
+                <input type="password" name="password" id="password" placeholder="password">
             </div>
-            <div class="kotak_input">
-                <label>Confirm Password</label>
-                <input type="password" name="confirm" id="confirm">
+            <div class="compass">
+                <!-- <label>Confirm Password</label> -->
+                <input type="password" name="confirm" id="confirm" placeholder="Confirm password">
             </div>
-            <div class="kotak_input">
-                <label>Gmail</label>
-                <input type="text" name="Gmail" id="Gmail">
+            <div class="Gmail">
+                <!-- <label>Gmail</label> -->
+                <input type="text" name="Gmail" id="Gmail" placeholder="Gmail">
             </div>
-            <div class="kotak_input">
-                <label>Phone Number</label>
-                <input type="number" name="phone" id="phone">
+            <div class="phone">
+                <!-- <label>Phone Number</label> -->
+                <input type="text" name="phone" id="phone" placeholder="Phone Number">
             </div>
 
-            <button type="button" id="buttonRegis" value="submit">Tambah Pengeluaran</button>
+            <button type="button" id="buttonRegis" value="submit">SUBMIT</button>
 
         </form>
     </div>
 
-    <script>
-        function coba() {
-            let name = document.getElementById('name').value;
-            let username = document.getElementById('username').value;
-            let password = document.getElementById('password').value;
-            let confirm = document.getElementById('confirm').value;
-            let Gmail = document.getElementById('Gmail').value;
-            let phone = document.getElementById('phone').value;
-            // alert(`name:${name},username:${username}`);
-            if (name == '' || username == '' || password == '' || confirm == '' || Gmail == '' || phone == '') {
-                alert("Tolong lengkapi semua data");
-                return;
-            }
-            alert(`${name},${username},${password},${confirm},${Gmail},${phone}`);
-        }
-        // buttonRegis.addEventListener('click', coba);
-
-        function cek() {
-            let name = document.getElementById('name').value;
-
-            if (name == '') {
-                alert("nama anda kososng");
-                let nameElement = document.getElementById('name');
-
-                nameElement.style.border = "1px solid red";
-                nameElement.style.backgroundColor = "red";
-            } else {
-                coba();
-                nameElement.style.border = "1px solid black";
-            }
-        }
-        buttonRegis.addEventListener('click', cek);
-    </script>
+    <script src="Register.js"></script>
 </body>
 
 </html>
