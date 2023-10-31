@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
+    <!-- Jika ada data dan tidak kosong maka akan diarahkan ke halaman selanjutnya, 
+    jika tidak maka akan ada pesan "DATA TIDAK BOLEH KOSONG" -->
     <div class = "nav">
         <div class = "logo">
             <a href="index.html">
@@ -18,29 +20,43 @@
         <br><br>
     <div class="container">
         <div class="card-container">
+            <br>
             <H1>Contact Us </H1>
-            <form name="formcontact">
-                <input type="text" placeholder="Nama" id="txtnama">
+            <form name="formcontact" action="masuk.html" method="post" onsubmit="return validasi()">
+                <!-- Nama -->
+                <input type="text" placeholder="Nama" id="txtnama" class="form-control" minlength="3">
                 <br>
-                <input type="number" placeholder="No Handphone" id="">
+                <!-- Handphone -->
+                <input type="number" placeholder="No Handphone" id="txtnumber" class="form-control" minlength="13">
                 <br>
-                <input type="text" placeholder="Email" id="">
-                <textarea name="text" placeholder="Deskripsi Kebutuhan" cols="30" rows="10"></textarea>
+                <!-- Email -->
+                <input type="text" placeholder="Email Aktif" id="txtemail" class="form-control">
+                <!-- Deskripsi -->
+                <textarea name="text" placeholder="Deskripsi Kebutuhan" cols="30" rows="10" id="txtdes"></textarea>
+                <!-- Button -->
                 <input type="submit" class="submit" value="Submit" id="button">
             </form>
         </div>
     </div>
     <script>
-        let form = document.forms.formcontact;
-        function kirim(){
-            let nama = document.getElementById('txtnama');
-            if(nama.value==''){
-                alert('Nama Tidak Boleh Kosong !');
-            }else{
-                form.submit();
+        function validasi() {
+            if (document.forms["formcontact"]["txtnama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["formcontact"]["txtnama"].focus();
+                return false;
+            }
+            if (document.forms["formcontact"]["txtemail"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["formcontact"]["txtemail"].focus();
+                return false;
+            }
+            if (document.forms["formcontact"]["txtdes"].value == "") {
+                alert("Masukan Deskrpsi.");
+                document.forms["formcontact"]["txtdes"].focus();
+                return false;
             }
         }
-        form.addEventListener('submit',kirim);
     </script>
+
 </body>
 </html>
