@@ -1,0 +1,131 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Untuk Background */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: block;
+}
+
+/* Class Header */
+.header{
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.header h1{
+    color: #EC008C;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    font-size: 50px;
+}
+
+.header span{
+    color: rgb(74, 147, 147);
+}
+
+/* Class Deskrpsi */
+.deskripsi{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 70%;
+    text-align: center;
+    color: #00003C;
+    /* font-weight:bold; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.deskripsi span{
+    color:#EC008C
+}
+
+/* Class tombol pesan */
+.pesan{ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    width: 70%;
+    /* top: 53%; */
+    height: 45px;
+    float: center;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: #EC008C;
+    margin-top: 0.2px;
+    box-shadow: 0px 21px 45px #0e788f;
+}
+
+/* Class logo */
+.logo{
+    float: left;
+    margin-left: 46px;
+    padding: 0px 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px; /*Ukuran font*/
+    font-weight: bold;
+}
+.logo a {
+    text-decoration: none;
+    color: #EC008C;
+
+}
+
+/* Class gambar */
+.gambar{
+    float: left;
+    margin-left: 130px;
+    margin-top: 120px;
+    
+}
+
+/* Class Navbar */
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 100%;
+}
+.nav ul{ 
+    /* Ditaruh disebelah kanan */
+    list-style: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 140px;
+}
+.nav ul{
+    list-style: none;
+    /* Ini rada error gakjelas */
+    display: inline-block;
+    color: #EC008C;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px 8px;
+}
+
+.kontak{
+    float: left;
+    margin-left: 30px;
+    margin-top: 650px;
+    color: #EC008C;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+

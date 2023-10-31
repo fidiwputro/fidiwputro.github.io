@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class = "nav">
+        <div class = "logo">
+            <a href="index.html">
+                <br>
+                GacoanEats
+            </a>
+        </div>
+        <br><br>
+    <div class="container">
+        <div class="card-container">
+            <H1>Contact Us </H1>
+            <form name="formcontact">
+                <input type="text" placeholder="Nama" id="txtnama">
+                <br>
+                <input type="number" placeholder="No Handphone" id="">
+                <br>
+                <input type="text" placeholder="Email" id="">
+                <textarea name="text" placeholder="Deskripsi Kebutuhan" cols="30" rows="10"></textarea>
+                <input type="submit" class="submit" value="Submit" id="button">
+            </form>
+        </div>
+    </div>
+    <script>
+        let form = document.forms.formcontact;
+        function kirim(){
+            let nama = document.getElementById('txtnama');
+            if(nama.value==''){
+                alert('Nama Tidak Boleh Kosong !');
+            }else{
+                form.submit();
+            }
+        }
+        form.addEventListener('submit',kirim);
+    </script>
+</body>
+</html>
