@@ -8,21 +8,27 @@
 
 <body>
     <div class="Login">
+        <div class="imgkiri">
+            <img src="Asset/kalkulator.png" alt="">
+        </div>
+
         <h2>Login</h2>
         <form>
-            <div class="kotak_input">
-                <label>Username</label>
-                <input type="text" name="username" id="username">
+            <div class="username">
+                <!-- <label>Username</label> -->
+                <input type="text" name="username" id="username" placeholder="Username">
             </div>
-            <div class="kotak_input">
-                <label>Password</label>
-                <input type="password" name="password" id="password">
+            <div class="password">
+                <!-- <label>Password</label> -->
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
 
-            <button type="submit">Tambah Pengeluaran</button>
+            <button type="button" id="buttonLogin" value="submit">SUBMIT</button>
 
         </form>
     </div>
+
+    <script src="Login.js"></script>
 </body>
 
 </html>
