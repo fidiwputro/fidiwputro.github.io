@@ -52,6 +52,16 @@ form input {
     width: 30%;
     padding: 40px;
     background: #4F709C;
+    /* box-sizing: border-box; */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.imgkiri img {
+    height: 70%;
+    width: 70%;
+    background: #4F709C;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
