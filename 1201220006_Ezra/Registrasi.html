@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Registrasi.css">
+</head>
+<body>
+    <form action="">
+        <div class="form">
+            <h1>For U</h1>
+            <ul>
+                <li class="inp-name"><input type="text" placeholder="name"></li>
+                <li class="inp-email"><input type="email" placeholder="email"></li>
+                <li class="inp-password"><input type="password" placeholder="password"></li>
+                <li class="inp-password-v"><input type="password" placeholder="password validation"></li>
+                <li class="btn-submit"><a href="" id="btnSubmit">SUBMIT</a></li>
+                <li class="btn-registrasi">
+                    SUDAH PUNYA AKUN?
+                    <br>
+                    <a href="Login.html">SIGN IN</a>
+                </li>
+            </ul>
+        </div>
+    </form>
+
+    <script>
+        // var submit
+
+        function test(){
+            let nama = document.getElementsByClassName('inp-name').value
+            let email = document.getElementsByClassName('inp-email').value
+            let password = document.getElementsByClassName('inp-password').value
+            alert("lanjut login",)
+        }
+
+        btnSubmit.addEventListener('click',test)
+    </script>
+</body>
+</html>

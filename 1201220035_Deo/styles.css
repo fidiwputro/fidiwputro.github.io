@@ -1,0 +1,123 @@
+/* 
+60 - #f0f2f1
+30 - #3b5d4f
+10 - #f8bf28 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Inter",sans-serif;
+}
+nav{
+    display: flex;
+    padding: 20px 10%;
+    align-items: center;
+    background-color: #3b5d4f;
+    justify-content: space-between;
+}
+nav h1{
+    color: #fff;
+    font-size: 24px;
+    font-family: "Poppins";
+}
+
+nav ul {
+    gap: 45px;
+    display: flex;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul .menu {
+    gap: 40px;
+    display: flex;
+    /* background-color: aqua; */
+}
+nav ul .menu li a:not(#active){
+    opacity: 0.5;
+}
+
+
+nav ul .pic {
+    gap: 40px;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+/* main */
+
+main .hero{
+    height: 60vh;
+    display: flex;
+    padding: 20px 10%;
+    align-items: center;
+    background-color: #3b5d4f;
+    justify-content: space-between;
+}
+
+main .hero .text{
+    color: #fff;
+    max-width: 400px;
+    /* background-color: #f8bf28; */
+}
+
+main .hero .text h1{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+main .hero .text p{
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+main .hero .text .button {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+main .hero .text .button #shop{
+    color: #3b5d4f;
+    font-weight: 600;
+    padding: 18px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid #f8bf28;
+    background-color: #f8bf28 ;
+}
+    main .hero .text .button #shop:hover{
+    transform: scale(102%);
+}
+main .hero .text .button #explore{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 18px 36px;
+    border-radius: 50px ;
+    border: 2px solid #fff;
+    opacity: 0.8;
+}
+    main .hero .text .button #explore:hover{
+        transform: scale(102%);
+    }
+main .hero img{
+    /* background-color: #f8bf28; */
+    top: 80px;
+    left:550px;
+    z-index: 2;
+    width: 700px;
+    position: absolute;
+}

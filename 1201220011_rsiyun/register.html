@@ -40,9 +40,11 @@
                             <div class="item-card">
                                 <div class="formel">
                                     <input type="text" id="username" name="username" placeholder="username">
+                                    <span id="alter-username" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
                                 </div>
                                 <div class="formel">
                                     <input type="email" id="email" name="email" placeholder="email">
+                                    <span id="alter-email" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
                                 </div>
                                 <div class="formel-icon">
                                     <div class="d-flex">
@@ -51,29 +53,42 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 16px; width: 16px;"> <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /> <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /> </svg>
                                         </div>
                                     </div>
+                                    <span id="alter-password" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
                                 </div>
                                 <div class="formel">
                                     <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                                    <span id="alter-confirm" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
                                 </div>
                                 <div class="formel">
                                     <input type="text" id="name" name="name" placeholder="Nama Lengkap">
+                                    <span id="alter-name" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
                                 </div>
                                 <div class="formel">
                                     <input type="text" id="address" name="address" placeholder="alamat">
+                                    <span id="alter-address" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
                                 </div>
                                 <div class="formel">
                                     <input type="text" id="city" name="city" placeholder="Kota">
+                                    <span id="alter-city" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
                                 </div>
-                                <select id="province" name="province" style="appearance: none; margin-bottom: 16px; padding: 16px; width: 365px; border-radius: 8px; background-color: transparent; border: 1px solid #cecece;">
-                                    <option value="" selected>Provinsi</option>
-                                    <option value="hurr">Durr</option>
-                                </select>
-                                <select id="country" name="country" style="appearance: none; margin-bottom: 16px; padding: 16px; width: 365px; border-radius: 8px; background-color: transparent; border: 1px solid #cecece;">
-                                    <option value="" selected>Negara</option>
-                                    <option value="hurr">Durr</option>
-                                </select>
+
+                                <div class="d-flex flex-column mb-16">
+                                    <select id="province" name="province" style="appearance: none; padding: 16px; width: 365px; border-radius: 8px; background-color: transparent; border: 1px solid #cecece;">
+                                        <option value="" selected>Provinsi</option>
+                                        <option value="hurr">Durr</option>
+                                    </select>
+                                    <span id="alter-province" class="text-xs text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="d-flex flex-column mb-16">
+                                    <select id="country" name="country" style="appearance: none; padding: 16px; width: 365px; border-radius: 8px; background-color: transparent; border: 1px solid #cecece;">
+                                        <option value="" selected>Negara</option>
+                                        <option value="hurr">Durr</option>
+                                        <option value="hurr">lai lai</option>
+                                    </select>
+                                    <span id="alter-country" class="text-xs text-danger pt-8 pl-8"></span>
+                                </div>
                                 
-                                <button type="submit" style="background-color: blue; color: white; padding: 8px 16px; border-radius: 8px; margin-bottom: 16px;">Register</button>
+                                <button id="submit" type="button" style="background-color: blue; color: white; padding: 8px 16px; border-radius: 8px; margin-bottom: 16px;">Register</button>
                                 <p class="text-xs">Forgot <span class="text-seablue">Username/password ?</span></p>
                                 <p class="text-xs">have an account? <span class="text-seablue">
                                     <a href="login.html" style="color: inherit;">Sign in</a>
@@ -83,5 +98,69 @@
             </div>
         </section>
     </main>
+    <script>
+
+        function requiredValue(id, alter, info) {
+            if(document.getElementById(id).value == ""){
+                document.getElementById(alter).classList.remove('d-hidden')
+                document.getElementById(alter).textContent = info
+                return false
+            }
+            if (!document.getElementById(alter).classList.contains('d-hidden')) {
+                document.getElementById(alter).classList.add('d-hidden')
+            }
+            return true
+        }
+        function isvalid() {          
+            let usernameValid = requiredValue('username', 'alter-username', 'username harus diisi')
+            let emailValid = requiredValue('email', 'alter-email', 'email harus diisi')
+            let password = requiredValue('password', 'alter-password', 'password harus diisi')
+            let confirm = requiredValue('confirmPassword', 'alter-confirm', 'konfirmasi password harus diisi')
+            let name = requiredValue('name','alter-name', 'nama harus diisi')
+            let cityValid = requiredValue('city','alter-city', 'Kota harus diisi')
+            let address = requiredValue('address','alter-address', 'alamat harus diisi')
+            let province = requiredValue('province','alter-province', 'Provinsi harus diisi')
+            let countryValid = requiredValue('country','alter-country', 'Country harus diisi')
+            let samePassword = true
+
+            
+            if(document.getElementById('confirmPassword').value != document.getElementById('password').value){
+                document.getElementById('alter-confirm').classList.remove('d-hidden')
+                document.getElementById('alter-confirm').textContent = 'konfirmasi dan password harus sama'
+                samePassword = false
+            }else if (!document.getElementById('alter-confirm').classList.contains('d-hidden')) {
+                document.getElementById('alter-confirm').classList.add('d-hidden')
+            }
+            const valid = usernameValid && emailValid && password && confirm && name && address && province && cityValid && countryValid && samePassword   
+            return valid;
+        }
+        function formValue() {
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let name = document.getElementById("name").value;
+            let address = document.getElementById("address").value;
+            let city = document.getElementById("city").value;
+            let province = document.getElementById("province").value;
+            var e = document.getElementById("country");
+            let country = e.options[e.selectedIndex].text;
+            console.log(country)
+            if (isvalid()) {
+                alert(`
+                username: ${username}
+                email: ${email}
+                password: ${password}
+                confirm password: ${confirmPassword}
+                name: ${name}
+                address: ${address}
+                city: ${city}
+                province: ${province}
+                `)
+                return;
+            }
+        }
+            document.getElementById("submit").addEventListener("click", formValue)
+    </script>
 </body>
 </html>

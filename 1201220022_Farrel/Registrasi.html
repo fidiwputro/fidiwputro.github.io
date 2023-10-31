@@ -5,19 +5,62 @@
 <title>LaptopLab Registration</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h2> Registration Form</h2>
+<body style="background-color:black;">
 
+<header>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">LaptopLab</h2>
+			</div>
+			
+			<div class="menu">
+				<ul>
+					<li><a href="laptop.html">HOME</a></li>
+					<li><a href="#">STORE</a></li>
+					<li><a href="#">PAYMENT</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+			<
+			
+			<div class="search">
+				<input class="srch" type="search" name="" placeholder=" search here">
+				<a href="a> <button class="btn> search</button></a>
+		</div>
+	</div>
+	</header>
+	
 <div class="regis">
+	<h2> Registration Form</h2>
 	<label for "email"><a>Email</a></label>
-	<input type="email" placeholder="Enter Your Email" email="email" required>
+	<input type="text" id="txtemail" name="txtemail" placeholder="Enter Your Email">
 	
 	<p label for "name"><a>Username</a></label>
-	<input type="text" placeholder="Enter Username" name="name" required>
+	<input type="text" id="txtname" name="txtname" placeholder="Enter Username">
 	
 	<p label for "pass"><a>Password</a></label>
-	<input type="password" placeholder="Enter Password" name="psw" required>
-	
-	<p> <button type="submit">Submit</button></p>
+	<input type="text" id="txtpass"  name="txtpass" placeholder="Enter Password">
+	<div>
+	<p> <input type="button" id="sumreg" name="sumreg" value="submit"/></p>
+	</div>
+	already have account <a href="login.html">Login</a>
 	
 </div>
+<script>
+	
+	function test(){
+		let Email= document.getElementById('txtemail').value;
+		let Username= document.getElementById('txtname').value;
+		let Password= document.getElementById('txtpass').value;
+		
+		alert(Email+' '+Username+' '+Password);
+	}
+	
+	sumreg.addEventListener('click',test);
+	
+	
+	
+</script>
+</body>
+</html>

@@ -11,19 +11,26 @@
     <div class="menu">
         <h2>ExpenseNote</h2>
         <ul>
-            <li><a href="./index.html">DASHBOARD</a></li>
+            <li><a href="./dashboard.html">DASHBOARD</a></li>
             <li><a href="./pengeluaran.html">PENGELUARAN</a></li>
-            <li><a href="./CatatanPribadi.html">CATATAN PRIBADI</a></li>
+            <li><a href="./CatatanPribadi.html" id="catatanpribadi">CATATAN PRIBADI</a></li>
         </ul>
         <img src="./Asset/Personal_icon.png" alt="">
     </div>
 
+
     <!-- ini isinya content -->
-    <div class="dash">
-        <h2>CATATAN PRIBADI</h2>
+    <div class="catatanpribadi">
+        <form id="catatan-form">
+            <div class="form-group">
+                <label for="">Catatan:</label>
+                <textarea id="catatan" name="catatan"></textarea>
+            </div>
+            <button type="submit">Tambah Catatan</button>
+        </form>
     </div>
 
-    <div class="daftarPengeluaran">
+    <div class="history">
         <h3>Daftar Catatan Pribadi</h3>
         <ul>
         </ul>
