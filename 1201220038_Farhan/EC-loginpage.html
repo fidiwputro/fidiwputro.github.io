@@ -13,16 +13,44 @@
             <div>
             <form>
                 <label for="email"><strong>Email</strong></label><br>
-                <input type="text" id="email" name="email"><br>
+                <input type="email" id="email" name="email"><br>
                 <label for="pswd"><strong>Password</strong></label><br>
                 <input type="password" id="pswd" name="pswd"><br><br>
-                <input type="submit" value="submit">
+                <input type="submit" value="Login" name="submit" id="submit"/>
             </form>
             </div>
 
-            <p>Belum punya akun?
-                <a href="EC-registerpage.html" target="_blank">Buat Akun</a>
+            <p>Belum punya akun? 
+                <a href="EC-registerpage.html" target="_blank"> Buat Akun</a>
                 sekarang!</p>
         </div>
+
+        <script>
+            let login = document.getElementById('submit');
+            let uname = document.getElementById('email');
+            let ps    = document.getElementById('pswd');
+
+            function valid () {
+                if (uname.value == '' && ps.value == '') {
+                    alert('kosong njir');
+                }
+
+                else if (uname.value == '') {
+                    alert('Email masih kosong');
+                }
+
+                else if (ps.value == '') {
+                    alert('Password masih kosong');
+                }
+
+                else {
+                    alert('Login berhasil');
+                }
+            }
+
+            login.addEventListener('click', valid);
+
+        </script>
+
     </body>
 </html>

@@ -15,12 +15,31 @@
                 <label for="username"><strong>Username</strong></label><br>
                 <input type="text" id="username" name="username"><br>
                 <label for="email"><strong>Email</strong></label><br>
-                <input type="text" id="email" name="email"><br>
+                <input type="email" id="email" name="email"><br>
                 <label for="pswd"><strong>Password</strong></label><br>
                 <input type="password" id="pswd" name="pswd"><br><br>
-                <input type="submit" value="Create Account">
+                <input type="submit" value="Create Account" name="submit" id="regsubmit">
             </form>
             </div>
         </div>
+
+        <script>
+            let regname = document.getElementById('username');
+            let regmail = document.getElementById('email');
+            let regps   = document.getElementById('pswd');
+            let regsub  = document.getElementById('regsubmit');
+
+            function validreg () {
+                if (regname.value == '' || regmail.value == '' || regps.value == ''){
+                    alert('gak lengkap mas');
+                }
+
+                else {
+                    alert("sip. lengkap mas");
+                }
+            }
+
+            regsub.addEventListener('click', validreg);
+        </script>
     </body>
 </html>
