@@ -14,23 +14,26 @@
                 <hr>
                 <p>Sehat Buat Kita Sendiri</p>
                 <label for="">Email</label>
-                <input type="text" 
-                placeholder="example@gmail.com">
+                <input type="text" id="mail" name="email" placeholder="example@gmail.com">
                 <label for="">Password</label>
-                <input type="Password"
-                placeholder="Password">
+                <input type="text" id="pwd" name="pwd" placeholder="Password">
                 <button>Login</button>
+                <input type="button" id="sbtreg" name="sbtreg" value="login">
                 <p>
-                    <a href="a">Forget Password</a>
+                    <a href="#">Forget Password</a>
                 </p>
             </form>
         </div class="right">
-            <img src="aset/fruits.png" alt=""
-        <div>
-
-        </div>
-        
+            <img src="aset/fruits.png" alt="">
     </div>
+    <script>
+        function test(){
+            let email = document.getElementById('email');
+            let Password = document.getElementById('pwd')
+            alert(email+''+Password);
+        }
+        sbteg.addEventListener('click',test)
+    </script>
     
 </body>
 </html>
