@@ -1,23 +1,41 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page Service-in Aja!</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="halaman-login">
         <div class="form-login">
-            <form>
+            <form name="form-login">
                 <h2>Login</h2>
                 <label for="username">Username : </label>
                 <input type="text" name="username" id="username"><br>
                 <label for="password">Password : </label>
                 <input type="password" name="password" id="password"><br><br>
-                <input type="button" value="Login"><br><br>
+                <button type="button" id="btnlogin">login</button><br><br>
                 <a href="register.html">Belum Punya Akun ?</a><br>
             </form>
         </div>
     </div>
+    <script>
+        let form = document.forms['form-login'];
+        function notifikasi(){
+            let uname = document.getElementById('username');
+            let pass = document.getElementById('password');
+            if (uname.value == '' || pass.value == '') {
+                alert('Username dan Password tidak boleh kosong :|');
+            } else{
+                alert('halo, ' + uname.value);
+            }
+        }
+
+        let login = document.getElementById('btnlogin');
+        login.addEventListener('click', notifikasi);
+    </script>
 </body>
+
 </html>

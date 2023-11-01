@@ -2,36 +2,33 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./login.css" type="text/css">
     <title>ExpenseNote</title>
 </head>
 
 <body>
-    <div class="login-box">
+    <div class="Login">
+        <div class="imgkiri">
+            <img src="Asset/kalkulator.png" alt="">
+        </div>
+
         <h2>Login</h2>
         <form>
-            <div class="user-box">
-                <input type="text" name="" required="">
-                <label>Username</label>
+            <div class="username">
+                <!-- <label>Username</label> -->
+                <input type="text" name="username" id="username" placeholder="Username">
             </div>
-            <div class="user-box">
-                <input type="password" name="" required="">
-                <label>Password</label>
+            <div class="password">
+                <!-- <label>Password</label> -->
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
-            <div class="button-container">
-                <a class="submit">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <!-- <div class="button-container">
-                        <button type="submit" class="submit">Submit</button>
-                    </div> -->
-                    Submit
-                </a>
-            </div>
+
+            <button type="button" id="buttonLogin" value="submit">SUBMIT</button>
+
         </form>
     </div>
+
+    <script src="Login.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,35 @@
+.konten{
+    /* border: rgb(107, 229, 213); */
+    /* border-style: double; */
+    display: flex;
+    width: 95%;
+    height: 90%;
+    /* justify-content: center; mengatur agar kontennya ditengah */
+    /* align-items: center; */
+    background-color: white;
+    box-shadow: 10px 10px 8px 0px black;
+    align-items: center;
+    justify-content: center;
+}
+.konten .Headr{
+    border: rgb(0, 0, 0);
+    border-style: double;
+    width:100%;
+    height: 23%;
+}
+.konten .mid{
+    border: rgb(0, 0, 0);
+    border-style: double;
+    width:100%;
+    height: 54%;
+    display: flex;
+    align-items: center;
+    margin: auto auto auto auto;
+    text-align: center;
+}
+.konten .botm{
+    border: rgb(0, 0, 0);
+    border-style: double;
+    width:100%;
+    height: 23%;
+}

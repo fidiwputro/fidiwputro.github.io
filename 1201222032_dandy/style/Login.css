@@ -16,17 +16,18 @@ body {
     flex-direction: row;
 }
 
-.Logo {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 40px;
-    margin: 50px 50px 20px 50px;
-}
 
 .loginLeft {
     background-color: var(--third-color);
     width: 50%;
     height: 100vh;
+}
+
+.Logo {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 40px;
+    margin: 50px 50px 20px 50px;
 }
 
 p {

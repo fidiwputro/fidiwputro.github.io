@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #666;
+        margin-block: 6rem;
+        padding: 4rem;
+        border-radius: 1rem;
+      }
+
+      header div {
+        text-align: center;
+      }
+
+      header div p a {
+        border-bottom: 1px solid #000;
+      }
+
+      header form {
+        margin-block: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header form div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-block-end: 2rem;
+      }
+
+      header form div p {
+        opacity: 0.5;
+      }
+
+      header form label {
+        margin-block-end: 0.25rem;
+        color: #666;
+        font-weight: 600;
+      }
+
+      header form div input {
+        width: 44.5rem;
+        border-radius: 0.75rem;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      header form div input:focus {
+        border: #000 solid 2px;
+        outline: #000 solid 1px;
+      }
+
+      header form div button {
+        width: 44.5rem;
+        height: 4rem;
+        border-radius: 999rem;
+        background-color: #1c1e53;
+        border: #1c1e53 solid 1px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.75s;
+        font-size: 1.25rem;
+      }
+
+      header form div button:hover {
+        background: #fff;
+        color: #1c1e53;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Create an account</h1>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+
+      <form>
+        <div>
+          <label for="username" class="label">username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username" />
+        </div>
+
+        <div>
+          <label for="email" class="label">email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email" />
+        </div>
+
+        <div>
+          <label for="password" class="label">password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password" />
+          <p>
+            Use 8 or more characters with a mix of letters, numbers & symbols
+          </p>
+        </div>
+
+        <div>
+          <button type="submit" onclick="validateForm(event)">
+            Create an account
+          </button>
+        </div>
+      </form>
+    </header>
+
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+
+        const username = document.querySelector("#username").value;
+        const email = document.querySelector("#email").value;
+        const password = document.querySelector("#password").value;
+
+        if (username === "" || email === "" || password === "") {
+          document.querySelector("#username").style.border = "2px solid red";
+          document.querySelector("#email").style.border = "2px solid red";
+          document.querySelector("#password").style.border = "2px solid red";
+          alert("Input Can't be Empty!");
+          return false;
+        }
+        document.querySelector("#username").style.border = "2px solid black";
+        document.querySelector("#email").style.border = "2px solid black";
+        document.querySelector("#password").style.border = "2px solid black";
+        alert("Succes Submit!");
+        return true;
+      }
+    </script>
+  </body>
+</html>
