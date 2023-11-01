@@ -2,30 +2,83 @@
 <html lang="en">
 <head>
     <title>Tampilan Utama</title>
-    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="wadah">
-    <div class="logo">J0nkSh0p
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="all">
-        <div class="desc">
-            <h1>Barang Bekas</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Neque, inventore? Quaerat qui pariatur inventore nemo recusandae,
-                quos cum autem, sed et architecto,
-                nostrum adipisci voluptates in dolorum dignissimos repudiandae facilis.
-            </p>
-            <button type="button">Get Started</button>
+        <div class="logo">J0nkSh0p
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button>Sign In</button>
+                <button>Sign Up</button>
+            </div>
         </div>
+        <div class="kotak-form">
+            <div class="wadah-pendaftaran" id="pendaftaran">
+                <div class="atas">
+                    <span>Have an account? <a href="#" onclick="login()">login</a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="dua-form">
+                    <form id="formregistrasi">
+                        <div class="inputan">
+                            <input type="text" class="input1" placeholder="Firstname" id="firstName">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="inputan">
+                            <input type="text" class="input1" placeholder="Lastname" id="lastName">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="inputan">
+                            <input type="text" class="input1" placeholder="Email" id="email">
+                            <i class="bx bx-envelop"></i>
+                        </div>
+                        <div class="inputan">
+                            <input type="password" class="input1" placeholder="Password" id="password">
+                            <i class="bx bx-kunci"></i>
+                        </div>
+                        <div class="inputan">
+                            <input type="submit" class="submit" value="Register">
+                        </div>
+                        <div class="two-cool">
+                            <div class="one">
+                                <input type="checkbox" id="cek-pendaftaran">
+                                <label for="cek-pendaftaran"> Remember Me </label>
+                            </div>
+                            <div class="dua">
+                                <label><a href="#"> Terms & Conditions </a></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        let form = document.getElementById('formregistrasi');
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            let firstName = document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            if (firstName == '' || lastName == '' || email == '' || password == '') {
+                alert("MOHON YANG KOSONG DIISI!");
+            } else {
+                alert("TERIMAKASIH TELAH MENDAFTAR");
+                form.submit();
+            }
+        });
+    </script>
 </body>
 </html>
+
+
+
