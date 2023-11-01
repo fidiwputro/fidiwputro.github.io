@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="img/logo.png" alt="logo" />
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <!-- form -->
+    <div class="form">
+      <h1>Login</h1>
+      <form name="formlogin">
+        <div class="label">
+          <label for="username">Username :</label>
+        </div>
+        <div class="input">
+          <input type="text" id="username" name="username" />
+        </div>
+        <div class="label">
+          <label for="password">Password :</label>
+        </div>
+        <div class="input">
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="button">
+          <button type="submit" name="submit" id="submit" value="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <!-- akhir form -->]
+    <script>
+      // let tombol = document.getElementById("submit");
+      // function klik1() {
+      //   alert("satu");
+      // }
+      // function klik2() {
+      //   alert("dua");
+      // }
+
+      // tombol.addEventListener("click", klik1);
+      // tombol.addEventListener("click", klik2);
+
+      // let login = document.forms.formlogin;
+      // let nama = login.elements.username;
+      // let btn = document.getElementById("submit");
+      // function tampil() {
+      //   alert(nama.value);
+      // }
+      // btn.addEventListener("click", tampil);
+
+      let form = document.forms.formlogin;
+      function kirim() {
+        let nama = document.getElementById("username");
+        let password = document.getElementById("password");
+        if (nama.value == "" && password.value == "") {
+          alert("username dan password harap diisi");
+        } else if (nama.value == "") {
+          alert("username harap diisi");
+        } else if (password.value == "") {
+          alert("password harap diisi");
+        } else {
+          form.submit();
+        }
+      }
+      form.addEventListener("submit", kirim);
+    </script>
+  </body>
+</html>

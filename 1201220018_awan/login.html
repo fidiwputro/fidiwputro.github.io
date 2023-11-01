@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <form action="">
+                <h1>Login</h1>
+                <hr>
+                <p>Sehat Buat Kita Sendiri</p>
+                <label for="">Email</label>
+                <input type="text" id="mail" name="email" placeholder="example@gmail.com">
+                <label for="">Password</label>
+                <input type="text" id="pwd" name="pwd" placeholder="Password">
+                <button>Login</button>
+                <input type="button" id="sbtreg" name="sbtreg" value="login">
+                <p>
+                    <a href="#">Forget Password</a>
+                </p>
+            </form>
+        </div class="right">
+            <img src="aset/fruits.png" alt="">
+    </div>
+    <script>
+        function test(){
+            let email = document.getElementById('email');
+            let Password = document.getElementById('pwd')
+            alert(email+''+Password);
+        }
+        sbteg.addEventListener('click',test)
+    </script>
+    
+</body>
+</html>

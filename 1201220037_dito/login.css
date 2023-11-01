@@ -1,0 +1,81 @@
+body {
+    background-color: #c8d8ed;
+}
+
+.Login {
+    border: 1px black;
+    width: 70%;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    height: 66vh;
+    display: flex;
+    background-color: #d9dee4;
+    box-shadow: 10px 10px 8px rgba(191, 191, 191, 0.403);
+    border-radius: 20px;
+}
+
+.Login .imgkiri img {
+    /* background-size: contain;
+    object-fit: contain;
+    overflow: hidden; */
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.Login h2 {
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    right: 220px;
+    top: 10px;
+    font-size: 40px;
+}
+
+.Login input {
+    height: 50px;
+    width: 240px;
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgb(200, 200, 200);
+}
+
+.Login .username input {
+    left: 680px;
+    top: 150px;
+}
+
+.Login .password input {
+    left: 680px;
+    top: 250px;
+}
+
+.Login button {
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #E5D283;
+    color: #213555;
+    border-radius: 13px;
+    margin-top: 20px;
+    position: absolute;
+    top: 350px;
+    right: 180px;
+    border: none;
+}
+
+.Login button:hover {
+    background: #E5D283;
+    color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 0 5px #E5D283,
+        0 0 25px #E5D283,
+        0 0 50px #E5D283,
+        0 0 100px #E5D283;
+    transition: 0.5s ease;
+}

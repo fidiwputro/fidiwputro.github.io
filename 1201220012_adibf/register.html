@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="img/logo.png" alt="logo" />
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <!-- form -->
+    <div class="form">
+      <h1>Register</h1>
+      <form name="formregist">
+        <div class="label">
+          <label for="username">Username :</label>
+        </div>
+        <div class="input">
+          <input type="text" id="username" name="username" />
+        </div>
+        <div class="label">
+          <label for="email">Email : </label>
+        </div>
+        <div class="input">
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="label">
+          <label for="nohp">No Hp :</label>
+        </div>
+        <div class="input">
+          <input type="tel" id="nohp" name="nohp" />
+        </div>
+        <div class="label">
+          <label for="password">Password :</label>
+        </div>
+        <div class="input">
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="label">
+          <label for="kpassword">Konfirmasi Password :</label>
+        </div>
+        <div class="input">
+          <input type="password" id="kpassword" name="kpassword" />
+        </div>
+        <div class="button">
+          <button type="submit" name="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <!-- akhir form -->
+    <script>
+      let form = document.forms.formregist;
+      function kirim() {
+        let nama = document.getElementById("username");
+        let email = document.getElementById("email");
+        let nohp = document.getElementById("nohp");
+        let password = document.getElementById("password");
+        let kpassword = document.getElementById("kpassword");
+        if (nama.value == "" || email.value == "" || nohp.value == "" || password.value == "" || kpassword.value == "") {
+          alert("harap isi semua inputan");
+        } else {
+          form.submit();
+        }
+      }
+      form.addEventListener("submit", kirim);
+    </script>
+  </body>
+</html>

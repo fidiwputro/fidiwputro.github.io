@@ -3,33 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="kucing.png" type="image/png" rel="shortcut icon"/>
+	<link href="images/kucing.png" type="image/png" rel="shortcut icon"/>
     <link rel="stylesheet" href="style.css">
 	<title> HAY MIAW CARE SHOP.com </title>
 </head>
 
 <body>
-	<!---NAVBAR--->
+	
 	<div class="navigasi">
-			<div class="logo">
-				<img src="logo.png" width="360" height= "98">
-			</div>
-	
-            <div class="menu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-					<li><a href="masuk.html">Log In</a></li>
-                    <li><a href="miaw.html">Service</a></li>
-                    <li><a href="home.html">Contact</a></li>
-					<li><a href="cart.html"><img src="images/cart.png"></a></li>
-                </ul>
-            </div>		
-	</div>
+    <div class="logo">
+        <img src="images/logo.png" width="360" height="98">
+    </div>
 
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+
+            <li class="submenu">
+                <a href="shop.html">SHOP</a>
+                <ul class="submenu-content">
+                    <li><a href="makanan.html">FOOD</a></li>
+                    <li><a href="mainan.html">TOYS</a></li>
+                    <li><a href="kebersihan.html">CLEANING TOOL</a></li>
+                    <li><a href="obat.html">MEDICINE</a></li>
+                </ul>
+            </li>
+
+            <li class="submenu">
+                <a href="miaw.html">Service</a>
+                <ul class="submenu-content">
+                    <li><a href="hotel.html">HOTEL</a></li>
+                    <li><a href="miawcare.html">CARE</a></li>
+                    <li><a href="playground.html">PLAYGROUND</a></li>
+                </ul>
+            </li>
+
+            <li><a href="home.html">Contact</a></li>
+			
+            <li class="search-box">
+                <form action="#" method="get">
+                    <input type="text" name="query" placeholder="Search">
+                    <button type="submit">Search</button>
+                </form>
+            </li>
+        
+        <li class="submenuakun">
+            <img src="images/akun1.png"></a>
+            <ul class="submenudua-content">
+                <li>
+                    <!-- FORM SIGN UP -->
+                    <form class="signup-form" action="register.html" method="post">
+                        <h2>Create an Account</h2>
+                        <!-- ...TOMBOL SIGN UP  -->
+                        <button type="submit">Sign Up</button></a>
+                    </form>
+                </li>
+                <li>
+                    <!-- Form Sign In -->
+                    <form class="signin-form" action="shop.html" method="post">
+                        <h2>Sign In</h2>
+                        <label for="signin-username">Username Or Email:</label>
+                        <input type="text" id="signin-username" name="signin-username">
+                        
+                        <label for="signin-password">Password:</label>
+                        <input type="password" id="signin-password" name="signin-password">
+						
+
+                        <button type="submit">Sign In</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+		<li><a href="cart.html"><img src="images/cart.png"></a></li>
+			
+    </ul>
+</div>
 	
-	<!-- ini isinya content -->
+	
 	<div class="kucing">
 		<h1>Hai...Miaw Care<span>Shop</span></h1>
             <p>“ HAY MIAW CARE SHOP “ adalah sebuah platform yang didedikasikan 
@@ -51,42 +102,44 @@
             <p class="read">Read More</p>
             <p>Shop Now</p>
     </div>
-
 	
-
 	
-	<!--About Page (kotak categori kucing)-->
+<!--About Page-->
 
-   	 <div class="about">
+    <div class="about">
 		<center><h1>--------------------- CATEGORY --------------------</h1></center>
 		
         <div class="box">
-            <div class="card">
+
+            <div class="cards">
                 <img src="images/category-1.png">
-		<center><p>--------- CAT FOOD ---------</p></center>
+				  <center><p>--------- CAT FOOD ---------</p></center>
             </div>
-            <div class="card">
+            <div class="cards">
                 <img src="images/category-2.jpg">
-		<center><p>--------- CAT TOYS ---------</p></center>
+				  <center><p>--------- CAT TOYS ---------</p></center>
             </div>
-	    <div class="card">
+			<div class="cards">
                 <img src="images/category-3.png">
-	        <center><p>--------- CLEANING TOOL ---------</p></center>
+				  <center><p>--------- CLEANING TOOL ---------</p></center>
             </div>
-	    <div class="card">
+			<div class="cards">
                 <img src="images/category-5.png">
-	        <center><p>--------- CAT MEDICINE ---------</p></center>
+				  <center><p>--------- CAT MEDICINE ---------</p></center>
             </div>
         </div>
 	 
-	 <!--About Page (kotak service kucing)-->
-	<hr>
+	 
+	 
+		<hr>
             <div class="miaw">
             <center><h1>*********** SERVICE *********** </h1></center>
             
             <div class="miaw_box">
                 <div class="miaw_card">
+					<a href="miawcare.html">
                     <img src="images/mandi4.png">
+					</a>
                     <h1>MIAW CARE</h1>
                     <p>
                        Melayani Jasa Grooming Kucing 
@@ -96,8 +149,10 @@
                     </p>
                 </div> 
 				
-		<div class="miaw_card">
+				<div class="miaw_card">
+					<a href="hotel.html">
                     <img src="images/hotel2.png">
+					</a>
                     <h1>HOTEL MIAW</h1>
                     <p>
                         Melayani Jasa Penitipan Kucing Harian Dengan Pelayanan Terpecaya
@@ -106,8 +161,10 @@
                     </p>
                 </div>		
 					
-		<div class="miaw_card">
+				<div class="miaw_card">
+					<a href="playground.html">
                     <img src="images/bermain.png">
+					</a>
                     <h1>MIAW PLAYGROUND</h1>
                     <p>
                        Cat Playground adalah ruang bermain khusus yang dirancang untuk kucing agar 
@@ -115,11 +172,10 @@
 					   AYOOO AJAK ANABULMU KE MIAW PLAYGROUND !!
                     </p>
                 </div>	
-	    </div>
-	 </div>
-	</hr>
+			</div>
+			</div>
+		</hr>
 		
-	 <!--About Page (kotak produk kucing)-->
 	
 		<div class="produk">
 		<center><h1>::::::::: PRODUK TERLARIS ::::::::: </h1></center>
@@ -132,55 +188,55 @@
 			
 			<div class="cards">
 				<p> FRISKIES ADULT TUNA DRY 450gr </p>
-                                <img src="images/mkn2.png" alt="makan kucing">
+                <img src="images/mkn2.png" alt="makan kucing">
 				<p>Rp 40.000</p>
-                         </div>
+            </div>
 			
 			<div class="cards">
 				<p> ROYAL CANIN KITTEN DRY 400gr </p>
-                                <img src="images/mkn3.png" alt="makan kucing">
+                <img src="images/mkn3.png" alt="makan kucing">
 				<p>Rp 120.000</p>
-                        </div>
+            </div>
 			
 			
 			<div class="cards">
 				<p> ROYAL CANIN KITTEN DRY 400gr </p>
-                                <img src="images/mkn3.png" alt="makan kucing">
+                <img src="images/mkn3.png" alt="makan kucing">
 				<p>Rp 120.000</p>
-                        </div>
+            </div>
 			
 			<div class="cards">
 				<p> Me-O KITTEN OCEAN FISH DRY 1,1kg</p>
-                                <img src="images/mkn5.png" alt="makan kucing">
+                <img src="images/mkn5.png" alt="makan kucing">
 				<p>Rp 61.000</p>
-                        </div>
+            </div>
 			
 			<div class="cards">
 				<p> Me-O KITTEN OCEAN FISH DRY 1,1kg</p>
-                                <img src="images/mkn5.png" alt="makan kucing">
+                <img src="images/mkn5.png" alt="makan kucing">
 				<p>Rp 61.000</p>
-                        </div>
+            </div>
 		</div>
-		 
-	 <!--About Page (kotak kontak kucing)-->
-
-	<hr>
+		
+		<hr>
             <div class="contact">
             <center><h1>:::: CONTACT :::: </h1></center>
             
             <div class="box">
                 <div class="card">
-                <img src="images/kontak1.png">
+				
+               
+					<img src="images/kontak1.png">
 				
             </div>
             
-	    </div>
-	</hr>
+			</div>
+		</hr>
 		
 		
 	<footer>
-        <p>&copy; 2023 HAY MIAW CARE SHOP.com. By Nur Cahyani Astika Fauzi.</p>
-        </footer>
+        <p>&copy; 2023 HAY MIAW CARE SHOP.com. All rights reserved.</p>
+    </footer>
 		
 		
 

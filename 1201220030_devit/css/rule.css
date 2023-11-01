@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgb(17 24 39 ); 
+    font-family: 'Unifont','Fira Code',monospace;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    top: 0;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 20px 13%;
+    background-color: rgb(17 24 39 );
+    z-index: 1000;
+    color: rgb(217 249 157 );
+    
+}
+
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(217 249 157 );
+}
+
+
+.logo img{
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-clean{
+    list-style: none;
+    display: flex;
+}
+
+.nav-clean li{
+    margin-right: 20px;
+}
+
+.nav-clean li a{
+    color: rgb(217 249 157 );
+}
+
+.login-button{
+    background-color: rgb(190 242 100 );
+    color: rgb(51 85 0 );
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(156 163 175 );
+    background-color: rgb(31 41 55 );
+}
+
+.footer a{
+    color: #3a4ade;
+}
+
+/* RULE AREA */
+
+.area-utama{
+    margin-top: 150px;
+    padding: 0 33%;
+    color: rgb(217 249 157 );
+}
+
+.rule-des h1{
+    justify-content: center;
+    text-align: center;
+}
+
+.rule-des ul{
+    margin: 20px 0;
+}
+
+.rule-des ul li{
+    list-style: none;
+    color: aliceblue;
+}
+
+.rule-des-2 h1{
+    justify-content: center;
+    text-align: center;
+}
+
+.rule-des-2 p{
+    margin: 2px 0;
+    color: aliceblue;
+}
+
+.rule-des-2 h3{
+    margin: 5px 0;
+}
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/utilities.css" type="text/css">
+    <title>login</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar-fixed bg-white">
+            <div class="w-850px px-16 md:px-0 d-flex items-center justify-between">
+                <div class="d-flex gap-4 items-center">
+                    <button class="md:hidden d-flex min-w-[24px] min-h-[24px] justify-center items-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                    </button>
+                    <h1 class="text-seablue">
+                        <a href="index.html" style="color: inherit;">portal</a> 
+                    </h1>
+                </div>
+                <div class="d-flex items-center justify-center gap-4">
+                    <button class="d-flex justify-center items-center">
+                        <svg stroke="currentColor" class="text-2xl min-w-[24px]" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                    </button>
+                    <button class="d-flex justify-center items-center">
+                        <a href="login.html" style="text-decoration: none; color: black;">
+                            <svg stroke="currentColor" class="text-2xl min-w-[24px]" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z"></path><path d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z"></path></svg>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <div class="auth-card">
+                    <h2 class="text-seablue my-16 text-align-center">Register Page</h2>
+                    <form action="">
+                            <div class="item-card">
+                                <div class="formel">
+                                    <input type="text" id="username" name="username" placeholder="username">
+                                    <span id="alter-username" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="formel">
+                                    <input type="email" id="email" name="email" placeholder="email">
+                                    <span id="alter-email" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="formel-icon">
+                                    <div class="d-flex">
+                                        <input type="password" id="password" name="password" placeholder="password">
+                                        <div class="icon-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 16px; width: 16px;"> <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /> <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /> </svg>
+                                        </div>
+                                    </div>
+                                    <span id="alter-password" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="formel">
+                                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                                    <span id="alter-confirm" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="formel">
+                                    <input type="text" id="name" name="name" placeholder="Nama Lengkap">
+                                    <span id="alter-name" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="formel">
+                                    <input type="text" id="address" name="address" placeholder="alamat">
+                                    <span id="alter-address" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="formel">
+                                    <input type="text" id="city" name="city" placeholder="Kota">
+                                    <span id="alter-city" class="text-xs d-hidden text-danger pt-8 pl-8"></span>
+                                </div>
+
+                                <div class="d-flex flex-column mb-16">
+                                    <select id="province" name="province" style="appearance: none; padding: 16px; width: 365px; border-radius: 8px; background-color: transparent; border: 1px solid #cecece;">
+                                        <option value="" selected>Provinsi</option>
+                                        <option value="hurr">Durr</option>
+                                    </select>
+                                    <span id="alter-province" class="text-xs text-danger pt-8 pl-8"></span>
+                                </div>
+                                <div class="d-flex flex-column mb-16">
+                                    <select id="country" name="country" style="appearance: none; padding: 16px; width: 365px; border-radius: 8px; background-color: transparent; border: 1px solid #cecece;">
+                                        <option value="" selected>Negara</option>
+                                        <option value="hurr">Durr</option>
+                                        <option value="hurr">lai lai</option>
+                                    </select>
+                                    <span id="alter-country" class="text-xs text-danger pt-8 pl-8"></span>
+                                </div>
+                                
+                                <button id="submit" type="button" style="background-color: blue; color: white; padding: 8px 16px; border-radius: 8px; margin-bottom: 16px;">Register</button>
+                                <p class="text-xs">Forgot <span class="text-seablue">Username/password ?</span></p>
+                                <p class="text-xs">have an account? <span class="text-seablue">
+                                    <a href="login.html" style="color: inherit;">Sign in</a>
+                                </span></p>
+                            </div>
+                    </form>
+            </div>
+        </section>
+    </main>
+    <script>
+
+        function requiredValue(id, alter, info) {
+            if(document.getElementById(id).value == ""){
+                document.getElementById(alter).classList.remove('d-hidden')
+                document.getElementById(alter).textContent = info
+                return false
+            }
+            if (!document.getElementById(alter).classList.contains('d-hidden')) {
+                document.getElementById(alter).classList.add('d-hidden')
+            }
+            return true
+        }
+        function isvalid() {          
+            let usernameValid = requiredValue('username', 'alter-username', 'username harus diisi')
+            let emailValid = requiredValue('email', 'alter-email', 'email harus diisi')
+            let password = requiredValue('password', 'alter-password', 'password harus diisi')
+            let confirm = requiredValue('confirmPassword', 'alter-confirm', 'konfirmasi password harus diisi')
+            let name = requiredValue('name','alter-name', 'nama harus diisi')
+            let cityValid = requiredValue('city','alter-city', 'Kota harus diisi')
+            let address = requiredValue('address','alter-address', 'alamat harus diisi')
+            let province = requiredValue('province','alter-province', 'Provinsi harus diisi')
+            let countryValid = requiredValue('country','alter-country', 'Country harus diisi')
+            let samePassword = true
+
+            
+            if(document.getElementById('confirmPassword').value != document.getElementById('password').value){
+                document.getElementById('alter-confirm').classList.remove('d-hidden')
+                document.getElementById('alter-confirm').textContent = 'konfirmasi dan password harus sama'
+                samePassword = false
+            }else if (!document.getElementById('alter-confirm').classList.contains('d-hidden')) {
+                document.getElementById('alter-confirm').classList.add('d-hidden')
+            }
+            const valid = usernameValid && emailValid && password && confirm && name && address && province && cityValid && countryValid && samePassword   
+            return valid;
+        }
+        function formValue() {
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let name = document.getElementById("name").value;
+            let address = document.getElementById("address").value;
+            let city = document.getElementById("city").value;
+            let province = document.getElementById("province").value;
+            var e = document.getElementById("country");
+            let country = e.options[e.selectedIndex].text;
+            console.log(country)
+            if (isvalid()) {
+                alert(`
+                username: ${username}
+                email: ${email}
+                password: ${password}
+                confirm password: ${confirmPassword}
+                name: ${name}
+                address: ${address}
+                city: ${city}
+                province: ${province}
+                `)
+                return;
+            }
+        }
+            document.getElementById("submit").addEventListener("click", formValue)
+    </script>
+</body>
+</html>

@@ -4,10 +4,6 @@
   font-family: sans-serif;
 }
 
-.logo {
-  width: 120px;
-}
-
 .navbar {
   margin: auto;
   padding: 10px 0;
@@ -19,27 +15,32 @@
 
 .navbar ul li {
   display: inline-block;
+  background-color: black;
   margin: 0 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 
 .navbar ul li a:hover {
-  color: white;
+  color: orange;
 }
 
 .content-home {
   text-align: center;
   color: white;
+  padding-top: 100px;
 }
 
 .content-about {
   text-align: center;
   color: black;
+  padding-top: 100px;
 }
 
 .content-home h1,
@@ -49,8 +50,7 @@
 
 .content-home p,
 .content-about p {
-  font-weight: 100;
-  line-height: 25px;
+  font-weight: 10;
 }
 
 .home {
@@ -61,4 +61,59 @@
 .about {
   background-color: white;
   height: 662px;
+}
+
+footer {
+  background-color: black;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+.form {
+  background-color: black;
+  color: white;
+  height: 430px;
+  width: 600px;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form input {
+  width: 400px;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  height: 25px;
+}
+
+.form button {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+  width: 100px;
+}
+
+.form button:hover {
+  color: white;
+}
+
+.form .label {
+  margin-left: 100px;
+}
+.form .input {
+  text-align: center;
+}
+
+.form .button {
+  text-align: center;
 }

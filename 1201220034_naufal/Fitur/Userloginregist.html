@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <title>Web Login Regist</title>
+        <link rel="stylesheet" type="text/css" href="userloginregist.css">
+    </head>
+    <body>
+        <div class="halamanlogin">
+            <div class="Registrasi"><p>Registrasi</p>
+                <form>
+                    <label for="UsernameR">Username Baru
+                    </label><br>
+                    <input type="text" class="UsernameR"><br>
+                    <label for="PasswordR">Password Baru
+                    </label><br>
+                    <input type="password" class="PasswordR"><br>
+                    <label for="KonfirmasiR">Ulangi Password
+                    </label><br>
+                    <input type="password" class="KonfirmasiR"><br>
+                    <label for="TTL">Tempat Tanggal Lahir</label>
+                    <label><br>
+                    <input type="date">
+                    <br>
+                    <button class="TombolR">Registrasi</button>
+                </form>
+            </div>
+            <div class="Login"><p>Login</p>
+                <form>
+                    <label for="UsernameL">Username
+                    </label><br>
+                    <input type="text" class="UsernameL"><br>
+                    <label for="PasswordL">Password
+                    </label><br>
+                    <input type="password" class="PasswordL"><br>
+                    <button class="TombolL">Login</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            let tombol = document.getElementsByClassName("Tomboll");
+            alert(tombol.value);
+        </script>
+    </body>
+
+
+</html>
