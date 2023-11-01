@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link href="EC-registerpage.css" type="text/css" rel="stylesheet"/>
+
+    </head>
+
+    <body>
+        <div class="register">
+            <H1>REGISTER</H1>
+            <br>
+
+            <div>
+            <form>
+                <label for="username"><strong>Username</strong></label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="email"><strong>Email</strong></label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="pswd"><strong>Password</strong></label><br>
+                <input type="password" id="pswd" name="pswd"><br><br>
+                <input type="submit" value="Create Account" name="submit" id="regsubmit">
+            </form>
+            </div>
+        </div>
+
+        <script>
+            let regname = document.getElementById('username');
+            let regmail = document.getElementById('email');
+            let regps   = document.getElementById('pswd');
+            let regsub  = document.getElementById('regsubmit');
+
+            function validreg () {
+                if (regname.value == '' || regmail.value == '' || regps.value == ''){
+                    alert('gak lengkap mas');
+                }
+
+                else {
+                    alert("Register berhasil dengan Username ["+ regname.value + "] dan Email [" +regmail.value + "]");
+                }
+            }
+
+            regsub.addEventListener('click', validreg);
+        </script>
+    </body>
+</html>

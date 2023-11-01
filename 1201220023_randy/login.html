@@ -19,7 +19,7 @@
     </nav>
     <!--Form Login-->
     <div>
-        <form >
+        <form name="loginduluges">
             <h1>Login</h1>
             <div class="login_form">
                 <div>
@@ -28,7 +28,7 @@
                 </div>
                 <div>
                     <label>Password :</label>
-                    <input type="text" id="fpw" name="fpw">
+                    <input type="password" id="fpw" name="fpw">
                 </div>
                 <div>
                     <button>Submit</button>
@@ -36,5 +36,19 @@
             </div>
         </form>
     </div>
+    <!--Script JS-->
+    <script>
+        let form = document.forms.loginduluges;
+        function kirim() {
+            let email = document.getElementById("femail");
+            let pw = document.getElementById("fpw");
+            if (email.value == "" || pw.value == "" ) {
+                alert('Username atau password salah!');
+            }else {
+                alert('Berhasil login');
+            }
+        }
+        form.addEventListener("submit", kirim);
+    </script>
 </body>
 </html>

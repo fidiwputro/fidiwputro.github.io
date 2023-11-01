@@ -1,6 +1,7 @@
 {
 	margin: 0;
 	padding: 0;
+
 }
 
 .navbar{
@@ -112,12 +113,13 @@ main .dashboard img{
 }
 
 .login{
-        margin: 250px auto;
+        margin:150px auto;
         width: 500px;
-        padding: 50px;
+        padding: 0px;
         border: 0px solid #ccc;
         background:black;
 		color:red;
+		
     }
     input[type=text], input[type=password], input[type=email]{
         margin: 5px auto;
@@ -140,12 +142,13 @@ main .dashboard img{
 }
 
 .regis{
-        margin: 250px auto;
+        margin: 50px auto;
         width: 500px;
         padding: 50px;
         border: 0px solid #ccc;
         background:black;
 		color:red;
+		overflow:hidden;
     }
     input[type=text], input[type=password] {
         margin: 5px auto;
