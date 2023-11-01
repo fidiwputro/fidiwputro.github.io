@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background-image: url("/1201220006_Ezra/assets/Untitled.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    /* border: 4px solid tomato; */
+}
+
+.out-form {
+    background-image: url("/1201220006_Ezra/assets/Untitled\ \(1\).png");
+    width: 605px;
+    height: 658px;
+}
+
+.out-form .logo {
+    text-align: center;
+    margin: 11rem auto 4rem auto;
+} 
+
+.out-form p {
+    text-align: center;
+}
+
+.btn-login {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.btn-login a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 13px 2rem;
+    font-size: 21px;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-login a:hover {
+    box-shadow: 5px 6px 4.5px 1px gray ;
+}
+
+.in-form {
+    margin: 2.1rem auto;
+    width: 21.1rem;
+}
+
+
+.inp-form {
+    text-align: center;
+}
+
+
+.inp-name {
+    margin: auto;
+}
+.inp-name h3 {
+    margin: 0;
+    text-align: start;
+}
+.inp-name input {
+    padding: 1em 5rem;
+    border: 8px solid black;
+}
+
+
+.inp-email {
+    margin: auto;
+}
+
+.inp-email h3 {
+    margin: 0;
+    text-align: start;
+}
+
+.inp-email input {
+    padding: 1em 5rem;
+    border: 8px solid black;
+}
+
+
+.inp-password {
+    margin: auto;
+}
+
+.inp-password h3 {
+    margin: 0;
+    text-align: start;
+}
+
+.inp-password input {
+    padding: 1em 5rem;
+    border: 8px solid black;
+}
+
+
+.btn-register {
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+.btn-register a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 13px 2rem;
+    font-size: 21px;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-register a:hover {
+    box-shadow: 5px 6px 4.5px 1px gray ;
+}
+
