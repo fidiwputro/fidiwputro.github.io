@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Style/Main.css">
 </head>
 
 <body>
 
-    <!-- MOBILE MENU -->
-    <input type="checkbox" id="check" class="triger">
-
+    <input type="checkbox" id="mobile-triger">
+    
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-logo">
-            <a href="">For U</a>
+            <a href="#">For U</a>
         </div>
 
         <div class="nav-menu">
-            <div class="nav-button-tugas"><a href="#tugas">TUGAS</a></div>
-            <div class="nav-button-jadwal"><a href="#jadwal">JADWAL</a></div>
-            <div class="nav-button-jadwal"><a href="#tentang">TENTANG</a></div>
+            <a href="#tugas">TUGAS</a>
+            <a href="#jadwal">JADWAL</a>
+            <a href="#tentang">TENTANG</a>
         </div>
-
-        <div class="nav-button-tentang"><a href="Login.html">LOGOUT</a></div>
-
-        <div class="hamburger">
+        
+        <div class="btn-logout">
+            <a href="">LOGOUT</a>
+        </div>
+        
+        <div class="mobile-menu">
             <a href="">
-                <label for="check">
+                <label for="mobile-triger">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -38,25 +39,14 @@
         </div>
     </nav>
 
-    <!-- SIDE BAR -->
+    <!-- MOBILE MENU -->
     <section class="side-bar">
-        <div></div>
-        <label for="check">
-            <div class="sidebar-in">
-                <ul>
-                    <li>
-                        <div class="nav-button-tugas"><a href="#tugas">TUGAS</a></div>
-                    </li>
-                    <li>
-                        <div class="nav-button-jadwal"><a href="#jadwal">JADWAL</a></div>
-                    </li>
-                    <li>
-                        <div class="nav-button-tentang"><a href="#tentang">TENTANG</a></div>
-                    </li>
-                    <li>
-                        <div class="nav-button-logout"><a href="Login.html">LOGOUT</a></div>
-                    </li>
-                </ul>
+        <label for="mobile-triger">
+            <div class="side-bar-menu">
+                <a href="#tugas">TUGAS</a>
+                <a href="#jadwal">JADWAL</a>
+                <a href="#tentang">TENTANG</a>
+                <a href="">LOGOUT</a>
             </div>
         </label>
     </section>
@@ -95,11 +85,11 @@
             </div> -->
         </div>
 
-        <div class="button-tugas">
-            <div class="button-edit-tugas">
+        <div class="btn-tugas">
+            <div class="btn-edit-tugas">
                 <h3><a href="">EDIT</a></h3>
             </div>
-            <div class="button-reference">
+            <div class="btn-reference">
                 <h3><a href="">REFERENCE</a></h3>
             </div>
         </div>
@@ -109,150 +99,136 @@
     <section class="jadwal" id="jadwal">
         <div class="heading-jadwal">
             <h3>PREVIEW JADWAL</h3>
-            <h3>SEN <span class="clock">03:00</span></h3>
+            <h3>SEN <span class="jam">03:00</span></h3>
         </div>
 
         <div class="hari">
             <h3>SENIN</h3>
-            <h3><a href=""><span class="edit-hari">EDIT</span></a></h3>
+            <h3><a href=""><span class="btn-edit">EDIT</span></a></h3>
         </div>
-        <div class="jumlah-matkul">
+        <div class="tabel-matkul">
             <div class="matkul">
-                <h4>MATKUL A</h4>
-                <h4>10:00</h4>
-            </div>
-            <div class="matkul">
-                <h4>MATKUL B</h4>
-                <h4>07:00</h4>
+                <h4>AKPL ASIX ASIX ASIX</h4>
+                <h4>08:00</h4>
             </div>
         </div>
 
         <div class="hari">
             <h3>SELASA</h3>
-            <h3><a href=""><span class="edit-hari">EDIT</span></a></h3>
+            <h3><a href=""><span class="btn-edit">EDIT</span></a></h3>
         </div>
-        <div class="jumlah-matkul">
+        <div class="tabel-matkul">
             <div class="matkul">
-                <h4>MATKUL A</h4>
-                <h4>10:00</h4>
-            </div>
-            <div class="matkul">
-                <h4>MATKUL B</h4>
-                <h4>07:00</h4>
+                <h4>MATRIX & VEKTOR</h4>
+                <h4>08:00</h4>
             </div>
         </div>
 
         <div class="hari">
             <h3>RABU</h3>
-            <h3><a href=""><span class="edit-hari">EDIT</span></a></h3>
+            <h3><a href=""><span class="btn-edit">EDIT</span></a></h3>
         </div>
-        <div class="jumlah-matkul">
+        <div class="tabel-matkul">
             <div class="matkul">
-                <h4>MATKUL A</h4>
-                <h4>10:00</h4>
-            </div>
-            <div class="matkul">
-                <h4>MATKUL B</h4>
-                <h4>07:00</h4>
+                <h4>PAPL & UI/UX</h4>
+                <h4>09:00</h4>
             </div>
         </div>
 
         <div class="hari">
             <h3>KAMIS</h3>
-            <h3><a href=""><span class="edit-hari">EDIT</span></a></h3>
+            <h3><a href=""><span class="btn-edit">EDIT</span></a></h3>
         </div>
-        <div class="jumlah-matkul">
+        <div class="tabel-matkul">
             <div class="matkul">
-                <h4>MATKUL A</h4>
-                <h4>10:00</h4>
+                <h4>BASISDATA LANJUT</h4>
+                <h4>08:00</h4>
             </div>
             <div class="matkul">
-                <h4>MATKUL B</h4>
-                <h4>07:00</h4>
+                <h4>PEMROGAMAN WEB SERU SERU SERU</h4>
+                <h4>12:00</h4>
             </div>
         </div>
 
         <div class="hari">
             <h3>JUMAT</h3>
-            <h3><a href=""><span class="edit-hari">EDIT</span></a></h3>
+            <h3><a href=""><span class="btn-edit">EDIT</span></a></h3>
         </div>
-        <div class="jumlah-matkul">
+        <div class="tabel-matkul">
             <div class="matkul">
-                <h4>MATKUL A</h4>
-                <h4>10:00</h4>
+                <h4>PANCASILA</h4>
+                <h4>07:00</h4>
             </div>
             <div class="matkul">
-                <h4>MATKUL B</h4>
-                <h4>07:00</h4>
+                <h4>KAPITA SELSCTA</h4>
+                <h4>15:00</h4>
             </div>
         </div>
 
         <div class="hari">
             <h3>SABTU</h3>
-            <h3><a href=""><span class="edit-hari">EDIT</span></a></h3>
+            <h3><a href=""><span class="btn-edit">EDIT</span></a></h3>
         </div>
-        <div class="jumlah-matkul">
+        <div class="tabel-matkul">
             <div class="matkul">
-                <h4>MATKUL A</h4>
-                <h4>10:00</h4>
+                <h4>NGE COR</h4>
+                <h4>08:00</h4>
             </div>
             <div class="matkul">
-                <h4>MATKUL B</h4>
-                <h4>07:00</h4>
+                <h4>MANCING</h4>
+                <h4>15:00</h4>
             </div>
         </div>
 
         <div class="hari">
             <h3>MINGGU</h3>
-            <h3><a href=""><span class="edit-hari">EDIT</span></a></h3>
+            <h3><a href=""><span class="btn-edit">EDIT</span></a></h3>
         </div>
-        <div class="jumlah-matkul">
+        <div class="tabel-matkul">
             <div class="matkul">
-                <h4>MATKUL A</h4>
-                <h4>10:00</h4>
+                <h4>NDAKI</h4>
+                <h4>09:00</h4>
             </div>
             <div class="matkul">
-                <h4>MATKUL B</h4>
-                <h4>07:00</h4>
+                <h4>NGOPI</h4>
+                <h4>21:00</h4>
             </div>
         </div>
-    </section>
 
-    <!-- tentang -->
-    <section class="tentang" id="tentang">
-        <h3>TENTANG</h3>
-        <p> <span class="par-forU">For U</span> adalah web yang bisa kamu manfaatin untuk mencatat dan
-            merapikan tugas-tugas kamu loh <br> nah, ada juga nih fitur untuk menyimpan link pengumpulan tugas atau
-            e-learning kamu disini <br>
-            jadi selain cek tugas, kamu juga bisa langsung akses e-learning kamu disini.
-        </p>
+        <!-- TENTANG -->
+        <section class="tentang" id="tentang">
+            <h3>TENTANG</h3>
+            <p> <span class="par-forU">For U</span> adalah web yang bisa kamu manfaatin untuk mencatat dan
+                merapikan tugas-tugas kamu loh <br> nah, ada juga nih fitur untuk menyimpan link pengumpulan tugas atau
+                e-learning kamu disini <br>
+                jadi selain cek tugas, kamu juga bisa langsung akses e-learning kamu disini.
+            </p>
 
-        <p><span class="par-forU">For U</span> juga memungkinkan Kamu untuk mencatat jadwal juga, jadi ada tugas ada
-            jadwal mantep kan, <br>
-            gaperlu hawatir telat, disini ada fitur untuk menampilkan waktu sebagai pengingat kamu yang pelupa, <br>
-            kamu bisa menambahkan matkul dan seting keterangan waktu sesuai jadwal kamu.
-        </p>
+            <p><span class="par-forU">For U</span> juga memungkinkan Kamu untuk mencatat jadwal juga, jadi ada
+                pencatatan tugas ada
+                pencatatan jadwal mantep kan, <br>
+                gaperlu hawatir telat, disini ada fitur untuk menampilkan waktu sebagai pengingat kamu yang pelupa, <br>
+                kamu bisa menambahkan matkul dan seting keterangan waktu sesuai jadwal kamu.
+            </p>
 
-        <h1>JADWAL JANGAN DI INGET-INGET TAPI DI CATET</h1>
-        <h5>Ezra Gilang Raharjo RPL-01-05 Institut Teknologi Telokom Surabaya</h5>
+            <h1>JADWAL JANGAN DI INGET-INGET TAPI DI CATET</h1>
+            <h5>Ezra Gilang Raharjo RPL-01-05 Institut Teknologi Telokom Surabaya</h5>
+        </section>
 
-    </section>
-
-    <!-- footer -->
-    <footer class="footer">
-        <div class="email">
-            <h3>EMAIL</h3>
-            <p>ezra.gilang.e9@gmail.com</p>
-        </div>
-        <div class="copy">
-            <p>&copy; 2023 For U by Ezra Gilang Raharjo</p>
-        </div>
-        <div class="social">
-            <h3>INSTAGRAM</h3>
-            <p>@sodiumchlorideglukosa</p>
-        </div>
-    </footer>
-
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="email">
+                <h3>EMAIL</h3>
+                <p>ezra.gilang.e9@gmail.com</p>
+            </div>
+            <div class="copy">
+                <p>&copy; 2023 For U by Ezra Gilang Raharjo</p>
+            </div>
+            <div class="social">
+                <h3>INSTAGRAM</h3>
+                <p>@sodiumchlorideglukosa</p>
+            </div>
+        </footer>
 </body>
 
 </html>
