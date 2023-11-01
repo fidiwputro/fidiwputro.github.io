@@ -22,16 +22,28 @@
             <div class="inputan">
                 <div>
                     <Label>Username</Label>
-                    <input type="text">
+                    <input type="text" id="username">
                 </div>
                 <div>
                     <Label>Password</Label>
-                    <input type="password">
+                    <input type="password" id="password">
                 </div>
             </div>
-            <Button>Login</Button>
+            <Button id="btnLogin">Login</Button>
             <p>Belum Punya akun? <a href="Daftar.html"> Daftar disini</a></p>
         </div>
     </div>
+
+    <script>
+        let username = document.getElementById("username");
+        let password = document.getElementById("password");
+        let btnLogin = document.getElementById("btnLogin");
+
+        btnLogin.addEventListener("click", function(){
+            if(username.value == '' || password.value == ''){
+                alert("Username dan password tidak boleh kosong");
+            } });
+        
+    </script>
 </body>
 </html>
