@@ -8,21 +8,62 @@
 
 <body>
     <div class="Login">
+        <div class="imgkiri">
+            <img src="Asset/kalkulator.png" alt="">
+        </div>
+
         <h2>Login</h2>
         <form>
-            <div class="kotak_input">
-                <label>Username</label>
-                <input type="text" name="username" id="username">
+            <div class="username">
+                <!-- <label>Username</label> -->
+                <input type="text" name="username" id="username" placeholder="Username">
             </div>
-            <div class="kotak_input">
-                <label>Password</label>
-                <input type="password" name="password" id="password">
+            <div class="password">
+                <!-- <label>Password</label> -->
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
 
-            <button type="submit">Tambah Pengeluaran</button>
+            <button type="button" id="buttonLogin" value="submit">SUBMIT</button>
 
         </form>
     </div>
+
+    <script>
+        function inputLogin() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            // alert(`name:${name},username:${username}`);
+            if (username == '' && password == '') {
+                alert("Tolong lengkapi semua data");
+                return;
+            } else {
+                Login();
+            }
+
+        }
+        // buttonLogin.addEventListener('click', inputLogin);
+
+        function Login() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            if (username == '') {
+                alert("username anda kososng");
+                let nameElement = document.getElementById('username');
+
+                nameElement.style.border = "1px solid red";
+            } else if (password == '') {
+                alert("password anda kososng");
+                let nameElement = document.getElementById('password');
+
+                nameElement.style.border = "1px solid red";
+            } else {
+                alert(`${username},${password}`);
+                nameElement.style.border = "1px solid black";
+            }
+        }
+        buttonLogin.addEventListener('click', inputLogin);
+    </script>
 </body>
 
 </html>
