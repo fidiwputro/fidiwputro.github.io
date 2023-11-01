@@ -15,22 +15,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 84%;
     /* border: 4px solid tomato; */
 }
 
-.out-form {
+.out-form-l {
     background-image: url("/1201220006_Ezra/assets/Untitled\ \(1\).png");
     width: 605px;
     height: 658px;
 }
 
-.out-form .logo {
+
+.out-form-l .logo {
     text-align: center;
     margin: 11rem auto 4rem auto;
 } 
 
-.out-form p {
+.out-form-l p {
     text-align: center;
 }
 
@@ -50,6 +51,15 @@ body {
 
 .btn-login a:hover {
     box-shadow: 5px 6px 4.5px 1px gray ;
+}
+
+
+.out-form {
+    /* background-image: url("/1201220006_Ezra/assets/Untitled\ \(1\).png"); */
+    border: 9px solid black;
+    background-color: white;
+    width: 605px;
+    height: 641px;
 }
 
 .in-form {
