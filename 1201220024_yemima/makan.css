@@ -10,7 +10,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: url(2.png);
+    background-image: url(background.png);
     background-repeat: no-repeat;
     background-size: auto;
     display: block;
@@ -126,5 +126,6 @@ body{
     font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 
 
