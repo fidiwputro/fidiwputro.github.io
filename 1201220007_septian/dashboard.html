@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DASHBOARD</title>
         <link rel="stylesheet" href="display.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div class="sidebar">
@@ -16,26 +22,38 @@
             <div class="menu">
                 <div>
                     <div class="item">
-                        <img class="" src="asset/dashboard.png" alt="" />
-                        <div class="text">DASHBOARD</div>
+                        <img class="" src="asset/dashboard.svg" alt="" />
+                        <div class="text"><a href="dashboard.html">DASHBOARD</a></div>
                     </div>
                     <div class="item">
-                        <img src="asset/logbook.png" alt="" />
-                        <div class="text">LOGBOOK</div>
+                        <img src="asset/logbook.svg" alt="" />
+                        <div class="text">
+                            <a href="logBook.html">LOGBOOK</a>
+                        </div>
                     </div>
                     <div class="item">
-                        <img src="asset/warehouse.png" alt="" />
-                        <div class="text">WAREHOUSE</div>
+                        <img src="asset/warehouse.svg" alt="" />
+                        <div class="text">
+                            <a href="warehouse.html">WAREHOUSE</a>
+                        </div>
                     </div>
                     <div class="item">
-                        <img src="asset/employee.png" alt="" />
-                        <div class="text">EMPLOYEE</div>
+                        <img src="asset/employee.svg" alt="" />
+                        <div class="text">
+                            <a href="presence.html">EMPLOYEE</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="asset/shipment.svg" alt="" />
+                        <div class="text">
+                            <a href="logPengiriman.html">SHIPMENT</a>
+                        </div>
                     </div>
                 </div>
                 <div class="logout">
                     <div class="item">
-                        <img src="asset/employee.png" alt="" />
-                        <div class="text">Logout</div>
+                        <img src="asset/logout.svg" alt="" />
+                        <div class="text"><a href="index.html">Logout</a></div>
                     </div>
                 </div>
             </div>
@@ -55,7 +73,7 @@
                             </div>
                         </div>
                         <div class="picture">
-                            <img src="asset/greeting.jpg" alt="" />
+                            <img src="asset/greeting.png" alt="" />
                         </div>
                     </div>
                     <div class="keuangan">
@@ -77,7 +95,9 @@
                     </div>
                     <div class="warehouse">
                         <div class="bahanBaku">
-                            <h4>BAHAN BAKU</h4>
+                            <div class="whhead">
+                                <h4>BAHAN BAKU</h4>
+                            </div>
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -102,7 +122,9 @@
                             </table>
                         </div>
                         <div class="bahanJadi">
-                            <h4>BAHAN JADI</h4>
+                            <div class="whhead">
+                                <h4>BAHAN JADI</h4>
+                            </div>
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -140,7 +162,7 @@
                                 <h4>UD CHANDRA FURNITURE</h4>
                                 <p>Sawmill Industri</p>
                                 <div class="location">
-                                    <img src="asset/employee.png" alt="" />
+                                    <img src="asset/location.svg" alt="" />
                                     <p>Kab.Malang Jawatimur</p>
                                 </div>
                             </div>
@@ -192,7 +214,9 @@
                         </div>
                         <div class="headDtl">
                             <h4>Oktober</h4>
-                            <button>Lihat Detail</button>
+                            <button>
+                                <a href="logPengiriman.html">Lihat Detail</a>
+                            </button>
                         </div>
                         <div class="detailDate">
                             <table class="tableDtl">
@@ -250,148 +274,60 @@
                 </div>
             </div>
             <div class="bottomDisplay">
-                <div class="tableKehadiran first">
-                    <table >
-                        <tr>
-                            <th>NAMA</th>
-                        </tr>
-                        <tr>
-                            <th>DATANG</th>
-                        </tr>
-                        <tr>
-                            <th>PULANG</th>
-                        </tr>
-                    </table>
+                <div class="headbtm">
+                    <h4>DAFTAR KEHADIRAN</h4>
                 </div>
-                <div class="tableKehadiran second">
-                    <table class="jamKehadiran">
-                        <tr>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                            <th>Suyanto</th>
-                            <th>Dianto</th>
-                            <th>Naruto</th>
-                            <th>Dito</th>
-                        </tr>
-                        <tr>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                            <td>08:00 </td>
-                        </tr>
-                        <tr>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                            <td>16:00 </td>
-                        </tr>
-                    </table>
+                <div class="tbbtm">
+                    <div class="tableKehadiran first">
+                        <table>
+                            <tr>
+                                <th>NAMA</th>
+                            </tr>
+                            <tr>
+                                <th>DATANG</th>
+                            </tr>
+                            <tr>
+                                <th>PULANG</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tableKehadiran second">
+                        <table class="jamKehadiran">
+                            <tr>
+                                <th>Suyanto</th>
+                                <th>Dianto</th>
+                                <th>Naruto</th>
+                                <th>Dito</th>
+                                <th>Suyanto</th>
+                                <th>Dianto</th>
+                                <th>Naruto</th>
+                                <th>Dito</th>
+                                <th>Suyanto</th>
+                            </tr>
+                            <tr>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                                <td>08:00</td>
+                            </tr>
+                            <tr>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                                <td>16:00</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </main>

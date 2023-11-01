@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./aset/workers.png" type="image/x-icon">
+    <title>Registrasi</title>
+</head>
+<body background="./aset/bg-com.jpg">
+    
+<div class="reg">
+
+        <div class="gam">
+            <img src="./aset/Wavy_Tech-28_Single-10.jpg" alt="">
+        </div>
+
+        <h1>Registrasi</h1>
+
+        <div class="usr">
+            <input type="text" placeholder="Username" id="user" name="user">
+        </div>
+        <div class="email">
+            <input type="text" placeholder="E-mail" id="email" >
+        </div>
+        <div class="pass">
+            <input type="password" placeholder="Password" id="password">
+        </div>
+        <div class="compass">
+            <input type="password" placeholder="Confirm-Password" id="compass">
+        </div>
+
+        
+        <button ><a id="sbs" href="">Regis Now</a></button>
+
+        <div class="log">
+            <p>already have an account? <a href="login.html">Login</a></p>
+        </div>
+</div>
+
+<script>
+        
+    function test(){
+        let usr = document.getElementById('user').value
+        let email = document.getElementById('email').value
+        let pass = document.getElementById('password').value
+        let com = document.getElementById('compass').value
+        // alert (usr + ' ' + email + ' ' + pass + ' ' + com + ' ' );
+        if(usr === "" || email === "" || pass === "" || com === ""){
+            alert ("masukan data diri anda")
+        }else{
+            alert (usr + ' ' + email + ' ' + pass + ' ' + com + ' ' )
+        }
+    }
+    sbs.addEventListener('click',test)
+</script> 
+
+</body>
+</html>

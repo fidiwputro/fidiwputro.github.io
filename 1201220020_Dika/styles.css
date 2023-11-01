@@ -2,11 +2,12 @@ h1 {
     color: blue;
 }
 h2 {
-    color: red;
+    color: black;
 }
 h3 {
     color: green;
 }
+
 
 .navbar{
     background-color: black;    
@@ -39,15 +40,16 @@ h3 {
 
 .background {
     text-align: center;
+    
 
 }
 .background img {
     display: block;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 5%;
     max-width: 100%;
     height: auto;
-
+    opacity: 80%;
 }
 
 .desc{
@@ -73,4 +75,34 @@ h3 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.divlogin{
+    background-color: antiquewhite;
+    width: 500px;
+    border: 1px solid black;
+    margin-right: 25%;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 20px ;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+
+.divlogin div label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.divlogin div input {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: medium;
+    padding: 10px;
+   
+    
+
+
 }

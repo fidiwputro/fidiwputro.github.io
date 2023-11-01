@@ -49,6 +49,10 @@ body {
   margin: -5px 20px;
 }
 
+.login-button {
+  background-color: #445D48;
+}
+
 .logo {
   display: inline-block;
   vertical-align: top;
@@ -111,14 +115,58 @@ body {
 }
 
 .bagian-tengah {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 500px 500px;
   margin: 0;
   padding: 1%;
   background-color: #FDE5D4;
 }
 
-.tentang-kami {
+.elemen-bagian-tengah {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.tentang-kami, .tentang-kami footer{
   margin: 0;
   margin-top: -29px;
   color: #FEFAE0;
   background-color: #001524;
+}
+
+.halaman-login {
+  background-color: #FDE5D4;
+  width: 100%;
+  height: 100%;
+  padding-top: 8%;
+}
+
+.form-login {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: auto;
+  border-radius: 8%;
+  text-align: center;
+  width: 600px;
+  height: auto;
+  background-color: #D6CC99;
+}
+
+.form-login div {
+  padding: 1%;
+}
+
+.form-login label {
+  display: inline-block;
+  width: 32%;
+  text-align: left;
+}
+
+.login h2 {
+  margin-bottom: 10%;
+}
+
+.login a {
+  font-size: 14px;
 }

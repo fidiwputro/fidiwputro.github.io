@@ -5,31 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/font.css">
 </head>
+
 <body>
-    <div class="back">
-        <a href="./login.html"><button>&lBarr; Back</button></a>
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar ">
+        <a href="../index.html"  class="logo">
+            <img  src="https://iili.io/J27Kips.png" alt="">
+            <span class="" >K4-CTF</span>
+        </a>
+
+        <ul class="nav-clean ">
+            <li><a href="./rule.html">Rule</a></li>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/teams">Teams</a></li>
+            <li><a href="./scoreboard.html">Scoreboard</a></li>
+            <li><a href="./challenges.html">Challenges</a></li>
+        </ul>
+
+        <div class="login-button">
+            <a href="./login.html">
+                <span  >Login kuy &rarr;</span>
+            </a>
+        </div>
+    </nav>
+    <!-- Content -->
     <div class="content-utama">
         <div class="form-login">
-            <form action="">
-                <h2>Form Login</h2>
-                <div>
-                    <label for="">Username</label>
-                    <br>
-                    <input type="text" placeholder="username">
-                </div>
+            <!-- Form login -->
+            <form name="form-login"action="">
+                <h2>/ FORM LOGIN /</h2>
+                <hr>
                 <br>
-                <div>
-                    <label for="">Password</label>
+                    <div>
+                        <label for="">Username</label>
+                        <input id="username" name="username"  type="text" value="" placeholder="username">
+                    </div>
                     <br>
-                    <input type="password" placeholder="Password">
-                </div>
-                <br><br>
-                <button class="login">Login</button>
+                    <div>
+                        <label for="">Password</label>
+                        <input id="password" name="password"  type="password" placeholder="Password">
+                    </div>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <button id="login"type="button"  class="login">Login</button>
             </form>
-            <a href="../"><button class="regis">Register</button></a>
+            <a href="../pages/register.html"><button class="regis">Register</button></a>
         </div>
     </div>
+    <div id="show-value">
+        awd
+    </div>
+
+    <!-- Script -->
+    <script>
+        
+        let form = document.forms['form-login'];
+
+        function login(){
+            let username = document.getElementById('username');
+            let password = document.getElementById('password');
+            if( username.value == '' || password.value == '' ){
+                alert('data anda kosong');
+            }else if( username.value == 'admin' && password.value == 'admin'){
+                alert('hallo admin');
+                document.location.href = './challenges.html';
+            }else{
+                alert('Invalid Input');
+                let simpan = document.getElementById('show-value');
+                simpan.textContent = username.value+password.value;
+            }
+        }
+
+        //form.addEventListener('submit',login);
+        let logins =document.getElementById('login'); 
+        logins.addEventListener('click',login)
+    </script>
 </body>
 </html>
