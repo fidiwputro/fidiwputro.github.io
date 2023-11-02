@@ -103,9 +103,9 @@ form input,form select{
     width: 80%;
     /* margin-bottom: 10%; */
 }
-form #atas{
+form #uname{
     margin-top: 5%;
 }
-form #bawah{
+form #captcha{
     margin-bottom: 0%;
 }
