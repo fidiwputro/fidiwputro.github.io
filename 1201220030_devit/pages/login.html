@@ -52,7 +52,7 @@
                 <br>
                 <hr>
                 <br>
-                <button id="login" name="submit" type="button"  class="login">Login</button>
+                <button id="login"type="button"  class="login">Login</button>
             </form>
             <a href="../pages/register.html"><button class="regis">Register</button></a>
         </div>
@@ -63,6 +63,7 @@
 
     <!-- Script -->
     <script>
+        
         let form = document.forms['form-login'];
 
         function login(){
@@ -72,14 +73,16 @@
                 alert('data anda kosong');
             }else if( username.value == 'admin' && password.value == 'admin'){
                 alert('hallo admin');
+                document.location.href = './challenges.html';
             }else{
+                alert('Invalid Input');
                 let simpan = document.getElementById('show-value');
                 simpan.textContent = username.value+password.value;
             }
         }
 
         //form.addEventListener('submit',login);
-        let logins =document.getElementById('login');
+        let logins =document.getElementById('login'); 
         logins.addEventListener('click',login)
     </script>
 </body>
