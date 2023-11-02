@@ -106,7 +106,45 @@
 .submenudua-content button:hover {
     background-color: #1CBAC8;
 }
-
+/* SUBMENU UNTUK SHPING*/
+.submenuduabr-content {
+    display: none; /*Untuk menyembunyikan menu*/
+    position: absolute;
+    background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
+    box-shadow: 0 95px 85px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    width: 250px; /*MENGATUR LEBAR FORM*/
+    height: 150px; /*MENGATUR TINGGI FORM*/
+    padding: 35px; /*spasi atau ruang diantara konten dan border. */
+}
+.submenuakunbr:hover .submenuduabr-content {
+    display: block; /*ANIMASI KE MENU YNG INGIN DI KLIK*/
+}
+.submenuduabr-content label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+.submenuduabr-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.submenuduabr-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ADDEF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submenuduabr-content button:hover {
+    background-color: #1CBAC8;
+}
 
 /* SUBMENU UNTUK SERVICE DAN SHOP */
 
@@ -171,35 +209,6 @@
     line-height: 26px;
     text-align: justify;
 }
-
-/* TOMBOL BACA*/
-.baca h1 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  font-style: italic;
-  margin: 1px;
-}
-.baca .button {
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
-  display: inline-block;
-  border-radius: 30px;
-  padding: 10px 20px;
-  color: #333;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 1px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-.baca .button:hover {
- background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
-  transform: scale(1.05);
-}
-
-
 
 
 .background_image img{
@@ -587,20 +596,6 @@ h1 span {
     transform: translate(-50%, -50%);
     margin-left: 25px;
 }
-.hallo3 {
-    background-color: white;
-    height: 950px;
-    text-align: center;
-}
-.hallo3 .background_image img {
-    width: 850px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-    position: absolute;
-    top: 60%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    margin-left: 25px;
-}
 
 
 
@@ -638,6 +633,13 @@ h1 span {
   background-color: #f2f2f2;
 }
 
+footer {
+    background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
+    color: Black;
+    text-align: center;
+    padding: 10px 0;
+}
+
 
 .tabletwo {
   background-color: #aee2ff;
@@ -672,6 +674,12 @@ h1 span {
   background-color: #f2f2f2;
 }
 
+footer {
+    background-image: linear-gradient(90deg, #DFF5F6 30%,#2ADDEF);
+    color: Black;
+    text-align: center;
+    padding: 10px 0;
+}
 
 /*REGRISTASI PADA MIAW HOTEL,CARE, DAN PLAYGROUD*/
 .registrasi h1 {
@@ -715,7 +723,6 @@ h1 span {
   box-shadow: #333;
   padding-bottom: -80px;
 }
-
 .card .isi h2 {
   font-family: "Montserrat", time new roman;
   color: #333;
@@ -724,28 +731,24 @@ h1 span {
   font-size: 30px;
   padding-left: 120px;
 }
-
 .card .isi .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 120px;
 }
-
 .card .isi .form .input {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px 0;
 }
-
 .card .isi .form .input label {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin-bottom: 5px; 
   text-align: center;
 }
-
 .card .isi .form .input input {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -758,12 +761,12 @@ h1 span {
   border: 1px solid #ccc;
 }
 
+
 /*button*/
 .formbutton {
   text-align: center;
   margin-top: 20px; /* Adjust the margin as needed */
 }
-
 .formbutton button a{
   text-decoration: none;
   width: 100%;
@@ -771,7 +774,6 @@ h1 span {
   padding: 20px;
   color: #ffffff;
 }
-
 .formbutton button {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -784,11 +786,12 @@ h1 span {
   transition: background-color 0.3s, transform 0.2s;
   width: 100%;
 }
-
 .formbutton button:hover {
   background-color: #0079b1;
   transform: scale(1.05);
 }
+
+
 
 /*MENU REGISTER*/
 
@@ -804,7 +807,6 @@ h1 span {
   box-shadow: #333;
   padding-bottom: -80px;
 }
-
 .card .isi h2 {
   font-family: "Montserrat", time new roman;
   color: #333;
@@ -813,28 +815,24 @@ h1 span {
   font-size: 30px;
   padding-left: 120px;
 }
-
 .card .isi .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 110px;
 }
-
 .card .isi .form .input {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px 0;
 }
-
 .card .isi .form .input label {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin-bottom: 5px; 
   text-align: center;
 }
-
 .card .isi .form .input input {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -976,4 +974,130 @@ section{
 }
 
 
+/* Cards */
+.cards {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 
+    /* Center the card horizontally */
+    margin-left: auto;
+    margin-right: auto;
+}
+.cards:hover {
+    transform: scale(1.05);
+}
+.cards p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.cards p:last-child {
+    color: #EF2894;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*card*/
+
+.card {
+  background-color: #aee2ff;
+  border-radius: 15px; /* Sesuaikan radius batas untuk radius sudut yang lebih kecil */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  max-width: 500px; /* Sesuaikan lebar maksimal sesuai kebutuhan */
+  max-height: 465px; /* Sesuaikan ketinggian maksimal sesuai kebutuhan */
+  margin: 20px auto; /* Sesuaikan margin sesuai kebutuhan */
+  padding: 10px; /*Sesuaikan bantalan sesuai kebutuhan */
+}
+.card .isian img {
+  height: 20%; /* Sesuaikan ketinggian sesuai kebutuhan */
+  align-items: center;
+  padding-left: 40%; /* Sesuaikan padding-kiri sesuai kebutuhan */
+}
+.card .isian h2 {
+  font-family: "Montserrat", TIME NEW ROMANS;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan */
+}
+.card .isian .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .isian .form .input,
+.card .isian .form .inputLong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0; /* Sesuaikan margin sesuai kebutuhan */
+}
+.card .isian .form .input label,
+.card .isian .form .inputLong label {
+  font-family: "Montserrat", time new romas;
+  font-size: 14px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  margin-bottom: 3px; 
+  text-align: center;
+}
+.card .isian .form .input input,
+.card .isian .form .inputLong input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; 
+  border-radius: 15px; 
+  padding: 8px; 
+  width: 100%; 
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+.card .isian .closeButton button:hover {
+  background-color: #e05252; 
+}
+
+
+
+/*Logout*/
+.logoutButton {
+  text-align: center;
+  margin-top: 20px; 
+.logoutButton button a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #000000;
+}
+.logoutButton button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #ffe600;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+}
+.logoutButton button:hover {
+  background-color: #ff5151;
+  transform: scale(1.05);
+}
+.logoutButton button a:hover {
+  color: white;
+  font-weight: bold;
+}
