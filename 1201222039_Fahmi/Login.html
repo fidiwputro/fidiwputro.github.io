@@ -17,11 +17,11 @@
                                 <div style=" padding: 15px; display: inline-flex; flex-direction: column; gap: 10px;">
                                     <div style=" display: inline-flex; flex-direction: column;">
                                         <label for="username">Username:</label>
-                                        <input type="text" name="username" id="username" style="width: 386px; border-style: none;display: inline-flex;/* font-size: 24px; */padding-left: 15px;padding-right: 15px;">
+                                        <input type="text" name="username" id="username" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
                                     </div>
                                     <div style=" display: inline-flex; flex-direction: column;">
                                         <label for="password">Password:</label>
-                                        <input type="password" name="password" id="password" style="width: 386px; border-style: none;display: inline-flex;/* font-size: 24px; */padding-left: 15px;padding-right: 15px;">
+                                        <input type="password" name="password" id="password" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
                                     </div>
                                 </div>
                             </form>
@@ -35,28 +35,27 @@
                                     </a>
                                 </div>
                             </div>
-                        </div><div style="/* width: 622px; */height: 439px;position: relative">
+                        </div><div style="height: 439px;position: relative">
                     </div>
                 </div>
             </section>
         </main>
-        <script>
-            // document.getElementById('username').value;
-            // alert(nama);
-            
+        <script> 
             function Alert() {
                 let username = document.getElementById('username').value;
                 let password = document.getElementById('password').value;
                 
-                if(username == ''){
-                    alert("username tidak boleh kosong");
+                if(username == '' || password == ''){
+                    alert("Tidak boleh ada kotak yang kosong.");
+                    return false;
                 }
 
-                if(password == ''){
-                    alert("password tidak boleh kosong");
-                }             
+                if(password.length < 8){
+                    alert("Password seharusnya lebih dari 8 karakter.");
+                    return false;
+                }   
+                return true;          
             }            
-            
             sbtreg.addEventListener("click", Alert);
         </script>
     </body>

@@ -27,6 +27,10 @@
                                         <label for="password">Password:</label>
                                         <input type="password" name="password" id="password" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
                                     </div>
+                                    <div style=" display: inline-flex; flex-direction: column;">
+                                        <label for="confirmPassword">Confirm Password:</label>
+                                        <input type="confirmPassword" name="confirmPassword" id="confirmPassword" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
+                                    </div>
                                 </div>
                             </form>
                             <div id="sbtreg" name="sbtreg" style="width: 192px; height: 52px; position: relative; padding: 10px; margin: auto;">
@@ -42,27 +46,35 @@
             </section>
         </main>
         <script>
-            // document.getElementById('username').value;
-            // alert(nama);
-            
             function Alert() {
                 let username = document.getElementById('username').value;
                 let email = document.getElementById('email').value;
                 let password = document.getElementById('password').value;
-                
-                if(username == ''){
-                    alert("username tidak boleh kosong");
-                }
-                
-                if(email == ''){
-                    alert("email tidak boleh kosong")
+                let confirmPassword = document.getElementById('confirmPassword').value;
+
+                if(username == '' || email == '' || password == ''){
+                    alert("Tidak boleh ada kotak yang kosong.");
+                    return false;
                 }
 
-                if(password == ''){
-                    alert("password tidak boleh kosong");
-                }             
+                var regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-z]{2,7}$/;
+                if (!regex.test(email)) {
+                    alert("Tolong masukkan alamat email yang valid.");
+                    return false;
+                }
+
+                if(password.length < 8){
+                    alert("Password seharusnya lebih dari 8 karakter.");
+                    return false;
+                }            
+
+                if (password !== confirmPassword) {
+                    alert("Password tidak sama.");
+                    return false;
+                }
+
+                return true;
             }            
-            
             sbtreg.addEventListener("click", Alert);
         </script>
     </body>
