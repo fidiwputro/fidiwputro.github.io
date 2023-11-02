@@ -1,21 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Sider Menu Bar CSS</title>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="images/kucing.png" type="image/png" rel="shortcut icon"/>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
+	<title> HAY MIAW CARE SHOP.com </title>
+</head>
+
+<body>
+	
+	<div class="navigasi">
+    <div class="logo">
+        <img src="images/logo.png" width="360" height="98">
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="shop.html">SHOP</a></li>
+
+            <li class="submenu">
+                <a href="miaw.html">Service</a>
+                <ul class="submenu-content">
+                    <li><a href="hotel.html">HOTEL</a></li>
+                    <li><a href="miawcare.html">CARE</a></li>
+                    <li><a href="playground.html">PLAYGROUND</a></li>
+                </ul>
+            </li>
+
+            <li><a href="home.html">Contact</a></li>
+			
+            <li class="search-box">
+                <form action="#" method="get">
+                    <input type="text" name="query" placeholder="Search">
+                    <button type="submit">Search</button>
+                </form>
+            </li>
+        
+        <li class="submenuakunbr">
+            <img src="images/akun1.png"></a>
+            <ul class="submenuduabr-content">
+                <li>
+                    <!-- FORM SIGN UP -->
+                    <form class="signup-form" action="profile.html" method="post">
+                        <center><h1>HAPPY SHOPPINGG....</h1></center>
+						<h2> TIII ASTIII </h2>
+
+                        <button type="submit">Profile</button>
+                    </form>
+                </li>
+               
+            </ul>
+        </li>
+		<li><a href="cart.html"><img src="images/cart.png"></a></li>
+			
+    </ul>
+</div>
+
     <div class="sidebar">
-		<header> MY CAT SHOP </header>
+        
 		<ul>
-   
 			<li><a href="#"><i class="fas fa-link"></i>CAT FOOD</a></li>
 			<li><a href="#"><i class="fas fa-stream"></i>CAT TOYS</a></li>
 			<li><a href="#"><i class="fas fa-calendar-week"></i>CLEANING TOOL </a></li>
@@ -25,7 +72,46 @@
 		</ul>
 	</div>
 	
+			<div class="cards">
+				<p> WHISKAS ADULT TUNA DRY 480gr </p>
+				<img src="images/mkn1.png" alt="makan kucing">
+				<p>Rp 30.000</p>
+			</div>
+			
+			<div class="cards">
+				<p> FRISKIES ADULT TUNA DRY 450gr </p>
+                <img src="images/mkn2.png" alt="makan kucing">
+				<p>Rp 40.000</p>
+            </div>
+			
+			<div class="cards">
+				<p> ROYAL CANIN KITTEN DRY 400gr </p>
+                <img src="images/mkn3.png" alt="makan kucing">
+				<p>Rp 120.000</p>
+            </div>
+			
+			
+			<div class="cards">
+				<p> ROYAL CANIN KITTEN DRY 400gr </p>
+                <img src="images/mkn3.png" alt="makan kucing">
+				<p>Rp 120.000</p>
+            </div>
+			
+			<div class="cards">
+				<p> Me-O KITTEN OCEAN FISH DRY 1,1kg</p>
+                <img src="images/mkn5.png" alt="makan kucing">
+				<p>Rp 61.000</p>
+            </div>
+			
+			<div class="cards">
+				<p> Me-O KITTEN OCEAN FISH DRY 1,1kg</p>
+                <img src="images/mkn5.png" alt="makan kucing">
+				<p>Rp 61.000</p>
+            </div>
+		</div>
+		
 
+	
 
   </body>
 </html>

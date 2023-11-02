@@ -1,0 +1,132 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0p ;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Courier New';
+    background-color: #ffffff;
+}
+
+.rap {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a{
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+/*untuk menu*/
+.menu {
+    float: right;
+}
+/*untuk membuat menu dan logo lengket di atas saat di scroll */
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+}
+
+nav ul{
+    list-style-type:none; 
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+/*untuk kata luwe edit*/
+nav ul li {
+    float: left;
+}
+/*untuk kata menu bagian kanan*/
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 18px 0px 18px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* untuk ubah nama sebelah logo*/
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.gambar {
+    margin-left: 60px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 90px;
+    margin-top: 180px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: comic sans-serif;
+    color: black;
+}
+
+h2 {
+    font-family: comic sans-serif;  
+    font-weight: 850;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    line-height: 20px;
+}
+a.tabel-hitam {
+    background: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tabel-hitam:hover {
+    background: black;
+    text-decoration: none;
+}
+
+a.tabel-biru {
+    background: blue;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tabel-biru:hover {
+    background:blue ;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}

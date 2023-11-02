@@ -20,7 +20,7 @@
     <!-- form -->
     <div class="form">
       <h1>Register</h1>
-      <form>
+      <form name="formregist">
         <div class="label">
           <label for="username">Username :</label>
         </div>
@@ -45,11 +45,33 @@
         <div class="input">
           <input type="password" id="password" name="password" />
         </div>
+        <div class="label">
+          <label for="kpassword">Konfirmasi Password :</label>
+        </div>
+        <div class="input">
+          <input type="password" id="kpassword" name="kpassword" />
+        </div>
         <div class="button">
           <button type="submit" name="submit">SUBMIT</button>
         </div>
       </form>
     </div>
     <!-- akhir form -->
+    <script>
+      let form = document.forms.formregist;
+      function kirim() {
+        let nama = document.getElementById("username");
+        let email = document.getElementById("email");
+        let nohp = document.getElementById("nohp");
+        let password = document.getElementById("password");
+        let kpassword = document.getElementById("kpassword");
+        if (nama.value == "" || email.value == "" || nohp.value == "" || password.value == "" || kpassword.value == "") {
+          alert("harap isi semua inputan");
+        } else {
+          form.submit();
+        }
+      }
+      form.addEventListener("submit", kirim);
+    </script>
   </body>
 </html>

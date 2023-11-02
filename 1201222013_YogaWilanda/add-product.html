@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="whole-section">
+      <div class="form-section">
+        <form>
+          <div class="formBox pd12">
+            <div class="user-box">
+              <label for="username">Judul Properti </label>
+              <input
+                class="brdRadius brdNone pd12"
+                name="usernamee"
+                id="username"
+                autocomplete="additional-name"
+              />
+            </div>
+
+            <div class="user-box">
+              <label for="harga-properti">Harga Properti</label>
+              <input
+                class="brdRadius brdNone pd12"
+                type="text"
+                name="jenis-properti"
+                id="harga-properti"
+                autocomplete="additional-name"
+              />
+            </div>
+
+            <div class="dropdownDiv">
+              <label for="cars">Jenis Properti</label>
+
+              <select
+                name="cars"
+                id="property-type-dropdown"
+                class="dropdownDiv brdRadius pd12"
+              >
+                <option value="rumah1">rumah1</option>
+                <option value="rumah2">rumah2</option>
+                <option value="rumah3">rumah3</option>
+                <option value="rumah4">rumah4</option>
+              </select>
+            </div>
+
+            <div class="user-box">Fasilitas Properti</div>
+            <div class="user-box">Jumlah Lantai</div>
+            <div class="user-box">Dapat Dihubungi di</div>
+
+            <div class="user-box">
+              <p>Status Bangunan Rumah</p>
+
+              <div class="row mv12 mr3">
+                <input
+                  class="radio-btn"
+                  type="radio"
+                  id="Bekas"
+                  name="status-properti"
+                  value="Bekas"
+                />
+                <label for="Bekas">Bekas</label><br />
+                <input
+                  class="radio-btn"
+                  type="radio"
+                  id="Bekas"
+                  name="status-properti"
+                  value="On Development"
+                />
+                <label for="On Development">On Development</label><br />
+                <input
+                  class="radio-btn"
+                  type="radio"
+                  id="Baru"
+                  name="status-properti"
+                  value="Baru"
+                />
+                <label for="baru">Baru</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="pd12">
+              <button class="btnStyle1" onclick="sendToAlert(event)">submit</button>
+            </div>
+            <div class="pd12">
+              <button class="btnStyle1" onclick="randomizer(event)">
+                randomize
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="gallery-section" id="gallery-section">Gallery</div>
+    </div>
+    <script src="./scripts/bom.js"></script>
+  </body>
+
+  <script></script>
+</html>
