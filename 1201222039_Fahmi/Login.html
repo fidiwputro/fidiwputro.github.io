@@ -6,13 +6,14 @@
         <link href="Image/ICON.png" type="image/gif" rel="shortcut icon"/>
         <title>Game Store</title>
         <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <script type="text/javascript" src="formbaru.js"></script>
     </head>
     <body>
         <main>
             <section id="Login form">
                 <div style="width: -webkit-fill-available;height: -webkit-fill-available;padding-top: 261px;padding-bottom: 261px;background: white;justify-content: center;align-items: center;display: inline-flex">
                     <div style="background: #F5F5F5;display: inline-flex;justify-content: center;align-items: center;flex-direction: column;width: 622px;height: 439px;">
-                            <form>
+                            <form style="display: inline-flex; flex-direction: column;">
                                 <h1>Login</h1>
                                 <div style=" padding: 15px; display: inline-flex; flex-direction: column; gap: 10px;">
                                     <div style=" display: inline-flex; flex-direction: column;">
@@ -24,17 +25,23 @@
                                         <input type="password" name="password" id="password" style="width: 386px; border-style: none;display: inline-flex; padding-left: 15px;padding-right: 15px;">
                                     </div>
                                 </div>
+                                <div style="display: inline-flex;align-items: center;"> 
+                                    <a href="Register.html">Dont have account? Register now!</a>
+                                    <button id="sbtreg" name="sbtreg" type="submit" style="width: 192px; height: 52px; position: relative; padding: 10px; margin: auto; background: #18A0FB;">
+                                        <text_tombol style="left: 64.03px; top: 16.30px; color:  white; font-size: 17px;">Login</text_tombol>
+                                    </button>
+                                </div>
                             </form>
-                            <div style="display: inline-flex;align-items: center;"> 
+                            <!-- <div style="display: inline-flex;align-items: center;"> 
                                 <a href="Register.html">Dont have account? Register now!</a>
-                                <div id="sbtreg" name="sbtreg" style="width: 192px; height: 52px;position: relative; margin: auto;">
-                                    <a type="submit" href="#sudahlogin">
+                                <div id="sbtreg" name="sbtreg" type="submit" style="width: 192px; height: 52px;position: relative; margin: auto;">
+                                    <a href="#sudahlogin">
                                         <tombol style="background: #18A0FB; margin: 15px;">
                                             <text_tombol style="left: 64.03px; top: 16.30px; color:  white; font-size: 17px;">Login</text_tombol>
                                         </tombol>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div><div style="height: 439px;position: relative">
                     </div>
                 </div>
