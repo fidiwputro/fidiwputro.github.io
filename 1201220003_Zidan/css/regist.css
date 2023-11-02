@@ -151,7 +151,12 @@ body {
   margin-top: 20px; /* Adjust the margin as needed */
 }
 
-.formbutton button {
+.formbutton a {
+  text-decoration: none;
+  color: white;
+}
+
+.formbutton input {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 10px 20px;
@@ -163,12 +168,7 @@ body {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.formbutton a {
-  text-decoration: none;
-  color: white;
-}
-
-.formbutton button:hover {
+.formbutton input:hover {
   background-color: #0079b1;
   transform: scale(1.05);
 }

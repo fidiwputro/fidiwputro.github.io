@@ -44,7 +44,8 @@ li a:hover {
     color: white;
 }
 
-.regis_form {
+.login_form div {
+    padding:  10px;
 }
 
 .regis_form div{

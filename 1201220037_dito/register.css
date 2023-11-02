@@ -1,31 +1,92 @@
 body {
-    /* background-image: url('./Asset/bggg.png'); */
+    background-color: #c8d8ed;
+}
+
+.Register {
+    border: 1px black;
+    width: 70%;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    height: 66vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4F709C;
-    color: #ffffff;
+    background-color: #d9dee4;
+    box-shadow: 10px 10px 8px rgba(191, 191, 191, 0.403);
+    border-radius: 20px;
+}
+
+.Register .imgkiri img {
+    /* background-size: contain;
+    object-fit: contain;
+    overflow: hidden; */
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.Register h2 {
+    position: absolute;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    right: 220px;
+    top: 10px;
+    font-size: 40px;
 }
 
-form input,
-form select,
-form textarea {
-    width: 60%;
-    padding: 10px;
-    font-size: 20px;
+.Register input {
+    height: 50px;
+    width: 240px;
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    border: none;
     border-radius: 10px;
-    border: 1px solid black;
-
+    padding-left: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgb(200, 200, 200);
 }
 
-form button {
-    padding: 10px;
-    font-size: 25px;
+.Register .name input {
+    left: 500px;
+    top: 150px;
+}
+
+.Register .username input {
+    left: 500px;
+    top: 220px;
+}
+
+.Register .password input {
+    left: 780px;
+    top: 220px;
+}
+
+.Register .compass input {
+    left: 780px;
+    top: 290px;
+}
+
+.Register .Gmail input {
+    left: 500px;
+    top: 290px;
+}
+
+.Register .phone input {
+    left: 780px;
+    top: 150px;
+}
+
+.Register button {
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #E5D283;
     color: #213555;
     border-radius: 13px;
     margin-top: 20px;
+    position: absolute;
+    top: 370px;
+    right: 220px;
+    border: none;
 }
 
 .Register button:hover {
@@ -37,25 +98,4 @@ form button {
         0 0 50px #E5D283,
         0 0 100px #E5D283;
     transition: 0.5s ease;
-}
-
-form label {
-    display: block;
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-form input {
-    width: 80%;
-}
-
-.Register {
-    width: 30%;
-    padding: 40px;
-    background: #213555;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-    border-radius: 10px;
-    border: 1px solid black;
-
 }
