@@ -95,12 +95,13 @@ body{
     display: flex;
     box-shadow: 10px 10px 8px 0px black;
     font-size: 100%;
+    border-radius: 10px;
 
 }
 #kanan2{
     top: 48%;
 }
-.ilogin>#atur2>a>#login{
+/* .ilogin>#atur2>button>a>#login{
     position: absolute;
     width: 30%;
     border-radius: 1px;
@@ -109,8 +110,27 @@ body{
     background-color: black;
     position: absolute;
     left: 33.5%;
-    /* top: 69%;
-    left: 35%; */
+} */
+#atur2 button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18pt;
+    text-decoration: none;
+    background-color: #09232c;
+    border: white;
+    border-style: groove;
+}
+#atur2 button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#atur2 button:hover{
+    background-color: black;
+    border: black;
+}
+#atur2 button a:hover{
+    color: white;
 }
 .ilogin p{
     color: rgb(255, 255, 255);
