@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(25, 199, 243);
+    background-color:  #2E97A7;
     margin: 0px;
     padding: 20px;
 }
@@ -8,20 +8,32 @@ body{
 
 
 form { 
-    background-color: #65a4f0;
-    padding: 30px;
-    border-radius: 60px;
-    box-shadow: 0px 2px 5px rgba(64, 64, 64, 0.3);
-    max-width: 450px;
-    margin: 0 auto;
-    text-align: center;
+  background-color: #1AACAC;
+  padding: 30px;
+  border-radius: 60px;
+  box-shadow: 10px 2px 5px rgba(64, 64, 64, 0.3);
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
 
-  }
-  label {
-    font-weight: bold;
-    border-radius: 10px;
+label {
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 20px;
+}
 
-  }
+input[type="nama"],
+input[type="Username"],
+input[type="email"],
+input[type="password"],
+input[type="gender"]{
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+}
+  
    h2{
     text-align: center;
    }
@@ -39,7 +51,7 @@ form {
 
   /* CSS untuk navigasi bar */
   .navbar{
-    margin-top: -60px;
+    margin-top: 0px;
     }
     .navbar ul {
     list-style-type: none;
@@ -80,18 +92,7 @@ form {
     }
     
     
-    .navbar .logo {
-    font-size: 24px;
-    margin-right:0px;
-    }
-    .navbar .logo {
-    display: inline-block;
-    width: 150px; /* sesuaikan lebar logo */
-    height:150px; /* sesuaikan tinggi logo */
-    background-image: url('0.png'); 
-    background-size: cover;
-    background-position: center;
-    }
+
     .navbar .home-link {
     margin-left: 50px;
     }
