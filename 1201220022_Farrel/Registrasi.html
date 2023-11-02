@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LaptopLab Registration</title>
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="form.js"></script>
 </head>
 <body style="background-color:black;">
 
@@ -30,37 +31,25 @@
 		</div>
 	</div>
 	</header>
-	
-<div class="regis">
-	<h2> Registration Form</h2>
-	<label for "email"><a>Email</a></label>
-	<input type="text" id="txtemail" name="txtemail" placeholder="Enter Your Email">
-	
-	<p label for "name"><a>Username</a></label>
-	<input type="text" id="txtname" name="txtname" placeholder="Enter Username">
-	
-	<p label for "pass"><a>Password</a></label>
-	<input type="text" id="txtpass"  name="txtpass" placeholder="Enter Password">
-	<div>
-	<p> <input type="button" id="sumreg" name="sumreg" value="submit"/></p>
-	</div>
-	already have account <a href="login.html">Login</a>
-	
-</div>
-<script>
-	
-	function test(){
-		let Email= document.getElementById('txtemail').value;
-		let Username= document.getElementById('txtname').value;
-		let Password= document.getElementById('txtpass').value;
+
+<div>
+	<form id="regis" name="regisform" action="index.html">
+		<div class="regis">
+		<h2> Registration Form</h2>
+		<label for "email"><a>Email</a></label>
+		<input type="text" id="txtemail" name="txtemail" placeholder="Enter Your Email">
 		
-		alert(Email+' '+Username+' '+Password);
-	}
-	
-	sumreg.addEventListener('click',test);
-	
-	
-	
-</script>
+		<p label for "name"><a>Username</a></label>
+		<input type="text" id="txtname" name="txtname" placeholder="Enter Username">
+		
+		<p label for "pass"><a>Password</a></label>
+		<input type="Password" id="txtpass"  name="txtpass" placeholder="Enter Password">
+		<div>
+		<p> <input type="submit" id="subreg" name="subreg" value="simpan"/></p>
+		</div>
+		already have account ? <a href="login.html">Login</a>
+	</form>
+</div>
+
 </body>
 </html>
