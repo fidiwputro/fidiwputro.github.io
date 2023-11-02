@@ -2,27 +2,31 @@
 60 - #f0f2f1
 30 - #3b5d4f
 10 - #f8bf28 
+#2f2f2f
+#cad6d2
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-size: 14px;
-    font-family: "Inter",sans-serif;
+    font-family: "Inter", sans-serif;
 }
-nav{
+
+nav {
     display: flex;
-    padding: 20px 10%;
+    padding: 20px 100px;
     align-items: center;
     background-color: #3b5d4f;
     justify-content: space-between;
 }
-nav h1{
+
+nav h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     font-family: "Poppins";
 }
 
@@ -32,10 +36,12 @@ nav ul {
     align-items: center;
     /* background-color: antiquewhite; */
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     font-weight: 500;
     text-decoration: none;
@@ -46,42 +52,66 @@ nav ul .menu {
     display: flex;
     /* background-color: aqua; */
 }
-nav ul .menu li a:not(#active){
+
+nav ul .menu li a:not(#active) {
     opacity: 0.5;
 }
 
 
-nav ul .pic {
-    gap: 40px;
+nav ul .button {
     display: flex;
     /* background-color: aqua; */
 }
 
+nav ul li .button a {
+    color: #fff;
+}
+
+nav ul .button #login {
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 30px;
+}
+
+nav ul .button #sign-up {
+    font-weight: 600;
+    color: #2f2f2f;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background-color: #f8bf28;
+}
+
 /* main */
 
-main .hero{
+main .hero {
     height: 60vh;
     display: flex;
-    padding: 20px 10%;
+    padding: 20px 100px;
     align-items: center;
     background-color: #3b5d4f;
     justify-content: space-between;
 }
 
-main .hero .text{
+main .hero .text {
     color: #fff;
-    max-width: 400px;
+    width: 475px;
     /* background-color: #f8bf28; */
 }
 
-main .hero .text h1{
+main .hero .text h1 {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 30px;
 }
-main .hero .text p{
+
+main .hero .text p {
+    width: 400px;
+    opacity: 0.5;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 30px;
-    color: rgba(255, 255, 255, 0.5);
 }
 
 main .hero .text .button {
@@ -89,35 +119,191 @@ main .hero .text .button {
     display: flex;
     align-items: center;
 }
-main .hero .text .button #shop{
-    color: #3b5d4f;
+
+main .hero .text .button #shop {
+    font-size: 14px;
     font-weight: 600;
-    padding: 18px 36px;
+    color: #2f2f2f;
+    padding: 14px 28px;
     border-radius: 50px;
     text-decoration: none;
     border: 2px solid #f8bf28;
-    background-color: #f8bf28 ;
+    background-color: #f8bf28;
 }
-    main .hero .text .button #shop:hover{
+
+main .hero .text .button #shop:hover {
     transform: scale(102%);
 }
-main .hero .text .button #explore{
-    text-decoration: none;
+
+main .hero .text .button #explore {
+    opacity: 0.8;
     color: #fff;
     font-weight: 600;
-    padding: 18px 36px;
-    border-radius: 50px ;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
     border: 2px solid #fff;
-    opacity: 0.8;
 }
-    main .hero .text .button #explore:hover{
-        transform: scale(102%);
-    }
-main .hero img{
-    /* background-color: #f8bf28; */
+
+main .hero .text .button #explore:hover {
+    transform: scale(102%);
+}
+
+main .hero #sofa {
+    right: 0;
     top: 80px;
-    left:550px;
     z-index: 2;
     width: 700px;
     position: absolute;
+}
+
+main .hero #dots-light {
+    right: 0;
+    top: 115px;
+    z-index: 1;
+    width: 275px;
+    position: absolute;
+}
+
+/* shop */
+main .shop {
+    display: flex;
+    padding: 100px;
+    background-color: #f0f2f1;
+    justify-content: space-between;
+}
+
+main .shop .text {
+    width: 230px;
+    /* background-color: antiquewhite; */
+}
+
+main .shop .text h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+main .shop .text p {
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+main .shop .text #buttonex {
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background-color: #2f2f2f;
+    border: 1px solid #2f2f2f;
+}
+
+main .shop .product {
+    gap: 20px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+main .shop .product #img {
+    width: 250px;
+    height: 250px;
+    /* background-color: #f8bf28; */
+}
+
+main .shop .product .product1 {
+    text-align: center;
+}
+
+main .shop .product .product1 h3 {
+    margin-top: 30px;
+}
+
+main .about {
+    display: flex;
+    padding: 100px;
+    color: #2f2f2f;
+    background-color: #f0f2f1;
+    justify-content: space-between;
+
+    .text {
+        width: 500px;
+        height: 430px;
+        line-height: 1.5;
+        /* background-color: aqua; */
+
+        .box {
+            width: 500px;
+            height: 500px;
+            display: grid;
+            /* margin-top: 10px; */
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            /* background-color: #f8bf28; */
+
+            .box1, .box2, .box3, .box4{
+                width: 248px;
+                height: 100px;
+                padding: 30px 0;
+                margin-top: 30px;
+                /* background-color: red; */
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 20px;
+                    border-radius: 20px;
+                    background-color: #cad6d2;
+                }
+                .icon img{
+                    top: -15px;
+                    left: -20px;
+                    position: relative;
+                    /* background-color: #3b5d4f; */
+                }
+            }
+
+            .box1 h3, .box2 h3, .box3 h3, .box4 h3{
+                font-size: 14px;
+                margin-top: 14px;
+                font-weight: 500;
+                color: #2f2f2f;
+            }
+        }
+    }
+
+    .text h1 {
+        font-size: 32px;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+    .text p{
+        line-height: 1.5;
+        opacity: 0.5;
+    }
+
+    #interior {
+        width: 425px;
+        height: 500px;
+        display: flex;
+        border-radius: 20px;
+        z-index: 2;
+    }
+    #dots-yellow{
+        position: absolute;
+        top: 1100px;
+        right: 355px;
+        width: 275px;
+        height: 275px;
+        z-index: 1;
+    }
+}
+main .help{
+    background-color: antiquewhite;
+    height: 500px;
+    padding: 100px;
 }
