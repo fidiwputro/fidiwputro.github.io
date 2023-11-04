@@ -5,36 +5,22 @@
         <link rel="stylesheet" type="text/css" href="login.css">
     </head>
     <body>
-    <div class="navbar">
-        <ul>
-          <li><span class="logo"></span></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Layanan </a></li>
-          <li><a href="login.html">Masuk</a></li>
-          <li><a href="registrasi.html">Daftar</a></li>
-        </ul>
-      </div>
-    <form action="#">
-         <h2> Login</h2>
-        
-     
-        <input type="Username" id="Username" placeholder="Username" required><br><br>
-        
-        <input type="password" id="password" placeholder="Password" required><br><br>
-
-        <input type="submit" onclick="Masuk()" id="button" value="Masuk"><br><br>
-
-      </form>
-      <script>
-        function Masuk() {
-          let Username = document.getElementById("Username").value;
-          let password = document.getElementById("password").value;
-          alert(Username);
-          alert(password);
-        }
-      </script>
-    </body>
-    </html>
+        <div class="navbar">
+            <ul>
+                <li><span class="logo"></span></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Layanan </a></li>
+                <li><a href="login.html">Masuk</a></li>
+                <li><a href="registrasi.html">Daftar</a></li>
+            </ul>
+        </div>
+        <form action="#">
+            <h2> Login</h2>
+            <input type="username" id="Username" placeholder="Username" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br>
+            <input type="submit" id="button" value="Masuk"><br><br>
+        </form>
+        <script src="formbaru.js"></script>
     </body>
 </html>
