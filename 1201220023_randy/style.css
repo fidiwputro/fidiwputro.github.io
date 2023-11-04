@@ -44,10 +44,140 @@ li a:hover {
     color: white;
 }
 
-.login_form div {
-    padding:  10px;
+.divDivLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:aquamarine;
+    height: 89vh;
 }
 
-.regis_form div{
-    padding: 10px;
+.divlogin {
+    border: 5px solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:cadetblue;
+    padding: 50px;
+}
+
+label{
+    display: block;
+}
+
+.logintxt {
+    margin-top:  -10px;
+    display: block;
+    justify-content: center;
+}
+
+.loginForm {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.divDivRegis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:aquamarine;
+    height: 89vh;
+}
+
+.divRegis {
+    border: 5px solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:cadetblue;
+    padding: 50px;
+}
+
+label{
+    display: block;
+}
+
+.regisTxt {
+    margin-top: -10px;
+    display: block;
+    justify-content: center;
+}
+
+.regis_form {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.submit {
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+tr:nth-child(odd) {
+    background-color:cornflowerblue;
+}
+
+tr, td {
+    text-align: center;
+}
+
+caption{
+    font-weight: bold;
+}
+
+.tabelMenu {
+    border: 5px solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:cadetblue;
+    padding: 35px;
+}
+
+.divPesan {
+    border: 5px solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:cadetblue;
+    padding: 50px;
+    margin-top:-5px;
+}
+
+label{
+    display: block;
+}
+
+.pesanTxt {
+    margin-top: -10px;
+    display: block;
+    justify-content: center;
+}
+
+.formPesan {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.submit {
+    margin-top: 10px;
 }
