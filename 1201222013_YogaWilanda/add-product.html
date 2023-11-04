@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Product Page</title>
+    <script src="./scripts/bom.js"></script>
   </head>
   <body>
-    <div class="whole-section">
-      <div class="form-section">
-        <form>
+    <div class="navbar bgBlack">
+      <p>
+        <a href="./index.html">Home</a>
+        <a href="./add-product.html">Produk</a>
+        <a href="./login.html">Akun</a>
+      </p>
+    </div>
+    <div class="product-section">
+      <div class="card2">
+        <form id="formiklanpendaftaran" name="Pendaftaran Iklan Properti">
           <div class="formBox pd12">
-            <div class="user-box">
+            <!-- Judul Properti Form:Input Only -->
+            <div class="formBox">
               <label for="username">Judul Properti </label>
               <input
                 class="brdRadius brdNone pd12"
@@ -21,44 +30,42 @@
               />
             </div>
 
-            <div class="user-box">
+            <!-- Harga Properti Box: Input Only Number -->
+            <div class="formBox">
               <label for="harga-properti">Harga Properti</label>
               <input
                 class="brdRadius brdNone pd12"
-                type="text"
-                name="jenis-properti"
+                type="number"
+                name="harga-properti"
                 id="harga-properti"
                 autocomplete="additional-name"
               />
             </div>
 
-            <div class="dropdownDiv">
-              <label for="cars">Jenis Properti</label>
+            <!-- Jenis Properti Section: Dropdown-->
+            <div class="formBox">
+              <label for="jenisProperti">Jenis Properti</label>
 
               <select
-                name="cars"
+                name="jenisProperti"
                 id="property-type-dropdown"
                 class="dropdownDiv brdRadius pd12"
               >
-                <option value="rumah1">rumah1</option>
-                <option value="rumah2">rumah2</option>
-                <option value="rumah3">rumah3</option>
-                <option value="rumah4">rumah4</option>
+                <option value="Rumah">Rumah</option>
+                <option value="Apartemen">Apartemen</option>
+                <option value="Gudang">Gudang</option>
+                <option value="Tanah">Tanah</option>
               </select>
             </div>
 
-            <div class="user-box">Fasilitas Properti</div>
-            <div class="user-box">Jumlah Lantai</div>
-            <div class="user-box">Dapat Dihubungi di</div>
-
+            <!-- Status Bangunan: Radiobutton -->
             <div class="user-box">
               <p>Status Bangunan Rumah</p>
-
               <div class="row mv12 mr3">
                 <input
                   class="radio-btn"
                   type="radio"
-                  id="Bekas"
+                  id="radioStatus"
                   name="status-properti"
                   value="Bekas"
                 />
@@ -66,7 +73,7 @@
                 <input
                   class="radio-btn"
                   type="radio"
-                  id="Bekas"
+                  id="radioStatus"
                   name="status-properti"
                   value="On Development"
                 />
@@ -74,31 +81,112 @@
                 <input
                   class="radio-btn"
                   type="radio"
-                  id="Baru"
+                  id="radioStatus"
                   name="status-properti"
                   value="Baru"
                 />
                 <label for="baru">Baru</label>
               </div>
             </div>
+
+            <!-- Fasilitas Properti Section: Checkbox -->
+            <div class="">
+              <p>Fasilitas Properti</p>
+              <!-- todo: radio jenis properti -->
+              <div class="row mv12 checkbox-style1 space-around">
+                <section>
+                  <input
+                    class="checkbox-btn"
+                    type="checkbox"
+                    id="cb-fasilitas"
+                    name="cb-name-fasilitas"
+                    value="AC"
+                  />
+                  <span for="AC">AC</span>
+                </section>
+
+                <section>
+                  <input
+                    class="checkbox-btn"
+                    type="checkbox"
+                    id="cb-fasilitas"
+                    name="cb-name-fasilitas"
+                    value="Parkiran"
+                  />
+                  <label for="Parkiran">Parkiran</label>
+                </section>
+                <section>
+                  <input
+                    class="checkbox-btn"
+                    type="checkbox"
+                    id="cb-fasilitas"
+                    name="cb-name-fasilitas"
+                    value="Listrik Tanam"
+                  />
+                  <label for="Listrik Tanam">Listrik Tanam</label>
+                </section>
+              </div>
+            </div>
+
+            <!-- Jumlah Lantai Section: Input -->
+            <div class="formBox">
+              <label for="jumlah-lantai"> Jumlah Lantai </label>
+              <input
+                class="brdRadius brdNone pd12"
+                type="number"
+                inputmode="number"
+                name="jumlah-lantai"
+                id="jumlah-lantai"
+              />
+            </div>
+
+            <!-- Kontak Marketing : Input Number + Checkbox Whatsapp -->
+            <div class="formBox">
+              Dapat Dihubungi di
+              <input
+                class="brdRadius brdNone pd12"
+                type="number"
+                inputmode="number"
+                name="no-hp"
+                id="no-hp"
+              />
+              <section>
+                <input
+                  class="checkbox-btn"
+                  type="checkbox"
+                  id="checkbox-hubungi"
+                  name="status-properti"
+                  value="Whatsapp"
+                />
+                <span for="checkbox-hubungi">Whatsapp Saya Aktif</span>
+              </section>
+            </div>
           </div>
 
+          <!-- Button Action : Submit dan Randomizer -->
           <div class="row">
             <div class="pd12">
-              <button class="btnStyle1" onclick="sendToAlert(event)">submit</button>
+              <button class="btnStyle1" type="submit">submit</button>
+              <!-- <button onclick="sendToAlert(event)">submit</button> -->
             </div>
             <div class="pd12">
               <button class="btnStyle1" onclick="randomizer(event)">
-                randomize
+                Acak Data
               </button>
             </div>
           </div>
         </form>
       </div>
-      <div class="gallery-section" id="gallery-section">Gallery</div>
-    </div>
-    <script src="./scripts/bom.js"></script>
-  </body>
 
-  <script></script>
+      <!-- Prewiew Konten -->
+      <div class="card2 gallery-section">
+        Preview
+        <div class="card2" id="changethisvalue">
+          Isi formulir untuk melihat hasilnya disini
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="./scripts/bom.js"></script> -->
+  </body>
 </html>
