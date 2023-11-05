@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/regist.css" />
     <link href="image/ICON.png" type="image/png" rel="shortcut icon" />
     <title>NEW ACCOUNT - APLIKASI E-LEARNING SMK SELURUH INDONESIA</title>
+    <script type="text/javascript" src="form.js"></script>
   </head>
   <body background="image/Pattern.png">
     <div class="overlay"></div>
@@ -27,7 +28,7 @@
 
       <div class="isi">
         <h2>Buat Akun Baru</h2>
-        <form>
+        <form id="formRegist" name="formRegist" action="login.html">
           <div class="form">
             <div class="input">
               <label for="nama">Nama:</label>
@@ -46,7 +47,7 @@
               <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
             </div>
             <div class="formbutton">
-              <input type="button" id="submitForm" value="Create Account" />
+              <input type="submit" id="submitForm" value="Create Account" />
             </div>
             
           </div>
@@ -65,7 +66,7 @@
       </div>
     </div>
 
-    <script>
+    <!-- <script>
       function printAlert(){
         let nama = document.getElementById("nama").value;
         let email = document.getElementById("email").value;
@@ -84,7 +85,7 @@
       submitForm.addEventListener("click",printAlert);
 
       
-    </script>
+    </script> -->
 
   </body>
 </html>
