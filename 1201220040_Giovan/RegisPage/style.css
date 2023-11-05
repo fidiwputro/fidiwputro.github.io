@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    opacity: 35%;
+    /* opacity: 35%; */
 }
 
 .pembungkus-box {
@@ -20,8 +20,8 @@ body {
 }
 
 .daftar {
-    /* background-color: black; */
-    width: 420px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 420px; */
     display: flex;
     text-align: center;
     justify-content: center;
@@ -31,10 +31,17 @@ body {
     /* margin: 50px 50px 50px 50px; */
 }
 
+label {
+    display: block;
+    text-align: left;
+    margin-left: 29px;
+    color: white;
+}
+
 input {
     /* background-color: aqua; */
     display: block;
-    margin: 30px;
+    margin: 25px;
     height: 35px;
     width: 30vw;
     border-radius: 20px;
@@ -58,4 +65,8 @@ button {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+}
+
+h3 {
+    color: white;
 }

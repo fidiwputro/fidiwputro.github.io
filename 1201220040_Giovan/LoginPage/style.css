@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    opacity: 35%;
+    /* opacity: 35%; */
 }
 
 .pembungkus-box {
@@ -57,4 +57,8 @@ button {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+}
+
+h3 {
+    color: white;
 }
