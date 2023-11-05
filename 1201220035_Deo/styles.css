@@ -161,9 +161,7 @@ main .hero {
 
             #explore:hover {
                 opacity: 1;
-                color: #fff;
                 transform: scale(105%);
-                border: 2px solid #fff;
             }
         }
     }
