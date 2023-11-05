@@ -1,7 +1,7 @@
 /* 
-60 - #f0f2f1
-30 - #3b5d4f
-10 - #f8bf28 
+#f0f2f1
+#3b5d4f
+#f8bf28 
 #2f2f2f
 #cad6d2
 */
@@ -31,9 +31,10 @@ nav h1 {
 }
 
 nav ul {
-    gap: 45px;
+    gap: 35px;
     display: flex;
     align-items: center;
+    margin-left: 120px;
     /* background-color: antiquewhite; */
 }
 
@@ -42,22 +43,50 @@ nav ul li {
 }
 
 nav ul li a {
+    opacity: 0.5;
     color: #fff;
     font-weight: 500;
+    position: relative;
     text-decoration: none;
 }
 
-nav ul .menu {
-    gap: 40px;
-    display: flex;
-    /* background-color: aqua; */
+nav ul li a:hover {
+    opacity: 1;
 }
 
-nav ul .menu li a:not(#active) {
-    opacity: 0.5;
+nav ul .active li a {
+    opacity: 1;
 }
 
-nav ul .button {
+nav ul .active li a::before {
+    left: 0;
+    content: "";
+    height: 4px;
+    width: 100%;
+    bottom: -10px;
+    display: block;
+    position: absolute;
+    background-color: #f8bf28;
+}
+
+nav ul li a::before {
+    left: 0;
+    width: 0;
+    content: "";
+    height: 4px;
+    bottom: -10px;
+    display: block;
+    transition: 0.3s;
+    position: absolute;
+    background-color: #f8bf28;
+}
+
+nav ul li a:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+
+nav .button {
     display: flex;
     /* background-color: aqua; */
 
@@ -66,19 +95,18 @@ nav ul .button {
         font-weight: 600;
         padding: 14px 28px;
         border-radius: 30px;
+        text-decoration: none;
+        /* background-color: aqua; */
     }
 
     #sign-up {
         font-weight: 600;
         color: #2f2f2f;
-        padding: 14px 28px;
+        padding: 16px 32px;
         border-radius: 30px;
+        text-decoration: none;
         background-color: #f8bf28;
     }
-}
-
-nav ul li .button a {
-    color: #fff;
 }
 
 /* main */
@@ -105,31 +133,37 @@ main .hero {
                 font-size: 14px;
                 font-weight: 600;
                 color: #2f2f2f;
-                transition: 0.2s;
                 padding: 16px 32px;
                 border-radius: 50px;
                 text-decoration: none;
+                transition: 0.3s all ease;
                 border: 2px solid #f8bf28;
                 background-color: #f8bf28;
             }
 
             #shop:hover {
+                color: #f8bf28;
                 transform: scale(105%);
+                border: 2px solid #f8bf28;
+                background-color: #3b5d4f;
             }
 
             #explore {
-                opacity: 0.8;
+                opacity: 0.5;
                 color: #fff;
-                transition: 0.2s;
                 font-weight: 600;
                 padding: 16px 32px;
                 border-radius: 50px;
                 text-decoration: none;
                 border: 2px solid #fff;
+                transition: 0.3s all ease;
             }
 
             #explore:hover {
+                opacity: 1;
+                color: #fff;
                 transform: scale(105%);
+                border: 2px solid #fff;
             }
         }
     }
