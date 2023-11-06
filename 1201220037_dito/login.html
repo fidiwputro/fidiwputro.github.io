@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="./login.css" type="text/css">
+    <script type="text/javascript" src="./login.js"></script>
     <title>ExpenseNote</title>
 </head>
 
@@ -13,7 +14,7 @@
         </div>
 
         <h2>Login</h2>
-        <form>
+        <form id="diform" action="./index.html" name="Form Login">
             <div class="username">
                 <!-- <label>Username</label> -->
                 <input type="text" name="username" id="username" placeholder="Username">
@@ -23,12 +24,12 @@
                 <input type="password" name="password" id="password" placeholder="Password">
             </div>
 
-            <button type="button" id="buttonLogin" value="submit">SUBMIT</button>
+            <button type="submit" id="buttonLogin" value="simpan">SUBMIT</button>
 
         </form>
-    </div>
 
-    <script src="Login.js"></script>
+        <p>Dont Have an Account? <a href="./register.html"> Sign up</a></p>
+    </div>
 </body>
 
 </html>
