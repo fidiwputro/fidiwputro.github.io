@@ -55,7 +55,6 @@ body {
 
 
 .out-form {
-    /* background-image: url("/1201220006_Ezra/assets/Untitled\ \(1\).png"); */
     border: 9px solid black;
     background-color: white;
     width: 605px;
@@ -63,13 +62,13 @@ body {
 }
 
 .in-form {
-    margin: 2.1rem auto;
+    margin: 1.7rem auto;
     width: 21.1rem;
 }
 
 
 .inp-form {
-    text-align: center;
+    text-align: start;
 }
 
 
@@ -81,7 +80,10 @@ body {
     text-align: start;
 }
 .inp-name input {
-    padding: 1em 5rem;
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
     border: 8px solid black;
 }
 
@@ -96,7 +98,10 @@ body {
 }
 
 .inp-email input {
-    padding: 1em 5rem;
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
     border: 8px solid black;
 }
 
@@ -111,14 +116,17 @@ body {
 }
 
 .inp-password input {
-    padding: 1em 5rem;
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
     border: 8px solid black;
 }
 
 
 .btn-register {
     text-align: center;
-    margin: 2.5rem auto;
+    margin: 2.4rem auto;
 }
 
 .btn-register a {
