@@ -66,7 +66,13 @@ button{
 p{
     color: #faebd7;
 }
-
+form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2px;
+    margin-bottom: 20px;
+}
 .judul{
     color: #faebd7;
     text-align: center;

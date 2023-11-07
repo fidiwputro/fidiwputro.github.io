@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Login</title>
 </head>
 <body>
-    <div class="">
-
+    <div class="pembungkus-box">
+        <div class="login">
+            <form name="login" onsubmit="log()">
+            <!-- Alamat Email -->
+                <input type="email" id="email" name="email" placeholder="Email">
+            <!-- Password -->
+                <input type="password" id="password" name="password" placeholder="Password">
+            <!-- Tombol Login -->
+                <button type="submit" id="btn-masuk">Masuk</button>
+            </form>
+        </div>
+        <!-- Ke Halaman Registrasi -->
+        <h3>Belum punya akun? <a href="/1201220040_Giovan/RegisPage/daftar.html">Registrasi Sekarang</a></h3>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
