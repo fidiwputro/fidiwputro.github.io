@@ -8,7 +8,7 @@
 <body>
     <div class="halaman-login">
         <div class="form-login">
-            <form>
+            <form name="form-register">
                 <h2>Register</h2>
                 <div>
                     <label for="firstname">First Name : </label>
@@ -34,9 +34,11 @@
                     <label for="confirmpass">Confirm Password : </label>
                     <input type="password" name="confirmpass" id="confirmpass"><br><br>
                 </div>
-                <input type="button" value="Register"><br><br>
+                <input type="submit" value="Register" id="btnregister"><br><br>
                 <a href="login.html">Sudah Punya Akun ?</a><br>
             </form>
+            <script src="validationregister.js"></script>
+            <script src="ddom.js"></script>
         </div>
     </div>
 </body>
