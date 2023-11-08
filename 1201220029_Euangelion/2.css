@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: #0C356A;
+  background-color: #053B50;
 }
 
 p {
@@ -19,7 +19,7 @@ p {
 .home h1{
   margin-bottom: 30px;
   font-weight: 300;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family :'Times New Roman', Times, serif;
 }
 
 .home h2{
@@ -76,16 +76,11 @@ p {
 }
 
 .home {
-  background-color: #0C356A;
+  background-color: #053B50;
   height: 60vh;
   color: #ffffff;
   }
-  .footer {
-    text-align: center;
-    color: black;
-    margin-top: 150px;
-  }
-  
+
 .home .button{
   display:flex;
 }
@@ -93,12 +88,52 @@ p {
 .home .button #explore{
   text-decoration: none;
   margin-left: 10px;
+  margin-bottom: 50px;
   color: #000000;
   padding: 14px 28px;
   background-color: #ffffff;
   border-radius: 30px;
 }
 
-.footer p {
-    color: #000000;
+.partner {
+ background-color: #053B50;
+ height: 60hv;
+ color: #ffffff; 
+ display: flex;
+ gap: 10px;
+ font-size: large;
 }
+.partner h2{
+  margin-bottom: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  
+}
+.partner img {
+   width: 300px;
+   height: 130px;
+   margin-left: 10px;
+   margin-top: 50px;
+}
+.partner p {
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  color: black;
+  margin-top: 150px;
+  display: flex;
+
+}
+  .footer img{
+    width: 300px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: -50px;
+ }
+  .footer p {
+    color: #000000;
+  }
+
+
+

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <title>FurniHub</title>
+    <title>FurnitureHub.</title>
 </head>
 
 <body>
@@ -14,19 +14,19 @@
         <nav>
             <h1>FurnitureHub.</h1>
             <ul>
-                <div class="menu">
-                    <li><a href="#home" id="active">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <!-- <li><a href="#">Services</a></li> -->
-                    <li><a href="#">Blog</a></li>
-                    <!-- <li><a href="#">Contact Us</a></li> -->
+                <div class="active">
+                    <li><a href="#home">Home</a></li>
                 </div>
-                <div class="button">
-                    <li><a href="#" id="login">Login</a></li>
-                    <li><a href="#" id="sign-up">Sign Up</a></li>
-                </div>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
+            <div class="button">
+                <a href="#" id="login">Login</a>
+                <a href="#" id="sign-up">Sign Up</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -56,16 +56,16 @@
                     <img src="Resources/product-1.png" alt="product1" id="img">
                     <h3>Nordic Chair</h3>
                     <h2>$50.00</h2>
-                    <img src="Resources/cross.svg" alt="icon" id="icon">
+                    <!-- <img src="Resources/cross.svg" alt="icon" id="icon"> -->
                 </div>
                 <div class="product1">
                     <img src="Resources/product-2.png" alt="product1" id="img">
-                    <h3>Nordic Chair</h3>
+                    <h3>Zeus Chair</h3>
                     <h2>$50.00</h2>
                 </div>
                 <div class="product1">
                     <img src="Resources/product-3.png" alt="product1" id="img">
-                    <h3>Nordic Chair</h3>
+                    <h3>Ergonomic Chair</h3>
                     <h2>$50.00</h2>
                 </div>
             </div>
@@ -111,8 +111,184 @@
             <img src="Resources/dots-yellow.svg" alt="dots-yellow" id="dots-yellow">
         </section>
 
-        <section class="help"></section>
+        <section class="help">
+            <div class="img-group">
+                <img src="Resources/dots-green.svg" alt="interior" id="dots-green">
+                <img src="Resources/img-grid-1.jpg" alt="interior" id="grid-1">
+                <img src="Resources/img-grid-2.jpg" alt="interior" id="grid-2">
+                <img src="Resources/img-grid-3.jpg" alt="interior" id="grid-3">
+            </div>
+            <div class="text">
+                <h2>We Help You Make Modern Interior Design</h2>
+                <p id="desc">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+                    malesuada. Nullam
+                    ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+                    morbi tristique senectus et netus et malesuada</p>
+                <ul>
+                    <li><span>Donec vitae odio quis nisl dapibus malesuada</span></li>
+                    <li><span>Donec vitae odio quis nisl dapibus malesuada</span></li>
+                    <li><span>Donec vitae odio quis nisl dapibus malesuada</span></li>
+                    <li><span>Donec vitae odio quis nisl dapibus malesuada</span></li>
+                </ul>
+                <button id="btn-ex">Explore</button>
+            </div>
+        </section>
+
+        <section class="best-product">
+            <div class="best-1">
+                <div class="box">
+                    <img src="Resources/product-1.png" alt="chair">
+                </div>
+                <div class="text">
+                    <h3>Nordic Chair</h3>
+                    <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="best-1">
+                <div class="box">
+                    <img src="Resources/product-2.png" alt="chair">
+                </div>
+                <div class="text">
+                    <h3>Zeus Chair</h3>
+                    <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="best-1">
+                <div class="box">
+                    <img src="Resources/product-3.png" alt="chair">
+                </div>
+                <div class="text">
+                    <h3>Ergonomic Chair</h3>
+                    <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <h2>Testimonial</h2>
+            <div class="container">
+                <button id="left"><i class='bx bx-chevron-left'></i></button>
+                <div class="text">
+                    <blockquote>
+                        <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+                            malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+                            tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                            turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                    </blockquote>
+                    <div class="profile">
+                        <img src="Resources/person-1.jpg" alt="person">
+                        <h3>Alexandria</h3>
+                        <p>CEO, Co-Founder, XYZ Inc.</p>
+                    </div>
+                </div>
+                <button id="left"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="heading">
+                <h2>Recent Blog</h2>
+                <a href="#">View All Post</a>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <img src="Resources/post-1.jpg" alt="post">
+                    <h3>How to Keep Your Furniture Clean</h3>
+                    <p>by <span>Johnson</span> on <span>Dec 20, 2024 </span></p>
+                </div>
+                <div class="card">
+                    <img src="Resources/post-2.jpg" alt="post">
+                    <h3>How to Keep Your Furniture Clean</h3>
+                    <p>by <span>Johnson</span> on <span>Dec 20, 2024 </span></p>
+                </div>
+                <div class="card">
+                    <img src="Resources/post-3.jpg" alt="post">
+                    <h3>How to Keep Your Furniture Clean</h3>
+                    <p>by <span>Johnson</span> on <span>Dec 20, 2024 </span></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="forum">
+                    <div class="heading">
+                        <img src="Resources/envelope-outline.svg" alt="email-con">
+                        <h3>Subscribe to Newsletter</h3>
+                    </div>
+                    <form action="#" id="form">
+                        <div class="form-control">
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                            <span id="name_error"></span>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <span id="email_error"></span>
+                        </div>
+                        <button type="submit" id="button-subscribe"><i class='bx bxs-paper-plane'></i></button>
+                    </form>
+                </div>
+                <img src="Resources/sofa-kecil.png" alt="sofa-kecil" id="img-sofa-kecil">
+            </div>
+
+            <h1>FurnitureHub.</h1>
+            <div class="box">
+                <div class="about">
+                    <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada.
+                        Nullam
+                        ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque
+                        habitant
+                    </p>
+                    <div class="sosmed">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="link1">
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="link2">
+                        <a href="#">Support</a>
+                        <a href="#">Knowledge Base</a>
+                        <a href="#">Live Chat</a>
+                    </div>
+                    <div class="link3">
+                        <a href="#">Jobs</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Leadership</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="link4">
+                        <a href="#">Nordic Chair</a>
+                        <a href="#">Zeus Chair</a>
+                        <a href="#">Ergonomic Chair</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p id="decs">Copyright &copy;. All Rights Reserved. &mdash; Designed with love by </p>
+                    <a href="#" id="credit">Theo</a>
+                </div>
+                <div class="policy">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

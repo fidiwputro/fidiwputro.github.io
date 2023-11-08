@@ -3,48 +3,41 @@
     <head>
         <title>Halaman Registrasi</title>
         <link rel="stylesheet" type="text/css" href="registrasi.css">
+        <script type="text/javascript" src="formbaru.js"></script>
+        <script>
+            function Daftar() {
+              let nama = document.getElementById("nama").value;
+              let Username = document.getElementById("Username").value;
+              let Email = document.getElementById("email").value;
+              let gender = document.getElementById("gender").value;
+              alert (nama);
+              alert (Username);
+              alert (Email);
+              alert (password);
+              alert (gender);
+            }
+        </script>
     </head>
     <body>
         <div class="navbar">
             <ul>
-              <li><span class="logo"></span></li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Layanan </a></li>
-              <li><a href="login.html">Masuk</a></li>
-              <li><a href="registrasi.html">Daftar</a></li>
+                <li><span class="logo"></span></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="login.html">Masuk</a></li>
+                <li><a href="registrasi.html">Daftar</a></li>
             </ul>
-          </div>
+        </div>
 
-    <form action="#">
-        <h2>Registrasi</h2>
-        
-        <input type="nama" id="nama" placeholder="Nama" required><br><br>
-        
-
-        <input type="Username" id="Username" placeholder="Username" required><br><br>
-
-     
-        <input type="email" id="email" placeholder="Email" required><br><br>
-
-       
-        <input type="password" id="password" placeholder="Password" required><br><br>
-                
-       
-        <input type="gender" id="gender"placeholder="Gender" required><br><br>
-
-        <input  type="submit" id = "button" value="Daftar" onclick="Daftar()">
-      </form>
-      <script>
-        function Daftar() {
-          let nama = document.getElementById("nama").value;
-          let Username = document.getElementById("Username").value;
-          let Email = document.getElementById("email").value;
-          let gender = document.getElementById("gender").value;
-
-        }
-      </script>
-    </body>
-    </html>
+        <form action="#">
+            <h2>Registrasi</h2>
+            <input type="nama" id="nama" placeholder="Nama" required><br><br>
+            <input type="username" id="Username" placeholder="Username" required><br><br>
+            <input type="email" id="email" placeholder="Email" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br>
+            <input type="gender" id="gender" placeholder="Gender" required><br><br>
+            <input type="submit" id="button" value="Daftar" onclick="Daftar()">
+        </form>
     </body>
 </html>
