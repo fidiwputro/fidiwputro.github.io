@@ -168,8 +168,8 @@ header {
 }
 
 .listcard div{
-    background-size: cover; /* Atur sesuai kebutuhan */
-  background-position: center; /* Atur posisi latar belakang */
+    background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
     color: black;
     width: 300px;
