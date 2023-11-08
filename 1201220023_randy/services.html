@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="formPesan.js"></script>
     <title>Services</title>
   </head>
   <body>
@@ -18,8 +19,6 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Service</a></li>
-        <li><a href="login.html">Sign In</a></li>
-        <li><a href="regis.html">Sign Up</a></li>
       </ul>
     </nav>
     <!--Tabel Menu-->
@@ -150,9 +149,7 @@
             <td>telur Mata sapi</td>
           </tr>
         </table>
-      </div>
-    </div>
-    <!--Form Pesan-->
+        <!--Form Pesan-->
     <div class="divDivPesan">
       <div class="divPesan">
         <form id="pesan" name="formPesan">
@@ -168,10 +165,10 @@
             </div>
             <div>
               <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" />
+              <input type="tel" id="phone" name="phone" maxlength="12"/>
             </div>
             <div>
-              <label for="event">Event Type</label>
+              <label for="event">Acara</label>
               <input type="text" id="event" name="event" />
             </div>
             <div>
@@ -185,6 +182,8 @@
             </div>
           </div>
         </form>
+      </div>
+    </div>
       </div>
     </div>
   </body>

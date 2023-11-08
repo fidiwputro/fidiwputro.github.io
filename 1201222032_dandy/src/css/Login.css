@@ -16,17 +16,18 @@ body {
     flex-direction: row;
 }
 
+
+.loginLeft {
+    background-color: var(--third-color);
+    width: 50%;
+    height: 100vh;
+}
+
 .Logo {
     text-align: center;
     color: var(--primary-color);
     font-size: 40px;
     margin: 50px 50px 20px 50px;
-}
-
-.registerLeft {
-    background-color: var(--third-color);
-    width: 50%;
-    height: 100%;
 }
 
 p {
@@ -90,12 +91,8 @@ button:hover {
     background-color: var(--primary-color);
 }
 
-.Login {
-    margin-right:  50px;
-    margin-left:  50px;
-    margin-top:  0px;
-    margin-bottom: 40px;
-    border: #0b5ed7 solid 1px;
+.Register {
+    margin:0px 50px;
     text-align: center;
     font-weight: bold;
     color: var(--text-color);
@@ -107,9 +104,9 @@ h4>a {
     font-weight: normal;
 }
 
-.registerRight {
+.loginRight {
     width: 50%;
-    height: auto;
+    height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -121,4 +118,17 @@ img {
     object-fit: contain;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .loginLeft {
+        width: 100vw;
+    }
+    .loginRight{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}

@@ -27,6 +27,7 @@
                 name="usernamee"
                 id="username"
                 autocomplete="additional-name"
+                required
               />
             </div>
 
@@ -39,6 +40,7 @@
                 name="harga-properti"
                 id="harga-properti"
                 autocomplete="additional-name"
+                required
               />
             </div>
 
@@ -48,8 +50,9 @@
 
               <select
                 name="jenisProperti"
-                id="property-type-dropdown"
+                id="status-bangunan"
                 class="dropdownDiv brdRadius pd12"
+                required
               >
                 <option value="Rumah">Rumah</option>
                 <option value="Apartemen">Apartemen</option>
@@ -68,6 +71,7 @@
                   id="radioStatus"
                   name="status-properti"
                   value="Bekas"
+                  required
                 />
                 <label for="Bekas">Bekas</label><br />
                 <input
@@ -76,6 +80,7 @@
                   id="radioStatus"
                   name="status-properti"
                   value="On Development"
+                  required
                 />
                 <label for="On Development">On Development</label><br />
                 <input
@@ -84,6 +89,7 @@
                   id="radioStatus"
                   name="status-properti"
                   value="Baru"
+                  required
                 />
                 <label for="baru">Baru</label>
               </div>
@@ -137,6 +143,7 @@
                 inputmode="number"
                 name="jumlah-lantai"
                 id="jumlah-lantai"
+                required
               />
             </div>
 
@@ -181,7 +188,7 @@
       <!-- Prewiew Konten -->
       <div class="card2 gallery-section">
         Preview
-        <div class="card2" id="changethisvalue">
+        <div class="card2" id="getInputValue">
           Isi formulir untuk melihat hasilnya disini
         </div>
       </div>

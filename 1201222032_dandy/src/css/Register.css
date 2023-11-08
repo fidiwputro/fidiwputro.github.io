@@ -16,18 +16,17 @@ body {
     flex-direction: row;
 }
 
-
-.loginLeft {
-    background-color: var(--third-color);
-    width: 50%;
-    height: 100vh;
-}
-
 .Logo {
     text-align: center;
     color: var(--primary-color);
     font-size: 40px;
     margin: 50px 50px 20px 50px;
+}
+
+.registerLeft {
+    background-color: var(--third-color);
+    width: 50%;
+    height: 800px;
 }
 
 p {
@@ -91,8 +90,11 @@ button:hover {
     background-color: var(--primary-color);
 }
 
-.Register {
-    margin:0px 50px;
+.Login {
+    margin-right:  50px;
+    margin-left:  50px;
+    margin-top:  0px;
+    margin-bottom: 40px;
     text-align: center;
     font-weight: bold;
     color: var(--text-color);
@@ -104,9 +106,9 @@ h4>a {
     font-weight: normal;
 }
 
-.loginRight {
+.registerRight {
     width: 50%;
-    height: 100vh;
+    height: 800px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -118,4 +120,14 @@ img {
     object-fit: contain;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 1066px) {
+    .registerRight{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .registerLeft {
+        width: 100vw;
+        height: 100vh;
+    }
+}

@@ -84,7 +84,7 @@ body {
     border-radius: 13px;
     margin-top: 20px;
     position: absolute;
-    top: 370px;
+    top: 350px;
     right: 220px;
     border: none;
 }
@@ -98,4 +98,19 @@ body {
         0 0 50px #E5D283,
         0 0 100px #E5D283;
     transition: 0.5s ease;
+}
+
+.Register p {
+    padding-top: 40%;
+    padding-left: 15%;
+
+}
+
+.Register a {
+    text-decoration: none;
+}
+
+.placeholderMerah::placeholder {
+    /*ini untuk di get elementnya pada javascript dengan classlist*/
+    color: red;
 }
