@@ -3,6 +3,14 @@
     <head>
         <title>Halaman login</title>
         <link rel="stylesheet" type="text/css" href="login.css">
+        <script>
+    function Login() {
+        let username = document.getElementById("Username").value;
+        let password = document.getElementById("password").value;
+
+        alert("Informasi Login disimpan!");
+    }
+</script>
     </head>
     <body>
         <div class="navbar">
@@ -15,7 +23,7 @@
                 <li><a href="registrasi.html">Daftar</a></li>
             </ul>
         </div>
-        <form action="#">
+        <form action="#" onsubmit="return Login();">
             <div class="container">
                 <img src="01.jpg" alt="Gambar Login" >
                 <div class="form-container">

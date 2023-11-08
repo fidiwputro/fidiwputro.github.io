@@ -5,26 +5,22 @@
         <link rel="stylesheet" type="text/css" href="registrasi.css">
         <script type="text/javascript" src="formbaru.js"></script>
         <script>
-function Daftar() {
-    let nama = document.getElementById("nama").value;
-    let Username = document.getElementById("Username").value;
-    let Email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    let gender = document.getElementById("gender").value;
-
-    if (password.length < 8) {
-        alert("Password harus terdiri dari minimal  delapan karakter.");
-        return false; // Menghentikan pengiriman formulir jika password tidak memenuhi syarat
-    }
-
-    // Melakukan pengiriman formulir jika semua syarat terpenuhi
-    alert(nama);
-    alert(Username);
-    alert(Email);
-    alert(password);
-    alert(gender);
-    return true;
-}
+            function Daftar() {
+                let nama = document.getElementById("nama").value;
+                let Username = document.getElementById("Username").value;
+                let Email = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
+                let gender = document.getElementById("gender").value;
+        
+                if (password.length < 8) {
+                    alert("Password harus terdiri dari minimal delapan karakter.");
+                    return false; // Menghentikan pengiriman formulir jika password tidak memenuhi syarat
+                }
+        
+                // Melakukan pengiriman formulir jika semua syarat terpenuhi
+                alert("Data berhasil disimpan!");
+                return true;
+            }
         </script>
     </head>
     <body>
