@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="formRegis.js"></script>
     <title>Sign In</title>
   </head>
   <body>
@@ -17,40 +18,41 @@
       />
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Service</a></li>
         <li><a href="login.html">Sign In</a></li>
         <li><a href="regis.html">Sign Up</a></li>
       </ul>
     </nav>
     <!--Form Registrasi-->
-    <div>
-      <form name="regisgaksih">
-        <h1>Registrasi Akun</h1>
-        <div class="regis_form">
+    <div class="divDivRegis">
+    <div class="divRegis">
+      <form id= "regis" name="form-regis" action="login.html">
+        <h1 class="regisTxt">Registrasi Akun</h1>
+        <div class="formRegis">
           <div>
             <label>Nama :</label>
-            <input type="text" id="fnama" name="fnama" />
+            <input class="txtName" type="text" id="fnama" name="fnama" />
           </div>
           <div>
             <label>Email :</label>
-            <input type="text" id="femail" name="femail" />
+            <input type="email" id="femail" name="femail" />
           </div>
           <div>
             <label>No. HP :</label>
-            <input type="text" id="fphone" name="fphone" />
+            <input type="tel" id="fphone" name="fphone" maxlength="12"/>
           </div>
           <div>
             <label>Password :</label>
-            <input type="text" id="fpw" name="fpw" />
+              <input type="password" id="fpw" name="fpw" />
+            </div>
+            <div>
+              <input class="submit" type="submit" id="submit" name="submit" value="submit" />
+            </div>
           </div>
-          <div>
-            <input type="submit" id="submit" name="submit" value="submit" />
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-    <!--Script JS-->
-    <script>
+    <!--Script JS Registrasi-->
+    <!-- <script>
     let form = document.forms.regisgaksih;
     function kirim() {
         let nama = document.getElementById("fnama");
@@ -63,7 +65,7 @@
             alert('Akun berhasil terdaftar');
         }
     }
-    form.addEventListener("submit", kirim);
+    form.addEventListener("submit", kirim); -->
     </script>
   </body>
 </html>

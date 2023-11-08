@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/Register.css">
+    <link rel="stylesheet" href="../src/css/Register.css">
+    <script src="../src/js/Register.js"></script>
     <title>EasyCode | Platform Belajar Coding</title>
 </head>
 <body>
@@ -12,21 +13,21 @@
         <h1 class="Logo">EasyCode</h1>
         <p>Daftarkan dirimu untuk menjelajahi lebih luas</p>
         <div class="form">
-            <form action="">
+            <form action="./Login.html" name="register">
                 <!-- <div class="usernameForm"> -->
-                    <label for="Username">Nama</label>
-                    <input placeholder="Masukkan Nama" type="text" id="Name" name="Name" required>
+                    <label for="Nama">Nama</label>
+                    <input placeholder="Masukkan Nama" type="text" id="Nama" name="Name">
                     <label for="Username">Username</label>
-                    <input placeholder="Masukkan Username" type="text" id="Username" name="Username" required>
-                    <label for="Username">Email</label>
-                    <input placeholder="Masukkan Email" type="email" id="Email" name="Email" required>
+                    <input placeholder="Masukkan Username" type="text" id="Username" name="Username">
+                    <label for="Email">Email</label>
+                    <input placeholder="Masukkan Email" type="email" id="Email" name="Email">
                 <!-- </div> -->
                 <!-- <div class="passwordForm"> -->
                     <label for="Password">Password</label>
-                    <input placeholder="Masukkan Password" type="password" id="Password" name="Password" required>
+                    <input placeholder="Masukkan Password" type="password" id="Password" name="Password">
                 <!-- </div> -->
+                <button type="submit">Daftar</button>
             </form>
-            <button type="submit">Daftar</button>
         </div>
         <h4 class="Login">Sudah Punya akun ? <a href="Login.html">Masuk.</a></h4>
     </section>
@@ -34,6 +35,19 @@
     <section class="registerRight">
         <img src="../assets/Register.jpg" alt="">
     </section>
+    <!-- <script>
+        function test() {
+            const namaValidate = document.forms["register"]["Name"].value;
+            const usernameValidate = document.forms["register"]["Username"].value;
+            const emailValidate = document.forms["register"]["Email"].value;
+            const passwordValidate= document.forms["register"]["Password"].value;
+            (namaValidate == "dandy") ? alert("Berhasil Login!"): alert("Nama Harus Diisi !")
+            (usernameValidate == "dandy") ? alert("Berhasil Login!"): alert("Nama Harus Diisi !")
+            (emailValidate == "dandy@gmail.com") ? alert("Berhasil Login!"): alert("Nama Harus Diisi !")
+            (passwordValidate == "dandy") ? alert("Berhasil Login!"): alert("Nama Harus Diisi !")
+        }
+        
+    </script> -->
 
 </body>
 </html>

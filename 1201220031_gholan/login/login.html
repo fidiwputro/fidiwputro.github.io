@@ -5,22 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="loginstyle.css">
-  <title>Document</title>
+  <script type="text/javascript" src="login/form.js"></script>
+  <title>Login</title>
 </head>
 
 <body>
   <div class="formulir">
     <h1>Login</h1>
-    <form action="">
-      <input type="text" placeholder="Email">
-      <input type="text" placeholder="Password">
+    <form id= "form">
+      <input id="Email" type="text" placeholder="Email">
+      <span id="error_email"></span>
+      <input id="password" type="password" placeholder="Password">
+      <span id="error_password"></span>
     </form>
     <div class="forgot">
       <p>Forgot Password?</p>
     </div>
-    <button>Login</button>
-    <p>Tidak punya akun? <a href="#">Sign Up</a></p>
+    <button type="submit">Login</button>
+
+    <!-- <p>Belum punya akun? <a href="#">Sign Up</a></p> -->
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

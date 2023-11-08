@@ -20,15 +20,8 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
 
-            <li class="submenu">
-                <a href="shop.html">SHOP</a>
-                <ul class="submenu-content">
-                    <li><a href="makanan.html">FOOD</a></li>
-                    <li><a href="mainan.html">TOYS</a></li>
-                    <li><a href="kebersihan.html">CLEANING TOOL</a></li>
-                    <li><a href="obat.html">MEDICINE</a></li>
-                </ul>
-            </li>
+            
+            <li><a href="shop.html">SHOP</a></li>
 
             <li class="submenu">
                 <a href="miaw.html">Service</a>
@@ -88,27 +81,40 @@
           <div class="form">
             <div class="input">
               <label for="nama">Nama:</label>
-              <input type="text" id="nama" name="nama" placeholder="Ex: John Cena">
+              <input type="text" id="txtname" name="txtname" placeholder="Enter Username">
             </div>
             <div class="input">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Ex: example@example.com">
+              <input type="text" id="txtemail" name="txtemail" placeholder="Enter Your Email">
             </div>
             <div class="input">
               <label for="password">Password:</label>
-              <input type="password" id="password" name="password" placeholder="Enter your password">
+              <input type="text" id="txtpass"  name="txtpass" placeholder="Enter Password">
             </div>
-          <div class="input">  
+			<div class="input">  
               <label for="confirm-password">Confirm Password:</label>
               <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
             </div>
             <div class="formbutton">
-              <button type="submit"><a href="login.html">Create Account</a></button>
+              <button type="submit" name="buttonlogin" id="btnreg" value="login"><a href="login.html">Create Account</a></button>
             </div>
-            
+            </div>
           </div>
         </form>
-        
       </div>
+	 
+	  
+	<script>
+	function test(){
+		let Email= document.getElementById('txtemail').value;
+		let Nama= document.getElementById('txtname').value;
+		let Password= document.getElementById('txtpass').value;
+		
+		//alert(Email+' '+Nama+' '+Password);
+		alert("APAKAH ANDA SUDAH YAKIN ??")
+	}
+	btnreg.addEventListener('click', test);
+	</script>
+	
 </body>
 </html>

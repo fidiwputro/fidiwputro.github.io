@@ -6,6 +6,7 @@
         <title>Wahana Taman Hiburan</title>
         <link rel="stylesheet" href="style.css">
         <link href="assets/carousel.png" type="image/x-icon" rel="shortcut icon">
+        <script type="text/javascript" src="form.js"></script>
     </head>
 <body>
     <nav class="navbar">
@@ -22,32 +23,34 @@
     <header>
         <h2>Beli Tiket</h2>
     </header>
-    <div class="divTiket">
-        <div>
-            <h3>Nama Lengkap</h3>
-            <input type="text" id="txtnama" placeholder="Nama" required>
+    <form id="formBeliTiket">
+        <div class="divTiket" action="index.html">
+            <div>
+                <h3>Nama Lengkap</h3>
+                <input type="text" name="nama" id="txtnama" placeholder="Nama">
+            </div>
+            <div>
+                <h3>E-Mail</h3>
+                <input type="email" name="E-Mail" id="txtemail" placeholder="E-Mail">
+            </div>
+            <div>
+                <h3>Nomor Telepon</h3>
+                <input type="text" name="Nomor Telepon" id="txtnotelp" placeholder="Nomor Telepon">
+            </div>
+            <div>
+                <h3>Banyak Tiket</h3>
+                <input type="number" name="Banyak Tiket" id="bykTiket" placeholder="Banyak Tiket">
+            </div>
+            <div>
+                <h3>Tanggal Kunjungan</h3>
+                <input type="date" name="Tanggal Pesanan" id="tglPesanan" placeholder="Pilih Tanggal Terlebih Dahulu">
+            </div>
+            <div>
+                <button id="submit" type="submit" value="submit">BELI</button>
+            </div>
         </div>
-        <div>
-            <h3>E-Mail</h3>
-            <input type="email" name="E-Mail" id="txtemail" placeholder="E-Mail" required>
-        </div>
-        <div>
-            <h3>Nomor Telepon</h3>
-            <input type="text" id="txtnotelp" placeholder="Nomor Telepon" required>
-        </div>
-        <div>
-            <h3>Banyak Tiket</h3>
-            <input type="number" name="bykTiket" id="bykTiket" placeholder="Banyak Tiket" required>
-        </div>
-        <div>
-            <h3>Tanggal Kunjungan</h3>
-            <input type="date" name="tglPesanan" id="tglPesanan" placeholder="Pilih Tanggal Terlebih Dahulu" required>
-        </div>
-        <div id="beliTiket">
-            <input onclick="submit()" type="button" value="Beli">
-        </div>
-    </div>
-    <script>
+    </form>
+    <!-- <script>
         function submit() {
             let nama = document.getElementById("txtnama").value;
             let email = document.getElementById("txtemail").value;
@@ -60,6 +63,6 @@
             alert(bykTiket);
             alert(tglKunjungan);
         }
-    </script>
+    </script> -->
 </body>
 </html>

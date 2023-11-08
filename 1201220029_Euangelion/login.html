@@ -3,31 +3,37 @@
     <head>
         <title>Halaman login</title>
         <link rel="stylesheet" type="text/css" href="login.css">
+        <script>
+    function Login() {
+        let username = document.getElementById("Username").value;
+        let password = document.getElementById("password").value;
+
+        alert("Informasi Login disimpan!");
+    }
+</script>
     </head>
     <body>
-    <div class="navbar">
-        <ul>
-          <li><span class="logo"></span></li>
-          <li><a href="komodo.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Layanan </a></li>
-          <li><a href="login.html">Masuk</a></li>
-          <li><a href="registrasi.html">Daftar</a></li>
-        </ul>
-      </div>
-    <form action="#">
-         <h2> Login</h2>
-        
-        <label for="Username">Username</label><br>
-        <input type="Username" id="Username" name="Username" required><br><br>
-        
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <input type="submit" id="button" value="Masuk"><br><br>
-
-      </form>
-    </body>
-    </html>
+        <div class="navbar">
+            <ul>
+                <li><span class="logo"></span></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Layanan </a></li>
+                <li><a href="login.html">Masuk</a></li>
+                <li><a href="registrasi.html">Daftar</a></li>
+            </ul>
+        </div>
+        <form action="#" onsubmit="return Login();">
+            <div class="container">
+                <img src="01.jpg" alt="Gambar Login" >
+                <div class="form-container">
+                    <h2>Login</h2>
+                    <input type="username" id="Username" placeholder="Username" required><br><br>
+                    <input type="password" id="password" placeholder="Password" required><br><br>
+                    <input type="submit" id="button" value="Masuk"><br><br>
+                </div>
+            </div>
+        </form>
+        <script src="formbaru.js"></script>
     </body>
 </html>
