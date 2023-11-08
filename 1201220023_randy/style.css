@@ -4,7 +4,7 @@ body {
 }
 
 .navigasi {
-    background-color: cornflowerblue;
+    background-color: #363062;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -23,7 +23,7 @@ li a {
 }
 
 li a:hover {
-    color: midnightblue;
+    color: #F5E8C7;
 }
 
 .kontenbg {
@@ -48,7 +48,7 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:aquamarine;
+    background-color:#435585;
     height: 89vh;
 }
 
@@ -59,12 +59,8 @@ li a:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color:cadetblue;
+    background-color:#818FB4;
     padding: 50px;
-}
-
-label{
-    display: block;
 }
 
 .logintxt {
@@ -73,7 +69,7 @@ label{
     justify-content: center;
 }
 
-.loginForm {
+.formLogin {
     display: block;
     justify-content: center;
     text-align: center;
@@ -83,7 +79,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:aquamarine;
+    background-color:#435585;
     height: 89vh;
 }
 
@@ -94,12 +90,8 @@ label{
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color:cadetblue;
+    background-color:#818FB4;
     padding: 50px;
-}
-
-label{
-    display: block;
 }
 
 .regisTxt {
@@ -108,7 +100,7 @@ label{
     justify-content: center;
 }
 
-.regis_form {
+.formRegis {
     display: block;
     justify-content: center;
     text-align: center;
@@ -140,30 +132,22 @@ caption{
 }
 
 .tabelMenu {
-    border: 5px solid;
-    border-radius: 10px;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color:cadetblue;
+    background-color:#818FB4;
     padding: 35px;
 }
 
 .divPesan {
-    border: 5px solid;
-    border-radius: 10px;
-    align-items: center;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    background-color:cadetblue;
     padding: 50px;
-    margin-top:-5px;
 }
 
 label{
     display: block;
+    margin: 10px;
 }
 
 .pesanTxt {
@@ -178,6 +162,3 @@ label{
     text-align: center;
 }
 
-.submit {
-    margin-top: 10px;
-}
