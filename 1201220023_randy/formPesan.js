@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dataform.forEach(function (value, key) {
       if (value === "") {
         if (!alertTampil) {
-          alert("Lengkapi Field yang kosong!");
+          alert("Lengkapi Field yang kosong!"); // agar alert keluar sekali
           alertTampil = true;
         }
         event.preventDefault();
