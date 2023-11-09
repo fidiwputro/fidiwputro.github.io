@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="form.js"></script>
     <link rel="icon" href="./aset/workers.png" type="image/x-icon">
     <title>Registrasi</title>
 </head>
@@ -17,21 +18,26 @@
 
         <h1>Registrasi</h1>
 
-        <div class="usr">
-            <input type="text" placeholder="Username" id="user" name="user">
-        </div>
-        <div class="email">
-            <input type="text" placeholder="E-mail" id="email" >
-        </div>
-        <div class="pass">
-            <input type="password" placeholder="Password" id="password">
-        </div>
-        <div class="compass">
-            <input type="password" placeholder="Confirm-Password" id="compass">
-        </div>
-
+        <form action="index.html" id="ppp">
+            <div class="usr">
+                <input type="text" placeholder="Username" id="user" name="user">
+            </div>
+            <div class="email">
+                <input type="text" placeholder="E-mail" id="email" name="emial">
+            </div>
+            <div class="pass">
+                <input type="password" placeholder="Password" id="password" name="pass">
+            </div>
+            <div class="compass">
+                <input type="password" placeholder="Confirm-Password" id="compass" name="commpas">
+            </div>
         
-        <button ><a id="sbs" href="">Regis Now</a></button>
+            <!-- <button type="submit"><a id="sbs" href="" >Regis Now</a></button> -->
+            <div class="button">   
+                <input type="submit" id="sbs" onclick="click()">
+                <!-- <button type="submit" id="sbs" onclick="click()">submit</button> -->
+            </div>
+        </form>
 
         <div class="log">
             <p>already have an account? <a href="login.html">Login</a></p>
@@ -39,19 +45,31 @@
 </div>
 
 <script>
-        
-    function test(){
-        let usr = document.getElementById('user').value
-        let email = document.getElementById('email').value
-        let pass = document.getElementById('password').value
-        let com = document.getElementById('compass').value
-        // alert (usr + ' ' + email + ' ' + pass + ' ' + com + ' ' );
-        if(usr === "" || email === "" || pass === "" || com === ""){
-            alert ("masukan data diri anda")
-        }else{
-            alert (usr + ' ' + email + ' ' + pass + ' ' + com + ' ' )
-        }
-    }
+
+    // function test(){
+    //     let usr = document.getElementById('user').value
+    //     let email = document.getElementById('email').value
+    //     let pass = document.getElementById('password').value
+    //     let com = document.getElementById('compass').value
+    //     if(user === "" || email === "" || pass === "" || com === ""){
+    //         // document.getElementById("user").style.border= " 1px solid red"
+    //         document.getElementsByName("user")[0].placeholder='masukan username anda'
+    //         document.getElementById("user").style.setProperty("--c", "red")
+    //         // alert ("masukan data diri anda")
+    //     }else{
+    //         alert (usr + ' ' + email + ' ' + pass + ' ' + com + ' ' )
+    //         window.location.href = "/1201222041_Muhammad/index.html"
+    //     }
+    // }
+    
+    // function click(){
+    //     if(user == ""){
+    //         // document.getElementsByName("user")[0].style.setProperty("--c", "red")
+    //     }
+    // }
+
+
+
     sbs.addEventListener('click',test)
 </script> 
 

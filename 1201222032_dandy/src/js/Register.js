@@ -5,21 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
         dataform.forEach((value,key) => {
             if (value == "") {
                 form[key].style.border="1px solid red"
-                form[key].style.backgroundColor="red"
+                form[key].placeholder= `${key} harus diisi`
                 console.log(dataform);
-                alert(`${key} harus diisi`)
                 setTimeout(() => {
                     form[key].style.border="1px solid white"
                     form[key].style.backgroundColor="white"
+                    form[0].placeholder="Masukkan Username"
+                    form[1].placeholder="Masukkan Password"
                 }, 1000)
-                form[0].value="user"
-                form[1].value="user"
-                form[2].value="user@gmail.com"
-                form[3].value="password"
-                event.preventDefault();
-            }
-            if (form[0] == "user" && form[1] == "user" && form[2] == "user@gmail.com" && form[3] == "password"){
-                alert("Berhasil Daftar !")
                 event.preventDefault();
             }
         })

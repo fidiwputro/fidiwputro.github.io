@@ -15,10 +15,8 @@
 
 .navbar ul li {
   display: inline-block;
-  background-color: black;
   margin: 0 20px;
   padding: 10px;
-  border-radius: 10px;
 }
 
 .navbar ul li a {
@@ -28,7 +26,7 @@
 }
 
 .navbar ul li a:hover {
-  color: orange;
+  color: black;
 }
 
 .content-home {
@@ -39,7 +37,7 @@
 
 .content-about {
   text-align: center;
-  color: black;
+  color: white;
   padding-top: 100px;
 }
 
@@ -59,8 +57,9 @@
 }
 
 .about {
-  background-color: white;
+  background-image: url(img/background.jpg);
   height: 662px;
+  background-size: cover;
 }
 
 footer {
@@ -71,13 +70,25 @@ footer p {
   color: white;
   text-align: center;
 }
-
+.gambarForm {
+  background-color: black;
+  color: white;
+  height: 430px;
+  width: 400px;
+  border-radius: 20px;
+  background-image: url(img/gambarform.jpg);
+  background-size: cover;
+  padding: 20px;
+  margin-top: 70px;
+  float: left;
+  margin-left: 200px;
+}
 .form {
   background-color: black;
   color: white;
   height: 430px;
   width: 600px;
-  margin: auto;
+  margin-left: 600px;
   margin-top: 70px;
   border-radius: 20px;
   padding: 20px;
@@ -95,16 +106,16 @@ footer p {
   height: 25px;
 }
 
+.form input:focus {
+  background-color: white;
+}
+
 .form button {
   background-color: orange;
   padding: 10px;
   border-radius: 20px;
   color: black;
   width: 100px;
-}
-
-.form button:hover {
-  color: white;
 }
 
 .form .label {
