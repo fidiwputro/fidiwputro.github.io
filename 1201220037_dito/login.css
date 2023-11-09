@@ -62,7 +62,7 @@ body {
     background-color: #E5D283;
     color: #213555;
     border-radius: 13px;
-    margin-top: 20px;
+    margin-top: 10px;
     position: absolute;
     top: 350px;
     right: 180px;
@@ -78,4 +78,19 @@ body {
         0 0 50px #E5D283,
         0 0 100px #E5D283;
     transition: 0.5s ease;
+}
+
+.Login p {
+    padding-top: 39%;
+    padding-left: 10%;
+
+}
+
+.Login a {
+    text-decoration: none;
+}
+
+.placeholderMerah::placeholder {
+    /*ini untuk di get elementnya pada javascript dengan classlist*/
+    color: red;
 }

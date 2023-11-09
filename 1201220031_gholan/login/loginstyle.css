@@ -65,6 +65,14 @@ body {
   border-radius: 4px;
 }
 
+.formulir button:hover{
+  background-color: rgba(0, 255, 255, 0.573);
+}
+
+.formulir #form span{
+  color: red;
+}
+
 .formulir p{
   margin-top: 50px;
   color: #fff;

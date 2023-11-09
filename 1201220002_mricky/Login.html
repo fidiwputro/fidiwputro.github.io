@@ -3,6 +3,7 @@
 <head>
     <title>Crafter</title>
     <link rel="stylesheet" type="text/css" href="stylelogin.css">
+    <script type="text/javascript" src="form.js"></script>
 </head>
 <body>
 
@@ -19,19 +20,20 @@
             <img src="image/Main.jpg" alt="natasha">
         </div>
         <div class="ContainerMenu">
-            <div class="inputan">
+            <form  id="form" class="inputan" action="index.html">
                 <div>
                     <Label>Username</Label>
-                    <input type="text">
+                    <input type="text" id="username" name="nama">
                 </div>
                 <div>
                     <Label>Password</Label>
-                    <input type="password">
+                    <input type="password" id="password" name="password">
                 </div>
-            </div>
-            <Button>Login</Button>
+                <input type="submit" id="submit" class="submit" value="Login">
+            </form>
             <p>Belum Punya akun? <a href="Daftar.html"> Daftar disini</a></p>
         </div>
     </div>
+    
 </body>
 </html>

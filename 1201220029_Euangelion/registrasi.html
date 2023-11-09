@@ -3,42 +3,51 @@
     <head>
         <title>Halaman Registrasi</title>
         <link rel="stylesheet" type="text/css" href="registrasi.css">
+        <script type="text/javascript" src="formbaru.js"></script>
+        <script>
+            function Daftar() {
+                let nama = document.getElementById("nama").value;
+                let Username = document.getElementById("Username").value;
+                let Email = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
+                let gender = document.getElementById("gender").value;
+        
+                if (password.length < 8) {
+                    alert("Password harus terdiri dari minimal delapan karakter.");
+                    return false; // Menghentikan pengiriman formulir jika password tidak memenuhi syarat
+                }
+        
+                // Melakukan pengiriman formulir jika semua syarat terpenuhi
+                alert("Data berhasil disimpan!");
+                return true;
+            }
+        </script>
     </head>
     <body>
         <div class="navbar">
             <ul>
-              <li><span class="logo"></span></li>
-              <li><a href="komodo.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Layanan </a></li>
-              <li><a href="login.html">Masuk</a></li>
-              <li><a href="registrasi.html">Daftar</a></li>
+                <li><span class="logo"></span></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="login.html">Masuk</a></li>
+                <li><a href="registrasi.html">Daftar</a></li>
             </ul>
-          </div>
+        </div>
 
-    <form action="#">
-        <h2>Registrasi</h2>
-        <label for="nama">Nama</label><br>
-        <input type="text" id="nama" name="nama" required><br><br>
-        
-        <label for="Username">Username</label><br>
-        <input type="Username" id="Username" name="Username" required><br><br>
-
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for ="Phone Number">Phone Number</label><br>
-        <input type="Phone Number" id="Phone Number" name="Phone Number" required><br><br>
-        
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-                
-        <label for ="gender">Gender</label><br>
-        <input type="gender" id="gender" name="gender" required><br><br>
-
-        <input type="submit" id = "button" value="Daftar">
-      </form>
-    </body>
-    </html>
+        <form action="#" onsubmit="return Daftar();">
+            <div class="container">
+                <img id="registrasi-image" src="0.jpg" alt="Gambar Registrasi">
+                <div class="form-container">
+                    <h2>Registrasi</h2>
+                    <input type="nama" id="nama" placeholder="Nama" required><br><br>
+                    <input type="username" id="Username" placeholder="Username" required><br><br>
+                    <input type="email" id="email" placeholder="Email" required><br><br>
+                    <input type="password" id="password" placeholder="Password" required><br><br>
+                    <input type="gender" id="gender" placeholder="Gender" required><br><br>
+                    <input type="submit" id="button" value="Daftar" onclick="Daftar()">
+                </div>
+            </div>
+        </form>
     </body>
 </html>

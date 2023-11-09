@@ -1,9 +1,11 @@
 body {
     margin: 10px 10px;
+    background-color: rgb(20, 40, 45);
 }
 
 .register {
-    border: 1px solid red;
+    background-color: white;
+    padding-top: 5px;
     width: 500px;
     height: 550px;
     margin: 70px auto;
