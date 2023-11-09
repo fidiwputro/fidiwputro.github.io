@@ -1,14 +1,16 @@
 body {
     margin: 10px 10px;
+    background-color: rgb(20, 40, 45);
 }
 
 .login {
-    border: 1px solid red;
+    padding-top: 5px;
     width: 500px;
     height: 550px;
     margin: 70px auto;
     border-radius: 20px;
     text-align: center;
+    background-color: white;
 }
 
 

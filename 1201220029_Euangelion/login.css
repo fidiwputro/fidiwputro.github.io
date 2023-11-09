@@ -1,18 +1,16 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-color:  #2E97A7;
+  background: linear-gradient(to right, #164863, #427D9D, #9BBEC8);
   margin: 0px;
   padding: 20px;
 }
 
 
-
 form { 
-  background-color: #1AACAC;
+  background-color: #DDF2FD;
   padding: 30px;
-  border-radius: 60px;
   box-shadow: 10px 2px 5px rgba(64, 64, 64, 0.3);
-  max-width: 450px;
+  max-width: 750px;
   margin: 0 auto;
   margin-top: 40px;
   text-align: center;
@@ -44,7 +42,20 @@ input[type="password"] {
   border-radius: 10px;
   cursor: pointer;
 }
+.container {
+  display: flex;
+}
 
+img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.form-container {
+  float: left;
+}
 /* CSS untuk navigasi bar */
 .navbar{
   margin-top: 0px;
