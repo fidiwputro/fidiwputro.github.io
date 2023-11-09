@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="/1201220006_Ezra/Style/Login.css">
+    <script src="/1201220006_Ezra/Script/login.js"></script>
 </head>
 <body>
-    <form action="">
-        <div class="form">
-            <h1>For U</h1>
-            <ul>
-                <li class="inp-email"><input type="email" placeholder="email"></li>
-                <li class="inp-password"><input type="password" placeholder="password"></li>
-                <li class="btn-lupapassword"><a href="">FORGOT PASSWORD</a></li>
-                <li class="btn-submit"><a href="Main.html">SUBMIT</a></li>
-                <li class="btn-registrasi">
-                    BELUM PUNYA AKUN?
-                    <br>
-                    <a href="Registrasi.html">SIGN IN</a>
-                </li>
-            </ul>
-        </div>
-    </form>
+    
+    <div class="container-form">
+        <form name="form-login">
+            <div class="form-title">For U</div>
+            <label for="">Email <span id="alter">email kosong</span></label>
+            <input type="email" name="email" id="email">
+
+            <label for="">Password <span id="alter">password kosong</span></label>
+            <input type="password" name="password" id="password">
+
+            <a href="" class="lupa-pass">Lupa Password</a>
+            <input type="submit" value="LOGIN" class="btn-login">
+            <p class="btn-daftar">Belum memiliki akun ? <span><a href="/1201220006_Ezra/Registrasi.html">Daftar</a></span></p>
+        </form>
+    </div>
+
 </body>
 </html>

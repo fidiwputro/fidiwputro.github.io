@@ -7,6 +7,7 @@
 body{
     background-color: rgb(17 24 39 ); 
     font-family: 'Unifont','Fira Code',monospace;
+    height: 100vh;
 }
 
 
@@ -14,69 +15,16 @@ a{
     text-decoration: none;
 }
 
-/* NAVBAR AREA */
-.navbar{
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    top: 0;
-    display: flex;
-    width: 100%;
-    position: fixed;
-    padding: 20px 13%;
-    background-color: rgb(17 24 39 );
-    z-index: 100;
-    color: rgb(217 249 157 );
-    
-}
-
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(217 249 157 );
-}
-
-.logo img{
-    width: 2rem;
-    height: auto;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-}
-
-.nav-clean{
-    list-style: none;
-    display: flex;
-}
-
-.nav-clean li{
-    margin-right: 20px;
-}
-
-.nav-clean li a{
-    color: rgb(217 249 157 );
-}
-
-.login-button{
-    background-color: rgb(190 242 100 );
-    color: rgb(51 85 0 );
-    border: none;
-    border-radius: 5px;
-    padding: 7px 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-
 /* Kontent Main */
 
 
 .layar{
     width: 100%;
+    
 }
 .container-chall {
     width: 100%;
-    margin-top: 90px;
-    height: 620px;
+    height: 90%;
     display: flex;
     flex-direction: row;
     color: rgb(217 249 157);
@@ -131,7 +79,11 @@ a{
 
 .lead{
     width: 100%;
+    height: 15%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     padding: 2rem;
     border-bottom: 1px solid white;
     border-right: 1px solid white;
@@ -141,7 +93,7 @@ a{
 
 .table-score{
     width: 100%;
-    height: 83%;
+    height: 85%;
     color: rgb(217 249 157);
     border-right: 1px solid white;
     overflow-y: scroll;

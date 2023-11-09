@@ -15,15 +15,13 @@
                 <img  src="https://iili.io/J27Kips.png" alt="">
                 <span class="" >K4-CTF</span>
             </a>
-
             <ul class="nav-clean ">
                 <li><a href="./rule.html">Rule</a></li>
-                <li><a href="/users">Users</a></li>
-                <li><a href="/teams">Teams</a></li>
+                <li><a href="./users.html">Users</a></li>
+                <li><a href="./teams.html">Teams</a></li>
                 <li><a href="./scoreboard.html">Scoreboard</a></li>
                 <li><a href="./challenges.html">Challenges</a></li>
             </ul>
-
             <div class="login-button">
                 <a href="./login.html">
                     <span  >Login kuy &rarr;</span>
@@ -33,55 +31,56 @@
     <div class="kotak1">
         <!-- Content KOtak -->
            <div class="main-kontent">
-            <form action="">
+            <form name="form-register" action="./login.html">
                 <div class="judul">
                     <h1>/ FORM REGISTER /</h1>
                 </div>
                 <br>
                 <hr>
                 <div class="kotak-form">
-                    <div class="kotak-kiri">
-                        <div>
-                            <label for="">Nama</label>
-                            <input type="text">
+                        <div class="kotak-kiri">
+                            <div>
+                                <label for="">Nama</label>
+                                <input name="nama" type="text" >
+                            </div>
+                            <div>
+                                <label for="">Provinsi</label>
+                                <select name="provinsi" >
+                                    <option value=""> Pilih Provinsi </option>
+                                    <option >Jawa Timur</option>
+                                    <option >Jawa Barat</option>
+                                    <option >Jawa Tengah</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label  for="">Kampus</label>
+                                <input name="kampus" type="text" >
+                            </div>
                         </div>
-                        <div>
-                            <label for="">Provinsi</label>
-                            <select name="" id="">
-                                <option> Pilih Provinsi </option>
-                                <option value="">Jawa Timur</option>
-                                <option value="">Jawa Barat</option>
-                                <option value="">Jawa Tengah</option>
-                            </select>
+                        <div class="kotak-kanan">
+                            <div>
+                                <label for="">Email</label>
+                                <input name="email" type="email">
+                            </div>
+                            <div>
+                                <label for="">Username</label>
+                                <input name="username" type="text" >
+                            </div>
+                            <div>
+                                <label for="">Password</label>
+                                <input name="password" type="password" >
+                            </div>
                         </div>
-                        <div>
-                            <label for="">Kampus</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="kotak-kanan">
-                        <div>
-                            <label for="">Nama</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Provinsi</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Kampus</label>
-                            <input type="text">
-                        </div>
-                    </div>
                 </div>
                 <br>
                 <hr>
                 <br>
-                <button>Submit</button>
+                <button type="submit" name="submit" class="bt-reg">Submit</button>
             </form>
-            <a href="./login.html"><button>Login</button>
+            <a href="./login.html"><button class="bt-log">Login</button>
             </a>
            </div>
     </div>
+    <script type="text/javascript" src="../js/register.js"></script>
 </body>
 </html>

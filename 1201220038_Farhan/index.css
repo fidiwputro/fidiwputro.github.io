@@ -1,0 +1,207 @@
+p, a {
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #040D12;
+}
+
+/* navbar */
+header {
+    width: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F0F0F;
+    position: fixed;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    
+}
+
+.home .edu {
+    color: greenyellow;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+.home a {
+    text-decoration: none;
+}
+
+.menu {
+    width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #93B1A6;
+}
+
+.login {
+    width: 150px;
+    padding: 20px 0 0 0;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.login a {
+    font-size: 18px;
+    color: rgb(100, 150, 150);
+    text-decoration: none;
+}
+
+.login a:hover {
+    color: #93B1A6;
+}
+
+
+/* body */
+.intro1 {
+    margin-top: 100px;
+    width: 60%;
+    height: 580px;
+    border: 1px solid rgb(10, 25, 30);
+    margin: 20px 0 0 20px;
+    border-radius: 20px;
+    background-color: rgb(10, 25, 30);
+}
+
+.intro {
+    background-color: rgb(20, 40, 45);
+    width: 98%;
+    border-radius: 20px;
+    font-size: 55px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.intro p {
+    color: white;
+}
+
+.desc p {
+    font-size: 20px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.desc2 p {
+    font-size: 20px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.register {
+    width: 300px;
+    height: 70px;
+    border: 1px solid red;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+.register:hover {
+    background-color: red;
+}
+
+.register h1 {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.intro2 {
+    width: 40%;
+    height: 580px;
+    margin: 20px 20px 0 20px;
+    border-radius: 20px;
+}
+
+.intro2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.awal {
+    display: flex;
+    flex-direction: column;
+}
+
+.kotak1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* menu apps */
+
+.kotak2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.listcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.listcard div{
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    color: black;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listcard div p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #93b1a6a9;
+    padding: 30px;
+    height: 50px;
+}
+
+.listcard .c1 {
+    background-image: url(images/chemistryLecturer.webp);
+}
+
+.listcard .c2 {
+    background-image: url(images/englishLecturer.jpg);
+}
+
+.listcard .c3 {
+    background-image: url(images/mathLecturer.jpg);
+}
+
+.listcard .c4 {
+    background-image: url(images/kidLearning.jpeg);
+}

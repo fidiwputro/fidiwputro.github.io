@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Registrasi.css">
+    <link rel="stylesheet" href="/1201220006_Ezra/Style/Registrasi.css">
+    <script src="/1201220006_Ezra/Script/Register.js"></script>
 </head>
+
 <body>
-    <form action="">
-        <div class="form">
-            <h1>For U</h1>
-            <ul>
-                <li class="inp-name"><input type="text" placeholder="name"></li>
-                <li class="inp-email"><input type="email" placeholder="email"></li>
-                <li class="inp-password"><input type="password" placeholder="password"></li>
-                <li class="inp-password-v"><input type="password" placeholder="password validation"></li>
-                <li class="btn-submit"><a href="" id="btnSubmit">SUBMIT</a></li>
-                <li class="btn-registrasi">
-                    SUDAH PUNYA AKUN?
-                    <br>
-                    <a href="Login.html">SIGN IN</a>
-                </li>
-            </ul>
+
+    <div class="page">
+
+        <div class="out-form-l">
+            <h1 class="logo">For U</h1>
+            <p>Sering lupa dengan kegiatanmu sendiri?</p>
+            <p>Catat semua kegiatanmu disini</p>
+
+            <div class="btn-login">
+                <a href="/1201220006_Ezra/Login.html" id="register">LOGIN</a>
+            </div>
         </div>
-    </form>
 
-    <script>
-        // var submit
+        <form action="" class="out-form">
+            <div class="in-form">
 
-        function test(){
-            let nama = document.getElementsByClassName('inp-name').value
-            let email = document.getElementsByClassName('inp-email').value
-            let password = document.getElementsByClassName('inp-password').value
-            alert("lanjut login",)
-        }
+                <div class="inp-form">
+                    <div class="inp-name">
+                        <label for="">First Name <span id="alter">nama kosong</span></label>
+                        <input name="f-name" type="text" id="first-name">
+                    </div> <br>
+                    <div class="inp-name">
+                        <label for="">Last Name <span id="alter">nama kosong</span></label>
+                        <input name="l-name" type="text" id="last-name">
+                    </div> <br>
+                    <div class="inp-email">
+                        <label for="">Email <span id="alter">email kosong</span></label>
+                        <input name="email" type="email" id="email">
+                    </div> <br>
+                    <div class="inp-password">
+                        <label for="">Password 
+                            <span id="alter">password kosong</span>
+                            <span id="alter">invalid</span>
+                        </label>
+                        <input name="password" type="password" id="password">
+                    </div> <br>
+                    <div class="inp-password">
+                        <label for="">Password 
+                            <span id="alter">password kosong</span>
+                            <span id="alter">invalid</span>
+                        </label>
+                        <input name="val-password" type="password" id="password-ver">
+                    </div>
+                </div>
 
-        btnSubmit.addEventListener('click',test)
-    </script>
+                <div class="btn-register">
+                    <input type="submit" value="DAFTAR" class="btn-daftar">
+                </div>
+            </div>
+        </form>
+
+    </div>
+
 </body>
+
 </html>

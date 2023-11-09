@@ -69,18 +69,18 @@ header h1 {
     text-align: center;
 }
 
-.wan {
+.hana {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.wan .hiu1,
-.wan .atlantis,
-.wan .hiu,
-.wan .roller,
-.wan .seaworld {
+.hana .hiu1,
+.hana .atlantis,
+.hana .hiu,
+.hana .roller,
+.hana .seaworld {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -90,21 +90,21 @@ header h1 {
     color: #113946;
 }
 
-.wan .hiu1:hover,
-.wan .atlantis:hover,
-.wan .hiu:hover,
-.wan .roller:hover,
-.wan .seaworld:hover {
+.hana .hiu1:hover,
+.hana .atlantis:hover,
+.hana .hiu:hover,
+.hana .roller:hover,
+.hana .seaworld:hover {
     background-color: #146C94;
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.wan h3 {
+.hana h3 {
     padding-top: 15px;
 }
 
-.wan img {
+.hana img {
     max-width: 100%;
     max-height: 400px;
     border-radius: 10px;
@@ -132,10 +132,20 @@ footer {
 .divLogin div input {
     border-radius: 10px;
     margin: 10px;
-    font-size: medium;
+    font-size: 20px;
     padding: 10px;
     text-align: center;
-    width: 500px;
+    width: 400px;
+}
+
+.divLogin .inputLogin input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
 }
 
 .divRegis {
@@ -151,12 +161,26 @@ footer {
 }
 
 .divRegis div input {
-    width: 500px;
     border-radius: 10px;
     margin: 10px;
-    font-size: medium;
+    font-size: 20px;
     padding: 10px;
     text-align: center;
+    width: 400px;
+}
+
+.divRegis .inputRegis input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.divRegis #tglLahir{
+    width: 200px;
 }
 
 .divTiket {
@@ -179,6 +203,10 @@ footer {
     text-align: center;
 }
 
+.divTiket .bykTiket input{
+    width: 200px;
+}
+
 #txtnama, #txtemail, #txtnotelp, #tiketDewasa {
     width: 400px;
 }
@@ -186,4 +214,21 @@ footer {
 #beliTiket input:hover {
     color: #ddd;
     background-color: #333;
+}
+
+.divTiket div button {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.divTiket div select {
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 10px;
 }

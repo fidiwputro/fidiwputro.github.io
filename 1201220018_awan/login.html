@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="formbaru.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="login">
-            <form action="">
+            <form id="loginFrom">
                 <h1>Login</h1>
                 <hr>
                 <p>Sehat Buat Kita Sendiri</p>
@@ -17,23 +18,15 @@
                 <input type="text" id="mail" name="email" placeholder="example@gmail.com">
                 <label for="">Password</label>
                 <input type="text" id="pwd" name="pwd" placeholder="Password">
-                <button>Login</button>
-                <input type="button" id="sbtreg" name="sbtreg" value="login">
+                <button type="submit" id="loginbutton">Login</button>
                 <p>
                     <a href="#">Forget Password</a>
                 </p>
             </form>
-        </div class="right">
-            <img src="aset/fruits.png" alt="">
+        </div> 
+        <div class="right">
+            <img src="aset/fruits.png" alt="">>
+        </div>
     </div>
-    <script>
-        function test(){
-            let email = document.getElementById('email');
-            let Password = document.getElementById('pwd')
-            alert(email+''+Password);
-        }
-        sbteg.addEventListener('click',test)
-    </script>
-    
 </body>
 </html>

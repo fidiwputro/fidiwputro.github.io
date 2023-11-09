@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -26,13 +26,12 @@
 
 nav {
     flex: 1; 
-    text-align: right;
+    text-align: center;
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
+    display: inline-block; 
+    margin-left: 50px;
 }
 
 nav ul li a {
@@ -41,35 +40,91 @@ nav ul li a {
     font-size: 15px;
 }
 
-.all {
-    display: flex;
-    height: 88%;
-    align-items: center;
-}
-
-.desc {
-    flex-basis: 50%;
-}
-
-h1 {
-    color: whitesmoke;
-    font-size: 70px;
-}
-
-p {
-    color: whitesmoke;
-    font-size: 12px;
-    line-height: 15px;
-}
-
 button {
-    width: 180px;
+    width: 130px;
+    height: 40px;
     color: black;
     font-size: 12px;
     padding: 12px 0;
     background: whitesmoke;
     border: 0;
-    border-radius: 20px;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.kotak-form{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.wadah-pendaftaran{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.atas span{
+    color: whitesmoke;
+    font-size: small;
+    padding: 50px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.atas span a{
+    font-weight: 500;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+header{
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.dua-form{
+    /* display: flex; */
+    gap: 15px;
+   
+}
+
+.input1{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: whitesmoke;
+    height: 40px;
+    width: 80%;
+    /* padding: 0 10px 0 45px; */
+    border: none;
+    border-radius: 30px;
     outline: none;
-    margin-top: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+::-webkit-input-placeholder{
+    color: whitesmoke;
+}
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 30px;
+    width: 60%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
 }

@@ -1,17 +1,18 @@
 <html lang="id">
-    <link rel="stylesheet" href="beranda.css">
+<link rel="stylesheet" href="balancingModal.css">
+
 </html>
 
 <body>
     <div class="batasan1">
         <div class="fitur1">
-            
+
             <button class="jrkats"><a href="kasir.html"><img src="./image/Group 1506.png" alt="kasir" > <p>Kasir</p></a></button>
             <button><a href="balancingModal.html"><img src="./image/Group 1507.png" alt="balancing modal"><p>Balancing Modal</p></a></button>
             <button><a href="pengeluaran.html"><img src="./image/Group 1508.png" alt="Pengeluaran"><p>Pengeluaran</p></a></button>
             <button><a href="pembukuan.html"><img src="./image/Group 1509.png" alt="pembukuan"><p>Pembukuan</p></a></button>
             <button><a href="Lshift.html"><img src="./image/Group 1511.png" alt="laporan shift"><p>Laporan Shift</p></a></button>
-            <button><a href="Lshift.html"><img src="./image/Group 1510.png" alt="laporan harian"><p>Laporan Shift</p></a></button>
+            <button><a href="Lshift.html"><img src="./image/Group 1510.png" alt="laporan harian"><p>Laporan Harian</p></a></button>
             <button class="jrkbwh"><a href="Profile.html"><img src="./image/profile.png" alt="laporan harian" class="lphr"><p>Profile</p></a></button>
 
         </div>
@@ -22,8 +23,66 @@
 
         </div>
         <div class="konten">
-            <p>SELAMAT MEMULAI SHIFTNYA KAKAK</p>
+            <p>SEMOGA TIDAK BONCOS YA</p>
+            <form>
+                <div id="field">
+                    <label>Total uang yang seharusnya</label>
+                    <input type="text" id="uangSeharusnya" name="uangSeharusnya" placeholder="Nominal uang" value="20000000" readonly>
+                </div>
+                <div id="field">
+                    <div id="inField">
+                        <div id="inInField">
+                            <label>Uang Rp. 100</label>
+                            <input type="text" id="rp100" name="rp100" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 200</label>
+                            <input type="text" id="rp200" name="rp200" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 500</label>
+                            <input type="text" id="rp500" name="rp500" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 1000</label>
+                            <input type="text" id="rp1000" name="rp1000" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 2000</label>
+                            <input type="text" id="rp2000" name="rp2000" placeholder="jumlah uang">
+                        </div>
+                    </div>
+                    <div id="inField">
+                        <div id="inInField">
+                            <label>Uang Rp. 5000</label>
+                            <input type="text" id="rp5000" name="rp5000" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 10000</label>
+                            <input type="text" id="rp10000" name="rp10000" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 20000</label>
+                            <input type="text" id="rp20000" name="rp20000" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 50000</label>
+                            <input type="text" id="rp50000" name="rp50000" placeholder="jumlah uang">
+                        </div>
+                        <div id="inInField">
+                            <label>Uang Rp. 100000</label>
+                            <input type="text" id="rp100000" name="rp100000" placeholder="jumlah uang">
+                        </div>
+                    </div>
+                </div>
+                <div id="field">
+                    <label>Total uang Offline</label>
+                    <input type="text" id="uangOffline" name="uangOffline" placeholder="Nominal uang" readonly>
+                </div>
+                <label type="submit">PRESS</label>
+            </form>
         </div>
     </div>
 
 </body>
+<script type="text/javascript" src="balancingModal.js "></script>

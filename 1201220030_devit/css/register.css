@@ -24,7 +24,7 @@
     width: 50%;
     background-color: rgb(31 41 55 );   
     border-radius: 5px;
-    margin-top: 150px;
+    margin-top: 50px;
     color: rgb(108, 123, 138);
     padding: 50px 50px;
     border: 1px solid rgb(108, 123, 138);
@@ -67,7 +67,7 @@
      color: rgb(217 249 157);
     }
 
-    .main-kontent form button{
+    .bt-reg{
         width: 100%;
         padding: 8px;
         border-radius: 2px;
@@ -75,9 +75,10 @@
         color: rgb(190 242 100 );
         border: 1px solid rgb(190 242 100 );
         cursor: pointer;
+        font-weight: bold;
     }
 
-    .main-kontent button{
+    .bt-log{
         margin-top: 10px;
         width: 100%;
         padding: 8px;

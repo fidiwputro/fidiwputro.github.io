@@ -1,0 +1,162 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/1201220006_Ezra/assets/Untitled.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 84%;
+    /* border: 4px solid tomato; */
+}
+
+.out-form-l {
+    background-image: url("/1201220006_Ezra/assets/Untitled\ \(1\).png");
+    width: 605px;
+    height: 658px;
+}
+
+
+.out-form-l .logo {
+    text-align: center;
+    margin: 11rem auto 4rem auto;
+} 
+
+.out-form-l p {
+    text-align: center;
+}
+
+.btn-login {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.btn-login a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 13px 2rem;
+    font-size: 21px;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-login a:hover {
+    box-shadow: 5px 6px 4.5px 1px gray ;
+}
+
+
+.out-form {
+    border: 9px solid black;
+    background-color: white;
+    width: 605px;
+    height: 641px;
+}
+
+.in-form {
+    margin: 1.7rem auto;
+    width: 21.1rem;
+}
+
+
+.inp-form {
+    text-align: start;
+}
+
+label {
+    /* margin-top: 2rem; */
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label #alter {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.inp-name {
+    margin: auto;
+}
+.inp-name h3 {
+    margin: 0;
+    text-align: start;
+}
+.inp-name input {
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
+    border: 8px solid black;
+}
+
+
+.inp-email {
+    margin: auto;
+}
+
+.inp-email h3 {
+    margin: 0;
+    text-align: start;
+}
+
+.inp-email input {
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
+    border: 8px solid black;
+}
+
+
+.inp-password {
+    margin: auto;
+}
+
+.inp-password h3 {
+    margin: 0;
+    text-align: start;
+}
+
+.inp-password input {
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
+    border: 8px solid black;
+}
+
+
+.btn-register {
+    text-align: center;
+    margin: 1.7rem auto;
+}
+
+.btn-register input {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 13px 2rem;
+    font-size: 21px;
+    font-weight: bold;
+    border: none;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-register input:hover {
+    box-shadow: 5px 6px 4.5px 1px gray ;
+    cursor: pointer;
+}
+

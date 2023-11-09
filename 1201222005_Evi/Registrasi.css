@@ -2,17 +2,17 @@
     font-family: 'Nunito';
     src: url(./font/Nunito-VariableFont_wght.ttf) format();
 }
-body{
+
+body {
     background-color: #09232c;
     display: flex;
-    width:auto;
+    width: auto;
     height: auto;
     /* border: white; */
     /* border-style: double; */
 }
 
-
-.batasan2{
+.batasan2 {
     /* border: yellow; */
     /* border-style: double; */
     display: flex;
@@ -22,7 +22,8 @@ body{
     /* center; mengatur agar kontennya ditengah */
     align-items: center;
 }
-.konten{
+
+.konten {
     /* border: rgb(107, 229, 213);
     border-style: double; */
     display: flex;
@@ -32,10 +33,9 @@ body{
     /* align-items: center; */
     background-color: white;
     box-shadow: 10px 10px 8px 0px black;
-
 }
 
-.batasan2>.konten>p{
+.batasan2>.konten>p {
     display: flex;
     color: #09232c;
     position: absolute;
@@ -46,13 +46,13 @@ body{
     position: absolute;
     transform: translate(-50%, -50%);
 }
-#regis{
+
+#regis {
     top: 15%;
     left: 50%;
 }
 
-form button{
-    
+form button {
     border-radius: 20px;
     border-style: groove;
     display: flex;
@@ -60,26 +60,29 @@ form button{
     width: 150;
     height: 35;
 }
-form button a{
+
+form button a {
     margin: auto;
     /* border: black; */
     /* background-color: black; */
     padding: 10 50;
-
 }
-form button:hover{
+
+form button:hover {
     background-color: black;
     border: white;
 }
-form button a:hover{
+
+form button a:hover {
     color: white;
     margin: auto;
 }
+
 .konten {
     padding-top: 100px;
 }
 
-.konten form{
+.konten form {
     margin-top: 2%;
     border-radius: 20px;
     display: flex;
@@ -94,18 +97,22 @@ form button a:hover{
     justify-content: space-between;
     align-items: center;
 }
-#atur{
+
+#atur {
     display: flex;
     margin-top: 0%;
 }
 
-form input,form select{
+form input,
+form select {
     width: 80%;
     /* margin-bottom: 10%; */
 }
-form #atas{
+
+form #uname {
     margin-top: 5%;
 }
-form #bawah{
+
+form #captcha {
     margin-bottom: 0%;
 }

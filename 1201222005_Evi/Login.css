@@ -1,14 +1,13 @@
-body{
+body {
     background-color: #09232c;
     display: flex;
-    width:auto;
+    width: auto;
     height: auto;
     /* border: white; */
     /* border-style: double; */
 }
 
-
-.batasan2{
+.batasan2 {
     /* border: yellow; */
     /* border-style: double; */
     display: flex;
@@ -18,7 +17,8 @@ body{
     /* center; mengatur agar kontennya ditengah */
     align-items: center;
 }
-.konten{
+
+.konten {
     /* border: rgb(107, 229, 213);
     border-style: double; */
     display: flex;
@@ -30,11 +30,12 @@ body{
     box-shadow: 10px 10px 8px 0px black;
 }
 
-.batasan2 .konten{
+.batasan2 .konten {
     align-items: center;
     justify-content: center;
 }
-.konten{
+
+.konten {
     /* border: rgb(107, 229, 213); */
     /* border-style: double; */
     display: flex;
@@ -48,11 +49,13 @@ body{
     /* justify-content: center; */
     flex-direction: column;
 }
+
 @font-face {
     font-family: 'Nunito';
     src: url(./font/Nunito-VariableFont_wght.ttf) format();
 }
-.konten>p{
+
+.konten>p {
     color: #09232c;
     position: absolute;
     z-index: 2;
@@ -61,11 +64,28 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: 835;
 }
-.konten .ilogin{
+
+
+/* .konten form .ilogin {
+    align-items: center;
+    background-color: #09232c;
+    border: #09232c;
+    border-style: double;
+    color: black;
+    display: flex;
+    z-index: 1;
+    top: 32%;
+    font-size: 18pt;
+    width: 50%;
+    height: 40%;
+} */
+
+.konten form .ilogin {
     color: black;
     position: absolute;
     z-index: 1;
     top: 32%;
+    left: 26%;
     font-size: 18pt;
     width: 50%;
     height: 40%;
@@ -73,8 +93,11 @@ body{
     border: #09232c;
     border-style: double;
     display: flex;
+    align-items: center;
 }
-#kiri1,#kiri2{
+
+#kiri1,
+#kiri2 {
     position: absolute;
     top: 5%;
     left: 10%;
@@ -83,10 +106,13 @@ body{
     display: flex;
     width: 40%;
 }
-#kiri2{
+
+#kiri2 {
     top: 30%
 }
-#kanan1,#kanan2{
+
+#kanan1,
+#kanan2 {
     right: 10%;
     position: absolute;
     top: 23%;
@@ -95,12 +121,15 @@ body{
     display: flex;
     box-shadow: 10px 10px 8px 0px black;
     font-size: 100%;
-
+    border-radius: 10px;
 }
-#kanan2{
+
+#kanan2 {
     top: 48%;
 }
-.ilogin>#atur2>a>#login{
+
+
+/* .ilogin>#atur2>button>a>#login{
     position: absolute;
     width: 30%;
     border-radius: 1px;
@@ -109,20 +138,48 @@ body{
     background-color: black;
     position: absolute;
     left: 33.5%;
-    /* top: 69%;
-    left: 35%; */
+} */
+
+#atur2 button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18pt;
+    text-decoration: none;
+    background-color: #09232c;
+    border: white;
+    border-style: groove;
 }
-.ilogin p{
+
+#atur2 button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#atur2 button:hover {
+    background-color: black;
+    border: black;
+}
+
+#atur2 button a:hover {
+    color: white;
+}
+
+.ilogin p {
     color: rgb(255, 255, 255);
 }
-#registerT,#dis2{
+
+#registerT,
+#dis2 {
     display: flex;
     font-size: 50%;
 }
-#atur{
+
+#atur {
     display: flex;
 }
-#atur2{
+
+#atur2 {
     display: flex;
     width: 50%;
     height: 35%;
@@ -132,20 +189,24 @@ body{
     flex-direction: column;
     margin-top: 52%;
     margin-left: 24%;
-
 }
-#login,#atur{
+
+#login,
+#atur {
     margin: 0% 0% 20% 0%;
     position: absolute;
     top: 68%;
     /* border: white; */
     /* border-style: double; */
 }
-#atur{
+
+#atur {
     top: 20%;
     position: absolute;
     top: 83%;
 }
+
+
 /* #registerT, #dis2{
     display: flex;
     font-size: 60%;
@@ -156,10 +217,3 @@ body{
 #dis2{
     left: 57%;
 } */
-
-
-
-
-
-
-
