@@ -17,8 +17,6 @@ function randomizer(event) {
 
   const jenisProperti = ["Rumah", "Apartemen", "Tanah", "Gudang"];
 
-  const fasilitasProperti = ["AC", "Parkiran", "Listrik Tanam"];
-
   document.getElementById("username").value =
     namaRumah[acakNomorBerjarak(0, 8)];
 
@@ -26,11 +24,15 @@ function randomizer(event) {
     acakNomorBerjarak(0.1, 10) * 1200000;
 
   document.getElementById("jumlah-lantai").value = acakNomorBerjarak(1, 4);
+  
+  // Acak Nomor HP dengan function acakNomorHP()
   document.getElementById("no-hp").value = acakNomorHP();
 
-  document.getElementById("property-type-dropdown").value =
+  // Acak Jenis Properti dengan function acakNomorBerjarak() dari 1 sampe 3
+  document.getElementById("status-bangunan").value =
     jenisProperti[acakNomorBerjarak(0, 3)];
 
+  // Acak 
   document
     .querySelectorAll(".checkbox-btn")
     .forEach((checkbox) => (checkbox.checked = false));
@@ -68,18 +70,6 @@ function acakNomorBerjarak(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function sendToAlert(event) {
-  event.preventDefault();
-
-  let getHarga = document.getElementById("harga-properti").value;
-  let getJenis = document.getElementById("property-type-dropdown").value;
-  let getStatus = document.getElementById("radioStatus").value;
-  let getAdName = document.getElementById("username").value;
-  alert(
-    `nama: ${getAdName}\nharga: ${getHarga}\njenis: ${getJenis}\nstatus: ${getStatus}\n`
-  );
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   let form = document.forms[0];
 
@@ -91,22 +81,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let datanya = new FormData(form);
     let isiform = [...datanya.entries()];
-    const gallerySection = document.getElementById("changethisvalue");
+    const gallerySection = document.getElementById("getInputValue");
     // gallerySection.textContent = isiform.map((item) => item[1]);
     gallerySection.textContent = isiform.map((item) => item[1]).join(", ");
 
     console.log(form.name);
 
+    if (value == "") {
+      event.preventDefault();
+      form[key].style.border = "1px solid red";
+      form[2].value = "";
+      alert("Data tidak boleh kosong");
+    }
+
     datanya.forEach((value, key) => {
       console.log({ key }, { value });
-      if (value == "") {
-        event.preventDefault();
-        form[key].style.border = "1px solid red";
-        form[2].value = "Hello";
-        alert("Data tidak boleh kosong");
-      } else {
-        form[key].style.border = "1px solid black";
-      }
+      // form[key].style.border = "1px solid black";
+      // }
     });
   });
 });
+
+function sendToAlert(event) {
+  event.preventDefault();
+
+  let getHarga = document.getElementById("harga-properti").value;
+  let getJenis = document.getElementById("property-type-dropdown").value;
+  let getStatus = document.getElementById("radioStatus").value;
+  let getAdName = document.getElementById("username").value;
+  alert(
+    `nama: ${getAdName}\nharga: ${getHarga}\njenis: ${getJenis}\nstatus: ${getStatus}\n`
+  );
+}
