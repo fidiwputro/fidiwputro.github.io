@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
   let form = document.forms[0];
 
   form.addEventListener("submit", function (event) {
-    let dataform = new FormData(form);
 
-    let alertTampil = false;
+    let dataform = new FormData(form); 
+
+    let alertTampil = false; 
 
     dataform.forEach(function (value, key) {
       if (value === "") {
+
         if (!alertTampil) {
-          alert("Lengkapi Field yang kosong!");
+          alert("Lengkapi Field yang kosong!"); // agar alert hanya muncul sekali 
           alertTampil = true;
         }
         event.preventDefault();
@@ -19,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         form[key].addEventListener("focus", function(){ // apabila focus pada field tertentu background color kembali berwarna putih
           form[key].style.backgroundColor = "white";
         })
-
       }
     });
     if (!alertTampil) {
