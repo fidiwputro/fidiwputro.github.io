@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // form[0].value="user"
                 // form[1].value="password"
                 event.preventDefault();
-            }else if (usernameInput == "user" && passwordInput == "user"){
+            }else if (usernameInput === "user" && passwordInput === "user"){
                 // window.location.href="./Dashboard.html"
                 alert('testqwqw');
             }else if (usernameInput != "user" && passwordInput != "user"){
