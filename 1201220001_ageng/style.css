@@ -135,7 +135,17 @@ footer {
     font-size: medium;
     padding: 10px;
     text-align: center;
-    width: 500px;
+    width: 400px;
+}
+
+.divLogin .inputLogin input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
 }
 
 .divRegis {
@@ -151,12 +161,22 @@ footer {
 }
 
 .divRegis div input {
-    width: 500px;
+    width: 400px;
     border-radius: 10px;
     margin: 10px;
-    font-size: medium;
+    font-size: 20px;
     padding: 10px;
     text-align: center;
+}
+
+.divRegis .inputRegis input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
 }
 
 .divTiket {
@@ -195,11 +215,11 @@ footer {
 .divTiket div button {
     border-radius: 10px;
     margin: 10px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
     text-align: center;
     width: 200px;
-    height: 70px;
+    height: 50px;
 }
 
 .divTiket div select {

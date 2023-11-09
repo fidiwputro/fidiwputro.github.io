@@ -6,11 +6,13 @@
     <title>Wahana Taman Hiburan</title>
     <link rel="stylesheet" href="style.css">
     <link href="assets/carousel.png" type="image/x-icon" rel="shortcut icon">
+    <script type="text/javascript" src="form.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
             <img src="assets/carousel.png" alt="Logo Wahana Taman Hiburan">
+            <script type="text/javascript" src="form.js"></script>
         </div>
         <ul>
             <li><a href="index.html">Beranda</a></li>
@@ -40,20 +42,14 @@
             </div>
             <div>
                 <h3>Nomor Telepon :</h3>
-                <input type="text">
+                <input type="text" id="notelp">
             </div>
             <div>
                 <h3>Tanggal Lahir :</h3>
                 <input type="date" name="tglLahir" id="">
             </div>
-                <h3>Jenis Kelamin</h3>
-                <select name="sljeniskelamin" id="sljeniskelamin">
-                    <option value="0">-Pilih Jenis Kelamin-</option>
-                    <option value="1">Laki Laki</option>
-                    <option value="2">Perempuan</option>
-                </select>
-            <div>
-                <input type="button" value="Register">
+            <div class="inputRegis">
+                <input type="submit" value="Register">
             </div>
         </form>
     </div>
