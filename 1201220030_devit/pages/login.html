@@ -64,7 +64,6 @@
         
         let form = document.forms['form-login'];
         
-
         function login(){
             let username = document.getElementById('username');
             let password = document.getElementById('password');
@@ -72,7 +71,7 @@
                 alert('data anda kosong');
             }else if( username.value == 'admin' && password.value == 'admin'){
                 alert(`hallo ${username.value}`);
-                //document.location.href = './challenges.html';
+                document.location.href = './challenges.html';
             }else if(username.value.trim()=='' && password.value.trim()=='' ){
                 alert('Harap Isi Form Login !!');
             }else if(password.value.trim()==''){
@@ -99,7 +98,6 @@
 
                 console.log(`Data keyname = ${keyname} | Value = ${value}`)
             }
-
         }
 
         //form.addEventListener('submit',login);
