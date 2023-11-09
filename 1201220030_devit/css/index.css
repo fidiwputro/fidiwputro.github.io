@@ -6,7 +6,8 @@
 
 body{
     background-color: rgb(17 24 39 ); 
-    font-family: 'Unifont';
+    font-family: 'Unifont','Fira Code',monospace;
+    height: 100vh;
 }
 
 a{

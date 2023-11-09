@@ -3,6 +3,7 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="styleDaftar.css">
+    <script type="text/javascript" src="form.js"></script>
 </head>
 <body>
 
@@ -20,20 +21,22 @@
         </div>
         <div class="ContainerMenu">
             <div class="inputan">
-                <div>
-                    <Label>Username baru</Label>
-                    <input type="text">
+                <form action="" name="formRegis">
+                    <div>
+                        <Label>Username baru</Label>
+                        <input type="text" name="username">
+                    </div>
+                    <div>
+                        <Label>Password baru</Label>
+                        <input type="password" name="password">
+                    </div>
+                    <div>
+                        <Label>Ulangi Password</Label>
+                        <input type="password" name="ulangi">
+                    </div>
                 </div>
-                <div>
-                    <Label>Password baru</Label>
-                    <input type="password">
-                </div>
-                <div>
-                    <Label>Ulangi Password</Label>
-                    <input type="password">
-                </div>
-            </div>
-            <Button>Login</Button>
+                <Button type="button" id="btnDaftar">Daftar</Button>
+                </form>
             <p>Sudah Punya akun? <a href="Login.html">Login disini</a></p>
         </div>
     </div>

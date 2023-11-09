@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="assets/Logo_Institut_Teknologi_Telkom_Surabaya_white - Copy.png" type="image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script type="text/javascript" src="formbaru.js"></script>
 </head>
 <body>
     
 <div class="overlay-container"></div>
 <div class="navbar">
     <img src="assets/Logo_Institut_Teknologi_Telkom_Surabaya_white.png" alt="ini logo">
-    <a href="ittsparkir.html">Beranda</a>
+    <a href="index.html">Beranda</a>
     <a href="https://maps.app.goo.gl/JiMS6bVUVe6ofdEm8">Lihat Peta Parkiran</a>
     <a href="http://google.com/">Bantuan</a>
     <a href="login.html">Login</a>
@@ -23,25 +25,36 @@
         <h2>Register</h2>
             <div>
                 <label >Nama :</label> <br>
-                <input type="namausr" name="namausr" id="namausr"required>
+                <input type="namausr" name="namauser" id="namausr">
             </div>
             <div>
                 <label >Nim :</label> <br>
-                <input type="nimusr" name="nimusr" id="nimusr"required>
+                <input type="nimusr" name="nimuser" id="nimusr">
             </div>
             <div>
                 <label >username :</label><br>
-                <input type="username" id="username" name="username" required>
+                <input type="username" id="username" name="username" >
             </div>
             <div>
                 <label >password :</label> <br>
-                <input type="password" name="password" id="password"required><br><br>
+                <input type="password" name="password" id="password"    ><br><br>
             </div>
             <div>
-                <input type="button" name="buttonlogin" id="btnlgn" value="login">
+                <input type="submit" name="buttonregis" id="btnlgn" value="Register">
             </div>
     </form>
 </div>
+<script>
+    function test(){
+        let Nama = document.getElementById('namauser').value;
+        let nimusr = document.getElementById('nimuser').value;
+        let username = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+        // alert(nama+' '+username+' '+password+' '+nimusr);
+        alert("lah?")
+}
+btnlgn.addEventListener('click', test);
+</script>
 
 </body>
 </html>

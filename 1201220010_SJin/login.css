@@ -59,5 +59,9 @@ button:hover {
 }
 
 button#back-button:hover {
+<<<<<<< HEAD
     background-color: #0056b3;
+=======
+    background-color: #666;
+>>>>>>> 333052550ceed0b52ad077fa5b3e0b12b7df5e2e
 }

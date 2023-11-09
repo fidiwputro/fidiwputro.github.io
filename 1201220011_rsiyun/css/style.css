@@ -47,6 +47,9 @@ button {
 .flex-grow{
     flex-grow: 1;
 }
+.flex-column{
+    flex-direction: column;
+}
 .justify-center{
     justify-content: center;
 }
@@ -85,7 +88,7 @@ button {
     margin-bottom: 8px;
 }
 .mb-16{
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
 }
 .ml-8{
     margin-left: 8px;

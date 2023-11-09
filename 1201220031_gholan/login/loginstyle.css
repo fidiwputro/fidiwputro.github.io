@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-color: #1d1d1d;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+
+.formulir{
+  width: 400px;
+  background-color: antiquewhite; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+}
+
+.formulir #form{
+  margin-top: 20px;
+  height: 200px;
+  /* background-color: aquamarine; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.formulir #form .form-control{
+  /* background-color: aliceblue; */
+  height: 70px;
+}
+.formulir #form .form-control #email,
+.formulir #form .form-control #password{ 
+  padding: 14px 14px;
+  width: 250px;
+  border-radius: 7px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.formulir #form .form-control span{
+  color: red;
+  font-size: 10px;
+}
+.formulir #form button{
+  width: 280px;
+  padding: 14px;
+  font-weight: 600;
+  border-radius: 7px;
+  border: 1px solid aqua;
+  background-color: aqua;
+}
+
+.formulir #form button:hover{
+  background-color: #15d6d6;
+  border: 1px solid #15d6d6;
+}

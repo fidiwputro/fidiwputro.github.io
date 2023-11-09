@@ -4,7 +4,7 @@ body {
 }
 
 .navigasi {
-    background-color: cornflowerblue;
+    background-color: #363062;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -23,7 +23,7 @@ li a {
 }
 
 li a:hover {
-    color: midnightblue;
+    color: #F5E8C7;
 }
 
 .kontenbg {
@@ -44,9 +44,121 @@ li a:hover {
     color: white;
 }
 
-.regis_form {
+.divDivLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#435585;
+    height: 89vh;
 }
 
-.regis_form div{
-    padding: 10px;
+.divlogin {
+    border: 5px solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#818FB4;
+    padding: 50px;
 }
+
+.logintxt {
+    margin-top:  -10px;
+    display: block;
+    justify-content: center;
+}
+
+.formLogin {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.divDivRegis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#435585;
+    height: 89vh;
+}
+
+.divRegis {
+    border: 5px solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#818FB4;
+    padding: 50px;
+}
+
+.regisTxt {
+    margin-top: -10px;
+    display: block;
+    justify-content: center;
+}
+
+.formRegis {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.submit {
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color:lightblue;
+}
+
+tr:nth-child(odd) {
+    background-color:cornflowerblue;
+}
+
+tr, td {
+    text-align: center;
+}
+
+caption{
+    font-weight: bold;
+}
+
+.tabelMenu {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#818FB4;
+    padding: 35px;
+}
+
+.divPesan {
+    display: flex;
+    padding: 50px;
+}
+
+label{
+    display: block;
+    margin: 10px;
+}
+
+.pesanTxt {
+    margin-top: -10px;
+    display: block;
+    justify-content: center;
+}
+
+.formPesan {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+

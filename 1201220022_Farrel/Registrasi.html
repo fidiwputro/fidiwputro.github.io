@@ -4,24 +4,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LaptopLab Registration</title>
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="form.js"></script>
 </head>
 <body style="background-color:black;">
 
+<header>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">LaptopLab</h2>
+			</div>
+			
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#">STORE</a></li>
+					<li><a href="#">PAYMENT</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+			<
+			
+			<div class="search">
+				<input class="srch" type="search" name="" placeholder=" search here">
+				<a href="a> <button class="btn> search</button></a>
+		</div>
+	</div>
+	</header>
 
-<div class="regis">
-	<form> <input type="button" value="<" onclick="history.back()"> </form>
-	<h2> Registration Form</h2>
-	<label for "email"><a>Email</a></label>
-	<input type="email" placeholder="Enter Your Email" email="email" required>
-	
-	<p label for "name"><a>Username</a></label>
-	<input type="text" placeholder="Enter Username" name="name" required>
-	
-	<p label for "pass"><a>Password</a></label>
-	<input type="password" placeholder="Enter Password" Password="psw" required>
-	
-	<p> <button type="submit">Submit</button></p>
-	
-	already have account <a href="login.html">Login</a>
-	
+<div>
+	<form id="regis" name="regisform" action="index.html">
+		<div class="regis">
+		<h2> Registration Form</h2>
+		<label for "email"><a>Email</a></label>
+		<input type="text" id="txtemail" name="txtemail" placeholder="Enter Your Email">
+		
+		<p label for "name"><a>Username</a></label>
+		<input type="text" id="txtname" name="txtname" placeholder="Enter Username">
+		
+		<p label for "pass"><a>Password</a></label>
+		<input type="Password" id="txtpass"  name="txtpass" placeholder="Enter Password">
+		<div>
+		<p> <input type="submit" id="subreg" name="subreg" value="simpan"/></p>
+		</div>
+		already have account ? <a href="login.html">Login</a>
+	</form>
 </div>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
 
 body{
     background-color: rgb(17 24 39 ); 
-    font-family: 'Unifont';
+    font-family: 'Unifont','Fira Code',monospace;
 }
 
 a{
@@ -21,7 +21,6 @@ a{
     top: 0;
     display: flex;
     width: 100%;
-    position: fixed;
     padding: 20px 13%;
     background-color: rgb(17 24 39 );
     z-index: 1000;

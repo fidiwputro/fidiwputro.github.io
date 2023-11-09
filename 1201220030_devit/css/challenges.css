@@ -6,63 +6,12 @@
 
 body{
     background-color: rgb(17 24 39 ); 
-    font-family: 'Unifont';
+    font-family: 'Unifont','Fira Code',monospace;
+    height: 100vh;
 }
 
 a{
     text-decoration: none;
-}
-
-/* NAVBAR AREA */
-.navbar{
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    top: 0;
-    display: flex;
-    width: 100%;
-    position: fixed;
-    padding: 20px 13%;
-    background-color: rgb(17 24 39 );
-    z-index: 100;
-    color: rgb(217 249 157 );
-    
-}
-
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(217 249 157 );
-}
-
-.logo img{
-    width: 2rem;
-    height: auto;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-}
-
-.nav-clean{
-    list-style: none;
-    display: flex;
-}
-
-.nav-clean li{
-    margin-right: 20px;
-}
-
-.nav-clean li a{
-    color: rgb(217 249 157 );
-}
-
-.login-button{
-    background-color: rgb(190 242 100 );
-    color: rgb(51 85 0 );
-    border: none;
-    border-radius: 5px;
-    padding: 7px 20px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 
@@ -71,11 +20,11 @@ a{
 
 .layar{
     width: 100%;
+    height: 100%;
 }
 .container-chall {
     width: 100%;
-    margin-top: 90px;
-    height: 620px;
+    height: 90%;
     display: flex;
     flex-direction: row;
     color: rgb(217 249 157);
@@ -105,9 +54,8 @@ a{
     width: 25%;
     border-left: 1px  solid white;
     border-right: 1px  solid white;
-    max-height: 100%;
+    height: 100%;
     overflow-y: scroll;
-
 }
 
 .kategori :hover{
@@ -124,6 +72,7 @@ a{
 
 .judul-soal{
     width: 20%;
+    height: 100%;
     max-height: 100%;
     overflow-y: scroll;
 
@@ -146,12 +95,18 @@ a{
 .deskripsi{
     background-color: rgb(19, 25, 35); 
     width: 35%;
+    height: 100%;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
-
-.deskripsi h1{
+.detail-des{
+    width: 100%;
+    height: auto;
+}
+.detail-des h1{
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -159,6 +114,7 @@ a{
 
 .desk-2 p{
     color:rgb(217 249 157);
+    padding: 5% 0;
 }
 
 .judul-des{
@@ -173,6 +129,13 @@ a{
     color:rgb(111, 111, 111);
 }
 /* Atch */
+.atch{
+    height: 10%;
+}
+.atch-isi{
+    display: flex;
+    flex-direction: column;
+}
 .atch a{
     color: aqua;
 }
@@ -182,6 +145,10 @@ a{
 }
 
 /* Flag Area */
+.flag{
+    height: 5%;
+}
+
 .flag form{
     display: flex;
 }
@@ -202,7 +169,7 @@ a{
 }
 
 .flag input{
-    width: 63%;
+    width: 60%;
     background-color: rgb(17 24 39 ); 
     color: white;
     border-radius: 2px;
@@ -212,12 +179,12 @@ a{
 
 }
 
-.Solper{
-    height: 25%;
+.solper{
+    height: 20%;
 }
 
 .solved{
-    max-height: 80%;
+    max-height: 90%;
     overflow-y: scroll;
 }
 
@@ -242,4 +209,6 @@ a{
 }
 
 
-
+hr{
+    margin: 2% 0;
+}

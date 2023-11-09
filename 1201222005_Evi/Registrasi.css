@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(./font/Nunito-VariableFont_wght.ttf) format();
+}
+body{
+    background-color: #09232c;
+    display: flex;
+    width:auto;
+    height: auto;
+    /* border: white; */
+    /* border-style: double; */
+}
+
+
+.batasan2{
+    /* border: yellow; */
+    /* border-style: double; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    /* center; mengatur agar kontennya ditengah */
+    align-items: center;
+}
+.konten{
+    /* border: rgb(107, 229, 213);
+    border-style: double; */
+    display: flex;
+    width: 95%;
+    height: 80%;
+    /* justify-content: center; mengatur agar kontennya ditengah */
+    /* align-items: center; */
+    background-color: white;
+    box-shadow: 10px 10px 8px 0px black;
+
+}
+
+.batasan2>.konten>p{
+    display: flex;
+    color: #09232c;
+    position: absolute;
+    z-index: 2;
+    font-size: 18pt;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 835;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+#regis{
+    top: 15%;
+    left: 50%;
+}
+
+form button{
+    
+    border-radius: 20px;
+    border-style: groove;
+    display: flex;
+    justify-content: center;
+    width: 150;
+    height: 35;
+}
+form button a{
+    margin: auto;
+    /* border: black; */
+    /* background-color: black; */
+    padding: 10 50;
+
+}
+form button:hover{
+    background-color: black;
+    border: white;
+}
+form button a:hover{
+    color: white;
+    margin: auto;
+}
+.konten {
+    padding-top: 100px;
+}
+
+.konten form{
+    margin-top: 2%;
+    border-radius: 20px;
+    display: flex;
+    background-color: antiquewhite;
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#atur{
+    display: flex;
+    margin-top: 0%;
+}
+
+form input,form select{
+    width: 80%;
+    /* margin-bottom: 10%; */
+}
+form #uname{
+    margin-top: 5%;
+}
+form #captcha{
+    margin-bottom: 0%;
+}
