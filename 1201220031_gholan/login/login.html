@@ -12,18 +12,17 @@
 <body>
   <div class="formulir">
     <h1>Login</h1>
-    <form id= "form">
-      <input id="Email" type="text" placeholder="Email">
-      <span id="error_email"></span>
-      <input id="password" type="password" placeholder="Password">
-      <span id="error_password"></span>
+    <form id="form" action="#">
+      <div class="form-control">
+        <input id="email" type="email" placeholder="Email">
+        <span id="error_email"></span>
+      </div>
+      <div class="form-control">
+        <input id="password" type="password" placeholder="Password">
+        <span id="error_password"></span>
+      </div>
+      <button type="submit">Login</button>
     </form>
-    <div class="forgot">
-      <p>Forgot Password?</p>
-    </div>
-    <button type="submit">Login</button>
-
-    <!-- <p>Belum punya akun? <a href="#">Sign Up</a></p> -->
   </div>
   <script src="script.js"></script>
 </body>
