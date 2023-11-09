@@ -3,7 +3,7 @@ body {
 }
 
 .Login {
-    border: 1px black;
+    /* border: 1px black; */
     width: 70%;
     position: absolute;
     left: 250px;
@@ -16,9 +16,6 @@ body {
 }
 
 .Login .imgkiri img {
-    /* background-size: contain;
-    object-fit: contain;
-    overflow: hidden; */
     width: 90%;
     height: 100%;
     border-radius: 20px 0 0 20px;
@@ -93,4 +90,20 @@ body {
 .placeholderMerah::placeholder {
     /*ini untuk di get elementnya pada javascript dengan classlist*/
     color: red;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    font-size: 25px;
+    color: #636363;
+}
+
+.menu a {
+    margin-left: 100px;
+    text-decoration: none;
 }

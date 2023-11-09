@@ -1,4 +1,3 @@
-/* CSS untuk halaman registrasi */
 .container {
     display: flex;
     justify-content: center;
@@ -60,10 +59,9 @@ button:hover {
 }
 
 button#back-button:hover {
+<<<<<<< HEAD
+    background-color: #0056b3;
+=======
     background-color: #666;
-}
-
-#success-message {
-    color: green; /* Warna teks untuk notifikasi sukses */
-    margin-top: 10px;
+>>>>>>> 333052550ceed0b52ad077fa5b3e0b12b7df5e2e
 }

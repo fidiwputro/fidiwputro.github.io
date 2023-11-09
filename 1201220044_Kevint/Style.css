@@ -5,7 +5,7 @@
 #EEEEEE 
 */
 
-
+/* index */
 * {
 	text-decoration: none;
 	margin: 0px;
@@ -15,6 +15,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	background-color: #393E46;
 }
 
 nav h1 {
@@ -65,18 +66,50 @@ nav ul li #btn2 {
 	border: 1px solid #00ADB5;
 }
 
-/* game */
+h4 {
+	color: #EEEEEE;
+	margin-left: 150px;
+	margin-top: -270px;
+}
+h5 {
+	color: #EEEEEE;
+	margin-left: 150px;
+}
+
+/* game index */
+
+.text{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #EEEEEE;
+	margin-left: 150px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	background-color: #393E46;
+}
+
+.textt{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #EEEEEE;
+	margin-left: 150px;
+	margin-top: 30px;
+	margin-bottom: -30px;
+	background-color: #393E46;
+}
 
 .gamegroup{
 	height: 100vh;
-	width: 100%;background-color: #00ADB5;
+	color: #222831;
+	width: 100%;background-color: #393E46;
+	margin-top: -35px;
 }
+
  .game {
 	background-color: #393E46;
 	height: 180px;
-	padding: 40px 10%;
+	padding: 20px 10%;
 	display: flex;
 	justify-content: space-between;
+	color: #EEEEEE;
 }
 
  .game .box a img {
@@ -84,4 +117,28 @@ nav ul li #btn2 {
 	height: 180px;
 	width: 180px;
 	border-radius: 20px;
+}
+
+.MetodePembayaran{
+	color: #222831;
+	width:40%;background-color: #393E46;
+}
+
+.pembayaran{
+	background-color: #393E46;
+	height: 30px;
+	padding: 20px 15%;
+	display: flex;
+	justify-content: space-between;
+	color: #EEEEEE;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.pembayaran .box img {
+	/* background-color: #00ADB5; */
+	height: 80px;
+	width: 100px;
+	border-radius: 3px;
+	margin-right: 10px;
 }

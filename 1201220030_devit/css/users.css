@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17 24 39 ); 
+    font-family: 'Unifont','Fira Code',monospace;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* main content */
+.container-users{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(217 249 157 );
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; 
+}
+
+
+/* text mirng */
+
+.vertical-text {
+    width: 12%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2.5rem;
+    color: rgb(217 249 157 );
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+}
+
+/* text miring team */
+.Myteam{
+    width: 10%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2.5rem;
+    color: rgb(217 249 157 );
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Myteam:hover{
+    background-color: rgb(217 249 157 );
+    box-shadow: 0 0 10px rgb(217 249 157);
+    color: rgb(17 24 39 );
+    cursor: pointer;
+}
+
+/* Kotak utama */
+
+.kotak-utama{
+    width: 80%;
+    height: 100%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* table-users */
+
+.table-users{
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    overflow-x: scroll;
+    max-height: 70%;
+}
+
+.table-users table{
+    width: 80%;
+}
+
+.table-users th{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    color:  rgb(17 24 39 );
+    background-color: rgb(51 85 0);
+}
+
+.table-users td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table-users tr:hover{
+    background-color: rgb(217 249 157 );
+    box-shadow: 0 0 10px rgb(217 249 157 );
+    color: rgb(17 24 39 );
+}
+
+
+/* Bagian Input/ Search */
+
+.search-users{
+    margin-top: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-users input{
+    border: 1px solid rgb(217 249 157 );
+    border-radius: 2px;
+    width: 68%;
+    background-color: rgb(17 24 39 );
+    color: rgb(217 249 157 );
+    padding-left: 20px;
+}
+
+.search-users button{
+    border: 1px solid rgb(190 242 100 );
+    background-color:rgb(51 85 0 ); 
+    color: rgb(190 242 100 );
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 10%;
+}

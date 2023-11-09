@@ -679,15 +679,84 @@ main .blog {
 }
 
 footer {
-    padding: 100px;
     background-color: #fff;
+    padding: 30px 100px 100px 100px;
 }
 
 footer h1 {
     font-size: 28px;
     color: #3b5d4f;
-    font-family: "Poppins";
     margin-bottom: 20px;
+    font-family: "Poppins";
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+
+    #img-sofa-kecil {
+        top: -100px;
+        width: 375px;
+        position: relative;
+    }
+
+    .forum {
+        .heading {
+            gap: 8px;
+            display: flex;
+            margin-bottom: 8px;
+            align-items: center;
+            /* background-color: aqua; */
+        }
+
+        .heading h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #3b5d4f;
+        }
+
+        #form {
+            height: 100px;
+            display: flex;
+            /* background-color: yellowgreen; */
+
+            .form-control {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                /* background-color: antiquewhite; */
+
+                #name,
+                #email {
+                    width: 200px;
+                    padding: 18px 14px;
+                    margin-right: 14px;
+                    border-radius: 10px;
+                    border: 1px solid #dfe1e5;
+                }
+            }
+
+            .form-control span {
+                color: #f00;
+                display: flex;
+                font-size: 14px;
+                margin-top: 8px;
+            }
+
+            #button-subscribe {
+                height: 52px;
+                color: #fff;
+                font-size: 24px;
+                padding: 11px 28px;
+                border-radius: 10px;
+                border: 1px solid #3b5d4f;
+                background-color: #3b5d4f;
+            }
+        }
+    }
+
 }
 
 footer .box {
@@ -719,8 +788,8 @@ footer .box {
             border-radius: 30px;
             text-decoration: none;
             justify-content: center;
-            background-color: #cad6d2;
             transition: 0.3s all ease;
+            background-color: #cad6d2;
         }
 
         .sosmed a:hover {

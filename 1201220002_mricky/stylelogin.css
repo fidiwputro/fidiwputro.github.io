@@ -61,16 +61,17 @@ label{
 .inputan{
     margin: 10px;
 }
-
-p{
-    color: #323F43ff;
-}
-
-.ContainerMenu button{
-   border: none;
+.submit{
+    margin: 10px;
+    border: none;
    width: 110px;
    height: 40px;
    background-color: #323F43ff;
    color: antiquewhite;
    border-radius: 5px;
+   justify-content: center;
+   text-align: center;
+}
+p{
+    color: #323F43ff;
 }

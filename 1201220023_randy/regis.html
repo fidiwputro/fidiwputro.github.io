@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="formRegis.js"></script>
     <title>Sign In</title>
   </head>
   <body>
@@ -18,7 +18,6 @@
       />
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
         <li><a href="login.html">Sign In</a></li>
         <li><a href="regis.html">Sign Up</a></li>
       </ul>
@@ -26,20 +25,20 @@
     <!--Form Registrasi-->
     <div class="divDivRegis">
     <div class="divRegis">
-      <form id= "regis" name="form-regis" action="index.html">
+      <form id= "regis" name="form-regis" action="login.html">
         <h1 class="regisTxt">Registrasi Akun</h1>
-        <div class="regis_form">
+        <div class="formRegis">
           <div>
             <label>Nama :</label>
-            <input type="text" id="fnama" name="fnama" />
+            <input class="txtName" type="text" id="fnama" name="fnama" />
           </div>
           <div>
             <label>Email :</label>
-            <input type="text" id="femail" name="femail" />
+            <input type="email" id="femail" name="femail" />
           </div>
           <div>
             <label>No. HP :</label>
-            <input type="text" id="fphone" name="fphone" />
+            <input type="tel" id="fphone" name="fphone" maxlength="12"/>
           </div>
           <div>
             <label>Password :</label>
@@ -52,21 +51,6 @@
         </form>
       </div>
     </div>
-    <!--Script JS Registrasi-->
-    <!-- <script>
-    let form = document.forms.regisgaksih;
-    function kirim() {
-        let nama = document.getElementById("fnama");
-        let email = document.getElementById("femail");
-        let phone = document.getElementById("fphone");
-        let pw = document.getElementById("fpw");
-        if (nama.value == "" || email.value == "" || phone.value == "" || pw.value == "" ) {
-            alert('Isi form tidak lengkap');
-        }else {
-            alert('Akun berhasil terdaftar');
-        }
-    }
-    form.addEventListener("submit", kirim); -->
     </script>
   </body>
 </html>
