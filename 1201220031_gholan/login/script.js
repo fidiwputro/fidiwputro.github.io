@@ -19,6 +19,7 @@ form.addEventListener('submit', (e) => {
         error_password.innerHTML = "";
     }
     if (error_email.innerHTML === "" && error_password.innerHTML === "") {
-        alert("YAy berhasil!");
+        alert("Berhasil Login");
+        window.location.href = "index.html";
     }
 });

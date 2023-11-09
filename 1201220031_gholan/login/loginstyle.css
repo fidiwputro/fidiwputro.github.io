@@ -14,7 +14,7 @@ body {
 
 .formulir{
   width: 400px;
-  background-color: antiquewhite; 
+  background-color: #56575b; 
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 }
 .formulir #form .form-control span{
-  color: red;
+  color: rgb(255, 0, 0);
   font-size: 10px;
 }
 .formulir #form button{
@@ -52,11 +52,11 @@ body {
   padding: 14px;
   font-weight: 600;
   border-radius: 7px;
-  border: 1px solid aqua;
-  background-color: aqua;
+  border: 1px solid #cdcdcd;
+  background-color: #cdcdcd;
 }
 
 .formulir #form button:hover{
-  background-color: #15d6d6;
-  border: 1px solid #15d6d6;
+  background-color: #adadad;
+  border: 1px solid #adadad;
 }
