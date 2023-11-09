@@ -111,10 +111,10 @@
                 <hr>
                 <!-- Flag Form -->
                 <div class="flag">
-                    <form name="" action="">
+                    <form name="form-flag" action="">
                         <h2>Flag </h2>
-                        <input type="text" placeholder="K4-CTF{...}" >
-                        <button type="submit">submit</button>
+                        <input id="in-flag" name="flag" type="text" placeholder="K4CTF{admin}" >
+                        <button id="btn-flag" onclick="checkFlag()" type="button">submit</button>
                     </form>
                     
                 </div>
@@ -176,5 +176,26 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function checkFlag(){
+        console.log('t');
+        let flag_form = document.forms['form-flag'];
+        let newFrom = new FormData(flag_form);
+        console.log(newFrom);
+        let flag_key = newFrom.keys();
+        for(let i of flag_key){
+            let isi = newFrom.get(i);
+            console.log('isis'+isi);
+            if(isi.trim() ==''){
+                alert('Wrong Flag !!');
+            }else if (isi == 'K4CTF{admin}'){
+                alert('Nice Solved !!');
+            }else{
+                alert('Wrong Flag !!');
+            }
+        }
+    }
+    </script>
 </body>
 </html>
