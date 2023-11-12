@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login/style.css">
+    <title>FurnitureHub.</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="Resources/wallpaper.jpg" alt="green-interior">
+        </div>
+        <div class="box">
+            <div class="heading">
+                <h1>Login</h1>
+                <p>Welcome back! Please login to continue.</p>
+            </div>
+            <div class="formulir">
+                <form action="index.html" id="form">
+                    <div class="form-control">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+                        <span id="error_email"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+                        <span id="error_password"></span>
+                    </div>
+                    <div class="remember">
+                        <div class="checkbox">
+                            <input type="checkbox" name="remember" value="Remember me" id="remember">
+                            <label for="remember">Remember Me</label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <button type="submit" id="btn-login">Login</button>
+                    <div class="divider">
+                        <hr>
+                        <p>OR</p>
+                        <hr>
+                    </div>
+                    <div class="btn-group">
+                        <a href="index.html" id="google">
+                            <div class="icon">
+                                <img src="Resources/google.png" alt="google-icon">
+                            </div>
+                            Login with Google
+                        </a>
+                        <a href="index.html" id="google">
+                            <div class="icon">
+                                <img src="Resources/facebook.png" alt="google-icon">
+                            </div>
+                            Login with Facebook
+                        </a>
+                    </div>
+                    <div class="signup">
+                        <p>Don't have account?</p>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login/script.js"></script>
+</body>
+
+</html>
