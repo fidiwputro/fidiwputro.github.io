@@ -32,19 +32,24 @@
 
 .Logo
 {
-    width: 20%;
+    width: 10%;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
-    /* position: relative; */
 }
 
 .login {
-    background-color: #ffffff;
-    border: none;
+    border: 2px solid #edc31d;
     border-radius: 25px;
     padding: 7px 20px;
     font-weight: bold;
+}
+.login :hover{
+    background-color: #edc31d;
+    transition: all ease-in;
+    color: white;
+    text-decoration: none;
+
 }
 
 .navbar ul li
@@ -56,12 +61,21 @@
     font-weight: bold;
 }
 
-.navbar ul li a
+.navbar a
 {
     text-decoration: none;
     color:  white;
     text-transform: uppercase;
 }
+
+.navbar a:hover{
+    color: #edc31d;
+    transition: all, .3s ;
+}
+
+.navbar ul li a :hover::after{
+    color:#edc31d;
+} 
 
 .navbar ul li::after
 {
@@ -111,6 +125,7 @@ button
     font-weight: bold;
     margin-left: 15px;
     color: white;
+    left: 0%;
     border: 2px solid #826d17;
     background: 0%;
 }
@@ -119,7 +134,8 @@ button:hover{
     border: none;
     transition: 0.3s;
     background: 100%;
-    background-color: rgba(0, 0, 0, 0.658);
+    left: 100%;
+    background-color: #826d17;
 }
 
 /* form login*/
@@ -140,6 +156,8 @@ form{
     display: inline-block;
     width: 30%;
 }
-.back-button{
+.back-button a{
     float: left;
+    text-decoration: none;
+    font-weight: solid;
 }
