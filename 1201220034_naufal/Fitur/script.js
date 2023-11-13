@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }else if (passwordR.value !== konfirmasiR.value) {
       registeredMessage.innerText = "Password dan konfirmasi password tidak cocok.";
       return;
+    }else{
+      window.location.href = "./Forum.html";
     }
 
     // Jika semua input valid, Anda dapat menambahkan kode untuk mengirim data ke server di sini.
