@@ -44,7 +44,7 @@ nav>div>ul>li>a:hover {
     text-decoration: none;
 }
 
-.btnLogin{
+.btnLogout {
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -54,19 +54,18 @@ nav>div>ul>li>a:hover {
     margin-left: 20px;
 }
 
-.btnLogin:hover{
+.btnLogout:hover {
     background-color: var(--primary-color);
 }
 
-
 .header {
-    font-size: 26px;
+    display: block;
+    height: 500px;
     text-align: center;
     padding: 50px 100px;
-    /* background-color: var(--third-color); */
-    background-color: red;
+    /* background-color: red; */
 }
 
-section>h1>span {
-    color:
+.headerTitle {
+    font-size: 100px;
 }

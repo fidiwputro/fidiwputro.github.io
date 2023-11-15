@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/assets/Untitled.png);
+    background-image: url(/1201220006_Ezra/assets/Untitled.png);
     height: 100vh;
     background-size: cover;
     margin: 0;
@@ -15,17 +15,13 @@ body {
 }
 
 .container-form {
-    background-image: url(/assets/Untitled\ \(1\).png);
+    background-image: url(/1201220006_Ezra/assets/Untitled\ \(1\).png);
     width: 605px;
     height: 658px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s ease-in-out;
-}
-
-.container-form:hover {
-    box-shadow: 12px 12px 4.5px 1px gray ;
 }
 
 form {
@@ -36,7 +32,6 @@ form {
     flex-direction: column;
 }
 
-
 .form-title {
     text-align: center;
     font-size: 27px;
@@ -46,6 +41,14 @@ form {
 label {
     margin-top: 2rem;
     font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label #alter {
+    display: none;
+    color: red;
+    font-weight: bold;
 }
 
 input {
@@ -67,7 +70,7 @@ a {
 
 .lupa-pass {
     width: 7rem;
-    margin: 2px 0 0 13.5rem;
+    top: 2px;
     transition: 0.3s ease-in-out;
 }
 
@@ -77,12 +80,12 @@ a {
 
 .btn-login {
     text-align: center;
-    height: 2.8rem;
-    width: 70%;
+    height: 3.4rem;
+    width: 40%;
     margin: 3rem auto 1rem auto;
     color: white;
     background-color: black;
-    font-size: 15px;
+    font-size: 21px;
     border: none;
     transition: 0.3s ease-in-out;
 }

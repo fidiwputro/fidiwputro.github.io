@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 // form[0].value="user"
                 // form[1].value="password"
                 event.preventDefault();
-            }else if (usernameInput == "user" && passwordInput == "user"){
-                window.location.href="Dashboard.html"
+            }else if (usernameInput === "user" && passwordInput === "user"){
+                // window.location.href="./Dashboard.html"
             }else if (usernameInput != "user" && passwordInput != "user"){
                 form[key].style.border="1px solid red"
                 form[key].value= `${key} Salah`

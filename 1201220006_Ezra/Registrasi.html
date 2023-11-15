@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/1201220006_Ezra/Style/Registrasi.css">
+    <script src="/1201220006_Ezra/Script/Register.js"></script>
 </head>
 
 <body>
 
     <div class="page">
 
-        <form action="" class="out-form-l">
+        <div class="out-form-l">
             <h1 class="logo">For U</h1>
             <p>Sering lupa dengan kegiatanmu sendiri?</p>
             <p>Catat semua kegiatanmu disini</p>
@@ -20,36 +21,42 @@
             <div class="btn-login">
                 <a href="/1201220006_Ezra/Login.html" id="register">LOGIN</a>
             </div>
-        </form>
+        </div>
 
         <form action="" class="out-form">
             <div class="in-form">
 
                 <div class="inp-form">
                     <div class="inp-name">
-                        <h3>first name</h3>
-                        <input type="text" id="first-name">
+                        <label for="">First Name <span id="alter">nama kosong</span></label>
+                        <input name="f-name" type="text" id="first-name">
                     </div> <br>
                     <div class="inp-name">
-                        <h3>last name</h3>
-                        <input type="text" id="last-name">
+                        <label for="">Last Name <span id="alter">nama kosong</span></label>
+                        <input name="l-name" type="text" id="last-name">
                     </div> <br>
                     <div class="inp-email">
-                        <h3>email</h3>
-                        <input type="email" id="email">
+                        <label for="">Email <span id="alter">email kosong</span></label>
+                        <input name="email" type="email" id="email">
                     </div> <br>
                     <div class="inp-password">
-                        <h3>Password</h3>
-                        <input type="password" id="password">
+                        <label for="">Password 
+                            <span id="alter">password kosong</span>
+                            <span id="alter">invalid</span>
+                        </label>
+                        <input name="password" type="password" id="password">
                     </div> <br>
                     <div class="inp-password">
-                        <h3>Password</h3>
-                        <input type="password" id="password-ver">
+                        <label for="">Password 
+                            <span id="alter">password kosong</span>
+                            <span id="alter">invalid</span>
+                        </label>
+                        <input name="val-password" type="password" id="password-ver">
                     </div>
                 </div>
 
                 <div class="btn-register">
-                    <a href="/1201220006_Ezra/Login.html" id="register">DAFTAR</a>
+                    <input type="submit" value="DAFTAR" class="btn-daftar">
                 </div>
             </div>
         </form>

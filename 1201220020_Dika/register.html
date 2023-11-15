@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script type="text/javascript" src="formbaru.js"></script>
 </head>
+
 <body>
     
 <div class="overlay-container"></div>
@@ -20,16 +21,16 @@
 
     
 </div>
-<div class="divlogin">
-    <form >
+<div class="divregis">
+    <form action="login.html">
         <h2>Register</h2>
             <div>
                 <label >Nama :</label> <br>
-                <input type="namausr" name="namauser" id="namausr">
+                <input type="nama user" name="namauser" id="namausr">
             </div>
             <div>
                 <label >Nim :</label> <br>
-                <input type="nimusr" name="nimuser" id="nimusr">
+                <input type="nim user" name="nimuser" id="nimusr">
             </div>
             <div>
                 <label >username :</label><br>
@@ -41,20 +42,21 @@
             </div>
             <div>
                 <input type="submit" name="buttonregis" id="btnlgn" value="Register">
+                <!-- <button type="submit" name="buttonregis" id="btnlgn" value="Register">Register</button> -->
             </div>
     </form>
 </div>
-<script>
+<!-- <script>
     function test(){
-        let Nama = document.getElementById('namauser').value;
-        let nimusr = document.getElementById('nimuser').value;
+        let Nama = document.getElementById('nama user').value;
+        let nimusr = document.getElementById('nim user').value;
         let username = document.getElementById('username').value;
         let password = document.getElementById('password').value;
         // alert(nama+' '+username+' '+password+' '+nimusr);
         alert("lah?")
 }
 btnlgn.addEventListener('click', test);
-</script>
+</script> -->
 
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="form.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -13,14 +14,16 @@
         <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#about">About Us</a></li>
         <li><a href="login.html">Sign In</a></li>
-        <li><a href="register.html">Sign Up</a></li>
+        <li><a href="register.html" class="daftar">Sign Up</a></li>
       </ul>
     </nav>
+
+    <div class="gambarForm"></div>
 
     <!-- form -->
     <div class="form">
       <h1>Register</h1>
-      <form name="formregist">
+      <form id="form" name="form" action="dashboard.html">
         <div class="label">
           <label for="username">Username :</label>
         </div>
@@ -57,7 +60,7 @@
       </form>
     </div>
     <!-- akhir form -->
-    <script>
+    <!-- <script>
       let form = document.forms.formregist;
       function kirim() {
         let nama = document.getElementById("username");
@@ -72,6 +75,6 @@
         }
       }
       form.addEventListener("submit", kirim);
-    </script>
+    </script> -->
   </body>
 </html>

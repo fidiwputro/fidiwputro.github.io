@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", (event)=>{
     let form = document.forms[0]
     form.addEventListener("submit", (evt)=>{
@@ -6,9 +7,10 @@ document.addEventListener("DOMContentLoaded", (event)=>{
         // console.log([...datanya.entries()]);
         datanya.forEach((val, key)=>{
             if (val=='' || val==0){
-                // alert(key+' lah kok kosong');
+                alert(key+' lah kok kosong');
                 form[key].style.backgroundColor="red    ";
             }
+        
         })
     })
 });
