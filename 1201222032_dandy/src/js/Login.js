@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 event.preventDefault();
             }else if (usernameInput === "user" && passwordInput === "user"){
                 // window.location.href="./Dashboard.html"
-                alert('testqwqw');
             }else if (usernameInput != "user" && passwordInput != "user"){
                 form[key].style.border="1px solid red"
                 form[key].value= `${key} Salah`
