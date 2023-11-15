@@ -11,14 +11,14 @@ body{
     background-repeat: no-repeat;
 
 }
-.layard-dalam {
+/* .layard-dalam {
     width: 100%;
     margin: auto;
-}
+} */
 .layar-penuh{
     width: 100%;
 }
-nav {
+/* nav {
     z-index: 100;
     color: #fff;
     text-align: center;
@@ -26,26 +26,25 @@ nav {
     border-bottom: 1px solid #b1b1b1;
     line-height: 60px;
     width: 100%;
-}
+} */
 
-nav.putih {
+/* nav.putih {
     background-color: #fff;
-}
-nav .logo {
+} */
+/* nav .logo {
     float: left;
     position: relative;
     line-height: 55px;
     text-align: center;
-}
-nav .logo img {
+} */
+/* nav .logo img {
     vertical-align: middle;
     width: 120px;
-}
+} */
 
 nav .menu {
     float: right;
     height: 60px;
-    /* max-width: 600px; */
 }
 
 nav ,.menu ul {
@@ -55,22 +54,22 @@ nav ,.menu ul {
     display: flex;
 }
 
-nav .menu ul li {
+/* nav .menu ul li {
     list-style-type: none;
     float: left;
     line-height: 60px;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
     color: #fff;
     text-align: center;
     padding: 0px 16px 0px 16px;
     text-decoration: none;
-}
+} */
 
-nav ul li a:hover {
+/* nav ul li a:hover {
     text-decoration: underline;
-}
+} */
 
 header { 
     position: relative;
@@ -79,17 +78,17 @@ header {
     overflow: hidden;
     z-index: 2;
 }
-header video {
+/* header video {
     position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
     z-index: -2;
-}
+} */
 
-.layar-penuh  source{
+/* .layar-penuh  source{
     width: 100%;
-}
+} */
 
 .nav{
     border: 1px rgb(0, 0, 0);

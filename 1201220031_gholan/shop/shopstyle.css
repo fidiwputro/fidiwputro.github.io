@@ -153,3 +153,19 @@ main .dashboard img{
     .preview .bottom{
         display: flex;
     }
+
+    /* Footer */
+    footer {
+      background-color: #fff;
+      width: 100%;
+      
+    }
+
+    footer p {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 10px
+    }

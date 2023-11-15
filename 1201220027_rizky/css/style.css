@@ -7,7 +7,7 @@
 
 /* Background Web */
 body {
-    background-image: url(../img/7.jpg); /* Latar Belakang (Gambar) */
+    background-image: url(../img/9.jpg); /* Latar Belakang (Gambar) */
     background-color: rgb(238, 238, 238);/* Warna dari latar belakang */
     background-size: cover;/* buat ukuran latar belakangnya (cover berati menutupi keseluruhan) */
     background-repeat: no-repeat;/* background digambar akan muncul berapa kali( no repeat agar hanya satu background yang memenuhi tampilan */
@@ -138,7 +138,7 @@ main {
     margin-bottom: 10px;
 }
 /* Footer */
-footer {
+/* footer {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 10px 0;
@@ -147,4 +147,4 @@ footer {
 }
 .p1{
     color: #ffffff;
-}
+} */

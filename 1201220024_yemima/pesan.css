@@ -107,11 +107,11 @@ body{
 
 .kotak-span {
     border: 1px solid #000; /* Garis tepi 1 piksel warna hitam */
-    padding: 10px; /* Ruang dalam 10 piksel */
+    padding: 20px; /* Ruang dalam 10 piksel */
     text-align: left;
     position: absolute;
-    top: 65%;
-    right: 37%;
+    top: 60%;
+    right: 43%;
     transform: translate(-50%, -50%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     float: center;
@@ -127,6 +127,7 @@ body{
     margin-top: 120px;
     
 }
+
 
 /* section makan */
 .menu{
@@ -161,6 +162,7 @@ body{
 }
 
 .makanan button{
+    /* Lebar button */
     padding:  10px 60px; 
     border:none;
     cursor: pointer;

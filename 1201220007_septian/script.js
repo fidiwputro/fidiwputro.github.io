@@ -25,8 +25,22 @@
 
 // })
 
+const dataRegis = {
+    nama : "",
+    nomor : "",
+    akun : "",
+    password : ""
+}
+
+const dataLogin = {
+    akun : dataRegis.akun,
+    password : dataRegis.password
+}
+
 document.addEventListener("DOMContentLoaded", ()=>{
     const formLogin = document.querySelector('#formLogin');
+    console.log(Object.values(dataLogin));
+
 // VALIDASI FORM LOGIN
     formLogin.addEventListener("submit", (event) => {
         var aksi = false;
@@ -58,6 +72,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 // VALIDASI FORM REGISTRASI
 document.addEventListener("DOMContentLoaded", ()=>{
 const formRegister = document.querySelector('#formRegister');
+console.log(Object.values(dataRegis));
         formRegister.addEventListener("submit", (event) => {
             var aksi = 0;
             event.preventDefault();
@@ -72,6 +87,8 @@ const formRegister = document.querySelector('#formRegister');
                 }
                 })
 
+                
+
                 const password = dataForm.get('password');
                 if(password.length < 8 && password.length > 0 ){
                     aksi = 2 ;
@@ -84,8 +101,16 @@ const formRegister = document.querySelector('#formRegister');
                     formRegister['password'].style.backgroundColor = "orange";
                 }else{
                     alert('Registrasi Berhasil');
-                    window.location.href = "index.html";
+                    // dataRegis.nama = dataForm.get('nama');
+                    // dataRegis.nomor = dataForm.get('telepon');
+                    // dataRegis.akun = dataForm.get('account');
+                    // dataRegis.password = dataForm.get('password');
+                    console.log(Object.values(dataRegis));
+                    // window.location.href = "index.html";
                 }
             })
-
+            dataRegis.nama = dataForm.get('nama');
+                    dataRegis.nomor = dataForm.get('telepon');
+                    dataRegis.akun = dataForm.get('account');
+                    dataRegis.password = dataForm.get('password');
     })

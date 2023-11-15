@@ -1,8 +1,6 @@
 function randomizer(event) {
   event.preventDefault();
 
-  const names = [];
-
   const namaRumah = [
     "Rumah murah di pusat kota",
     "Apartemen mewah di dekat mal",
@@ -20,11 +18,15 @@ function randomizer(event) {
   document.getElementById("username").value =
     namaRumah[acakNomorBerjarak(0, 8)];
 
+  // Acak harga dengan rumus randomisasi 0.1 hinnga 10,
+  // lalu hasil randomisasi dikalikan 1200000(Satu juta dua ratus ribu)
+  // todo: buat modifikasi hasil value menjadi dalam hitungan rupiah.
   document.getElementById("harga-properti").value =
     acakNomorBerjarak(0.1, 10) * 1200000;
 
+  // Acak jumlah Lantai
   document.getElementById("jumlah-lantai").value = acakNomorBerjarak(1, 4);
-  
+
   // Acak Nomor HP dengan function acakNomorHP()
   document.getElementById("no-hp").value = acakNomorHP();
 
@@ -32,7 +34,7 @@ function randomizer(event) {
   document.getElementById("status-bangunan").value =
     jenisProperti[acakNomorBerjarak(0, 3)];
 
-  // Acak 
+  // Acak
   document
     .querySelectorAll(".checkbox-btn")
     .forEach((checkbox) => (checkbox.checked = false));
@@ -75,14 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    // console.log(datanya.get("username"));
-    // console.log([...datanya.entries()]);
-    // datanya.forEach((value, key) => console.log({ key }, { value }));
 
     let datanya = new FormData(form);
     let isiform = [...datanya.entries()];
+
     const gallerySection = document.getElementById("getInputValue");
     // gallerySection.textContent = isiform.map((item) => item[1]);
+
     gallerySection.textContent = isiform.map((item) => item[1]).join(", ");
 
     console.log(form.name);
@@ -112,4 +113,17 @@ function sendToAlert(event) {
   alert(
     `nama: ${getAdName}\nharga: ${getHarga}\njenis: ${getJenis}\nstatus: ${getStatus}\n`
   );
+}
+
+function loginValidationButton() {
+  const username = document.getElementsByName("username");
+  const password = document.getElementsByName("password");
+
+  if (username === "" && password === "") {
+
+    alert("tidak boleh kosong")
+  } else {
+    alert("login sukses");
+    window.location = "../authenticated.html";
+  }
 }

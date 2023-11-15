@@ -61,25 +61,24 @@ body{
     float: right;
 }
 
-
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* This will distribute the space evenly between the columns */
     align-items: center;
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    width: 70%;
 }
 
 .container .row-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
+    display: flex; /* Change this to flex */
+    justify-content: space-between; /* Add this line */
     padding: 0 4px;
 }
 
-.container .col-1{
+.container .col-1, .container .col-2{
+    flex: 1; /* This will make the columns take up equal space */
     padding: 10px;
     height: 300px;
 }
@@ -91,7 +90,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container .h1-success{
+.container .success{
     text-align: left;
     font-size: 40px;
     color: #09d855;
@@ -105,18 +104,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.container .col-2{
-    padding: 10px;
-    height: 300px;
-    margin-bottom : 50px;
-}
-
-.col-2 .my_image{
+.container .col-2 .my_image{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%; /* This will make the image take the full width of the column */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+.col-2 .my_image{
+    background-size: cover; /* This will make the image cover the entire column */
 }
 
 .title-about{
@@ -191,4 +188,67 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    /* This will distribute the space evenly between the columns */
+    align-items: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.container-3 .row-3 {
+    display: flex;
+    /* Change this to flex */
+    justify-content: space-between;
+    /* Add this line */
+    padding: 0 4px;
+}
+
+.container-3 .col-1,
+.container-3 .col-2 {
+    flex: 1;
+    /* This will make the columns take up equal space */
+    padding: 10px;
+    height: 300px;
+}
+
+.container-3 h1 {
+    text-align: left;
+    font-size: 40px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-3 .success {
+    text-align: left;
+    font-size: 40px;
+    color: #09d855;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-3 p {
+    text-align: left;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-3 .col-2 .my_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* This will make the image take the full width of the column */
+    height: auto;
+    /* This will maintain the image's aspect ratio */
+}
+
+.container-3 .col-2 .my_image {
+    background-size: cover;
+    /* This will make the image cover the entire column */
 }
