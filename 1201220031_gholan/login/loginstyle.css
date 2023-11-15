@@ -12,73 +12,51 @@ body {
   font-family: "Montserrat";
 }
 
-.formulir {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(75, 75, 75);
-}
-
-.formulir h1{
-  margin-bottom: 50px;
-  color: #fff;
-}
-
-.formulir form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-
-.formulir form input {
-  padding: 14px;
+.formulir{
   width: 400px;
-  border-radius: 4px;
-  border: none;
+  background-color: #56575b; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
 }
 
-.formulir .forgot {
-  margin-top: -14px;
-  text-align: left;
-  float: left;
-  /* background-color: antiquewhite; */
-  width: 427px;
-  height: 14px;
+.formulir #form{
+  margin-top: 20px;
+  height: 200px;
+  /* background-color: aquamarine; */
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
-.formulir .forgot p{
-  font-size: 14px;
+.formulir #form .form-control{
+  /* background-color: aliceblue; */
+  height: 70px;
 }
-.formulir button{
-  margin-top: 40px;
-  padding: 14px 197px;
-  background-color: aqua;
+.formulir #form .form-control #email,
+.formulir #form .form-control #password{ 
+  padding: 14px 14px;
+  width: 250px;
+  border-radius: 7px;
   border: none;
-  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.formulir #form .form-control span{
+  color: rgb(255, 0, 0);
+  font-size: 10px;
+}
+.formulir #form button{
+  width: 280px;
+  padding: 14px;
   font-weight: 600;
-  border-radius: 4px;
+  border-radius: 7px;
+  border: 1px solid #cdcdcd;
+  background-color: #cdcdcd;
 }
 
-.formulir button:hover{
-  background-color: rgba(0, 255, 255, 0.573);
-}
-
-.formulir #form span{
-  color: red;
-}
-
-.formulir p{
-  margin-top: 50px;
-  color: #fff;
-  font-size: 14px;
-}
-.formulir p a{
-  text-decoration: underline;
-  color: #fff;
+.formulir #form button:hover{
+  background-color: #adadad;
+  border: 1px solid #adadad;
 }

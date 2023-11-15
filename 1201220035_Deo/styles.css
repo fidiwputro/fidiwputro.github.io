@@ -728,6 +728,10 @@ footer .container {
                 justify-content: flex-start;
                 /* background-color: antiquewhite; */
 
+                .error{
+                    outline: 1.2px solid #f00;
+                }
+
                 #name,
                 #email {
                     width: 200px;
@@ -735,7 +739,7 @@ footer .container {
                     margin-right: 14px;
                     border-radius: 10px;
                     border: 1px solid #dfe1e5;
-                }
+                }  
             }
 
             .form-control span {

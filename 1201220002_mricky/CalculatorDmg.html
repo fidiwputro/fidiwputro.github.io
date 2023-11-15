@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styleCalculatorDmg.css">
-    <script type="text/javascript" src="form.js"></script>
     <title>CalculatorDmg</title>
+    <link rel="stylesheet" type="text/css" href="styleCalculatorDmg.css">
+    <script type="text/javascript" src="formCalculatorDmg.js"></script>
 </head>
 <body>
     <div class="navigasi">
@@ -38,7 +38,7 @@
                             <input type="range" min="1" max="7" id="rangeNaNatasha" name="rangeNaNatasha" value="1">
                             <p>Memberikan phisycal Damage sebesar : <span id="hasilBasicAtkNatasha">------</span> </p>
                         </div>
-                        <button id="btnHitungDmgNatasha" type="submit" itemid="tes">HITUNG</button>
+                        <button id="btnHitungDmgNatasha" type="button" >HITUNG</button>
                     </form>
                 </div>
             </div>
@@ -46,7 +46,8 @@
             <div class="skill">
 
                 <div class="inputan">
-                    <form action="" name="formNatasha">
+
+                    <form action="" name="formSkillNatasha" id="formSkillNatasha">
                         <label for="hp">HP</label>
                         <input type="number" name="hpNatasha" min="1">
 
@@ -64,12 +65,12 @@
                             <div class="hasil">
                                 <h3 class="judul">ULTIMATE</h3>
                                 <h4>Lv.</h4>
-                                <input type="range" min="1" max="7" name="rangeUltNatasha">
+                                <input type="range" min="1" max="7" name="rangeUltNatasha" value="1">
                                 <p>Menyembuhkan semua sekutu sebesar <span id="hasilUltimateNatasha">------</span></p>
                             </div>
                         </div>
         
-                        <button id="btnHitungHealNatasha" type="submit">HITUNG</button>
+                        <button id="btnHitungHealNatasha" type="button">HITUNG</button>
                     </form>
                 </div>
 
@@ -85,7 +86,7 @@
 
             <div class="skill">
                 <div class="inputan">
-                    <form action="">
+                    <form action="" name="formNaLynx">
                         <label for="atk">HP</label>
                         <input type="number" name="hpLynx">
 
@@ -103,37 +104,40 @@
                                 <p>Menimbulkan Quantum DMG setara dengan <span>------</span> ke satu musuh.  </p>
                             </div>
                         </div>
-                        <button type="submit">HITUNG</button>
+                        <button id="btnNaLynx" type="button">HITUNG</button>
                     </form>
                 </div>
                 
             </div>
 
             <div class="skill">
+                <form action="">
 
-                <div class="inputan">
-                    <label for="hp">HP</label>
-                    <input type="number" id="hp">
-                    <label for="OG">Outgooing Healing</label>
-                    <input type="number" id="be">
-                </div>
+                    <div class="inputan">
+                        <label for="hp">HP</label>
+                        <input type="number" id="hp" name="hpLynx">
+                        
+                        <label for="OG">Outgooing Healing</label>
+                        <input type="number" id="be" name="oghLynx">
+                    </div>
 
-                <div class="hasilskill">
-                    <div class="hasil">
-                        <h3 class="judul">SKILL</h3>
-                        <h4>Lv.--</h4>
-                        <input type="range" min="1" max="7">
-                        <p>Memulihkan satu sekutu sebesar <span>------</span>. Memulihkan sekutu sebesar <span>------</span> di awal tiap giliran selama 2 giliran.</p>
+                    <div class="hasilskill">
+                        <div class="hasil">
+                            <h3 class="judul">SKILL</h3>
+                            <h4>Lv.--</h4>
+                            <input type="range" min="1" max="7">
+                            <p>Memulihkan satu sekutu sebesar <span>------</span>. Memulihkan sekutu sebesar <span>------</span> di awal tiap giliran selama 2 giliran.</p>
+                        </div>
+        
+                        <div class="hasil">
+                            <h3 class="judul">ULTIMATE</h3>
+                            <h4>Lv.--</h4>
+                            <input type="range" min="1" max="7" name="rangelvskillLynx">
+                            <p>Menyembuhkan semua sekutu sebesar <span>------</span></p>
+                        </div>
                     </div>
-    
-                    <div class="hasil">
-                        <h3 class="judul">ULTIMATE</h3>
-                        <h4>Lv.--</h4>
-                        <input type="range" min="1" max="7">
-                        <p>Menyembuhkan semua sekutu sebesar <span>------</span></p>
-                    </div>
-                </div>
-                <button>HITUNG</button>
+                    <button type="button" id="btnHealLynx">HITUNG</button>
+                </form>
             </div>
         </div>
     </div>
