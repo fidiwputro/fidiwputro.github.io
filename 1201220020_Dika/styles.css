@@ -1,25 +1,16 @@
-h1 {
-    color: blue;
+body{
+    margin: 0;
 }
-h2 {
-    color: black;
-}
-h3 {
-    color: green;
-}
-
 
 .navbar{
     background-color: black;    
     display: flex;
-    overflow: hidden;
     width: 100%;
-    border-radius: 20px;
-    box-shadow: black;
+
 }
 
 .navbar img{
-    float: left;
+    float: left !;
     display: block;
     padding-left: 20px;
     padding-top: 15px;
@@ -32,49 +23,38 @@ h3 {
     display: block;
     float: left;
     text-align: center;
-    text-decoration: none;
     color: antiquewhite;
     padding: 40px 30px;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.background {
-    text-align: center;
-    
-
-}
-.background img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 5%;
-    max-width: 100%;
-    height: auto;
-    opacity: 80%;
-}
-
-.desc{
- font-size: medium;
- text-align: center;
-}
-
-.centered-button {
-    position: relative;
-    text-align: center;
-   
-}
-
-.center-button {
+.background img{  
     position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: red;
-    color: #fff;
-    font-size: 24px;
-    padding: 15px 30px;
-    border: none;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.reserve{
+    border: red solid;
     border-radius: 10px;
-    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    top: 75%;
+    left: 38%;
+    text-align: center;
+    font-weight: bold;
+
+}
+.reserve a{
+    color: red;
+    
 }
 
 .divlogin{
@@ -90,12 +70,11 @@ h3 {
     
 }
 
-.divlogin div label {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
+.divlogin label {
+  font-size: larger;
 }
 
-.divlogin div input {
+.divlogin input {
     width: 300px;
     border-radius: 10px;
     margin: 10px;
@@ -104,10 +83,33 @@ h3 {
 
 }
 
-.reserve{
-    border: red solid;
+.divregis{
+    background-color: antiquewhite;
+    width: 500px;
+    border: 1px solid black;
+    margin-right: 25%;
+    margin-left: 30%;
+    margin-top: 1%;
+    padding: 20px ;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.divregis input{
+    width: 300px;
     border-radius: 10px;
+    margin: 10px;
+    font-size: medium;
+    padding: 10px;
+}
+
+.divregis button {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: medium;
     padding: 10px;
 
-
 }
+
+

@@ -9,25 +9,54 @@
 <body>
     <div class="container">
         <div class="form-container">
-            <form id="register-form" action="index.html" method="GET">
+            <form id="Register-form" action="index.html" method="GET">
                 <h2>Register</h2>
                 <div class="form-group">
-                    <label for="new-username">Username:</label>
-                    <input type="text" id="new-username" name="new-username" required>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <span id="email-error" class="error-message"></span> <!-- Pesan kesalahan -->
+                    <input type="text" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="new-password">Password:</label>
-                    <input type="password" id="new-password" name="new-password" required>
+                    <label for="Nomorhp">Nomor Hp:</label>
+                    <input type="nomorhp" id="nomorhp" name="nomorhp" required>
                 </div>
-                <button type="submit">Daftar</button>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-group">
+                    <button type="button" onclick="validateForm('Register-form')">Register</button>
+                    <button id="back-button" onclick="window.location.href='index.html'">Back</button>
+                </div>
+                <div id="error-message" style="color: red; display: none;">Mohon isi data Register dengan benar</div>
             </form>
-            <button id="back-button" onclick="window.location.href='index.html'">Back</button>
         </div>
     </div>
+    <script>
+        function validateForm(formId) {
+            const form = document.getElementById(formId);
+            const inputs = form.querySelectorAll('input[required]');
+            let valid = true;
+
+            inputs.forEach(input => {
+                if (!input.value) {
+                    input.style.borderColor = 'red';
+                    valid = false;
+                } else {
+                    input.style.borderColor = '';
+                }
+            });
+
+            if (valid) {
+                form.submit();
+            } else {
+                const errorMessage = document.getElementById('error-message');
+                errorMessage.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>

@@ -10,6 +10,7 @@ form.addEventListener('submit', (e) => {
     if (name.value === '' || name.value == null) {
         e.preventDefault();
         name_error.innerHTML = "*Name cannot be empty";
+        name.classList.add("error");
     } else {
         name_error.innerHTML = "";
     }
@@ -17,6 +18,7 @@ form.addEventListener('submit', (e) => {
     if (!email.value.match(email_check)) {
         e.preventDefault();
         email_error.innerHTML = "*Invalid Email Format";
+        email.classList.add("error");
     }
     if (email.value === '' || email.value == null) {
         e.preventDefault();

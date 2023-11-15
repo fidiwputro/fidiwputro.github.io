@@ -4,6 +4,14 @@ body{
 html{
     scroll-behavior: smooth;
 }
+#registered{
+    color:red;
+    font-size:small;
+}
+#loginMessage{
+    color:red;
+    font-size:small;
+}
 @media only screen and (max-width: 770px) {
     /*Responsive*/
     .halamanlogin{
