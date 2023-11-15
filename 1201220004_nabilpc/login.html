@@ -16,26 +16,13 @@
                 <input type="text" name="username" id="username"><br>
                 <label for="password">Password : </label>
                 <input type="password" name="password" id="password"><br><br>
-                <button type="button" id="btnlogin">login</button><br><br>
+                <button type="submit" id="btnlogin">login</button><br><br>
                 <a href="register.html">Belum Punya Akun ?</a><br>
             </form>
+            <script src="validationlogin.js"></script>
+            <script src="dom.js"></script>
         </div>
     </div>
-    <script>
-        let form = document.forms['form-login'];
-        function notifikasi(){
-            let uname = document.getElementById('username');
-            let pass = document.getElementById('password');
-            if (uname.value == '' || pass.value == '') {
-                alert('Username dan Password tidak boleh kosong :|');
-            } else{
-                alert('halo, ' + uname.value);
-            }
-        }
-
-        let login = document.getElementById('btnlogin');
-        login.addEventListener('click', notifikasi);
-    </script>
 </body>
 
 </html>

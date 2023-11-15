@@ -28,6 +28,11 @@ body {
     z-index: 9999;
 }
 
+/* .menu-wrapper a {
+    display: block;
+    margin-left: 3px;
+} */
+
 .navbar-brand {
     font-size: 2rem;
     font-weight: 700;
@@ -52,6 +57,7 @@ body {
     text-transform: capitalize;
 }
 
+/* Hover Navbar Bagian Tengah */
 .navbar > a:hover {
     color: crimson;
     transition: all, .3s ease-in-out;
@@ -93,6 +99,16 @@ body {
     text-transform: capitalize;
 }
 
+/* Hover Navbar Bagian Kanan */
+.right-nav > a:hover {
+    color: crimson;
+    transition: all, .3s ease-in-out;
+    -webkit-transition: all, .3s ease-in-out;
+    -moz-transition: all, .3s ease-in-out;
+    -ms-transition: all, .3s ease-in-out;
+    -o-transition: all, .3s ease-in-out;
+}
+
 /* Section */
 .hero {
     min-height: 100vh;
@@ -110,13 +126,14 @@ body {
 }
 
 .hero .content h1 {
-    font-size: 5em;
+    font-size: 3em;
     color: #fff;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     line-height: 1.2;
 }
 
 .hero .content p {
+    color: #fff;
     font-size: 1.6rem;
     margin-top: 1rem;
     line-height: 1.4;

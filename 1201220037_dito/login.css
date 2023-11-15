@@ -3,7 +3,7 @@ body {
 }
 
 .Login {
-    border: 1px black;
+    /* border: 1px black; */
     width: 70%;
     position: absolute;
     left: 250px;
@@ -16,9 +16,6 @@ body {
 }
 
 .Login .imgkiri img {
-    /* background-size: contain;
-    object-fit: contain;
-    overflow: hidden; */
     width: 90%;
     height: 100%;
     border-radius: 20px 0 0 20px;
@@ -62,7 +59,7 @@ body {
     background-color: #E5D283;
     color: #213555;
     border-radius: 13px;
-    margin-top: 20px;
+    margin-top: 10px;
     position: absolute;
     top: 350px;
     right: 180px;
@@ -78,4 +75,35 @@ body {
         0 0 50px #E5D283,
         0 0 100px #E5D283;
     transition: 0.5s ease;
+}
+
+.Login p {
+    padding-top: 39%;
+    padding-left: 10%;
+
+}
+
+.Login a {
+    text-decoration: none;
+}
+
+.placeholderMerah::placeholder {
+    /*ini untuk di get elementnya pada javascript dengan classlist*/
+    color: red;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    font-size: 25px;
+    color: #636363;
+}
+
+.menu a {
+    margin-left: 100px;
+    text-decoration: none;
 }

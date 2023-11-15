@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="formLogin.js"></script>
     <title>Sign In</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Navbar-->
-    <nav class ="navigasi" >
-        <img class="logo" src="images/Logo Katering.jpeg" alt="Logo" width= "55px">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="login.html">Sign In</a></li>
-            <li><a href="regis.html">Sign Up</a></li>
-        </ul>
+    <nav class="navigasi">
+      <img
+        class="logo"
+        src="images/Logo Katering.jpeg"
+        alt="Logo"
+        width="55px"
+      />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="regis.html">Sign Up</a></li>
+      </ul>
     </nav>
     <!--Form Login-->
-    <div>
-        <form name="loginduluges">
-            <h1>Login</h1>
-            <div class="login_form">
-                <div>
-                    <label>Email :</label>
-                    <input type="text" id="femail" name="femail">
-                </div>
-                <div>
-                    <label>Password :</label>
-                    <input type="password" id="fpw" name="fpw">
-                </div>
-                <div>
-                    <button>Submit</button>
-                </div>
+    <div class="divDivLogin">
+      <div class="divlogin">
+        <h1 class="logintxt">Login</h1>
+        <form name="formLogin" class="loginForm" action="services.html">
+          <div>
+            <div>
+              <label>Email :</label>
+              <input type="email" id="femail" name="femail" />
             </div>
+            <div>
+              <label>Password :</label>
+              <input type="password" id="fpw" name="fpw" />
+            </div>
+            <div>
+              <input
+                class="submit"
+                type="submit"
+                id="submit"
+                name="submit"
+                value="Login"
+              />
+            </div>
+          </div>
         </form>
+      </div>
     </div>
-    <!--Script JS-->
-    <script>
-        let form = document.forms.loginduluges;
-        function kirim() {
-            let email = document.getElementById("femail");
-            let pw = document.getElementById("fpw");
-            if (email.value == "" || pw.value == "" ) {
-                alert('Username atau password salah!');
-            }else {
-                alert('Berhasil login');
-            }
-        }
-        form.addEventListener("submit", kirim);
-    </script>
-</body>
+  </body>
 </html>

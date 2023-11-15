@@ -48,9 +48,24 @@ html {
     border: none;
   }
 
+  .dropshadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card2 {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+  }
+
   .dropdownDiv {
     position: relative;
-    color: #3498db;
     width: 54%;
     border: none;
   }
@@ -69,18 +84,47 @@ html {
   }
 
   .radio-btn {
-    size: 100px;
-    width: 30px;
+    /* margin-right: -10px; */
+    size: 50px;
+    width: 40px;
+    background-color: red;
+  }
+  .checkbox-btn {
+    accent-color: black;
+    flex: auto;
+    align-items: center;
+    height: 20px; /* not needed */
+    width: 20px;
+    border-radius: 50px;
+    padding: 12px;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .space-around {
+    justify-content: space-around;
+  }
+
+  .justify-center {
+    justify-content: center;
+    padding: 12px 10px;
+
   }
 
   .gap12 {
     gap: 12px;
   }
-  .whole-section {
+
+  .product-section {
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: row;
-    /* padding: 4rem; */
-    /* gap: 12px; */
     justify-content: flex-start;
   }
 
@@ -99,6 +143,11 @@ html {
     width: 30%;
     color: black;
     border: #3498db 1px solid;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    ;
   }
 
   .btnStyle1 {
@@ -520,15 +569,11 @@ html {
     text-align: center;
   }
 
-  .user-box {
-
-  }
-
   .login-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: small;
-    color: #303030;
+    /* color: #303030; */
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #3f3f3f;
@@ -536,9 +581,6 @@ html {
     background: transparent;
   }
   .login-box .user-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 10px 0;
     font-size: small;
     color: #303030;
@@ -546,11 +588,8 @@ html {
     transition: 0.5s;
   }
 
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: #fff;
+  .login-box .user-box label ~ input:focus,
+  .login-box .user-box label ~ input:focus {
     font-size: small;
   }
 
@@ -558,7 +597,7 @@ html {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #000000;
+    color: white;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -567,17 +606,27 @@ html {
     margin-top: 40px;
   }
 
+  /* hover border */
   .login-box a:hover {
     background: #000000;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #000000, 0 0 25px #fff, 0 0 50px #000000,
-      0 0 100px #000000;
+    box-shadow: 0 0 1px #000000, 0 0 1px #fff, 0 0 1px #000000,
+      0 0 10px #000000;
   }
 
   .login-box a span {
     position: absolute;
     display: block;
+  }
+
+  .btnStyle2 {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 1.2em;
   }
 
   .formBox {
@@ -636,9 +685,7 @@ html {
 
   .dropdownDiv {
     position: relative;
-    color: #3498db;
     width: 54%;
-    border: none;
   }
 
   .mt12 {

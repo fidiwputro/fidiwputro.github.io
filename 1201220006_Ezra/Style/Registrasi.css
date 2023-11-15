@@ -1,8 +1,11 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
     background-image: url("/1201220006_Ezra/assets/Untitled.png");
     background-size: cover;
     height: 100vh;
@@ -14,7 +17,7 @@ body {
 .page {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 84%;
     /* border: 4px solid tomato; */
 }
@@ -55,7 +58,6 @@ body {
 
 
 .out-form {
-    /* background-image: url("/1201220006_Ezra/assets/Untitled\ \(1\).png"); */
     border: 9px solid black;
     background-color: white;
     width: 605px;
@@ -63,15 +65,27 @@ body {
 }
 
 .in-form {
-    margin: 2.1rem auto;
+    margin: 1.7rem auto;
     width: 21.1rem;
 }
 
 
 .inp-form {
-    text-align: center;
+    text-align: start;
 }
 
+label {
+    /* margin-top: 2rem; */
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label #alter {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
 
 .inp-name {
     margin: auto;
@@ -81,7 +95,10 @@ body {
     text-align: start;
 }
 .inp-name input {
-    padding: 1em 5rem;
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
     border: 8px solid black;
 }
 
@@ -96,7 +113,10 @@ body {
 }
 
 .inp-email input {
-    padding: 1em 5rem;
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
     border: 8px solid black;
 }
 
@@ -111,26 +131,32 @@ body {
 }
 
 .inp-password input {
-    padding: 1em 5rem;
+    text-align: start;
+    width: 80%;
+    height: 2.5rem;
+    padding: 2px 1.7rem;
     border: 8px solid black;
 }
 
 
 .btn-register {
     text-align: center;
-    margin: 2.5rem auto;
+    margin: 1.7rem auto;
 }
 
-.btn-register a {
+.btn-register input {
     text-decoration: none;
     color: white;
     background-color: black;
     padding: 13px 2rem;
     font-size: 21px;
+    font-weight: bold;
+    border: none;
     transition: 0.4s ease-in-out;
 }
 
-.btn-register a:hover {
+.btn-register input:hover {
     box-shadow: 5px 6px 4.5px 1px gray ;
+    cursor: pointer;
 }
 

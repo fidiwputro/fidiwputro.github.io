@@ -82,7 +82,7 @@ body {
     margin-top: 20px;
 }
 
-.masuk input[type="submit"] {
+.masuk input[type="button"] {
     background-color: #72b7be;
     color: #fff;
     font-size: 18px;
@@ -94,6 +94,6 @@ body {
     text-align: center;
 }
 
-.masuk input[type="submit"]:hover {
+.masuk input[type="button"]:hover {
     background-color: #0056b3;
 }

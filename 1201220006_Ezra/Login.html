@@ -1,64 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/1201220006_Ezra/Style/Login.css">
+    <script src="/1201220006_Ezra/Script/login.js"></script>
 </head>
-
 <body>
+    
+    <div class="container-form">
+        <form name="form-login">
+            <div class="form-title">For U</div>
+            <label for="">Email <span id="alter">email kosong</span></label>
+            <input type="email" name="email" id="email">
 
-    <form action="" class="out-form">
-        <div class="in-form">
-            <h1 class="logo">For U</h1>
+            <label for="">Password <span id="alter">password kosong</span></label>
+            <input type="password" name="password" id="password">
 
-            <div class="inp-form">
-                <div class="inp-email">
-                    <h3>email</h3>
-                    <input type="email" id="email">
-                </div> <br>
-                <div class="inp-password">
-                    <h3>Password</h3>
-                    <input type="password" id="password">
-                </div>
-            </div>
+            <a href="" class="lupa-pass">Lupa Password</a>
+            <input type="submit" value="LOGIN" class="btn-login">
+            <p class="btn-daftar">Belum memiliki akun ? <span><a href="/1201220006_Ezra/Registrasi.html">Daftar</a></span></p>
+        </form>
+    </div>
 
-            <div class="forgot-regist">
-                <a href="">Lupa Password</a>
-                <a href="/1201220006_Ezra/Registrasi.html">Daftar</a>
-            </div>
-
-            <div class="btn-login">
-                <a href="/1201220006_Ezra/index.html" id="login">Masuk</a>
-            </div>
-        </div>
-    </form>
-
-    <script>
-        var login = document.getElementById("login")
-
-        login.addEventListener('click', function(event) {
-            event.preventDefault();
-            
-            var email = document.getElementById("email").value
-            var password = document.getElementById("password").value
-
-            if(email == "" && password == "") {
-                alert('Form tidak diisi')
-            }
-            else if(password == "") {
-                alert('Password kosong');
-            }
-            else if (email == "") {
-                alert('email kosong');
-            }
-            else {
-                window.location.href = "/1201220006_Ezra/index.html"
-            }
-        })
-    </script>
 </body>
-
 </html>
