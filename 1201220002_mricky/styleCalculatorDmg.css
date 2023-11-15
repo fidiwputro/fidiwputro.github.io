@@ -1,14 +1,17 @@
+/* mengatur body */
 body {
     margin: 0;
     padding: 10px;
     background-color: #323F43ff;
 }
+
+/* memberispasce untuk menu */
 .navigasi{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
 
+/* mengelompokkan icon menu */
 .pouch{
     width: fit-content;
     height: fit-content;
@@ -19,28 +22,35 @@ body {
     margin-top: 10px;
     position: fixed;
 }
+
+/* mengatur besar kecil img */
 .pouch img{
     width: 40px;
     margin: 2px;
 }
+
+/* membuat spasce untuk konten */
 .tabel{
     border: 2px solid #323F43ff;
     
 }
+
+/* membungkus konten */
 .Character{
     border: 1px solid #faebd7;
     padding: 5px;
     display: flex;
     flex-direction: row;
     margin-top: 100px;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
+
 .Character img{
     width: 80px;
     height: 80px;
     object-fit: cover;
 }
+
 .skill{
     margin: 10px;
     border: 1px dashed #faebd7;
@@ -48,24 +58,29 @@ body {
     width: fit-content;
     height: fit-content;
 }
+
 .inputan{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     padding: 2px;
-    margin-bottom: 40px;
+    margin-bottom: 4px;
     
 }
+
 label{
     color: #faebd7;
     margin-top: 10px;
 }
+
 button{
     margin-top: 10px;
 }
+
 p{
     color: #faebd7;
 }
+
 form{
     display: flex;
     align-items: flex-start;
@@ -73,10 +88,12 @@ form{
     padding: 2px;
     margin-bottom: 20px;
 }
+
 .judul{
     color: #faebd7;
     text-align: center;
 }
+
 h4{
     color: #faebd7;
 }
@@ -86,6 +103,7 @@ h4{
     border: 1px dashed #faebd7;
     width: 430px;
 }
+
 .hasilskill{
     display: flex;
     flex-direction: row;

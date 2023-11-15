@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
         form[key].style.border = "1px solid black";
         form[key].style.backgroundColor = "red"; // mengubah warna background menjadi merah apabila field kosong
 
-        form[key].addEventListener("focus", function(){ // apabila focus pada field tertentu background color kembali berwarna putih
+        form[key].addEventListener("focus", function () {
+          // apabila focus pada field tertentu background color kembali berwarna putih
           form[key].style.backgroundColor = "white";
-        })
-
+        });
       }
     });
     if (!alertTampil) {
-      alert("Login Sukses!");
+      alert("Pesanan Selesai");
     }
   });
 });
