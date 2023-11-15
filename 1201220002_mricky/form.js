@@ -41,14 +41,23 @@ document.addEventListener("DOMContentLoaded",()=>{
         if(cek != 0){
             alert("USERNAME ATAU PASSWORD MASIH KOSONG");
         }
-       
+
+        let user = document.getElementById("username");
+        let pass = document.getElementById("password");
+
+        // if(user.value != "" && pass.value !=""){
+        //     let tes2 = "./index.html";
+        //     tes2;
+        // }else{
+        //     event.preventDefault();
+        // }
     });
 
     let formRegis = document.forms["formRegis"];
     let btnRegis = document.getElementById("btnDaftar");
     
     btnRegis.addEventListener("click",(event)=>{
-        // event.preventDefault();
+        event.preventDefault();
         
         //MENAMPILKAN FORMDATA MULAI DARI KEY DAN VALUENYA SEPERTI nama->ricky
         let dataForm = new FormData(formRegis);

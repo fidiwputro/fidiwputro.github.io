@@ -19,6 +19,7 @@ body{
     margin-top: 10px;
     position: fixed;
 }
+
 .pouch img{
     width: 40px;
     margin: 2px;
@@ -27,15 +28,18 @@ body{
 .slide1 {
     display: flex;
 }
+
 .imageLanding {
     margin-top: 100px;
     width: 74%;
     overflow: hidden;
 }
+
 .imageLanding img {
     width: 100%;
     height: 100%;
 }
+
 .ContainerMenu {
     width: 26%;
     margin-top: 100px;
@@ -45,7 +49,8 @@ body{
     align-items: center;
     background-color: antiquewhite;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
-}    
+} 
+
 .ContainerMenu p {
     padding: 10px;
     text-align: center;
@@ -61,17 +66,23 @@ label{
 .inputan{
     margin: 10px;
 }
+
 .submit{
     margin: 10px;
     border: none;
-   width: 110px;
-   height: 40px;
-   background-color: #323F43ff;
-   color: antiquewhite;
-   border-radius: 5px;
-   justify-content: center;
-   text-align: center;
+    width: 110px;
+    height: 40px;
+    background-color: #323F43ff;
+    color: antiquewhite;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
 }
+
+form{
+    text-align: center;
+}
+
 p{
     color: #323F43ff;
 }

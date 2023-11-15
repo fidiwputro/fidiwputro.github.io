@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     let btn = document.getElementById("btnHitungDmgNatasha");
     
     btn.addEventListener("click",(event)=>{
+        
         //MENAMPILKAN FORMDATA MULAI DARI KEY DAN VALUENYA SEPERTI nama->ricky
         let datanyaNatasha = new FormData(form);
         console.log(datanyaNatasha);
@@ -162,9 +163,21 @@ document.addEventListener("DOMContentLoaded",()=>{
             console.log(key);
         }
 
+        let cek = 0;
+        datanyaNatasha.forEach((value,key)=>{
+            if(value === 0 || value === ""){
+                console.log(key+" tidak boleh kosong");
+                cek++;
+                console.log(cek);
+            }
+        })
+        if(cek != 0){
+            alert("inputan harus angka");
+        }
+
         let tes = 0;
         datanyaNatasha.forEach((value,key)=>{
-            if(value==""){
+            if(value=== ""){
                 console.log(key+" tidak boleh kosong");
                 tes++;
                 console.log(tes);
