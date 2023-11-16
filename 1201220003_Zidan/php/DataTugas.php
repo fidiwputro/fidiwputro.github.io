@@ -63,6 +63,11 @@ class DataTugas
         $this->deadline = $deadline;
     }
 
+    public function isiTugas(){
+
+    }
+
+
 
 }
 
