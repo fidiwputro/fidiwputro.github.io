@@ -9,19 +9,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const passwordL = document.querySelector(".PasswordL");
   const registeredMessage = document.querySelector("#registered");
   const loginMessage = document.querySelector("#loginMessage");
-
+  
   registrasiForm.addEventListener("submit", function (e) {
     e.preventDefault();
     
     // Validasi input registrasi
     if (usernameR.value.trim() === "") {
       registeredMessage.innerText = "Username harus diisi.";
+      console.log("Username harus diisi.");
       return;
     }else if (passwordR.value.trim() === "") {
       registeredMessage.innerText = "Password harus diisi.";
+      console.log("Password harus diisi.");
       return;
     }else if (passwordR.value !== konfirmasiR.value) {
       registeredMessage.innerText = "Password dan konfirmasi password tidak cocok.";
+      console.log("Password dan konfirmasi password tidak cocok.");
       return;
     }else{
       window.location.href = "./Forum.html";
@@ -40,10 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validasi input login
     if (usernameL.value.trim() === "") {
       loginMessage.innerText = "Username harus diisi.";
+      console.log("Username harus diisi.")
       return;
     }else if (passwordL.value.trim() === "") {
       loginMessage.innerText = "Password harus diisi.";
       return;
+    }else{
+      window.location.href = "./Forum.html";
     }
 
     // Jika semua input login valid, Anda dapat menambahkan kode untuk melakukan autentikasi sesuai kebutuhan.
