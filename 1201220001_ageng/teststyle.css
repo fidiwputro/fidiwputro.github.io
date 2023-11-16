@@ -1,3 +1,4 @@
+/* INDEX CSS */
 body {
     background-image: url(/1201220001_ageng/assets/36927.jpg);
     background-size: 2000px;
@@ -59,6 +60,13 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hana a {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
 .hana .hiu1,
 .hana .atlantis,
 .hana .hiu,
@@ -77,4 +85,19 @@ header {
     max-width: 1000px;
     max-height: 400px;
     border-radius: 10px;
+}
+
+/* LOGIN CSS */
+.divLogin {
+    padding: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 2px solid #333;
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* background-color: #D2E0FB; */
+    background-color: rgba(67, 67, 155, 0.603);
+    text-align: center;
+    color: whitesmoke;
 }
