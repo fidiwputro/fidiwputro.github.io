@@ -22,4 +22,4 @@ class register {
         return $this->password;
     }
 } 
-/>
+?>
