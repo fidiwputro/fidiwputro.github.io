@@ -5,15 +5,17 @@ class DataTugas
 {
     private $idTugas;
     private $statusTugas;
+    private $deadline;
     private $tanggalPengumpulan;
     private $deskripsiTugas;
 
-    public function __construct($idTugas, $statusTugas, $tanggalPengumpulan, $deskripsiTugas)
+    public function __construct($idTugas, $statusTugas, $tanggalPengumpulan, $deskripsiTugas, $deadline)
     {
         $this->idTugas = $idTugas;
         $this->statusTugas = $statusTugas;
         $this->tanggalPengumpulan = $tanggalPengumpulan;
         $this->deskripsiTugas = $deskripsiTugas;
+        $this->deadline = $deadline;
     }
 
     public function getIdTugas()
@@ -31,9 +33,9 @@ class DataTugas
         return $this->tanggalPengumpulan;
     }
 
-    public function getDeskripsiTugas()
+    public function getDeadline()
     {
-        return $this->deskripsiTugas;
+        return $this->deadline;
     }
 
     public function setIdTugas($idTugas)
@@ -55,6 +57,16 @@ class DataTugas
     {
         $this->deskripsiTugas = $deskripsiTugas;
     }
+
+    public function setDeadline($deadline)
+    {
+        $this->deadline = $deadline;
+    }
+
+    public function isiTugas(){
+
+    }
+
 
 
 }
