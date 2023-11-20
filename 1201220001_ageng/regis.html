@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wahana Taman Hiburan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teststyle.css">
     <link href="assets/carousel.png" type="image/x-icon" rel="shortcut icon">
-    <script type="text/javascript" src="form.js"></script>
+    <!-- <script type="text/javascript" src="form.js"></script> -->
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
             <img src="assets/carousel.png" alt="Logo Wahana Taman Hiburan">
-            <script type="text/javascript" src="form.js"></script>
         </div>
         <ul>
             <li><a href="index.html">Beranda</a></li>
@@ -26,30 +25,18 @@
         <H2>REGISTRASI</H2>
     </header>
     <div class="divRegis">
-        <br>
-        <form action="login.html" method="post">
+        <form id="formRegis" name="formRegisegis" action="register_process.php" method="POST">
             <div>
-                <h3>Nama Lengkap :</h3>
-                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="text" name="Nama Lengkap" placeholder="Nama Lengkap" id="txtnama" required>
             </div>
             <div>
-                <h3>E-Mail :</h3>
-                <input type="email" name="email" id="txtemail" placeholder="E-Mail" required>
+                <input type="email" name="email" id="txtemail" placeholder="Exceple@mail.com" required>
             </div>
             <div>
-                <h3>Password :</h3>
                 <input type="password" name="password" id="txtpw" placeholder="Password" required>
             </div>
-            <div>
-                <h3>Nomor Telepon :</h3>
-                <input type="text" id="notelp" placeholder="Nomor Telepon" required>
-            </div>
-            <div>
-                <h3>Tanggal Lahir :</h3>
-                <input type="date" name="tglLahir" id="tglLahir" placeholder="Tanggal Lahir" required>
-            </div>
             <div class="inputRegis">
-                <input type="submit" value="Register">
+                <input id="submitRegis" type="submit" value="Register">
             </div>
         </form>
     </div>

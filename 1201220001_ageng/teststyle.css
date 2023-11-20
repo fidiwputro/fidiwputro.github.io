@@ -90,14 +90,109 @@ header {
 /* LOGIN CSS */
 .divLogin {
     padding: 30px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 500px;
+    margin-right: 500px;
     border: 2px solid #333;
     border-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    /* background-color: #D2E0FB; */
-    background-color: rgba(67, 67, 155, 0.603);
+    background-color: rgba(86, 86, 173, 0.603);
     text-align: center;
     color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divLogin div input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+.divLogin a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: white;
+}
+
+.divLogin .inputLogin input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+/* REGISTRASI CSS */
+.divRegis {
+    padding: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 2px solid #333;
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(86, 86, 173, 0.603);
+    text-align: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divRegis div input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+.divRegis .inputRegis input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+/* TIKET CSS */
+.divTiket {
+    padding: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 2px solid #333;
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(86, 86, 173, 0.603);
+    text-align: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divTiket div input {
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+.divTiket .bykTiket input{
+    width: 200px;
+}
+
+.divTiket div select {
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 10px;
 }

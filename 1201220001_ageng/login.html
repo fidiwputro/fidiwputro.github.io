@@ -6,7 +6,7 @@
     <title>Wahana Taman Hiburan</title>
     <link rel="stylesheet" href="teststyle.css">
     <link href="assets/carousel.png" type="image/x-icon" rel="shortcut icon">
-    <script type="text/javascript" src="form.js"></script>
+    <!-- <script type="text/javascript" src="form.js"></script> -->
 </head>
 <body>
     <nav class="navbar">
@@ -24,24 +24,21 @@
     <header>
         <h2>LOGIN</h2>
     </header>
-    <form>
         <div class="divLogin">
-            <br>
-            <form>
+            <form id="formLogin" name="formLogin" action="login_process.php" method="POST"> 
                 <div>
-                    <h3>E-Mail :</h3>
-                    <input type="email" name="E-Mail" id="txtemail" placeholder="E-Mail" required>
+                    <!-- <h3>E-Mail :</h3> -->
+                    <input type="email" name="E-Mail" id="txtemail" placeholder="Exceple@mail.com" required>
                 </div>
                 <div>
-                    <h3>Password :</h3>
-                    <input type="password" name="password" placeholder="Password" id="txtpw" required>
+                    <!-- <h3>Password :</h3> -->
+                    <input type="password" name="Password" placeholder="Password" id="txtpw" required>
+                </div>
+                <div class="inputLogin">
+                    <input id="submitLogin" type="submit" value="Login">
                 </div>
                 <a href="regis.html">belum punya akun?</a>
-                <div class="inputLogin">
-                    <input id="submit" type="submit" value="Login">
-                </div>
             </form>
         </div>
-    </form>
 </body>
 </html>
