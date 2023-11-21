@@ -116,14 +116,13 @@ function sendToAlert(event) {
 }
 
 function loginValidationButton() {
-  const username = document.getElementsByName("username");
-  const password = document.getElementsByName("password");
+  const username = document.getElementsByName("username")[0];
+  const password = document.getElementsByName("password")[0];
 
-  if (username === "" && password === "") {
-
-    alert("tidak boleh kosong")
+  if (username.value == "" || password.value == "") {
+    alert("tidak boleh kosong");
   } else {
-    alert("login sukses");
-    window.location = "../authenticated.html";
+    window.location = "/1201222013_YogaWilanda/index.html";
   }
 }
+
