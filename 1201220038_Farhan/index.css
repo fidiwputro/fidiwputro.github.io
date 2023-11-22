@@ -7,7 +7,6 @@ body {
     background-color: #040D12;
 }
 
-/* navbar */
 header {
     width: auto;
     padding: 10px 20px;
@@ -36,7 +35,7 @@ header {
 }
 
 .menu {
-    width: 600px;
+    width: 400px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -128,10 +127,11 @@ header {
 }
 
 .intro2 {
-    width: 40%;
-    height: 580px;
+    width: 450px;
+    height: 550px;
     margin: 20px 20px 0 20px;
     border-radius: 20px;
+    padding: 15px 50px;
 }
 
 .intro2 img {
@@ -169,8 +169,7 @@ header {
 
 .listcard div{
     background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
     color: black;
     width: 300px;
     height: 350px;
@@ -185,7 +184,7 @@ header {
     font-size: 20px;
     color: black;
     text-align: center;
-    background-color: #93b1a6a9;
+    background-color: #93b1a690;
     padding: 30px;
     height: 50px;
 }
@@ -194,14 +193,41 @@ header {
     background-image: url(images/chemistryLecturer.webp);
 }
 
+.c1:hover {
+    width: 350px;
+    height: 400px;
+}
+
 .listcard .c2 {
     background-image: url(images/englishLecturer.jpg);
+}
+
+.c2:hover {
+    width: 350px;
+    height: 400px;
 }
 
 .listcard .c3 {
     background-image: url(images/mathLecturer.jpg);
 }
 
+.c3:hover {
+    width: 350px;
+    height: 400px;
+}
+
 .listcard .c4 {
     background-image: url(images/kidLearning.jpeg);
+}
+
+.c4:hover {
+    width: 350px;
+    height: 400px;
+}
+
+.mentor {
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    margin: 0 60px;
 }
