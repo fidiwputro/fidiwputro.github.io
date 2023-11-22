@@ -152,7 +152,6 @@ header {
 }
 
 /* menu apps */
-
 .kotak2{
     text-align: center;
     justify-content: center;
@@ -178,6 +177,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
 .listcard div p{
@@ -196,6 +196,7 @@ header {
 .c1:hover {
     width: 350px;
     height: 400px;
+    transition: 0.3s ease-in-out;
 }
 
 .listcard .c2 {
@@ -205,6 +206,7 @@ header {
 .c2:hover {
     width: 350px;
     height: 400px;
+    transition: 0.3s ease-in-out;
 }
 
 .listcard .c3 {
@@ -214,6 +216,7 @@ header {
 .c3:hover {
     width: 350px;
     height: 400px;
+    transition: 0.3s ease-in-out;
 }
 
 .listcard .c4 {
@@ -223,11 +226,133 @@ header {
 .c4:hover {
     width: 350px;
     height: 400px;
+    transition: 0.3s ease-in-out;
 }
 
-.mentor {
-    border: 1px solid red;
-    height: 100px;
-    width: 100px;
-    margin: 0 60px;
+.guru {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.guru div {
+    width: 250px;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.guru div .p1 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #93b1a6b0;
+    padding: 30px;
+    margin-top: 200px;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.guru div .p2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #93b1a6b0;
+    padding: 30px 5px;
+    margin-top: -10px;
+    visibility: hidden;
+}
+/* Bob Ross */
+.guru .c5 {
+    background-image: url(images/englishProfessor.jpg);
+}
+
+.guru .c5:hover .p1 {
+    position: relative;
+    margin-top: 90px;
+    transition: 0.3s ease-in-out;
+}
+
+.guru .c5:hover .p2 {
+    position: relative;
+    margin-top: -10px;
+    visibility: visible;
+    transition: 0.1s ease;
+    transition-delay: 0.2s;
+}
+/* Pak Rizal */
+.guru .c6 {
+    background-image: url(images/rizalkuddah.jpeg) ;
+}
+
+.guru .c6:hover .p1 {
+    position: relative;
+    margin-top: 90px;
+    transition: 0.3s ease-in-out;
+}
+
+.guru .c6:hover .p2 {
+    position: relative;
+    margin-top: -10px;
+    visibility: visible;
+    transition: 0.1s ease;
+    transition-delay: 0.2s;
+}
+/* Obama */
+.guru .c7 {
+    background-image: url(images/obama.jpg);
+}
+
+.guru .c7:hover .p1 {
+    position: relative;
+    margin-top: 90px;
+    transition: 0.3s ease-in-out;
+}
+
+.guru .c7:hover .p2 {
+    position: relative;
+    margin-top: -10px;
+    visibility: visible;
+    transition: 0.1s ease;
+    transition-delay: 0.2s;
+}
+/* Ryan */
+.guru .c8 {
+    background-image: url(images/RyanGosling.png);
+}
+
+.guru .c8:hover .p1 {
+    position: relative;
+    margin-top: 90px;
+    transition: 0.3s ease-in-out;
+}
+
+.guru .c8:hover .p2 {
+    position: relative;
+    margin-top: -10px;
+    visibility: visible;
+    transition: 0.1s ease;
+    transition-delay: 0.2s;
+}
+/* blank */
+.guru .c9 {
+    background-image: url(images/staringWhiteGuy.jpeg);
+}
+
+.guru .c9:hover .p1 {
+    position: relative;
+    margin-top: 90px;
+    transition: 0.3s ease-in-out;
+}
+
+.guru .c9:hover .p2 {
+    position: relative;
+    margin-top: -10px;
+    visibility: visible;
+    transition: 0.1s ease;
+    transition-delay: 0.2s;
 }
