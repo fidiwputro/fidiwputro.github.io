@@ -76,7 +76,6 @@ header {
     margin-top: 100px;
     width: 60%;
     height: 580px;
-    border: 1px solid rgb(10, 25, 30);
     margin: 20px 0 0 20px;
     border-radius: 20px;
     background-color: rgb(10, 25, 30);
@@ -251,8 +250,8 @@ header {
     color: black;
     text-align: center;
     background-color: #93b1a6b0;
-    padding: 30px;
-    margin-top: 200px;
+    padding: 20px;
+    margin-top: 250px;
     height: 40px;
     transition: all 0.5s ease-in-out;
 }
@@ -355,4 +354,169 @@ header {
     visibility: visible;
     transition: 0.1s ease;
     transition-delay: 0.2s;
+}
+
+.murid {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.murid div {
+    border-radius: 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1st student */
+.murid .murid1 {
+    width: 300px;
+    height: 200px;
+}
+
+.murid .text1 {
+    width: 300px;
+    height: 200px;
+    background-color: #93b1a6;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+.murid .foto1 {
+    width: 300px;
+    height: 200px;
+    margin-top: -200px;
+    background-image: url(images/femaleStudent2.jpg);
+    transition: 0.3s ease-in-out;
+}
+
+.murid .foto1 .p1 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #93b1a6b0;
+    padding: 10px;
+    margin-top: 125px;
+}
+
+.murid .text1 .p2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.murid .murid1:hover .text1 {
+    margin-top: 100px;
+    visibility: visible;
+}
+
+.murid .murid1:hover .foto1 {
+    margin-top: -400px;
+}
+
+/* 2nd Student */
+.murid .murid2 {
+    width: 300px;
+    height: 200px;
+}
+
+.murid .text2 {
+    width: 300px;
+    height: 200px;
+    background-color: #93b1a6;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+.murid .foto2 {
+    width: 300px;
+    height: 200px;
+    margin-top: -200px;
+    background-image: url(images/femaleStudent1.jpg);
+    transition: 0.3s ease-in-out;
+}
+
+.murid .foto2 .p1 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #93b1a6b0;
+    padding: 10px;
+    margin-top: 125px;
+}
+
+.murid .text2 .p2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.murid .murid2:hover .text2 {
+    margin-top: 100px;
+    visibility: visible;
+}
+
+.murid .murid2:hover .foto2 {
+    margin-top: -400px;
+}
+
+/* 3rd Student */
+.murid .murid3 {
+    width: 300px;
+    height: 200px;
+}
+
+.murid .text3 {
+    width: 300px;
+    height: 200px;
+    background-color: #93b1a6;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+.murid .foto3 {
+    width: 300px;
+    height: 200px;
+    margin-top: -200px;
+    background-image: url(images/nabil.jpg);
+    transition: 0.3s ease-in-out;
+}
+
+.murid .foto3 .p1 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: #93b1a6b0;
+    padding: 10px;
+    margin-top: 125px;
+}
+
+.murid .text3 .p2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.murid .murid3:hover .text3 {
+    margin-top: 100px;
+    visibility: visible;
+}
+
+.murid .murid3:hover .foto3 {
+    margin-top: -400px;
 }
