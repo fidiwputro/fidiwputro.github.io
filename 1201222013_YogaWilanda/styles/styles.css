@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   body {
     margin: 0;
     padding: 0;
@@ -637,7 +637,8 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* mobile version */
+@media screen and (max-width: 1080px) {
   body {
     margin: 0;
     padding: 0;
@@ -725,7 +726,6 @@ html {
   }
 
   .gallery-section {
-    /* height: 100vh; */
     height: 100rex;
     width: 30%;
     color: black;
@@ -754,6 +754,7 @@ html {
 
   .navbar {
     color: #fff;
+    visibility: hidden;
     padding: 12px;
     text-align: center;
     position: fixed;

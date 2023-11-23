@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         echo '<center>Login Berhasil</center>';
         exit();
     } else {
-        echo 
+        echo
         "<script>
         alert('Email atau password Anda salah. Silakan coba lagi!')
         </script>";
@@ -41,17 +41,20 @@ if (isset($_POST['submit'])) {
 <body>
     <div class="container">
         <form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+            
             <div class="input-group">
                 <input type="text" placeholder="Email" name="nama_user" required>
             </div>
+            
             <div class="input-group">
                 <input type="password" placeholder="Password" name="password_user" required>
             </div>
+            
             <div class="input-group">
                 <button name="submit" class="btn">Login</button>
             </div>
-            <p class="login-register-text">Anda belum punya akun? <a href="register.php">Register</a></p>
+            <p class="login-register-text">Anda belum punya akun? <a href="registerServer.php">Register</a></p>
         </form>
     </div>
 </body>

@@ -24,7 +24,7 @@ Server PHP
 </h2>
 
 1. Connect Database -> Done
-2. Form Register -> On Progress
+2. Form Register -> Done
 3. Form Pendaftaran Event -> Waiting List
 4. Form Mengikuti Event -> Waiting List
 

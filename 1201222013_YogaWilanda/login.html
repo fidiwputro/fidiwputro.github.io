@@ -5,41 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Login Page</title>
-    <script src="./scripts/bom.js"></script>
+    <!-- <script src="./scripts/bom.js"></script> -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <div class="login-box">
       <h2>Autentikasi diri anda</h2>
-      <form method="post">
+      <form method="post" action="">
         <div class="user-box">
           <label>Username</label>
           <input
             type="text"
-            name="username"
-            required=""
+            name="nama_user"
+            required
             placeholder=""
             title="tes"
           />
         </div>
         <div class="user-box">
           <label>Password</label>
-          <input type="password" name="password" required title="pw-title" />
+          <input type="password" name="password_user" required title="pw-title" />
         </div>
-        <div class="user-box">
-          <a class="btnStyle2" href="./index.html">Kembali ke beranda</a>
-        </div>
+        
         <div class="pd12">
           <button
             class="btnStyle1"
-            onclick="loginValidationButton()"
             type="submit"
-            formaction="./index.html"
+            name="submit"
           >
             Submit Using JS
           </button>
         </div>
+      
       </form>
+     
+    </div>
+    <div class="">
+      <a class="btnStyle2" href="./index.html">Kembali ke beranda</a>
     </div>
   </body>
 </html>

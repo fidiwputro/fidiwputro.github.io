@@ -115,14 +115,36 @@ function sendToAlert(event) {
   );
 }
 
+// function loginValidationButton() {
+//   const username = document.getElementsByName("username")[0];
+//   const password = document.getElementsByName("password")[0];
+
+//   if (username.value == "" || password.value == "") {
+//     alert("tidak boleh kosong");
+//   } else {
+//     window.location = "/1201222013_YogaWilanda/index.html";
+//   }
+// }
+
+
 function loginValidationButton() {
-  const username = document.getElementsByName("username")[0];
-  const password = document.getElementsByName("password")[0];
+  const username = document.getElementsByName('username')[0].value;
+  const password = document.getElementsByName('password')[0].value;
 
-  if (username.value == "" || password.value == "") {
-    alert("tidak boleh kosong");
-  } else {
-    window.location = "/1201222013_YogaWilanda/index.html";
-  }
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/1201222013_YogaWilanda/server/loginServer.php');
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      if (xhr.responseText.includes('Login Berhasil')) {
+        window.location = 'berhasil_login.php';
+      } else {
+        alert('Email atau password Anda salah. Silakan coba lagi!');
+      }
+    } else {
+      console.error('Error:', xhr.statusText);
+    }
+  };
+  xhr.send(`username=${username}&password=${password}`);
+  return false; // Prevent default form submission
 }
-
