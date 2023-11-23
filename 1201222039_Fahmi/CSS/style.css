@@ -1,15 +1,3 @@
-
-h2{
-    color: #000;
-    text-align: center;
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 28.444px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.427px;
-}
-
 icon_img{
     width: 46.49px; 
     height: 46.44px;
@@ -22,8 +10,8 @@ text_icon{
     color: black;
     font-size: 28.44px;
     font-family: 'Comfortaa', sans-serif;
+    word-wrap: break-word;
     font-weight: 400;
-    word-wrap: break-word
 }
 
 icon{
@@ -32,39 +20,175 @@ icon{
     position: relative;
 }
 
-gameOfTheYear{
+text{
     color: black;
     font-family: 'Montserrat', sans-serif; 
     word-wrap: break-word;
 }
 
+gotytitle{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: auto;
+    display: block;
+}
+
+gotydesc{
+    width: 686px; 
+    height: 90px; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+}
+
+gotyimgpicture{
+    width: 750px;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+h1{
+    color: black;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+    font-family: 'Montserrat', sans-serif; 
+    word-wrap: break-word;
+}
+
+h2{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif; 
+    word-wrap: break-word;
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Montserrat', sans-serif; 
+    word-wrap: break-word;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+gameimgpicturebrowse{
+    width: 173px;
+    height: 76px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 50px;
+}
+
+gameimgpicture{
+    width: 500px;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    display: inline-flex;
+}
+
+gamename{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.80); 
+    font-size: 30px;
+    font-weight: 800; 
+    line-height: 89px;
+    font-family: 'Montserrat', sans-serif; 
+    word-wrap: break-word;
+    display: block;
+}
+
+gamedesc{
+    width: 686px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    word-wrap: break-word;
+    display: block;
+}
+
+gameprice{
+    width: 400px;
+    height: 52px;
+    flex-direction: row;
+    background: white;
+    border: 1px #18A0FB solid;
+    border-radius: 6px;
+    display: inline-flex;
+}
+
 nav_tombol{
     width: 130px;
     height: 40px;
-    position: absolute; 
+    position: relative; 
     border-radius: 6px;
+    display: block;
 }
 
 nav_text_tombol {
     top: 11px;
     position: absolute;
     text-align: center;
-    font-size: 15px; 
-    font-family: Montserrat;
+    font-size: 13px; 
+    font-family: 'Comfortaa', sans-serif;
+    word-wrap: break-word;
     font-weight: 500;
-    word-wrap: break-word
 }
 tombol{
     width: 192px; 
     height: 52px;
-    position: absolute;
+    position: relative;
     border-radius: 6px;
+    display: block;
 }
 
 text_tombol{
     position: absolute; 
     text-align: center;
-    font-family: Montserrat;
-    font-weight: 500; 
+    font-family: 'Comfortaa', sans-serif;
     word-wrap: break-word;
+    font-weight: 500; 
+    font-size: 17px;
+}
+
+fillform{
+    display: inline-flex; 
+    flex-direction: column;   
+}
+
+formpicture{
+    padding: 15px; 
+    display: inline-flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+bgform{
+    background: #F5F5F5;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 622px;
+    height: 439px;
+}
+
+bgformpicture{
+    width: -webkit-fill-available; 
+    height: -webkit-fill-available;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    justify-content: center;
+    display: inline-flex;
 }
