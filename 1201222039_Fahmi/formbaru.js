@@ -12,5 +12,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 form[key].style.backgroundColor = "white";
             }
         })
+        
     })
 });
