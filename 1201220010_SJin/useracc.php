@@ -1,21 +1,21 @@
 <?php
+require 'DbConnection.php';
 class UserAccount{
-    private $iduser;
-    private $namauser;
-    private $emailuser;
+    private $username;
+    private $email;
+    private $nomorhp;
     private $usia;
-    private $nomoruser;
     private $password;
 
     function __construct($umur,$nama)
     {
         $this->usia=$umur;
-        $this->namauser=$nama;
+        $this->username=$nama;
     }
 
     function tampiluser()
     {
-        echo $this->namauser;
+        echo $this->username;
     }
 
     public function isinama($nama)
