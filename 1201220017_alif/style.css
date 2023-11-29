@@ -47,9 +47,11 @@
 .login :hover{
     background-color: #edc31d;
     transition: all ease-in;
-    color: white;
     text-decoration: none;
 
+}
+.login ul li a{
+    opacity: 0%;
 }
 
 .navbar ul li
