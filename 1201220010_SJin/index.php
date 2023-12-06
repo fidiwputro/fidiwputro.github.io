@@ -24,7 +24,7 @@
         </ul>
     </nav>
     <header id="site-header">
-        <h1>Selamat Datang di Beli dan Sewa iPhone</h1>
+        <h1>Selamat Datang di Toko Beli dan Sewa iPhone</h1>
         <p>Kami menyediakan layanan pembelian dan penyewaan iPhone terbaik di kota.</p>
     </header>
     <div class="container">
