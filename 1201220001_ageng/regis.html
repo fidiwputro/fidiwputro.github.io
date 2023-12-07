@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wahana Taman Hiburan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teststyle.css">
     <link href="assets/carousel.png" type="image/x-icon" rel="shortcut icon">
+    <!-- <script type="text/javascript" src="form.js"></script> -->
 </head>
 <body>
     <nav class="navbar">
@@ -23,36 +24,18 @@
         <H2>REGISTRASI</H2>
     </header>
     <div class="divRegis">
-        <br>
-        <form action="">
+        <form id="formRegis" name="formRegisegis" action="register_process.php" method="POST">
             <div>
-                <h3>Nama Lengkap :</h3>
-                <input type="text">
+                <input type="text" name="Nama Lengkap" placeholder="Nama Lengkap" id="txtnama" required>
             </div>
             <div>
-                <h3>E-Mail :</h3>
-                <input type="email" name="email" id="txtemail">
+                <input type="email" name="email" id="txtemail" placeholder="Exceple@mail.com" required>
             </div>
             <div>
-                <h3>Password :</h3>
-                <input type="password" name="password" id="txtpw">
+                <input type="password" name="password" id="txtpw" placeholder="Password" required>
             </div>
-            <div>
-                <h3>Nomor Telepon :</h3>
-                <input type="text">
-            </div>
-            <div>
-                <h3>Tanggal Lahir :</h3>
-                <input type="date" name="tglLahir" id="">
-            </div>
-                <h3>Jenis Kelamin</h3>
-                <select name="sljeniskelamin" id="sljeniskelamin">
-                    <option value="0">-Pilih Jenis Kelamin-</option>
-                    <option value="1">Laki Laki</option>
-                    <option value="2">Perempuan</option>
-                </select>
-            <div>
-                <input type="button" value="Register">
+            <div class="inputRegis">
+                <input id="submitRegis" type="submit" value="Register">
             </div>
         </form>
     </div>

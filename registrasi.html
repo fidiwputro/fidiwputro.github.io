@@ -3,10 +3,11 @@
     <head>
         <title>Registrasi Anggota</title>
         <link href="style.css" rel="stylesheet"/>
+        <script type="text/javascript" src="form.js"></script>
     </head>
     <body>
         <div>
-            <form name="formregistrasi">
+            <form id="diform" name="formregistrasi" action="index.html">
                 <h1>Registrasi Anggota</h1>
                 <div class="form-reg">
                     <div>
@@ -49,47 +50,12 @@
                         <input type="password" id="txtpwd" name="txtpwd"/>
                     </div>
                     <div>
-                        <input type="button" id="sbtreg" name="sbtreg" value="submit"/>
+                        <input type="submit" id="sbtreg" name="sbtreg" value="submit"/>
                     </div>
                     <a href="login.html">Login</a>
                     <a href="index.html">Home</a>
                 </div>
             </form>
-        </div>
-        <script>
-           
-
-            function test(){
-                let nama = document.getElementById('txtnama');
-                let nim = document.getElementById('txtnim');
-                let prodi = document.getElementById('slcprodi');
-                let usr = document.getElementById('txtusr').value;
-                let namaprodi;
-                for(let opt of prodi){
-                    if(opt.selected){
-                        namaprodi = opt.innerHTML;
-                    }
-                }
-
-                // alert(nama+' '+nim+' '+namaprodi+' '+usr);
-
-                if(nama.value==''){
-                    nama.style.backgroundColor="red";
-                }else{
-                    nama.style.backgroundColor="";
-                }
-
-                if(isNaN(nim.value)){
-                    nim.style.backgroundColor="pink";
-                }else{
-                    nim.style.backgroundColor="";
-                }
-            }
-
-            sbtreg.addEventListener('click',function (event)test);
-
-           
-            
-        </script>
+        </div>        
     </body>
 </html>

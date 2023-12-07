@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form
+      method="POST"
+      action="../pdo/pdo.php"
+      style="display: flex; flex-direction: column; width: 80vh; gap: 12px"
+    >
+      <div class="heading">
+        Selangkah lagi anda bisa menjadi bagian dari kami
+      </div>
+
+      <div class="imageHero">
+        <div class="imageContainer">
+          <div class="heroText">
+
+          </div>
+        </div>
+      </div>
+
+
+      <input
+        type="text"
+        name="name_user"
+        id="name_user"
+        aria-label="username anda"
+        placeholder="username anda"
+      />
+      <input
+        type="password"
+        name="password_user"
+        id="password_user"
+        aria-label="password anda"
+        placeholder="password anda"
+      />
+      <input
+        type="text"
+        name="role_user"
+        id="role_user"
+        title="Role User"
+        placeholder="jenis role"
+      />
+
+      <button type="submit" >Submit</button>
+    </form>
+  </body>
+</html>

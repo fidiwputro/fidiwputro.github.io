@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", (Event) => {
   let form = document.forms[0];
   form.addEventListener("submit", (evt) => {
-    evt.preventDefault();
+    // evt.preventDefault();
     let datanya = new FormData(form);
     // console.log([...datanya.entries()]);
     datanya.forEach((isi,nama)=>{

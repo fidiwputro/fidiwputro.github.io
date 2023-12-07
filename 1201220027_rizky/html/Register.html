@@ -14,30 +14,30 @@
     <nav class="navbar">
         <!-- Judul -->
         <div class="judul">
-            <a href="../html/index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <span>Vicon</span>
             </a>
         </div>
     </nav>
 
         <div>
-            <form action="#">
+            <form id="formregister" action="./Login.html">
                 <h1 class="daftar">Registrasi Akun</h1>
                 <div class="form-reg">
                     <!-- Bagian daftar nama -->
                     <div>
-                        <label for="txtNama">Nama:</label>
-                        <input type="text" id="txtNama" name="txtNama" placeholder="masukan nama">
+                        <label for="Namadaftar">Nama:</label>
+                        <input type="text" id="Namadaftar" name="Namadaftar" placeholder="masukan nama">
                     </div>
                     <!-- Bagian daftar password -->
                     <div>
-                        <label for="txtPassword">Password</label>
-                        <input type="password" id="txtPassword" name="txtPassword" placeholder="masukkan sandi">
+                        <label for="Passworddaftar">Password</label>
+                        <input type="password" id="Passworddaftar" name="Passworddaftar" placeholder="masukkan sandi">
                     </div>
                     <!-- Bagian Masukan Email -->
                     <div>
-                        <label for="txtEmail">Email</label>
-                        <input type="email" id="txtEmail" name="txtEmail" placeholder="masukan email anda">
+                        <label for="Emaildaftar">Email</label>
+                        <input type="email" id="Emaildaftar" name="Emaildaftar" placeholder="masukan email anda">
                     </div>
                     <!-- Bagian Masukan Gender -->
                     <div>
@@ -55,6 +55,21 @@
                 </div>
             </form>
         </div>
-   
+        <script type="text/javascript" src="../javascript/form.js"></script>
 </body>
+
+            <!-- Script -->
+            <!-- <script>
+                let inputdaftar = document.getElementById('regdaftar');
+                let user = document.getElementById ('Namadaftar');
+                let pass = document.getElementById ('Passworddaftar');
+                let email = document.getElementById ('Emaildaftar');
+                let Gender = document.getElementById ('reggender')
+
+                function.pendaftaran(){
+                    if(user.value   )
+                }
+            </script> -->
+            
+
 </html>

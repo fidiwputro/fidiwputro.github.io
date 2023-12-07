@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wahana Taman Hiburan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teststyle.css">
     <link href="assets/carousel.png" type="image/x-icon" rel="shortcut icon">
+    <!-- <script type="text/javascript" src="form.js"></script> -->
 </head>
 <body>
+    
     <nav class="navbar">
         <div class="logo">
             <img src="assets/carousel.png" alt="Logo Wahana Taman Hiburan">
@@ -22,22 +24,21 @@
     <header>
         <h2>LOGIN</h2>
     </header>
-    <div class="divLogin">
-        <br>
-        <form action="">
-            <div>
-                <h3>E-Mail :</h3>
-                <input type="email" name="" id="txtemail">
-            </div>
-            <div>
-                <h3>Password :</h3>
-                <input type="password" name="password" id="txtpw">
-            </div>
-            <a href="regis.html">belum punya akun?</a>
-            <div>
-                <input type="button" value="Login">
-            </div>
-        </form>
-    </div>
+        <div class="divLogin">
+            <form id="formLogin" name="formLogin" action="login_process.php" method="POST"> 
+                <div>
+                    <!-- <h3>E-Mail :</h3> -->
+                    <input type="email" name="E-Mail" id="txtemail" placeholder="Exceple@mail.com" required>
+                </div>
+                <div>
+                    <!-- <h3>Password :</h3> -->
+                    <input type="password" name="Password" placeholder="Password" id="txtpw" required>
+                </div>
+                <div class="inputLogin">
+                    <input id="submitLogin" type="submit" value="Login">
+                </div>
+                <a href="regis.html">belum punya akun?</a>
+            </form>
+        </div>
 </body>
 </html>

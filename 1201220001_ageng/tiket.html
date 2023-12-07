@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wahana Taman Hiburan</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="teststyle.css">
         <link href="assets/carousel.png" type="image/x-icon" rel="shortcut icon">
         <script type="text/javascript" src="form.js"></script>
     </head>
@@ -18,51 +18,43 @@
             <li><a href="#">Denah Taman Hiburan</a></li>
             <li><a href="#">Daftar Harga Tiket</a></li>
             <li><a href="tiket.html">Tiket</a></li>
+            <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
     <header>
         <h2>Beli Tiket</h2>
     </header>
-    <form id="formBeliTiket">
-        <div class="divTiket" action="index.html">
+    <form>
+        <div class="divTiket">
             <div>
-                <h3>Nama Lengkap</h3>
-                <input type="text" name="nama" id="txtnama" placeholder="Nama">
+                <input type="text" name="nama" id="txtnama" placeholder="Nama" required>
             </div>
             <div>
-                <h3>E-Mail</h3>
-                <input type="email" name="E-Mail" id="txtemail" placeholder="E-Mail">
+                <input type="email" name="E-Mail" id="txtemail" placeholder="Exceple@mail.com" required>
             </div>
             <div>
-                <h3>Nomor Telepon</h3>
-                <input type="text" name="Nomor Telepon" id="txtnotelp" placeholder="Nomor Telepon">
+                <input type="text" name="Nomor Telepon" id="txtnotelp" placeholder="Nomor Telepon" required>
             </div>
             <div>
-                <h3>Banyak Tiket</h3>
-                <input type="number" name="Banyak Tiket" id="bykTiket" placeholder="Banyak Tiket">
+                <h3>Jenis Tiket Wahana</h3>
+                <select name="select" id="jenisTiket" required>
+                    <option value="seaworld">Sea World</option>
+                    <option value="rollercoster">Roller Coster</option>
+                    <option value="atlantis">Atlantis</option>
+                    <option value="sharkaquarium">Shark Aquarium</option>
+                </select>
+            </div>
+            <div class="bykTiket">
+                <input type="number" min="1" max="100" name="Banyak Tiket" id="bykTiket" placeholder="Banyak Tiket" required>
             </div>
             <div>
                 <h3>Tanggal Kunjungan</h3>
-                <input type="date" name="Tanggal Pesanan" id="tglPesanan" placeholder="Pilih Tanggal Terlebih Dahulu">
+                <input type="date" name="Tanggal Pesanan" id="tglPesanan" placeholder="Pilih Tanggal Terlebih Dahulu" required>
             </div>
             <div>
-                <button id="submit" type="submit" value="submit">TUMBAS</button>
+                <button id="submit" type="submit" value="submit">BELI</button>
             </div>
         </div>
     </form>
-    <!-- <script>
-        function submit() {
-            let nama = document.getElementById("txtnama").value;
-            let email = document.getElementById("txtemail").value;
-            let notelp = document.getElementById("txtnotelp").value;
-            let bykTiket = document.getElementById("bykTiket").value;
-            let tglKunjungan = document.getElementById("tglPesanan").value;
-            alert(nama);
-            alert(email);
-            alert(notelp);
-            alert(bykTiket);
-            alert(tglKunjungan);
-        }
-    </script> -->
 </body>
 </html>

@@ -14,7 +14,7 @@
     <nav class="navbar">
         <!-- Judul -->
         <div class="judul">
-            <a href="../html/index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <span>Vicon</span>
             </a>
         </div>
@@ -27,20 +27,46 @@
             <div class="form-log">
                 <!-- Masukan Nama -->
                 <div>
-                    <label for="txtNama">Nama :</label>
-                    <input type="text" id="txtNama" name="txtNama" placeholder="username">
+                    <label for="Namalogin">Nama :</label>
+                    <input type="text" id="Namalogin" name="txtNama" placeholder="username">
                 </div>
                 <!-- Masukan Password -->
                 <div>
-                    <label for="txtPassword">Password : </label>
-                    <input type="password" id="txtPassword" placeholder="Password">
+                    <label for="Passwordlogin">Password : </label>
+                    <input type="password" id="Passwordlogin" placeholder="Password">
                 </div>
                 <!-- tombol login -->
                 <div class="masuk">
-                    <input type="submit" value="Login">
+                    <input type="button" value="Login" id="login" >
+                    
+                    
                 </div>
             </div>
         </form>
-    </div>    
+    </div>  
+    <!-- Script -->
+  <script>
+        let inputlogin = document.getElementById('login');//button login
+        let user = document.getElementById('Namalogin');
+        let pass = document.getElementById('Passwordlogin');
+
+        function validasi(){
+            if(user.value == '' && pass.value == ''){
+                alert('Data Kamu Kosong');
+            }else if( user.value == 'rizky' && pass.value == 'rizky'){
+                alert('berhasil login');
+                 document.location.href = './index.html';
+            }else if(user.value == ''){
+                alert('Username kosong');
+            }else if (pass.value == ''){
+                alert('password kosong');
+            }
+        }
+        
+        inputlogin.addEventListener('click', validasi)
+
+
+    </script> 
+    <script type="javascript" ></script>
 </body>
 </html>

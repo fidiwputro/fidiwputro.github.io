@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   body {
     margin: 0;
     padding: 0;
@@ -569,14 +569,11 @@ html {
     text-align: center;
   }
 
-  .user-box {
-  }
-
   .login-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: small;
-    color: #303030;
+    /* color: #303030; */
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #3f3f3f;
@@ -584,9 +581,6 @@ html {
     background: transparent;
   }
   .login-box .user-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 10px 0;
     font-size: small;
     color: #303030;
@@ -594,11 +588,8 @@ html {
     transition: 0.5s;
   }
 
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: #fff;
+  .login-box .user-box label ~ input:focus,
+  .login-box .user-box label ~ input:focus {
     font-size: small;
   }
 
@@ -606,7 +597,7 @@ html {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #000000;
+    color: white;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -615,17 +606,27 @@ html {
     margin-top: 40px;
   }
 
+  /* hover border */
   .login-box a:hover {
     background: #000000;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #000000, 0 0 25px #fff, 0 0 50px #000000,
-      0 0 100px #000000;
+    box-shadow: 0 0 1px #000000, 0 0 1px #fff, 0 0 1px #000000,
+      0 0 10px #000000;
   }
 
   .login-box a span {
     position: absolute;
     display: block;
+  }
+
+  .btnStyle2 {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 1.2em;
   }
 
   .formBox {
@@ -636,7 +637,8 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* mobile version */
+@media screen and (max-width: 1080px) {
   body {
     margin: 0;
     padding: 0;
@@ -724,7 +726,6 @@ html {
   }
 
   .gallery-section {
-    /* height: 100vh; */
     height: 100rex;
     width: 30%;
     color: black;
@@ -753,6 +754,7 @@ html {
 
   .navbar {
     color: #fff;
+    visibility: hidden;
     padding: 12px;
     text-align: center;
     position: fixed;

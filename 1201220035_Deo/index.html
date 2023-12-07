@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>FurnitureHub.</title>
 </head>
 
@@ -24,8 +24,8 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <div class="button">
-                <a href="#" id="login">Login</a>
-                <a href="#" id="sign-up">Sign Up</a>
+                <a href="login.html" id="login">Login</a>
+                <a href="sign-up.html" id="sign-up">Sign Up</a>
             </div>
         </nav>
     </header>
@@ -213,7 +213,27 @@
         </section>
 
         <footer>
-            <div class="form"></div>
+            <div class="container">
+                <div class="forum">
+                    <div class="heading">
+                        <img src="Resources/envelope-outline.svg" alt="email-con">
+                        <h3>Subscribe to Newsletter</h3>
+                    </div>
+                    <form action="#" id="form">
+                        <div class="form-control">
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                            <span id="error_name"></span>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <span id="error_email"></span>
+                        </div>
+                        <button type="submit" id="button-subscribe"><i class='bx bxs-paper-plane'></i></button>
+                    </form>
+                </div>
+                <img src="Resources/sofa-kecil.png" alt="sofa-kecil" id="img-sofa-kecil">
+            </div>
+
             <h1>FurnitureHub.</h1>
             <div class="box">
                 <div class="about">
@@ -267,6 +287,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="formPesan.js"></script>
     <title>Services</title>
   </head>
   <body>
@@ -16,10 +17,8 @@
         width="55px"
       />
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Service</a></li>
-        <li><a href="login.html">Sign In</a></li>
-        <li><a href="regis.html">Sign Up</a></li>
+        <li><a href="index.html">Log Out</a></li>
       </ul>
     </nav>
     <!--Tabel Menu-->
@@ -150,41 +149,41 @@
             <td>telur Mata sapi</td>
           </tr>
         </table>
-      </div>
-    </div>
-    <!--Form Pesan-->
-    <div class="divDivPesan">
-      <div class="divPesan">
-        <form id="pesan" name="formPesan">
-          <h1 class="pesanTxt">Pesan Katering</h1>
-          <div class="divFormPesan">
-            <div>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" />
-            </div>
-            <div>
-              <label for="event">Event Type</label>
-              <input type="text" id="event" name="event" />
-            </div>
-            <div>
-              <input
-                class="submit"
-                type="submit"
-                id="submit"
-                name="submit"
-                value="Submit"
-              />
-            </div>
+        <!--Form Pesan-->
+        <div class="divDivPesan">
+          <div class="divPesan">
+            <form id="pesan" name="formPesan">
+              <h1 class="pesanTxt">Pesan Katering</h1>
+              <div class="divFormPesan">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" maxlength="12" />
+                </div>
+                <div>
+                  <label for="event">Alamat</label>
+                  <input type="text" id="alamat" name="alamat" />
+                </div>
+                <div>
+                  <input
+                    class="submit"
+                    type="submit"
+                    id="submit"
+                    name="submit"
+                    value="Pesan"
+                  />
+                </div>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </body>

@@ -1,10 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
+ margin: 0;
+ padding: 0;
 }
 
+/* Untuk memisah logo dengan navbar */
 .navigasi {
-    background-color: cornflowerblue;
+    background-color: #363062;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -20,35 +21,39 @@ li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 li a:hover {
-    color: midnightblue;
+    color: #F5E8C7;
 }
 
 .kontenbg {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/food-2655778_1920.jpg);
-    margin-top: 0px;
+    background-image: url(images/food-2655778_1920.jpg);
+    margin-top: 0;
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
     padding-left: 8%;
     padding-right: 8%;
     width: 100%;
-    height: 89.1vh;
+    height: 89vh;
 }
 
+/* teks didepan background */
 .textfg {
+    text-shadow:2px 2px 5px black;
     display: inline-block;
     margin-top: 100px;
     color: white;
 }
 
+/* background dari div login */
 .divDivLogin {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:aquamarine;
+    background-color:#435585;
     height: 89vh;
 }
 
@@ -59,12 +64,8 @@ li a:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color:cadetblue;
+    background-color:#818FB4;
     padding: 50px;
-}
-
-label{
-    display: block;
 }
 
 .logintxt {
@@ -73,17 +74,18 @@ label{
     justify-content: center;
 }
 
-.loginForm {
+.formLogin {
     display: block;
     justify-content: center;
     text-align: center;
 }
 
+/* Background divRegis */
 .divDivRegis {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:aquamarine;
+    background-color:#435585;
     height: 89vh;
 }
 
@@ -94,12 +96,8 @@ label{
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color:cadetblue;
+    background-color:#818FB4;
     padding: 50px;
-}
-
-label{
-    display: block;
 }
 
 .regisTxt {
@@ -108,7 +106,7 @@ label{
     justify-content: center;
 }
 
-.regis_form {
+.formRegis {
     display: block;
     justify-content: center;
     text-align: center;
@@ -140,30 +138,22 @@ caption{
 }
 
 .tabelMenu {
-    border: 5px solid;
-    border-radius: 10px;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color:cadetblue;
+    background-color:#818FB4;
     padding: 35px;
 }
 
 .divPesan {
-    border: 5px solid;
-    border-radius: 10px;
-    align-items: center;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    background-color:cadetblue;
     padding: 50px;
-    margin-top:-5px;
 }
 
 label{
     display: block;
+    margin: 10px;
 }
 
 .pesanTxt {
@@ -178,6 +168,3 @@ label{
     text-align: center;
 }
 
-.submit {
-    margin-top: 10px;
-}

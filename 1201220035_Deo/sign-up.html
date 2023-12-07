@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <title>FurnitureHub.</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="Resources/wallpaper.jpg" alt="green-interior">
+        </div>
+        <div class="box">
+            <div class="heading">
+                <h1>Register</h1>
+                <p>Fill in the registration form to get started.</p>
+            </div>
+            <div class="formulir">
+                <form action="login.html" id="form">
+                    <div class="form-control">
+                        <label for="username">Username</label><br>
+                        <input type="text" name="username" id="username" placeholder="Enter your username"><br>
+                        <span id="error_username"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+                        <span id="error_email"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+                        <span id="error_password"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="confirm_pass">Confirm Password</label><br>
+                        <input type="password" name="confirm_pass" id="confirm_pass"
+                            placeholder="Enter your password"><br>
+                        <span id="error_confirm_pass"></span>
+                    </div>
+                    <button type="submit" id="btn-register">Register Now</button>
+
+                    <div class="sign-in">
+                        <p>Already have an account?</p>
+                        <a href="login.html">Sign In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/sign-up.js"></script>
+</body>
+
+</html>

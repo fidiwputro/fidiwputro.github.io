@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav{
+    /* background-color: #0f0e0e; */
+    color: #0a0a0a;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Logo{
+    float: left;
+    padding-left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav ul li{
+    float: left;
+}
+
+.nav ul li a{
+    display: block;
+    color: #100f0f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav ul li a:hover{
+    background-color: #09d855;
+    color: #fffefe;
+    transition: 0.5s;
+}
+
+.nav-center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.nav-right{
+    float: right;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between; /* This will distribute the space evenly between the columns */
+    align-items: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.container .row-1{
+    display: flex; /* Change this to flex */
+    justify-content: space-between; /* Add this line */
+    padding: 0 4px;
+}
+
+.container .col-1, .container .col-2{
+    flex: 1; /* This will make the columns take up equal space */
+    padding: 10px;
+    height: 300px;
+}
+
+.container h1{
+    text-align: left;
+    font-size: 40px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .success{
+    text-align: left;
+    font-size: 40px;
+    color: #09d855;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container p{
+    text-align: left;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .col-2 .my_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* This will make the image take the full width of the column */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+.col-2 .my_image{
+    background-size: cover; /* This will make the image cover the entire column */
+}
+
+.title-about{
+    text-align: center;
+    font-size: 40px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25%;
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.container-2 .row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 0 4px;
+    margin-top: 20px; /* Added this line to create space between row-1 and row-2 */
+}
+
+.container-2 .row-2 .col-1 .card-1{
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 400px;
+    margin-bottom : 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2 .row-2 .col-1 .card-1 .img-1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container-2 .row-2 .col-2 .card-2{
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 400px;
+    margin-bottom : 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2 .row-2 .col-2 .card-2 .img-2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container-2 .row-2 .col-3 .card-3{
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 400px;
+    margin-bottom : 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2 .row-2 .col-3 .card-3 .img-3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    /* This will distribute the space evenly between the columns */
+    align-items: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.container-3 .row-3 {
+    display: flex;
+    /* Change this to flex */
+    justify-content: space-between;
+    /* Add this line */
+    padding: 0 4px;
+}
+
+.container-3 .col-1,
+.container-3 .col-2 {
+    flex: 1;
+    /* This will make the columns take up equal space */
+    padding: 10px;
+    height: 300px;
+}
+
+.container-3 h1 {
+    text-align: left;
+    font-size: 40px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-3 .success {
+    text-align: left;
+    font-size: 40px;
+    color: #09d855;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-3 p {
+    text-align: left;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-3 .col-2 .my_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* This will make the image take the full width of the column */
+    height: auto;
+    /* This will maintain the image's aspect ratio */
+}
+
+.container-3 .col-2 .my_image {
+    background-size: cover;
+    /* This will make the image cover the entire column */
+}

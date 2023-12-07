@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styleCalculatorDmg.css">
     <title>CalculatorDmg</title>
+    <link rel="stylesheet" type="text/css" href="styleCalculatorDmg.css">
+    <script type="text/javascript" src="formCalculatorDmg.js"></script>
 </head>
 <body>
-    <div class="navigasi">
+    <divkontol
         <div class="pouch">
             <a href="index.html"><img src="image/home.png" alt=""></a>
             <a href="CalculatorDmg.html"><img src="image/calculator_5927785.png" alt=""></a>
@@ -14,56 +15,65 @@
     </div>
 
     <!-- FORM NATASHA -->
-    <div class="tabel" id="natasha">
+    <div class="tabel"kontol 
         <div class="Character" >
             <img src="image/icon_natasha.png" alt="">
 
-            <div class="skill">
+            <div class="kontol
                 <div class="inputan">
-                    <form action="" name="my">
+
+                    <form action="" name="formNaNatasha" id="formNaNatasha">
                         <label for="atk" >ATK</label>
-                        <input type="number" name="atk" id="atk">
+                        <input type="number" name="atkNatasha" min="1">
+
                         <label for="be">BreakEffect</label>
-                        <input type="number" id="be">
+                        <input type="number" name="be" min="1">
+
                         <label for="be">CDM</label>
-                        <input type="number" id="cdm">
+                        <input type="number" name="cdmNatasha" min="1">
+
+                        <div class="hasil">
+                            <h3 class="judul">BASIC ATK</h3>
+                            <h4>Lv.<span id="lvbanatasha"></span></h4>
+                            <input type="range" min="1" max="7" id="rangeNaNatasha" name="rangeNaNatasha" value="1">
+                            <p>Memberikan phisycal Damage sebesar : <span id="hasilBasicAtkNatasha">------</span> </p>
+                        </div>
+                        <button id="btnHitungDmgNatasha" type="button" >HITUNG</button>
                     </form>
                 </div>
-                <div class="hasil">
-                    <h3 class="judul">BASIC ATK</h3>
-                    <h4>Lv.<span id="lvbanatasha"></span></h4>
-                    <input type="range" min="1" max="7" id="rangelvnatasha">
-                    <p>Memberikan phisycal Damage sebesar : <span id="hasilBasicAtkNatasha">------</span> </p>
-                </div>
-                <button id="btnHitungDmgNatasha" >HITUNG</button>
             </div>
 
             <div class="skill">
 
                 <div class="inputan">
-                    <label for="hp">HP</label>
-                    <input type="number" id="hp">
-                    <label for="OG">Outgooing Healing</label>
-                    <input type="number" id="be">
+
+                    <form action="" name="formSkillNatasha" id="formSkillNatasha">
+                        <label for="hp">HP</label>
+                        <input type="number" name="hpNatasha" min="1">
+
+                        <label for="OG">Outgooing Healing</label>
+                        <input type="number" id="OG" name="oghNatasha" min="1">
+
+                        <div class="hasilskill">
+                            <div class="hasil">
+                                <h3 class="judul">SKILL</h3>
+                                <h4>Lv.</h4><span name="lvSkillNatasha"></span>
+                                <input type="range" min="1" max="7" value="1" name="rangeSkillNatasha">
+                                <p>Memulihkan satu sekutu sebesar <span id="hasilSkillNatasha1">------</span>. Memulihkan sekutu sebesar <span id="hasilSkillNatasha2">------</span> di awal tiap giliran selama 2 giliran.</p>
+                            </div>
+            
+                            <div class="hasil">
+                                <h3 class="judul">ULTIMATE</h3>
+                                <h4>Lv.</h4>
+                                <input type="range" min="1" max="7" name="rangeUltNatasha" value="1">
+                                <p>Menyembuhkan semua sekutu sebesar <span id="hasilUltimateNatasha">------</span></p>
+                            </div>
+                        </div>
+        
+                        <button id="btnHitungHealNatasha" type="button">HITUNG</button>
+                    </form>
                 </div>
 
-                <div class="hasilskill">
-                    <div class="hasil">
-                        <h3 class="judul">SKILL</h3>
-                        <h4>Lv.--</h4>
-                        <input type="range" min="1" max="7">
-                        <p>Memulihkan satu sekutu sebesar <span id="hasilSkillNatasha1">------</span>. Memulihkan sekutu sebesar <span id="hasilSkillNatasha2">------</span> di awal tiap giliran selama 2 giliran.</p>
-                    </div>
-    
-                    <div class="hasil">
-                        <h3 class="judul">ULTIMATE</h3>
-                        <h4>Lv.--</h4>
-                        <input type="range" min="1" max="7">
-                        <p>Menyembuhkan semua sekutu sebesar <span id="hasilUltimateNatasha">------</span></p>
-                    </div>
-                </div>
-
-                <button id="btnHitungHealNatasha">HITUNG</button>
 
             </div>
         </div>
@@ -76,76 +86,60 @@
 
             <div class="skill">
                 <div class="inputan">
-                    <form action="">
-                        <label for="atk">ATK</label>
-                        <input type="number" id="atk">
+                    <form action="" name="formNaLynx">
+                        <label for="atk">HP</label>
+                        <input type="number" name="hpLynx">
+
                         <label for="be">BreakEffect</label>
-                        <input type="number" id="be">
+                        <input type="number" name="beLynx">
+
                         <label for="be">CDM</label>
-                        <input type="number" id="cdm">
+                        <input type="number" name="cdmLynx">
+
+                        <div class="hasilskill">
+                            <div class="hasil">
+                                <h3 class="judul">BASIC ATK</h3>
+                                <h4>Lv.</h4><span>--</span>
+                                <input type="range" min="1" max="7" name="rangeNaLynx">
+                                <p>Menimbulkan Quantum DMG setara dengan <span>------</span> ke satu musuh.  </p>
+                            </div>
+                        </div>
+                        <button id="btnNaLynx" type="button">HITUNG</button>
                     </form>
                 </div>
-                <div class="hasilskill">
-                    <div class="hasil">
-                        <h3 class="judul">BASIC ATK</h3>
-                        <h4>Lv.--</h4>
-                        <input type="range" min="1" max="7">
-                        <p>Menimbulkan Quantum DMG setara dengan <span>------</span> ke satu musuh.  </p>
-                    </div>
-                </div>
-                <button>HITUNG</button>
+                
             </div>
 
             <div class="skill">
+                <form action="">
 
-                <div class="inputan">
-                    <label for="hp">HP</label>
-                    <input type="number" id="hp">
-                    <label for="OG">Outgooing Healing</label>
-                    <input type="number" id="be">
-                </div>
+                    <div class="inputan">
+                        <label for="hp">HP</label>
+                        <input type="number" id="hp" name="hpLynx">
+                        
+                        <label for="OG">Outgooing Healing</label>
+                        <input type="number" id="be" name="oghLynx">
+                    </div>
 
-                <div class="hasilskill">
-                    <div class="hasil">
-                        <h3 class="judul">SKILL</h3>
-                        <h4>Lv.--</h4>
-                        <input type="range" min="1" max="7">
-                        <p>Memulihkan satu sekutu sebesar <span>------</span>. Memulihkan sekutu sebesar <span>------</span> di awal tiap giliran selama 2 giliran.</p>
+                    <div class="hasilskill">
+                        <div class="hasil">
+                            <h3 class="judul">SKILL</h3>
+                            <h4>Lv.--</h4>
+                            <input type="range" min="1" max="7">
+                            <p>Memulihkan satu sekutu sebesar <span>------</span>. Memulihkan sekutu sebesar <span>------</span> di awal tiap giliran selama 2 giliran.</p>
+                        </div>
+        
+                        <div class="hasil">
+                            <h3 class="judul">ULTIMATE</h3>
+                            <h4>Lv.--</h4>
+                            <input type="range" min="1" max="7" name="rangelvskillLynx">
+                            <p>Menyembuhkan semua sekutu sebesar <span>------</span></p>
+                        </div>
                     </div>
-    
-                    <div class="hasil">
-                        <h3 class="judul">ULTIMATE</h3>
-                        <h4>Lv.--</h4>
-                        <input type="range" min="1" max="7">
-                        <p>Menyembuhkan semua sekutu sebesar <span>------</span></p>
-                    </div>
-                </div>
-                <button>HITUNG</button>
+                    <button type="button" id="btnHealLynx">HITUNG</button>
+                </form>
             </div>
         </div>
     </div>
-
-
-    <script>
-        
-        let lv = document.getElementById("lvbanatasha");
-        let lva = document.getElementById("rangelvnatasha");
-        
-        lva.addEventListener("input", function() {
-        lv.textContent = lva.value;
-    });
-
-        let atk = document.getElementById("atk");
-        let btnnatasha = document.getElementById("btnHitungDmgNatasha");
-        let be = document.getElementById("be");
-        let cdm = document.getElementById("cdm");
-
-        btnnatasha.addEventListener("click",function(){
-            if(atk.value == '' || be.value == '' || cdm.value == ''){
-                alert("Masukkan data");
-            }
-    });
-
-    </script>
 </body>
 </html>

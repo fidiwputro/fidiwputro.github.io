@@ -3,60 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Document</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Jika ada data dan tidak kosong maka akan diarahkan ke halaman selanjutnya, 
-    jika tidak maka akan ada pesan "DATA TIDAK BOLEH KOSONG" -->
     <div class = "nav">
         <div class = "logo">
             <a href="index.html">
                 <br>
-                GacoanEats
+                NOODLES HOUR
             </a>
         </div>
-        <br><br>
-    <div class="container">
-        <div class="card-container">
-            <br>
-            <H1>Contact Us </H1>
-            <form name="formcontact" action="masuk.html" method="post" onsubmit="return validasi()">
-                <!-- Nama -->
-                <input type="text" placeholder="Nama" id="txtnama" class="form-control" minlength="3">
-                <br>
-                <!-- Handphone -->
-                <input type="number" placeholder="No Handphone" id="txtnumber" class="form-control" minlength="13">
-                <br>
-                <!-- Email -->
-                <input type="text" placeholder="Email Aktif" id="txtemail" class="form-control">
-                <!-- Deskripsi -->
-                <textarea name="text" placeholder="Deskripsi Kebutuhan" cols="30" rows="10" id="txtdes"></textarea>
-                <!-- Button -->
-                <input type="submit" class="submit" value="Submit" id="button">
-            </form>
-        </div>
     </div>
-    <script>
-        function validasi() {
-            if (document.forms["formcontact"]["txtnama"].value == "") {
-                alert("Nama Tidak Boleh Kosong");
-                document.forms["formcontact"]["txtnama"].focus();
-                return false;
-            }
-            if (document.forms["formcontact"]["txtemail"].value == "") {
-                alert("Email Tidak Boleh Kosong");
-                document.forms["formcontact"]["txtemail"].focus();
-                return false;
-            }
-            if (document.forms["formcontact"]["txtdes"].value == "") {
-                alert("Masukan Deskrpsi.");
-                document.forms["formcontact"]["txtdes"].focus();
-                return false;
-            }
-        }
-    </script>
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contact Us</h1>
 
+            <label for="name">Name :</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"></small>
+
+            <label for="email">Email :</label>
+            <input type="text" id="email" placeholder="Your Email">
+            <small class="error"></small>
+
+            <label for="name">Message :</label>
+            <textarea id="message" placeholder="Your Message" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+    <script src="contact.js"></script>
+    
 </body>
 </html>

@@ -149,6 +149,7 @@ body {
 
 .carrousel .cards:hover{
   transform: scale(1.05);
+  transition: ease-in;
 }
 
 .carrousel .cards img {

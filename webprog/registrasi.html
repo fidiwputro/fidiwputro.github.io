@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrasi Anggota</title>
+        <link href="style.css" rel="stylesheet"/>
+        <!-- <script type="text/javascript" src="formbaru.js"></script> -->
+    </head>
+    <body>
+        <div>
+            <form id="diform" name="formregistrasi" method="POST" action="main.php">
+                <h1>Registrasi Anggota</h1>
+                <div class="form-reg">
+                    <div>
+                        <label>Nama:</label>
+                        <input type="text" id="txtnama" name="txtnama" value="Evi"/>
+                    </div>
+                    <div>
+                        <label>NIM:</label>
+                        <input type="text" id="txtnim" name="txtnim"/>
+                    </div>
+                    <div>
+                        <label>Program Studi</label>
+                        <select id="slcprodi" name="slcprodi">
+                            <option value="0">- Pilih Prodi -</option>
+                            <option value="1">Rekayasa Perangkat Lunak</option>
+                            <option value="2">Sistem Informasi</option>
+                            <option value="3">Teknologi Informasi</option>
+                            <option value="4">Informatika</option>
+                            <option value="5">Sains Data</option>
+                            <option value="6">Digital Bisnis</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <label><input type="radio" name="gender" value="L" checked/>L</label>
+                        <label><input type="radio" name="gender" value="P"/>P</label>
+                    </div>
+                    <div>
+                        <label>Status:</label>
+                        <label>
+                            <input type="checkbox" name="aktif" value="1" />Aktif
+                        </label>
+                    </div>
+                    <div>
+                        <label>Username:</label>
+                        <input type="text" id="txtusr" name="txtusr"/>
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" id="txtpwd" name="txtpwd"/>
+                    </div>
+                    <div>
+                        <input type="submit" id="sbtreg" name="sbtreg" value="simpan"/>
+                        <!-- <button type="submit">Gini</button> -->
+                    </div>
+                    <a href="login.html">Login</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </form>
+        </div>        
+    </body>
+</html>

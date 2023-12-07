@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="formLogin.js"></script>
     <title>Sign In</title>
   </head>
   <body>
@@ -18,7 +18,6 @@
       />
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
         <li><a href="login.html">Sign In</a></li>
         <li><a href="regis.html">Sign Up</a></li>
       </ul>
@@ -27,11 +26,11 @@
     <div class="divDivLogin">
       <div class="divlogin">
         <h1 class="logintxt">Login</h1>
-        <form name="formLogin" class="loginForm">
+        <form name="formLogin" class="loginForm" action="services.html">
           <div>
             <div>
               <label>Email :</label>
-              <input type="text" id="femail" name="femail" />
+              <input type="email" id="femail" name="femail" />
             </div>
             <div>
               <label>Password :</label>
@@ -43,26 +42,12 @@
                 type="submit"
                 id="submit"
                 name="submit"
-                value="submit"
+                value="Login"
               />
             </div>
           </div>
         </form>
       </div>
     </div>
-    <!--Script JS Login-->
-    <script>
-      let form = document.forms.loginduluges;
-      function kirim() {
-        let email = document.getElementById("femail");
-        let pw = document.getElementById("fpw");
-        if (email.value == "") {
-          alert("email kosong!");
-        } else if (pw.value == "") {
-          alert("Berhasil login");
-        }
-      }
-      form.addEventListener("submit", kirim);
-    </script>
   </body>
 </html>
