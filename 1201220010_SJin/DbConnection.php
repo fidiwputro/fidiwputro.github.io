@@ -4,7 +4,7 @@ class DbConnection {
     private $host = 'localhost';
     private $username = 'root';
     private $password = '';
-    private $database = 'web_iphone_accounts';
+    private $database = 'web_iphone';
     private $conn;
 
     public function __construct() {

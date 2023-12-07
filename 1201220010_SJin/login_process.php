@@ -1,41 +1,45 @@
-<!-- login_process.php -->
 <?php
-session_start();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    require_once "DbConnection.php";
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $conn = (new DbConnection())->getConnection();
+
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Connect to the database
-    $conn = new mysqli('localhost', 'root', '', 'web_iphone_accounts');
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Retrieve user data from the database
-    $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username = ?");
+    $stmt = $conn->prepare("SELECT id, username, password FROM accounts WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
-    $stmt->bind_result($userId, $dbUsername, $dbPassword);
-    $stmt->fetch();
-    $stmt->close();
+    $stmt->store_result();
 
-    // Verify password
-    if (password_verify($password, $dbPassword)) {
-        // Login successful
-        $_SESSION["user_id"] = $userId;
-        $_SESSION["username"] = $dbUsername;
-        header("Location: index.php"); // Redirect to the main page
-        exit();
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($id, $username, $stored_password);
+        $stmt->fetch();
+
+        if ($password === $stored_password) {
+            // Successful login
+            session_start(); // Start a session
+            $_SESSION["username"] = $username; // Store username in the session
+
+            $response = array("success" => true, "message" => "Login successful");
+        } else {
+            // Invalid password
+            $response = array("success" => false, "message" => "Invalid username or password");
+        }
     } else {
-        // Login failed
-        header("Location: login.php?error=1"); // Redirect with error parameter
-        exit();
+        // User not found
+        $response = array("success" => false, "message" => "Invalid username or password");
     }
 
-    // Close connection
+    // Send JSON response
+    header('Content-Type: application/json');
+    echo json_encode($response);
+
+    $stmt->close();
     $conn->close();
+} else {
+    // Invalid request method
+    http_response_code(405); // Method Not Allowed
+    echo "Invalid request method";
 }
 ?>

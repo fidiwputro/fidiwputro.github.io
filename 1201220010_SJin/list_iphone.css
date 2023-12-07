@@ -33,7 +33,12 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.iphone-item:hover {
+    border-color: #007BFF;
 }
 
 .iphone-item img {
@@ -49,12 +54,9 @@ h1 {
     font-weight: bold;
 }
 
-.iphone-item:hover {
-    transform: scale(1.05);
-}
-
-.iphone-item:hover img {
-    transform: scale(1.1);
+.iphone-stock {
+    margin: 5px 0;
+    color: #777;
 }
 
 .back-button {
@@ -73,4 +75,3 @@ h1 {
 .back-button:hover {
     background-color: #0056b3;
 }
-
