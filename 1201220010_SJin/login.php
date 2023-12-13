@@ -28,5 +28,31 @@
             </form>
         </div>
     </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting traditionally
+
+            // Assuming you have an AJAX function for making requests to the server
+            // Send a request to login_process.php
+            fetch('login_process.php', {
+                method: 'POST',
+                body: new FormData(this),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Redirect to a success page or perform other actions for successful login
+                    window.location.href = 'index.php';
+                } else {
+                    // Show a pop-up message for unsuccessful login
+                    document.getElementById('error-message').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
 </body>
 </html>
