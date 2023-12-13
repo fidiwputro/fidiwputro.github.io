@@ -34,18 +34,20 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     cursor: pointer;
-    transition: border-color 0.3s;
+    transition: border-color 0.5s;
 }
 
 .iphone-item:hover {
     border-color: #007BFF;
+    transform: scale(1.05);
 }
 
 .iphone-item img {
     max-width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s;
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .iphone-name {

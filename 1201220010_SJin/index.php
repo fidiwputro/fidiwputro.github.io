@@ -44,7 +44,6 @@ session_start();
         <p>Kami menyediakan layanan pembelian dan penyewaan iPhone terbaik di kota.</p>
         <?php
         if (isset($_SESSION["username"])) {
-            // User is logged in, display the username
             echo '<div class="logged-in-username">Welcome, ' . $_SESSION["username"] . '!</div>';
         }
         ?> 

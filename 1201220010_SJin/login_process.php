@@ -17,24 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->fetch();
 
         if ($password === $stored_password) {
-            // Successful login
-            session_start(); // Start a session
-            $_SESSION["username"] = $username; // Store username in the session
-
+            session_start();
+            $_SESSION["username"] = $username;
             $response = array("success" => true, "message" => "Login successful");
         } else {
-            // Invalid password
             $response = array("success" => false, "message" => "Invalid username or password");
         }
     } else {
-        // User not found
         $response = array("success" => false, "message" => "Invalid username or password");
     }
-
-    // Send JSON response
     header('Content-Type: application/json');
     echo json_encode($response);
-
     $stmt->close();
     $conn->close();
 } else {
