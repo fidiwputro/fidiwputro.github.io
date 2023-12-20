@@ -21,10 +21,14 @@ if (isset($_SESSION['username'])) {
         if ($isAdmin == 1) {
             $loggedInUser = "admin";
         }
-    }
 
-    $result->free();
-    $conn->close();
+        $result->free();
+        $conn->close();
+    } else {
+        $result->free();
+        $conn->close();
+        header('Location: login.php');
+    }
 } else {
     header('Location: login.php');
 }
@@ -63,9 +67,11 @@ if (isset($_SESSION['username'])) {
         </div>
         <h1>List iPhone</h1>
         <div class="action-buttons">
-            <a href="create_item.php"><button>Create</button></a>
-            <button onclick="editItem()">Edit</button>
-            <button onclick="deleteItem()">Delete</button>
+            <?php if ($isAdmin == 1): ?>
+                <a href="create_item.php"><button>Create</button></a>
+                <button onclick="editItem()">Edit</button>
+                <button onclick="deleteItem()">Delete</button>
+            <?php endif; ?>
         </div>
         <div class="iphone-list">
             <?php
@@ -91,10 +97,10 @@ if (isset($_SESSION['username'])) {
                 $conn->close();
             ?>
         </div>
+        <button onclick="buyItem()">Buy</button>
         <a href="index.php" class="back-button">Back</a>
     </div>
     <script src="list_iphone.js" defer></script>
-    <!-- Add this script to ensure the editItem function is properly defined -->
     <script>
         function editItem() {
             var selectedItem = document.querySelector('.iphone-item.selected');
@@ -107,31 +113,39 @@ if (isset($_SESSION['username'])) {
         }
     </script>
     <script>
-    function editItem() {
-        var selectedItem = document.querySelector('.iphone-item.selected');
-        if (selectedItem) {
-            var selectedItemId = selectedItem.getAttribute('data-item-id');
-            window.location.href = 'edit_item.php?id=' + selectedItemId;
-        } else {
-            alert('Please select an item to edit.');
-        }
-    }
-    function deleteItem() {
-        var selectedItem = document.querySelector('.iphone-item.selected');
-        if (selectedItem) {
-            var selectedItemId = selectedItem.getAttribute('data-item-id');
-
-            // Ask for confirmation before deleting
-            var confirmation = confirm('Are you sure you want to delete this item?');
-            if (confirmation) {
-                // Redirect to delete_item.php with the selected item ID
-                window.location.href = 'delete_item.php?id=' + selectedItemId;
+        function editItem() {
+            var selectedItem = document.querySelector('.iphone-item.selected');
+            if (selectedItem) {
+                var selectedItemId = selectedItem.getAttribute('data-item-id');
+                window.location.href = 'edit_item.php?id=' + selectedItemId;
+            } else {
+                alert('Please select an item to edit.');
             }
+        }
+        function deleteItem() {
+            var selectedItem = document.querySelector('.iphone-item.selected');
+            if (selectedItem) {
+                var selectedItemId = selectedItem.getAttribute('data-item-id');
+
+                // Ask for confirmation before deleting
+                var confirmation = confirm('Are you sure you want to delete this item?');
+                if (confirmation) {
+                    // Redirect to delete_item.php with the selected item ID
+                    window.location.href = 'delete_item.php?id=' + selectedItemId;
+                }
+            } else {
+                alert('Please select an item to delete.');
+            }
+        }
+        function buyItem() {
+        var selectedItem = document.querySelector('.iphone-item.selected');
+        if (selectedItem) {
+            var selectedItemId = selectedItem.getAttribute('data-item-id');
+            alert('Buy action for item with ID ' + selectedItemId);
         } else {
-            alert('Please select an item to delete.');
+            alert('Please select an item to buy.');
         }
     }
-</script>
-
+    </script>
 </body>
 </html>

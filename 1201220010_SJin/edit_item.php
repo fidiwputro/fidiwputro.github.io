@@ -22,6 +22,12 @@ if (isset($_SESSION['username'])) {
             $editedStock = $_POST['edited_stock'];
             $editedPrice = $_POST['edited_price'];
 
+            // Validate the price as a decimal number
+            if (!preg_match('/^\d+(\.\d{1,2})?$/', $editedPrice)) {
+                echo '<div class="error-message">Invalid price format. Please enter a valid decimal number.</div>';
+                exit;
+            }
+
             // Update the item in the database
             $updateQuery = "UPDATE iphone_stocks SET model = '$editedModel', stock = '$editedStock', price = '$editedPrice' WHERE id = '$itemId'";
             $updateResult = $conn->query($updateQuery);
@@ -78,7 +84,7 @@ if (isset($_SESSION['username'])) {
                     echo '<label for="edited_stock">Stock:</label>';
                     echo '<input type="number" id="edited_stock" name="edited_stock" value="' . $row['stock'] . '" required>';
                     echo '<label for="edited_price">Price:</label>';
-                    echo '<input type="number" id="edited_price" name="edited_price" value="' . $row['price'] . '" required>';
+                    echo '<input type="text" id="edited_price" name="edited_price" value="' . $row['price'] . '" required>';
 
                     // Display the image of the selected item
                     echo '<img src="' . $row['model'] . '.jpg" alt="' . $row['model'] . '">';

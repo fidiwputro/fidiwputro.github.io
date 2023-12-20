@@ -51,7 +51,7 @@ if (isset($_SESSION['username'])) {
             <label for="new_stock">Stock:</label>
             <input type="number" id="new_stock" name="new_stock" required>
             <label for="new_price">Price:</label>
-            <input type="number" id="new_price" name="new_price" required>
+            <input type="text" id="new_price" name="new_price" required pattern="\d+(\.\d{1,2})?">
             <button type="submit">Create Item</button>
         </form>
         <a href="list_iphone.php" class="back-button">Back</a>
