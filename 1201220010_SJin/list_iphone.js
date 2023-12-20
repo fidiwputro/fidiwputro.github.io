@@ -14,4 +14,3 @@ function highlight(element) {
         element.style.transform = 'scale(1.1)';
     }
 }
-
