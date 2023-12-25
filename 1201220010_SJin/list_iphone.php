@@ -97,7 +97,8 @@ if (isset($_SESSION['username'])) {
                 $conn->close();
             ?>
         </div>
-        <button onclick="buyItem()">Buy</button>
+        <a onclick="buyItem()" class= "buy-button">Buy</button>
+        <a href="keranjang.php" class="keranjang-button">Keranjang</a>
         <a href="index.php" class="back-button">Back</a>
     </div>
     <script src="list_iphone.js" defer></script>
@@ -111,37 +112,21 @@ if (isset($_SESSION['username'])) {
                 alert('Please select an item to edit.');
             }
         }
-    </script>
-    <script>
-        function editItem() {
-            var selectedItem = document.querySelector('.iphone-item.selected');
-            if (selectedItem) {
-                var selectedItemId = selectedItem.getAttribute('data-item-id');
-                window.location.href = 'edit_item.php?id=' + selectedItemId;
-            } else {
-                alert('Please select an item to edit.');
-            }
-        }
-        function deleteItem() {
-            var selectedItem = document.querySelector('.iphone-item.selected');
-            if (selectedItem) {
-                var selectedItemId = selectedItem.getAttribute('data-item-id');
 
-                // Ask for confirmation before deleting
-                var confirmation = confirm('Are you sure you want to delete this item?');
-                if (confirmation) {
-                    // Redirect to delete_item.php with the selected item ID
-                    window.location.href = 'delete_item.php?id=' + selectedItemId;
-                }
-            } else {
-                alert('Please select an item to delete.');
-            }
-        }
         function buyItem() {
         var selectedItem = document.querySelector('.iphone-item.selected');
         if (selectedItem) {
             var selectedItemId = selectedItem.getAttribute('data-item-id');
-            alert('Buy action for item with ID ' + selectedItemId);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'buy_item.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert(xhr.responseText);
+                }
+            };
+            xhr.send('item_id=' + selectedItemId);
+            location.reload();
         } else {
             alert('Please select an item to buy.');
         }

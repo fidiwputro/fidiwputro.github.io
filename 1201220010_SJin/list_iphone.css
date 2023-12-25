@@ -77,3 +77,54 @@ h1 {
 .back-button:hover {
     background-color: #0056b3;
 }
+
+.buy-button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ff000d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color: #aa010a;
+}
+
+.keranjang-button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #00ff0d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.keranjang-button:hover {
+    background-color: #037e0a;
+}
+
+button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
