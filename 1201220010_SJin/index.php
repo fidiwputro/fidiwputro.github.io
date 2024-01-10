@@ -52,6 +52,8 @@ session_start();
         <h2>Selamat Datang di Tempat Beli dan Sewa iPhone</h2>
         <p>Temukan koleksi iPhone terbaru dan terbaik kami. Kami siap melayani kebutuhan Anda dalam membeli atau menyewa iPhone dengan harga yang kompetitif.</p>
         <a href="list_iphone.php" class="button">Lihat List iPhone</a>
+        <a href="keranjang.php" class="button">Keranjang</a>
+        <a href="struk.php" class="button">View Purchased Item</a>
     </div>
 </body>
 

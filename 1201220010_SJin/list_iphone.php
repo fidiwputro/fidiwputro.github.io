@@ -97,8 +97,9 @@ if (isset($_SESSION['username'])) {
                 $conn->close();
             ?>
         </div>
-        <a onclick="buyItem()" class= "buy-button">Buy</button>
+        <a onclick="buyItem()" class= "buy-button">Order</button>
         <a href="keranjang.php" class="keranjang-button">Keranjang</a>
+        <a href="struk.php" class="back-button">View Purchased Item</a>
         <a href="index.php" class="back-button">Back</a>
     </div>
     <script src="list_iphone.js" defer></script>

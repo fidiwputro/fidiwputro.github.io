@@ -1,11 +1,9 @@
-body, h1, table {
-    margin: 0;
-    padding: 0;
-}
-
+/* Add your styles for struk.php */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -16,8 +14,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-
 
 h1 {
     text-align: center;
@@ -43,6 +39,11 @@ th {
 
 tr:hover {
     background-color: #f5f5f5;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
 }
 
 a {

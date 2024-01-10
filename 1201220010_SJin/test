@@ -1,1 +1,27 @@
-test
+<style>
+    #buyButton,
+    #cancelButton {
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: #d3d3d3; /* Grey color by default */
+        color: #fff;
+    }
+
+    #buyButton.blue {
+        background-color: #49f043;
+    }
+
+    #cancelButton.blue {
+        background-color: #fa2a1b
+    }
+
+    #buyButton.blue:hover {
+        background-color: #2b8228;
+    }
+
+    #cancelButton.blue:hover {  
+        background-color: #9e1c13
+    }
+    </style>
